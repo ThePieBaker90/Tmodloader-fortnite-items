@@ -6,46 +6,44 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class BurstAR : ModItem
+	public class HeavySniper : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Burst Assault Rifle");
-			Tooltip.SetDefault("Shoots in bursts of 3, Musket balls are turned into meteor shot\n\"Gotta get that W, 3 shots at a time\"");
+			DisplayName.SetDefault("Heavy Sniper Rifle");
+			Tooltip.SetDefault("Cannot fire chlorophyte bullets\nTurns musket balls into high velocity bullets\nFires a high damage bullet at the cost of firing speed\n\"Gotta get that W\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a post evil boss rifle intended for early game sustained damage
+		//a hardmode sniper rifle that is not fully implemented
 		public override void SetDefaults()
 		{
 
-			Item.damage = 22;
+			Item.damage = 250;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 3;
-			Item.useAnimation = 9;
+			Item.useTime = 120;
+			Item.useAnimation = 120;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2, silver: 50);
+			Item.knockBack = 2f;
+			Item.value = Item.sellPrice(gold: 10, silver: 50);
 			Item.rare = ItemRarityID.Pink;
-			Item.UseSound = SoundID.Item31;
+			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 70;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 30;
-			Item.reuseDelay = 30;
-			Item.consumeAmmoOnLastShotOnly = true;
+			Item.ArmorPenetration = 100;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.MeteoriteBar, 12);
-			recipe.AddIngredient(ItemID.IllegalGunParts, 1);
-			recipe.AddTile(TileID.Furnaces); 
+			recipe.AddRecipeGroup(nameof(ItemID.AdamantiteBar), 12);
+			recipe.AddIngredient(ItemID.SoulofMight, 5);
+			recipe.AddTile(TileID.AdamantiteForge); //Works as both titanium and adamantite forges
 			recipe.Register();
 
 		}
@@ -63,9 +61,14 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
+			if (type == ProjectileID.ChlorophyteBullet)
+			{
+				type = ProjectileID.BulletHighVelocity;
+			}
+
 			if (type == ProjectileID.Bullet)
 			{
-				type = ProjectileID.MeteorShot;
+				type = ProjectileID.BulletHighVelocity;
 			}
 		}
 
