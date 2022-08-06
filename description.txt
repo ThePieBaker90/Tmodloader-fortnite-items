@@ -22,4 +22,10 @@ This is intended to be an alternative to the megashark with higher long range da
 - Suppressed Assault Rifle - Crafted at an adamantite forge (or equivalent) with 5 hallowed bars, and 5 souls of sight
 This is intended to be a direct upgrade to the assault rifle with higher damage and a slightly faster firing speed
 
+- Charge SMG - Dropped by lihzards (1.66%) once plantera has been defeated
+This is intended to be a post plantera, pre golem smg with long uptime yet long downtime aswell
+
+- Burst Assault Rifle - Made at a furnace with 12 meteorite bars and 1 illegal gun parts
+This is intended to be a pre-skeletron rifle used for sustained fire
+
 NOTE: weapons are still being balanced, it would be appreciated if you point out if a weapon is too strong or weak!
