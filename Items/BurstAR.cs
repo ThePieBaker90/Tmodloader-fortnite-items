@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Burst Assault Rifle");
-			Tooltip.SetDefault("Shoots in bursts of 3, only the last bullet consumes ammo\n\"Gotta get that W, 3 shots at a time\"");
+			Tooltip.SetDefault("Shoots in bursts of 3, Musket balls are turned into meteor shot\n\"Gotta get that W, 3 shots at a time\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -19,7 +19,7 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 20;
+			Item.damage = 22;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -29,13 +29,13 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 2, silver: 50);
 			Item.rare = ItemRarityID.Pink;
-			Item.UseSound = SoundID.Item11;
+			Item.UseSound = SoundID.Item31;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 70;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 25;
+			Item.ArmorPenetration = 30;
 			Item.reuseDelay = 30;
 			Item.consumeAmmoOnLastShotOnly = true;
 		}
@@ -63,6 +63,10 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
+			if (type == ProjectileID.Bullet)
+			{
+				type = ProjectileID.MeteorShot;
+			}
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)
