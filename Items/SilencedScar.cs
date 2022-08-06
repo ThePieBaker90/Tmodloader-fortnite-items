@@ -15,7 +15,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-
+		//a direct upgrade to the assault rifle (or scar)
 		public override void SetDefaults()
 		{
 			Item.damage = 50;

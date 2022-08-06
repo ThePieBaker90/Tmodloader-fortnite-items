@@ -16,7 +16,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-
+		//intended to be an early hardmode "shotgun" (more like a sniper with the shape of a shotgun)
 		public override void SetDefaults()
 		{
 

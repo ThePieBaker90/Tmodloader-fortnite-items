@@ -15,7 +15,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-
+		//post plantera smg dropped by lihzards
 		public override void SetDefaults()
 		{
 
@@ -35,7 +35,7 @@ namespace FortniteItems.Items
 			Item.shootSpeed = 70;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.reuseDelay = 60;
+			Item.reuseDelay = 55;
 			Item.ArmorPenetration = 3;
 		}
 

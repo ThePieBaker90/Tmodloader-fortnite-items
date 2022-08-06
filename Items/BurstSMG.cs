@@ -15,7 +15,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-
+		//Intended to be an early game smg with a low chance to drop from man eaters and other npcs like that
 		public override void SetDefaults()
 		{
 

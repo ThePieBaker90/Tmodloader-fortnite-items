@@ -16,7 +16,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-
+		//a basic post skeletron shotgun that hits hard 
 		public override void SetDefaults()
 		{
 

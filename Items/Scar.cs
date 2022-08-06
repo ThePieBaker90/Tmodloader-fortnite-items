@@ -15,7 +15,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-
+		//a hardmode rifle that is a long range alternative to the mega shark
 		public override void SetDefaults()
 		{
 

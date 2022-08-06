@@ -16,7 +16,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-
+		//intended to be an early hardmode long range shot gun
 		public override void SetDefaults()
 		{
 

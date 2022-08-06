@@ -16,7 +16,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-
+		//a pre-plantera shotgun that has high single target damage but falls off the more enemies there are
 		public override void SetDefaults()
 		{
 
