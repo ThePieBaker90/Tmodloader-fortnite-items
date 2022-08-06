@@ -1,0 +1,3 @@
+displayName = Fortnite Items
+author = Rift90_
+version = 0.1
