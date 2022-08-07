@@ -39,6 +39,7 @@ namespace FortniteItems.NPCs
             {
 				if (NPC.downedBoss1 == true)
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<VGrenade>(), false);
+				
 
             }
 		}

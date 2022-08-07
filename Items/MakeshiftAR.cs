@@ -6,46 +6,44 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class BurstAR : ModItem
+	public class MakeshiftAR : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Burst Assault Rifle");
-			Tooltip.SetDefault("Shoots in bursts of 3, Musket balls are turned into meteor shot\n\"Gotta get that W, 3 shots at a time\"");
+			DisplayName.SetDefault("Makeshift Assault Rifle");
+			Tooltip.SetDefault("10% chance to not consume ammo\nInaccurate yet consistent\n\"Atleast you can craft with it\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a post evil boss rifle intended for early game sustained damage
+		//an early game rifle that is outclassed by nearly every other rifle in the game and is mainly used as a material
 		public override void SetDefaults()
 		{
 
-			Item.damage = 22;
+			Item.damage = 8;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 3;
-			Item.useAnimation = 9;
+			Item.useTime = 25;
+			Item.useAnimation = 25;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2, silver: 50);
+			Item.knockBack = 0.1f;
+			Item.value = Item.sellPrice(silver: 50);
 			Item.rare = ItemRarityID.Pink;
-			Item.UseSound = SoundID.Item31;
+			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 70;
+			Item.shootSpeed = 15;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 30;
-			Item.reuseDelay = 30;
-			Item.consumeAmmoOnLastShotOnly = true;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.MeteoriteBar, 12);
-			recipe.AddIngredient(ItemID.IllegalGunParts, 1);
-			recipe.AddTile(TileID.Furnaces); 
+			recipe.AddIngredient(ItemID.Ebonwood, 15);
+			recipe.AddRecipeGroup(nameof(ItemID.IronBar), 12);
+			recipe.AddRecipeGroup(nameof(ItemID.DemoniteBar), 1);
+			recipe.AddTile(TileID.Anvils); 
 			recipe.Register();
 
 		}
@@ -63,14 +61,13 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(3.5f));
+			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(10));
 
-			if (type == ProjectileID.Bullet)
-			{
-				type = ProjectileID.MeteorShot;
-			}
 		}
-
+		public override bool CanConsumeAmmo(Item ammo, Player player)
+		{
+			return Main.rand.NextFloat() >= 0.25f;
+		}
 
 	}
 }
