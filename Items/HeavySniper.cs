@@ -19,12 +19,12 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 250;
+			Item.damage = 550;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 120;
-			Item.useAnimation = 120;
+			Item.useTime = 90;
+			Item.useAnimation = 90;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 2f;
 			Item.value = Item.sellPrice(gold: 10, silver: 50);
@@ -32,10 +32,12 @@ namespace FortniteItems.Items
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 70;
+			Item.shootSpeed = 200;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 100;
+			Item.ArmorPenetration = 200;
+			Item.crit = 10;
+            
 		}
 
 		public override void AddRecipes()
@@ -70,6 +72,8 @@ namespace FortniteItems.Items
 			{
 				type = ProjectileID.BulletHighVelocity;
 			}
+
+			
 		}
 
 
