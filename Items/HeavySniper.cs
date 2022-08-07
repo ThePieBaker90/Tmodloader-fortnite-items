@@ -43,10 +43,18 @@ namespace FortniteItems.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddRecipeGroup(nameof(ItemID.AdamantiteBar), 12);
-			recipe.AddIngredient(ItemID.SoulofMight, 5);
-			recipe.AddTile(TileID.AdamantiteForge); //Works as both titanium and adamantite forges
+			recipe.AddIngredient(ItemID.ShroomiteBar, 12);
+			recipe.AddIngredient(ItemID.SniperRifle, 1);
+			recipe.AddTile(TileID.Autohammer);
 			recipe.Register();
+
+			Recipe altrecipe = CreateRecipe();
+			altrecipe.AddIngredient(ItemID.ShroomiteBar, 12);
+			altrecipe.AddIngredient(ItemID.SniperScope, 1);
+			altrecipe.AddIngredient(ItemID.IllegalGunParts, 1);
+			altrecipe.AddIngredient(ModContent.ItemType<Scar>());
+			altrecipe.AddTile(TileID.Autohammer);
+			altrecipe.Register();
 
 		}
 
