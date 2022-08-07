@@ -1,19 +1,27 @@
 This mod adds items from the hit game "Fortnite Battle Royale"
 
-Currently there are 7 Items;
+Currently there are 11 Items;
+
+- NEW - Heavy Sniper Rifle - Crafted at an autohammer with 12 shroomite bars and a sniper rifle
+This is intended to be a very high single target weapon that rewards precision with high damage and punishes missing with a slow speed
+
+- NEW - Vindertech Grenade - Sold by the Demolitionist once the Eye of Cthulu has been defeated
+This is intended to be a grenade that doesnt explode upon impact but rewards predictions with higher damage 
+(This weapon is a bit janky at the moment, any feedback would be appreciated)
+
 - Burst SMG - Dropped by Snatchers (1%), Man Eaters (1%), and Angry Trappers (2.5%).
 This is intended to be an early game version of the UZI with a 4 shot burst
 
 - Combat Shotgun - Dropped by Pixies (1.25%)
 This is intended to be an early hardmode shotgun with high armor penetration and range
 
-- Heavy Shotgun - Sold by Arms Dealer for 10 gold and 50 silver in hardmode
+- Heavy Shotgun - Sold by the Arms Dealer for 10 gold and 50 silver in hardmode
 This is intended to be an early hardmode shotgun that fires a single high damage slug with a high crit chance
 
 - Primal Shotgun - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, and 3 jungle spores
 This is intended to be a post mech shotgun that turns musket balls into chlorophyte bullets with the drawback being weak induvidual bullet damage
 
-- Pump Shotgun - Sold by Arms Dealer for 7 gold and 50 silver once skeletron has been defeated
+- Pump Shotgun - Sold by  the Arms Dealer for 7 gold and 50 silver once skeletron has been defeated
 This is intended to be a post skeletron shotgun that deals high damage and knockback at the cost of speed
 
 - Assault Rifle - Crafted at an adamantite forge (or equivalent) with 12 adamantite (or titanium) bars, and 5 souls of might

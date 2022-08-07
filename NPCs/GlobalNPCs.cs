@@ -34,6 +34,13 @@ namespace FortniteItems.NPCs
 				if (Main.hardMode == true)
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<HeavyShotgun>(), false);
 			}
+
+			if (type == NPCID.Demolitionist == true)
+            {
+				if (NPC.downedBoss1 == true)
+					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<VGrenade>(), false);
+
+            }
 		}
 		public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
 		{
