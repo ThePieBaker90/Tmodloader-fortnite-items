@@ -54,7 +54,7 @@ namespace FortniteItems.Items
 			}
 
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(9));
+			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(9)); //Random Bullet Spread
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)

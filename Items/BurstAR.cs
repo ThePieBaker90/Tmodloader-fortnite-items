@@ -63,7 +63,7 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(3.5f));
+			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(3.5f)); //Random Bullet Spread
 
 			if (type == ProjectileID.Bullet)
 			{

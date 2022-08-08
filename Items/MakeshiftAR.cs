@@ -61,7 +61,7 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(10));
+			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(10)); //Random Bullet Spread
 
 		}
 		public override bool CanConsumeAmmo(Item ammo, Player player)
