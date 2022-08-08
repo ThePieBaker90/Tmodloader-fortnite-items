@@ -6,44 +6,44 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class ScopedAR : ModItem
+	public class ThermalScopedAR : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Scoped Assault Rifle");
-			Tooltip.SetDefault("35% chance to not consume ammo\nTurns musket balls into high velocity bullets\n\"Gotta get that W, from a range\"");
+			DisplayName.SetDefault("Thermal Scoped Assault Rifle");
+			Tooltip.SetDefault("40% chance to not consume ammo\nTurns musket balls into chlorophyte bullets\n\"Gotta get that W, in thermal vision\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a direct upgrade to the silenced assault rifle (or silenced scar)
+		//a direct upgrade to the scoped assault rifle
 		public override void SetDefaults()
 		{
-			Item.damage = 70;
+			Item.damage = 95;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 8;
-			Item.useAnimation = 8;
+			Item.useTime = 7;
+			Item.useAnimation = 7;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 15);
-			Item.rare = ItemRarityID.Yellow; //Post Plantera Crafted with Shroomite
-			Item.UseSound = SoundID.Item11;
+			Item.value = Item.sellPrice(gold: 25);
+			Item.rare = ItemRarityID.Cyan; //Post Moonlord Crafted with Luminite
+			Item.UseSound = SoundID.Item48;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 70;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 50;
+			Item.ArmorPenetration = 70;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<SilencedScar>());
-			recipe.AddIngredient(ItemID.ShroomiteBar, 10);
-			recipe.AddIngredient(ItemID.SniperScope, 1);
-			recipe.AddTile(TileID.Autohammer);
+			recipe.AddIngredient(ModContent.ItemType<ScopedAR>());
+			recipe.AddIngredient(ItemID.LunarBar, 12);
+			recipe.AddIngredient(ItemID.FragmentVortex, 10);
+			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.Register();
 		}
 
@@ -62,13 +62,13 @@ namespace FortniteItems.Items
 
 			if (type == ProjectileID.Bullet)
 			{
-				type = ProjectileID.BulletHighVelocity;
+				type = ProjectileID.ChlorophyteBullet;
 			}
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.35f;
+			return Main.rand.NextFloat() >= 0.40f;
 		}
 
 	}
