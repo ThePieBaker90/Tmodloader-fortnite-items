@@ -15,7 +15,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//an midprehardmode gun that has infinite ammo
+		//a post skeletron gun that has infinite ammo
 		public override void SetDefaults()
 		{
 			Item.damage = 30;
@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 5);
-			Item.rare = ItemRarityID.Expert; //UNDECIDED
+			Item.rare = ItemRarityID.Green; //Post Skeletron crafted with bones
 			Item.UseSound = SoundID.Item72;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.CrystalBullet;
@@ -39,10 +39,9 @@ namespace FortniteItems.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<Scar>());
-			recipe.AddIngredient(ItemID.HallowedBar, 5);
-			recipe.AddIngredient(ItemID.SoulofSight, 5);
-			recipe.AddTile(TileID.AdamantiteForge);
+			recipe.AddRecipeGroup(nameof(ItemID.DemoniteBar), 12);
+			recipe.AddIngredient(ItemID.Bone, 10);
+			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}
 
@@ -65,10 +64,6 @@ namespace FortniteItems.Items
 			}
 		}
 
-		public override bool CanConsumeAmmo(Item ammo, Player player)
-		{
-			return Main.rand.NextFloat() >= 0.30f;
-		}
 
 	}
 }
