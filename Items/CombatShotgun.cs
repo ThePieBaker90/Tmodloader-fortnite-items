@@ -29,7 +29,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 3);
-			Item.rare = ItemRarityID.LightRed;
+			Item.rare = ItemRarityID.LightRed; //Early Hardmode Drop from Pixies
 			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;

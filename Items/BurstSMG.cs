@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 2, silver: 50);
-			Item.rare = ItemRarityID.Pink;
+			Item.rare = ItemRarityID.Orange; //Pre Hardmode Jungle Drop
 			Item.UseSound = SoundID.Item31;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;

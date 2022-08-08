@@ -15,7 +15,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a hardmode sniper rifle that is not fully implemented
+		//a hardmode sniper rifle that is crafted with the sniper rifle found in the dungeon and shroomite
 		public override void SetDefaults()
 		{
 
@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 2f;
 			Item.value = Item.sellPrice(gold: 10, silver: 50);
-			Item.rare = ItemRarityID.Pink;
+			Item.rare = ItemRarityID.Lime; //Post Plantera Sniper Rifle Crafted with Shroomite
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;

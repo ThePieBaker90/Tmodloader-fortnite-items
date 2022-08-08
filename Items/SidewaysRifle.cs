@@ -6,34 +6,33 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class SilencedScar : ModItem
+	public class SidewaysRifle : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Suppressed Assault Rifle");
-			Tooltip.SetDefault("30% chance to not consume ammo\nTurns musket balls into high velocity bullets\n\"Gotta get that W, quietly...\"");
+			DisplayName.SetDefault("Sideways Rifle");
+			Tooltip.SetDefault("Does not use ammo \n\"Miss? try again!\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a direct upgrade to the assault rifle (or scar)
+		//an midprehardmode gun that has infinite ammo
 		public override void SetDefaults()
 		{
-			Item.damage = 50;
+			Item.damage = 30;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 9;
-			Item.useAnimation = 9;
+			Item.useTime = 20;
+			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 5);
-			Item.rare = ItemRarityID.LightPurple; //Post Twins & Destroyer made with souls of sight
-			Item.UseSound = SoundID.Item48;
+			Item.rare = ItemRarityID.Expert; //UNDECIDED
+			Item.UseSound = SoundID.Item72;
 			Item.autoReuse = true;
-			Item.shoot = ProjectileID.PurificationPowder;
+			Item.shoot = ProjectileID.CrystalBullet;
 			Item.shootSpeed = 70;
 			Item.noMelee = true;
-			Item.useAmmo = AmmoID.Bullet;
 			Item.ArmorPenetration = 30;
 		}
 

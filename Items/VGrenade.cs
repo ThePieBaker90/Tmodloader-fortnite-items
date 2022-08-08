@@ -15,7 +15,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 99;
 		}
-		//Test
+		//Post eye consumable gotten from the demo man
 		public override void SetDefaults()
 		{
 
@@ -29,7 +29,7 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(copper: 50);
 			Item.value = Item.buyPrice(silver: 5);
-			Item.rare = ItemRarityID.Pink;
+			Item.rare = ItemRarityID.Blue; //Post Eye Sold by Demo
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<Projectiles.VGrenade>();

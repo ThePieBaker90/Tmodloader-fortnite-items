@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.1f;
 			Item.value = Item.sellPrice(silver: 50);
-			Item.rare = ItemRarityID.Pink;
+			Item.rare = ItemRarityID.Blue; //Early prehardmode crafted with demonite(or crimtane)
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;

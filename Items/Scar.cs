@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 2 ,silver: 50);
-			Item.rare = ItemRarityID.Pink;
+			Item.rare = ItemRarityID.Pink; //Mid Mech bosses crafted with souls of might
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;

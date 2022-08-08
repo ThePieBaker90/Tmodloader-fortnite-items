@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.01f;
 			Item.value = Item.sellPrice(gold: 8, silver: 50);
-			Item.rare = ItemRarityID.Pink;
+			Item.rare = ItemRarityID.Lime; //Post Plantera Temple Drop
 			Item.UseSound = SoundID.Item31;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;

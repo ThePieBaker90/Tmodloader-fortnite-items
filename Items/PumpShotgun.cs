@@ -30,7 +30,7 @@ namespace FortniteItems.Items
 			Item.knockBack = 5;
 			Item.value = Item.buyPrice(gold: 7, silver: 50);
 			Item.value = Item.sellPrice(gold: 1, silver: 25);
-			Item.rare = ItemRarityID.Green;
+			Item.rare = ItemRarityID.Green; //Post skeletron shotgun sold by arms dealer
 			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;

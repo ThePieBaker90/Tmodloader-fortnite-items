@@ -30,7 +30,7 @@ namespace FortniteItems.Items
 			Item.knockBack = 3f;
 			Item.value = Item.sellPrice(gold: 1 , silver: 25);
 			Item.value = Item.buyPrice(gold: 10 , silver: 50);
-			Item.rare = ItemRarityID.LightRed;
+			Item.rare = ItemRarityID.LightRed; //Early Hardmode Sold by Arms Dealer
 			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
