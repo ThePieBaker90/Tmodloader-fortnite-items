@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 25);
 			Item.rare = ItemRarityID.Cyan; //Post Moonlord Crafted with Luminite
-			Item.UseSound = SoundID.Item48;
+			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 70;
