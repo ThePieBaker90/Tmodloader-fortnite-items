@@ -18,7 +18,7 @@ namespace FortniteItems.Items
 		//a direct upgrade to the assault rifle (or scar)
 		public override void SetDefaults()
 		{
-			Item.damage = 50;
+			Item.damage = 70;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -26,7 +26,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 8;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 5);
+			Item.value = Item.sellPrice(gold: 15);
 			Item.rare = ItemRarityID.Yellow; //Post Plantera Crafted with Shroomite
 			Item.UseSound = SoundID.Item48;
 			Item.autoReuse = true;
