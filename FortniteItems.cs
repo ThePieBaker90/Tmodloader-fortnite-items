@@ -36,6 +36,9 @@ namespace FortniteItems
 			RecipeGroup DemonandCrim = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.DemoniteBar)}", ItemID.DemoniteBar, ItemID.CrimtaneBar);
 			RecipeGroup.RegisterGroup(nameof(ItemID.DemoniteBar), DemonandCrim);
 
+			RecipeGroup EvilMaterial = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.ShadowScale)}", ItemID.ShadowScale, ItemID.TissueSample);
+			RecipeGroup.RegisterGroup(nameof(ItemID.ShadowScale), EvilMaterial);
+
 		}
 	}
 }

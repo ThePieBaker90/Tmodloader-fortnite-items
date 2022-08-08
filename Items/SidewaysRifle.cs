@@ -22,12 +22,12 @@ namespace FortniteItems.Items
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 20;
-			Item.useAnimation = 20;
+			Item.useTime = 18;
+			Item.useAnimation = 18;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 5);
-			Item.rare = ItemRarityID.Green; //Post Skeletron crafted with bones
+			Item.rare = ItemRarityID.Green; //Post World Evil Boss crafted with Tissue Sample/Shadow Scales
 			Item.UseSound = SoundID.Item72;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.CrystalBullet;
@@ -40,7 +40,7 @@ namespace FortniteItems.Items
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddRecipeGroup(nameof(ItemID.DemoniteBar), 12);
-			recipe.AddIngredient(ItemID.Bone, 10);
+			recipe.AddRecipeGroup(nameof(ItemID.ShadowScale), 10);
 			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}
