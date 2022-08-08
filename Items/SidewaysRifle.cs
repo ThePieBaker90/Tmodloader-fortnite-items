@@ -41,7 +41,7 @@ namespace FortniteItems.Items
 			Recipe recipe = CreateRecipe();
 			recipe.AddRecipeGroup(nameof(ItemID.DemoniteBar), 12);
 			recipe.AddRecipeGroup(nameof(ItemID.ShadowScale), 10);
-			recipe.AddTile(TileID.Anvils);
+			recipe.AddTile(TileID.DemonAltar);
 			recipe.Register();
 		}
 
