@@ -1,6 +1,5 @@
 ﻿CURRENTLY TODO:
 Heavy Assault Rifle
-Infantry Rifle
 Combat Assault Rifle
 MK-SEVEN Assault Rifle
 Ranger Assault Rifle
@@ -11,19 +10,16 @@ Primal Assault Rifle
 LMG
 Pulse Rifle
 Tactical Assault Rifle
-Sideways Minigun
 Minigun
 Hammer Assault Rifle
 Drum Gun
 ____________________
 IN PROGRESS
-
+Infantry Rifle
 ____________________
 FINISHED
-Thermal Scoped Assault Rifle
-Scoped Assault Rifle
-Makeshift Assault Rifle
-Sideways Rifle 
+Sideways Minigun
+Sideways Rifle Modification
 ____________________
 LIVE
 Burst Assault Rifle
@@ -36,3 +32,7 @@ Primal Shotgun
 Assault Rifle
 Suppressed Assault Rifle
 Vindertech Grenade
+Thermal Scoped Assault Rifle
+Scoped Assault Rifle
+Makeshift Assault Rifle
+Sideways Rifle 

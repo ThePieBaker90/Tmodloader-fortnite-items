@@ -37,7 +37,7 @@ namespace FortniteItems.Items
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
 			Item.crit = 2;
-			Item.ArmorPenetration = 30;
+			Item.ArmorPenetration = 60;
 		}
 		
 		

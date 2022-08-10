@@ -2,6 +2,9 @@ This mod adds items from the hit game "Fortnite Battle Royale"
 
 Currently there are 15 Items;
 
+- Sideways Minigun - Crafted at a demon altar with 10 demonite bars (or equivalent) and 12 shadow scales (or equivalent)
+This is intended to be a post Eow or BoC minigun that does not use any ammunition and bounces off walls
+
 - Scoped Assault Rifle - Crafted at an autohammer with 10 shroomite bars, 1 sniper scope, and 1 suppressed assault rifle
 This is intended to be a post plantera direct upgrade to the suppressed assault rifle
 
@@ -12,7 +15,7 @@ This is intended to be a post moon-lord direct upgrade to the scoped assault rif
 This is intended to be an early game rifle that requires the corruption to have been visited atleast once and some mining to have been done
 
 - Sideways Rifle - Crafted at a demon altar with 12 demonite bars (or equivalent), and 10 shadow scales (or equivalent)
-This is intended to be a post EoW or BoC rifle that does not use any ammunition
+This is intended to be a post EoW or BoC rifle that does not use any ammunition and bounces off walls
 
 - Heavy Sniper Rifle - Crafted at an autohammer with 12 shroomite bars and a sniper rifle
 This is intended to be a very high single target weapon that rewards precision with high damage and punishes missing with a slow speed
