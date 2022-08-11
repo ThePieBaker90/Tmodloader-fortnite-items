@@ -46,38 +46,52 @@ namespace FortniteItems.NPCs
 		public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
 		{
 			
-			if (npc.type == NPCID.Pixie)
+			if (npc.type == NPCID.Pixie) //Combat Shotgun Drop from Pixies
 			{
 				
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 80));
 			}
 
-			if (npc.type == NPCID.ManEater)
+			if (npc.type == NPCID.ManEater) //Burst SMG Drop from man eaters
 				{
 
 					npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 100));
 
 				}
-			if (npc.type == NPCID.Snatcher)
+			if (npc.type == NPCID.Snatcher) //Burst SMG Drop from Snatchers
 			{
 
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 100));
 
 			}
 
-			if (npc.type == NPCID.AngryTrapper)
+			if (npc.type == NPCID.AngryTrapper) //Burst SMG Drop from angry trappers
 			{
 
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 40));
 
 			}
 
-			if (npc.type == NPCID.Lihzahrd)
+			if (npc.type == NPCID.Lihzahrd) //Charge SMG drop from Lihzards
 			{
 				if (NPC.downedPlantBoss == true)
 				{
 					npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ChargeSMG>(), 60));
 				}
+			}
+
+			if (npc.type == NPCID.Mimic) //Infantary Rifle drop from regular mimics
+			{
+
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfantaryRifle>(), 6));
+
+			}
+
+			if (npc.type == NPCID.IceMimic) //Infantary Rifle drop from ice mimics
+			{
+
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfantaryRifle>(), 3));
+
 			}
 
 		}

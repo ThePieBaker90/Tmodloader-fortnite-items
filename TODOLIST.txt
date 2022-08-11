@@ -15,13 +15,14 @@ Hammer Assault Rifle
 Drum Gun
 ____________________
 IN PROGRESS
+Combat Assault Rifle
 Infantry Rifle
 ____________________
 FINISHED
-Sideways Minigun
-Sideways Rifle Modification
+Drum Gun
 ____________________
 LIVE
+Sideways Minigun
 Burst Assault Rifle
 Burst SMG
 Charge SMG

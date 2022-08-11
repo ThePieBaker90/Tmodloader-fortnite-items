@@ -6,46 +6,37 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class SilencedScar : ModItem
+	public class InfantaryRifle : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Suppressed Assault Rifle");
-			Tooltip.SetDefault("30% chance to not consume ammo\nTurns musket balls into high velocity bullets\n\"Gotta get that W, quietly...\"");
+			DisplayName.SetDefault("Infantary Rifle");
+			Tooltip.SetDefault("a slower firing assault rifle that hits hard\n\"When a sniper rifle and an assault rifle meet...\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a direct upgrade to the assault rifle (or scar)
+		//a slow firing assault rifle acquired from mimics
 		public override void SetDefaults()
 		{
-			Item.damage = 80;
+			Item.damage = 70;
 			Item.DamageType = DamageClass.Ranged;
-			Item.width = 40;
+			Item.width = 65;
 			Item.height = 40;
-			Item.useTime = 17;
-			Item.useAnimation = 17;
+			Item.useTime = 20;
+			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 5);
-			Item.rare = ItemRarityID.LightPurple; //Post Twins & Destroyer made with souls of sight
-			Item.UseSound = SoundID.Item48;
+			Item.rare = ItemRarityID.LightRed; //Early hardmode drop from mimics 1/6 and ice mimics 1/3
+			Item.UseSound = SoundID.Item40;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 70;
+			Item.shootSpeed = 40;
 			Item.noMelee = true;
-			Item.useAmmo = AmmoID.Bullet;
 			Item.ArmorPenetration = 30;
+			Item.useAmmo = AmmoID.Bullet;
 		}
 
-		public override void AddRecipes()
-		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<Scar>());
-			recipe.AddIngredient(ItemID.HallowedBar, 5);
-			recipe.AddIngredient(ItemID.SoulofSight, 5);
-			recipe.AddTile(TileID.AdamantiteForge);
-			recipe.Register();
-		}
 
 		public override Vector2? HoldoutOffset()
 		{
@@ -60,16 +51,8 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			if (type == ProjectileID.Bullet)
-			{
-				type = ProjectileID.BulletHighVelocity;
-			}
 		}
 
-		public override bool CanConsumeAmmo(Item ammo, Player player)
-		{
-			return Main.rand.NextFloat() >= 0.30f;
-		}
 
 	}
 }

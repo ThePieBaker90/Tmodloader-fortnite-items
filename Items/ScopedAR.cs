@@ -18,12 +18,12 @@ namespace FortniteItems.Items
 		//a direct upgrade to the silenced assault rifle (or silenced scar)
 		public override void SetDefaults()
 		{
-			Item.damage = 70;
+			Item.damage = 90;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 8;
-			Item.useAnimation = 8;
+			Item.useTime = 15;
+			Item.useAnimation = 15;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 15);

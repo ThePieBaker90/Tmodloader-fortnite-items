@@ -29,7 +29,7 @@ namespace FortniteItems.Items
 			Item.knockBack = 2f;
 			Item.value = Item.sellPrice(gold: 10, silver: 50);
 			Item.rare = ItemRarityID.Lime; //Post Plantera Sniper Rifle Crafted with Shroomite
-			Item.UseSound = SoundID.Item11;
+			Item.UseSound = SoundID.Item40;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 200;

@@ -1,1 +1,62 @@
-﻿
+﻿Added the Drum Gun, Combat Assault Rifle, and Infantary Rifle. Reworked the Assault Rifle and recipes based off of it to have a fire rate that matches fortnite more closley while increasing damage
+
+Stats List:
+Drum Gun
+Damage - 24
+Use time - 9
+Knock back - 0.2
+Sell Price - 2g 50s
+Projectile Speed - 10
+Armor Penetration - 0
+Spread - 5
+Crit Chance - 4%
+
+Combat Assault Rifle
+Damage - 15
+Use time - 5
+Knock back - 0.1
+Sell Price - 7g 50s
+Projectile Speed - 70
+Armor Penetration - 10
+Spread - 2
+Crit Chance - 4%
+
+Infantary Rifle
+Damage - 70
+Use time - 30
+Knock back - 0.2
+Sell Price - 5g
+Projectile Speed - 40
+Armor Penetration - 30
+Spread - 0
+Crit Chance - 4%
+
+Changes
+
+- Assault Rifle
+Use time 10 -> 19
+Damage 37 -> 70
+
+- Suppressed Assault Rifle
+Use time 9 -> 17
+Damage 50 -> 80
+
+- Scoped Assault Rifle
+use time 8 -> 15
+Damage 70 -> 90
+
+- Thermal Scoped Assault Rifle
+use time 7 -> 13
+Damage 95 -> 100
+
+- Heavy Shotgun
+Crit Chance 15% -> 25%
+
+- Burst Assault Rifle
+Crafting Station changed from a furnace to an anvil
+Added Minishark to the recipe
+
+Bug Fixes
+
+- Heavy Sniper Rifle
+Changed sound to match other sniper rifles
