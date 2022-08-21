@@ -1,27 +1,30 @@
 ﻿CURRENTLY TODO:
-Heavy Assault Rifle
-Combat Assault Rifle
-MK-SEVEN Assault Rifle
-Ranger Assault Rifle
-Sideways Rifle
-Striker Burst Assault Rifle
-Scoped Assault Rifle
-Primal Assault Rifle
 LMG
-Pulse Rifle
 Tactical Assault Rifle
-Minigun
-Hammer Assault Rifle
-Drum Gun
+BUG - Reduce all Crit chances (except pulse rifle and exotic pulse and any at 4% by 4%)
 ____________________
-IN PROGRESS
-Combat Assault Rifle
-Infantry Rifle
+SPRITING IN PROGRESS
+
+____________________
+IDEA MAKING IN PROGRESS
+Heavy Assault Rifle
+Ranger Assault Rifle
+Hammer Assault Rifle - a new prerequisite to the assault rifle, hellstone
+Striker Burst Assault Rifle - a more accurate and powerfull burst ar, chlorophyte
+Minigun - an upgrade to the drum gun, hallowed
+____________________
+CODING IN PROGRESS
+
 ____________________
 FINISHED
-Drum Gun
+
 ____________________
 LIVE
+Custom Rarity for Exotic Weapons
+MK-SEVEN Assault Rifle - a more accurate combat ar, luminite 
+Pulse Rifle - rifle that uses magic instead of bullets, spectre
+EXOTIC Burst Pulse Rifle - a pulse rifle upgrade that fires in a burst of 3
+Primal Assault Rifle - an inaccurate rifle that is fast and powerful, chlorophyte
 Sideways Minigun
 Burst Assault Rifle
 Burst SMG
@@ -37,3 +40,8 @@ Thermal Scoped Assault Rifle
 Scoped Assault Rifle
 Makeshift Assault Rifle
 Sideways Rifle 
+Drum Gun
+Combat Assault Rifle
+Infantry Rifle
+
+my main issue that Im trying to figure out is how to choose a custom color and not "DiscoB" "DiscoG" or "DiscoR", not the timing inbetween

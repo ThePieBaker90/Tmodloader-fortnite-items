@@ -1,6 +1,17 @@
 This mod adds items from the hit game "Fortnite Battle Royale"
 
-Currently there are 18 Items;
+Currently there are 21 Items;
+- MK7 Assault Rifle - Crafted at an ancient manipulator with 10 Luminite bars, 1 Combat Assault Rifle, and 1 SDMG
+This is Intended to be a direct upgrade to the combat assault rifle
+
+-Pulse Rifle - Crafted at an autohammer with 10 Spectre Bars, 1 Assault Rifle, and 1 Magic Missile
+This is intended to be a magic gun useful against groups of enemies
+
+-Burst Pulse Rifle - Crafted at an autohammer with 1 heatray/1 Staff of Earth, 1 Pulse Rifle, and 5 Spectre Bars
+This is intended to be a direct upgrade to the Pulse Rifle
+
+- Primal Assault Rifle - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, 3 jungle spores, and 1 makeshift assault rifle
+This is intended to be a post mech shotgun that turns chlorophyte bullets into primal bullets that increase the fire rate and damage of the gun
 
 - Combat Assault Rifle - Crafted at an adamantite forge (or equivalent) with 12 hallowed bars, 1 makeshift assault rifle, 1 soul of might, 1 soul of fright, and 1 soul of sight
 This is intended to be a post mech gun with a fast firing rate but low damage
@@ -42,8 +53,8 @@ This is intended to be an early hardmode shotgun with high armor penetration and
 - Heavy Shotgun - Sold by the Arms Dealer for 10 gold and 50 silver in hardmode
 This is intended to be an early hardmode shotgun that fires a single high damage slug with a high crit chance
 
-- Primal Shotgun - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, and 3 jungle spores
-This is intended to be a post mech shotgun that turns musket balls into chlorophyte bullets with the drawback being weak induvidual bullet damage
+- Primal Shotgun - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, 3 jungle spores, and 1 pump shotgun
+This is intended to be a post mech shotgun that turns chlorophyte bullets into primal bullets that increase the fire rate and damage of the gun
 
 - Pump Shotgun - Sold by  the Arms Dealer for 7 gold and 50 silver once skeletron has been defeated
 This is intended to be a post skeletron shotgun that deals high damage and knockback at the cost of speed

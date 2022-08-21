@@ -6,47 +6,45 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class CombatAR : ModItem
+	public class MK7AR : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Combat Assault Rifle");
-			Tooltip.SetDefault("60% chance to not consume ammo\nTurns musket balls into high velocity bullets\n\"Speed over power!\"");
+			DisplayName.SetDefault("MK7 Assault Rifle");
+			Tooltip.SetDefault("70% chance to not consume ammo\nTurns musket balls into high velocity bullets\n\"One of the seven\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a quick firing rifle acquired after the mech bosses have been defeated
+		//a direct upgrade to the Combat AR
 		public override void SetDefaults()
 		{
 
-			Item.damage = 15;
+			Item.damage = 80;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 5;
-			Item.useAnimation = 5;
+			Item.useTime = 4;
+			Item.useAnimation = 4;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.1f;
-			Item.value = Item.sellPrice(gold: 7, silver: 50);
-			Item.rare = ItemRarityID.Pink; //Post Mech Crafted with all souls and hallowed bars
+			Item.value = Item.sellPrice(gold: 20);
+			Item.rare = ItemRarityID.Red; //Post Moon Lord requiring Luminite
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 70;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 10;
+			Item.ArmorPenetration = 30;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.HallowedBar, 12);
-			recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>());
-			recipe.AddIngredient(ItemID.SoulofMight, 1);
-			recipe.AddIngredient(ItemID.SoulofFright, 1);
-			recipe.AddIngredient(ItemID.SoulofSight, 1);
-			recipe.AddTile(TileID.AdamantiteForge);
+			recipe.AddIngredient(ItemID.LunarBar, 10);
+			recipe.AddIngredient(ModContent.ItemType<CombatAR>(), 1);
+			recipe.AddIngredient(ItemID.SDMG, 1);
+			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.Register();
 
 		}
@@ -69,12 +67,12 @@ namespace FortniteItems.Items
 				type = ProjectileID.BulletHighVelocity;
 			}
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(2f)); //Random Bullet Spread
+			
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.60f;
+			return Main.rand.NextFloat() >= 0.70f;
 
 		}
 

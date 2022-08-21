@@ -12,11 +12,11 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Primal Shotgun");
-			Tooltip.SetDefault("A two burst shotgun that turns musket balls into chlorophyte bullets\n\"The island has grown wild, and so must you\"");
+			Tooltip.SetDefault("A two burst shotgun with a wide spread but fast speed and high damage\nChlorophyte bullets make the shot gun deal extra damage and fire faster, but they get turned into high velocity bullets\n\"The island has grown wild, and so must you\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a pre-plantera shotgun that has high single target damage but falls off the more enemies there are
+		//a pre-plantera shotgun that has high damage and speed but is innacurate and cannot fire chlorophyte bullets
 		public override void SetDefaults()
 		{
 
@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 22;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 7);
+			Item.value = Item.sellPrice(gold: 15);
 			Item.rare = ItemRarityID.LightPurple; //Pre Plantera Shotgun made with Chlorophyte
 			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;
@@ -37,9 +37,8 @@ namespace FortniteItems.Items
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
 			Item.crit = 0;
-			Item.reuseDelay = 14;
+			Item.reuseDelay = 44;
 			Item.consumeAmmoOnLastShotOnly = true;
-			Item.ArmorPenetration = 20;
 		}
 
 		public override void AddRecipes()
@@ -68,20 +67,38 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			if (type == ProjectileID.Bullet)
+			if (type == ProjectileID.ChlorophyteBullet)
 			{
-				type = ProjectileID.ChlorophyteBullet;
+				type = ModContent.ProjectileType<Projectiles.PrimalBullet>();
+				Item.damage = 16;
+				Item.reuseDelay = 33;
+			}
+
+			if (type != ProjectileID.ChlorophyteBullet)
+            {
+				if (type != ModContent.ProjectileType<Projectiles.PrimalBullet>())
+                {
+					Item.damage = 8;
+					Item.reuseDelay = 44;
+				}
+					
+			}
+
+			if (type == ModContent.ProjectileType<Projectiles.PrimalBullet>())
+            {
+				Item.damage = 16;
+				Item.reuseDelay = 33;
 			}
 		}
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
 
 		{
-			const int NumProjectiles = 12; // The humber of projectiles that this gun will shoot.
+			const int NumProjectiles = 16; // The humber of projectiles that this gun will shoot.
 
 			for (int i = 0; i < NumProjectiles; i++)
 			{
 				// Rotate the velocity randomly by 30 degrees at max.
-				Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(12));
+				Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(60));
 
 				// Decrease velocity randomly for nicer visuals.
 				newVelocity *= 1f - Main.rand.NextFloat(0.2f);
@@ -91,6 +108,8 @@ namespace FortniteItems.Items
 			}
 
 			return false; // Return false because we don't want tModLoader to shoot projectile
+
+
+			}
 		}
 	}
-}
