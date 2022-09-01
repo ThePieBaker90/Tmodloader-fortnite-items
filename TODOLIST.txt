@@ -1,25 +1,24 @@
 ﻿CURRENTLY TODO:
-LMG
-Tactical Assault Rifle
 BUG - Reduce all Crit chances (except pulse rifle and exotic pulse and any at 4% by 4%)
 ____________________
 SPRITING IN PROGRESS
 
 ____________________
 IDEA MAKING IN PROGRESS
-Heavy Assault Rifle
-Ranger Assault Rifle
-Hammer Assault Rifle - a new prerequisite to the assault rifle, hellstone
+LMG - Inaccurate rifle, Pre-Hardmode Dungeon Drop
+Ranger Assault Rifle - a slowish rifle that hit hard, mothron drop
 Striker Burst Assault Rifle - a more accurate and powerfull burst ar, chlorophyte
-Minigun - an upgrade to the drum gun, hallowed
+Tactical Assault Rifle - accurate fast yet weak gun, hellst
 ____________________
 CODING IN PROGRESS
-
-____________________
+Heavy Assault Rifle - a slower rifle that hits hard, pirate drop
+____________________ 
 FINISHED
 
 ____________________
 LIVE
+Hammer Assault Rifle - a hellstone explosive assault rifle, hellstone
+Minigun - an alternative to the hallowed repeater, hallowed
 Custom Rarity for Exotic Weapons
 MK-SEVEN Assault Rifle - a more accurate combat ar, luminite 
 Pulse Rifle - rifle that uses magic instead of bullets, spectre

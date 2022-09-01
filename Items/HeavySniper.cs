@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Heavy Sniper Rifle");
-			Tooltip.SetDefault("Cannot fire chlorophyte bullets\nTurns musket balls into high velocity bullets\nFires a high damage bullet at the cost of firing speed\n\"Gotta get that W\"");
+			Tooltip.SetDefault("Cannot fire chlorophyte bullets\nTurns musket balls into high velocity bullets\nFires a high damage bullet at the cost of firing speed\n\"Boom, Headshot\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}

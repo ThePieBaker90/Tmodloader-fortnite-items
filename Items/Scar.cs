@@ -19,15 +19,15 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 70;
+			Item.damage = 50;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 19;
-			Item.useAnimation = 19;
+			Item.useTime = 13;
+			Item.useAnimation = 13;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2 ,silver: 50);
+			Item.value = Item.sellPrice(gold: 4 ,silver: 10);
 			Item.rare = ItemRarityID.Pink; //Mid Mech bosses crafted with souls of might
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
@@ -41,6 +41,7 @@ namespace FortniteItems.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
 			recipe.AddRecipeGroup(nameof(ItemID.AdamantiteBar), 12);
 			recipe.AddIngredient(ItemID.SoulofMight, 5);
 			recipe.AddTile(TileID.AdamantiteForge); //Works as both titanium and adamantite forges

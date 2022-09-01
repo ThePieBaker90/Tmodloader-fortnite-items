@@ -48,28 +48,22 @@ namespace FortniteItems.NPCs
 			
 			if (npc.type == NPCID.Pixie) //Combat Shotgun Drop from Pixies
 			{
-				
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 80));
 			}
 
 			if (npc.type == NPCID.ManEater) //Burst SMG Drop from man eaters
-				{
-
+			{
 					npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 100));
+			}
 
-				}
 			if (npc.type == NPCID.Snatcher) //Burst SMG Drop from Snatchers
 			{
-
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 100));
-
 			}
 
 			if (npc.type == NPCID.AngryTrapper) //Burst SMG Drop from angry trappers
 			{
-
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 40));
-
 			}
 
 			if (npc.type == NPCID.Lihzahrd) //Charge SMG drop from Lihzards
@@ -82,18 +76,38 @@ namespace FortniteItems.NPCs
 
 			if (npc.type == NPCID.Mimic) //Infantary Rifle drop from regular mimics
 			{
-
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfantaryRifle>(), 6));
-
 			}
 
 			if (npc.type == NPCID.IceMimic) //Infantary Rifle drop from ice mimics
 			{
-
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfantaryRifle>(), 3));
-
 			}
 
+			if (npc.type == NPCID.PirateCaptain) //Heavvy Assault Rifle Drop from Pirate Captain
+            {
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+			}
+
+			if (npc.type == NPCID.PirateCorsair) //Heavvy Assault Rifle Drop from Pirate Corsair
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+			}
+
+			if (npc.type == NPCID.PirateCrossbower) //Heavvy Assault Rifle Drop from Pirate Crossbower
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+			}
+
+			if (npc.type == NPCID.PirateDeadeye) //Heavvy Assault Rifle Drop from Pirate Deadeye
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+			}
+
+			if (npc.type == NPCID.PirateDeckhand) //Heavvy Assault Rifle Drop from Pirate Deckhand
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+			}
 		}
 	}
-}
+	}

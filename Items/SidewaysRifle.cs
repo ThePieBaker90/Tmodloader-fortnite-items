@@ -26,7 +26,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 29;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 5);
+			Item.value = Item.sellPrice(gold: 2);
 			Item.rare = ItemRarityID.Green; //Post World Evil Boss crafted with Tissue Sample/Shadow Scales
 			Item.UseSound = SoundID.Item72;
 			Item.autoReuse = true;

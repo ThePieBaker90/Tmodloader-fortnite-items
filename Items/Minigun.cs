@@ -6,50 +6,48 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class ThermalScopedAR : ModItem
+	public class Minigun : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Thermal Scoped Assault Rifle");
-			Tooltip.SetDefault("40% chance to not consume ammo\nTurns musket balls into chlorophyte bullets\n\"Gotta get that W, in thermal vision\"");
+			DisplayName.SetDefault("Minigun");
+			Tooltip.SetDefault("70% chance not to consume ammo\nHas a large spread and fast fire rate\n\"Miss? you'll hit eventually!\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a direct upgrade to the scoped assault rifle
+		//a hallowed gun alternative to the hallowed repeater
 		public override void SetDefaults()
 		{
-			Item.damage = 95;
+			Item.damage = 15; 
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 12;
-			Item.useAnimation = 12;
+			Item.useTime = 5; 
+			Item.useAnimation = 5;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 25);
-			Item.rare = ItemRarityID.Cyan; //Post Moonlord Crafted with Luminite
-			Item.UseSound = SoundID.Item11;
+			Item.knockBack = 0.3f; 
+			Item.value = Item.sellPrice(gold: 4);
+			Item.rare = ItemRarityID.Pink; 
+			Item.UseSound = SoundID.Item11; 
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 70;
+			Item.shootSpeed = 7f; 
 			Item.noMelee = true;
+			Item.ArmorPenetration = 3;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 70;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<ScopedAR>());
-			recipe.AddIngredient(ItemID.LunarBar, 12);
-			recipe.AddIngredient(ItemID.FragmentVortex, 10);
-			recipe.AddTile(TileID.LunarCraftingStation);
+			recipe.AddIngredient(ItemID.HallowedBar, 12);
+			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.Register();
 		}
 
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-11f, 0);
+			return new Vector2(-5f, 7f);
 		}
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{
@@ -60,16 +58,14 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			if (type == ProjectileID.Bullet)
-			{
-				type = ProjectileID.ChlorophyteBullet;
-			}
+			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(7f)); //Random Bullet Spread
+
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.40f;
-		}
+			return Main.rand.NextFloat() >= 0.70f;
 
+		}
 	}
 }

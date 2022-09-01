@@ -6,50 +6,52 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class ThermalScopedAR : ModItem
+	public class HammerAR : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Thermal Scoped Assault Rifle");
-			Tooltip.SetDefault("40% chance to not consume ammo\nTurns musket balls into chlorophyte bullets\n\"Gotta get that W, in thermal vision\"");
+			DisplayName.SetDefault("Hammer Assault Rifle");
+			Tooltip.SetDefault("20% chance to not consume ammo\nTurns musket balls into explosive bullets\n\"Drop the Hammer\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a direct upgrade to the scoped assault rifle
+		//a pre-hardmode rifle alternative to the pheonix blaster
 		public override void SetDefaults()
 		{
-			Item.damage = 95;
+
+			Item.damage = 20;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 12;
-			Item.useAnimation = 12;
+			Item.useTime = 20;
+			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 25);
-			Item.rare = ItemRarityID.Cyan; //Post Moonlord Crafted with Luminite
+			Item.knockBack = 1f;
+			Item.value = Item.sellPrice(gold: 2, silver: 50);
+			Item.rare = ItemRarityID.Orange; //made of hellstone
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 70;
+			Item.shootSpeed = 12;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 70;
+			Item.ArmorPenetration = 10;
+			Item.crit = 6;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<ScopedAR>());
-			recipe.AddIngredient(ItemID.LunarBar, 12);
-			recipe.AddIngredient(ItemID.FragmentVortex, 10);
-			recipe.AddTile(TileID.LunarCraftingStation);
+			recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
+			recipe.AddIngredient(ItemID.HellstoneBar, 15);
+			recipe.AddTile(TileID.Hellforge); //Hell forge
 			recipe.Register();
+
 		}
 
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-11f, 0);
+			return new Vector2(-9f, 0);
 		}
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{
@@ -62,13 +64,16 @@ namespace FortniteItems.Items
 
 			if (type == ProjectileID.Bullet)
 			{
-				type = ProjectileID.ChlorophyteBullet;
+				type = ProjectileID.ExplosiveBullet;
 			}
+
+
+			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(2f));
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.40f;
+			return Main.rand.NextFloat() >= 0.2f;
 		}
 
 	}

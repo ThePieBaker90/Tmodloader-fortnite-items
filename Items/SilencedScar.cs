@@ -18,12 +18,12 @@ namespace FortniteItems.Items
 		//a direct upgrade to the assault rifle (or scar)
 		public override void SetDefaults()
 		{
-			Item.damage = 80;
+			Item.damage = 60;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 17;
-			Item.useAnimation = 17;
+			Item.useTime = 13;
+			Item.useAnimation = 13;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 5);

@@ -1,43 +1,16 @@
-﻿Added the MK7 Assault rifle, Pulse Rifle, Exotic Burst Pulse Rifle
+﻿Added the Heavy Assault Rifle
 
 Stats List:
-MK7 Assault Rifle
-Damage - 80
-Use time - 4
-Knock back - 0.1
-Sell Price - 20g
-Projectile Speed - 70
-Armor Penetration - 30
-Spread - 0
-Crit Chance - 4%
-Chance to not use ammo - 70%
+Heavy Assault Rifle
+Damage - 
+Use time - 
+Knock back - 
+Sell Price - 
+Projectile Speed - 
+Armor Penetration - 
+Spread - 
+Crit Chance - 
+Chance to not use ammo - 
 
-Pulse Rifle
-Damage - 50
-Use time - 22
-Knock back - 3
-Sell Price - 15g
-Projectile Speed - 7
-Armor Penetration - 0
-Spread - 0
-Crit Chance - 20%
-Mana - 11
-
-*EXOTIC*
-Burst Pulse Rifle
-Damage - 55
-Use time - 21 (3 shot burst)
-Knock back - 2
-Sell Price - 25g
-Projectile Speed - 7
-Armor Penetration - 0
-Spread - 0
-Crit Chance - 20%
-Mana - 11
-
-Changes
-
-Combat Assault Rifle
-Chance to not consume ammo 25% -> 60%
-
+Changes:
 
