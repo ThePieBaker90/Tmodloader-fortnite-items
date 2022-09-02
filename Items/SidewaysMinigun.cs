@@ -18,7 +18,7 @@ namespace FortniteItems.Items
 		//a post skeletron gun that has infinite ammo
 		public override void SetDefaults()
 		{
-			Item.damage = 10;
+			Item.damage = 8;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;

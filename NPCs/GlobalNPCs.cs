@@ -66,13 +66,6 @@ namespace FortniteItems.NPCs
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 40));
 			}
 
-			if (npc.type == NPCID.Lihzahrd) //Charge SMG drop from Lihzards
-			{
-				if (NPC.downedPlantBoss == true)
-				{
-					npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ChargeSMG>(), 60));
-				}
-			}
 
 			if (npc.type == NPCID.Mimic) //Infantary Rifle drop from regular mimics
 			{
@@ -84,29 +77,33 @@ namespace FortniteItems.NPCs
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfantaryRifle>(), 3));
 			}
 
-			if (npc.type == NPCID.PirateCaptain) //Heavvy Assault Rifle Drop from Pirate Captain
-            {
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+			if (npc.type == NPCID.PirateCaptain) //Ranger Assault Rifle Drop from Pirate Captain
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
 			}
 
-			if (npc.type == NPCID.PirateCorsair) //Heavvy Assault Rifle Drop from Pirate Corsair
+			if (npc.type == NPCID.PirateCorsair) //Ranger Assault Rifle Drop from Pirate Corsair
 			{
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
 			}
 
-			if (npc.type == NPCID.PirateCrossbower) //Heavvy Assault Rifle Drop from Pirate Crossbower
+			if (npc.type == NPCID.PirateCrossbower) //Ranger Assault Rifle Drop from Pirate Crossbower
 			{
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
 			}
 
-			if (npc.type == NPCID.PirateDeadeye) //Heavvy Assault Rifle Drop from Pirate Deadeye
+			if (npc.type == NPCID.PirateDeadeye) //Ranger Assault Rifle Drop from Pirate Deadeye
 			{
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
 			}
 
-			if (npc.type == NPCID.PirateDeckhand) //Heavvy Assault Rifle Drop from Pirate Deckhand
+			if (npc.type == NPCID.PirateDeckhand) //Ranger Assault Rifle Drop from Pirate Deckhand
 			{
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 100));
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
+			}
+			if (npc.type == NPCID.Mothron) //Heavy Assault Rifle Drop from Mothron
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 3));
 			}
 		}
 	}

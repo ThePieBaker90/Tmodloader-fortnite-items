@@ -1,6 +1,15 @@
 This mod adds items from the hit game "Fortnite Battle Royale"
 
-Currently there are 23 Items;
+Currently there are 28 Items;
+- Striker Burst Assault Rifle - Crafted at an adamantite forge (or equivalent) with 1 Burst Assault Rifle and 12 chlorophyte bars
+This is intended to be a hardmode upgrade to the burst assault rifle that fires nanite bullets
+
+- Heavy Assault Rifle - dropped by mothron (33%)
+This is intended a slow firing assault rifle with high armor penetration
+
+- Ranger Assault Rifle - Dropped by all pirates (1%)
+Intended to be an early hardmode gun equivalent to a 3rd tier repeater that shoots explosive bullets
+
 - Minigun - Crafted at an adamantite forge (or equivalent) with 12 hallowed bars
 This is intended to be a gun alternative to the hallowe repeater
 
@@ -10,10 +19,10 @@ This is intended to be a hellstone assault rifle that fires explosive bullets wh
 - MK7 Assault Rifle - Crafted at an ancient manipulator with 10 Luminite bars, 1 Combat Assault Rifle, and 1 SDMG
 This is Intended to be a direct upgrade to the combat assault rifle
 
--Pulse Rifle - Crafted at an autohammer with 10 Spectre Bars, 1 Assault Rifle, and 1 Magic Missile
+- Pulse Rifle - Crafted at an autohammer with 10 Spectre Bars, 1 Assault Rifle, and 1 Magic Missile
 This is intended to be a magic gun useful against groups of enemies
 
--Burst Pulse Rifle - Crafted at an autohammer with 1 heatray/1 Staff of Earth, 1 Pulse Rifle, and 5 Spectre Bars
+- Burst Pulse Rifle - Crafted at an autohammer with 1 heatray/1 Staff of Earth, 1 Pulse Rifle, and 5 Spectre Bars
 This is intended to be a direct upgrade to the Pulse Rifle
 
 - Primal Assault Rifle - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, 3 jungle spores, and 1 makeshift assault rifle
@@ -68,13 +77,13 @@ This is intended to be a post skeletron shotgun that deals high damage and knock
 - Assault Rifle - Crafted at an adamantite forge (or equivalent) with 12 adamantite (or titanium) bars, 1 hammer assault rifle, and 5 souls of might
 This is intended to be an alternative to the megashark with higher long range damage but less close range damage
 
-- Suppressed Assault Rifle - Crafted at an adamantite forge (or equivalent) with 5 hallowed bars, and 5 souls of sight
-This is intended to be a direct upgrade to the assault rifle with higher damage and a slightly faster firing speed
+- Suppressed Assault Rifle - Crafted at an adamantite forge (or equivalent) with 10 chlorophyte bars
+This is intended to be a direct upgrade to the assault rifle with higher damage and armor penetration
 
-- Charge SMG - Dropped by lihzards (1.66%) once plantera has been defeated
+- Charge SMG - Crafted with 12 Solar Tablet Fragments and 3 Chlorophyte Bars at an adamantite forge (or equivalent)
 This is intended to be a post plantera, pre golem smg with long uptime yet long downtime aswell
 
-- Burst Assault Rifle - Made at an anvil with 12 meteorite bars, 1 minishark, and 1 illegal gun parts
+- Burst Assault Rifle - Made at an anvil with 12 meteorite bars, 1 makeshift assault rifle, and 1 illegal gun parts
 This is intended to be a pre-skeletron rifle used for sustained fire
 
 NOTE: weapons are still being balanced, it would be appreciated if you point out if a weapon is too strong or weak!

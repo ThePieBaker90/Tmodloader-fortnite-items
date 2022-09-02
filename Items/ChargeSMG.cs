@@ -15,7 +15,7 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//post plantera smg dropped by lihzards
+		//a high uptime and medium downtime smg
 		public override void SetDefaults()
 		{
 
@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.01f;
 			Item.value = Item.sellPrice(gold: 8, silver: 50);
-			Item.rare = ItemRarityID.Lime; //Post Plantera Temple Drop
+			Item.rare = ItemRarityID.Lime; //Post Plantera solar tablet craft
 			Item.UseSound = SoundID.Item31;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
@@ -38,7 +38,15 @@ namespace FortniteItems.Items
 			Item.reuseDelay = 55;
 			Item.ArmorPenetration = 3;
 		}
+		public override void AddRecipes()
+		{
+			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ItemID.LunarTabletFragment, 12);
+			recipe.AddIngredient(ItemID.ChlorophyteBar, 3);
+			recipe.AddTile(TileID.AdamantiteForge);
+			recipe.Register();
 
+		}
 
 		public override Vector2? HoldoutOffset()
 		{

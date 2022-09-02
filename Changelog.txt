@@ -1,16 +1,62 @@
-﻿Added the Heavy Assault Rifle
+﻿Added the Heavy Assault Rifle, Ranger Assault Rifle, Striker Burst Assault Rifle
 
 Stats List:
 Heavy Assault Rifle
-Damage - 
-Use time - 
-Knock back - 
-Sell Price - 
-Projectile Speed - 
-Armor Penetration - 
-Spread - 
-Crit Chance - 
-Chance to not use ammo - 
+Damage - 80
+Use time - 20
+Knock back - 2
+Sell Price - 5g
+Projectile Speed - 40
+Armor Penetration - 70
+Spread - 0
+Crit Chance - 4%
+Chance to not use ammo - 0%
+
+Ranger Assault Rifle
+Damage - 45
+Use time - 17
+Knock back - 1
+Sell Price - 3g 20s
+Projectile Speed - 12
+Armor Penetration - 40
+Spread - 3
+Crit Chance - 7%
+Chance to not use ammo - 10%
+
+Striker Burst Assault Rifle
+Damage - 55
+Use time - 9 (3 shot burst, 25 tick delay)
+Knock back - 0.2
+Sell Price - 5g 10s
+Projectile Speed - 70
+Armor Penetration - 45
+Spread - 0
+Crit Chance - 4%
+Chance to not use ammo - 0%
 
 Changes:
+Infantary Rifle
+Description "...Firing Assault Rifle that..." -> "...Firing Rifle that..."
 
+Burst Assault Rifle
+Recipe 1 Minishark -> 1 Makeshift Assault Rifle
+
+Sideways Rifle
+Damage 70 -> 50
+
+Sideways Minigun
+Damage 10 -> 8
+
+Charge SMG
+Obtained from Lihzrds -> Crafted with 12 Solar Tablet Fragments and 3 Chlorophyte Bars at an adamantite forge
+
+Assault Rifle
+Damage 50 -> 40
+
+Suppressed Assault Rifle
+Recipe 5 Souls of Sight, 5 Hallowed Bars -> 10 Chlorophyte Bars
+Damage 60 -> 50
+
+Thermal Scoped Assault Rifle
+Damage 95 -> 170
+Crit Chance 4% -> 18%

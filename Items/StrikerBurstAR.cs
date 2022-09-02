@@ -6,20 +6,20 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class BurstAR : ModItem
+	public class StrikerBurstAR : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Burst Assault Rifle");
-			Tooltip.SetDefault("Shoots in bursts of 3, Musket balls are turned into meteor shot\n\"Gotta get that W, 3 shots at a time\"");
+			DisplayName.SetDefault("Striker Burst Assault Rifle");
+			Tooltip.SetDefault("Shoots in bursts of 3, Musket balls are turned into nanite bullets\n\"Bounce back at em!\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a post evil boss rifle intended for early game sustained damage
+		//a pre plantera burst rifle that bounces off of walls
 		public override void SetDefaults()
 		{
 
-			Item.damage = 22;
+			Item.damage = 55;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -27,25 +27,25 @@ namespace FortniteItems.Items
 			Item.useAnimation = 9;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2, silver: 50);
-			Item.rare = ItemRarityID.Green; //Mid Pre Hardmode Craft from Meteorite
+			Item.value = Item.sellPrice(gold: 5, silver: 10);
+			Item.rare = ItemRarityID.LightPurple; //chlorophyte craft
 			Item.UseSound = SoundID.Item31;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 70;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 30;
-			Item.reuseDelay = 30;
+			Item.ArmorPenetration = 45;
+			Item.reuseDelay = 25;
 			Item.consumeAmmoOnLastShotOnly = true;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.MeteoriteBar, 12);
-			recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-			recipe.AddTile(TileID.Anvils); 
+			recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+			recipe.AddIngredient(ModContent.ItemType<BurstAR>(), 1);
+			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 
 		}
@@ -63,11 +63,10 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(3.5f)); //Random Bullet Spread
 
 			if (type == ProjectileID.Bullet)
 			{
-				type = ProjectileID.MeteorShot;
+				type = ProjectileID.NanoBullet;
 			}
 		}
 

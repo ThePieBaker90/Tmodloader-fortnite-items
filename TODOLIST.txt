@@ -6,15 +6,15 @@ SPRITING IN PROGRESS
 ____________________
 IDEA MAKING IN PROGRESS
 LMG - Inaccurate rifle, Pre-Hardmode Dungeon Drop
-Ranger Assault Rifle - a slowish rifle that hit hard, mothron drop
-Striker Burst Assault Rifle - a more accurate and powerfull burst ar, chlorophyte
-Tactical Assault Rifle - accurate fast yet weak gun, hellst
+
 ____________________
 CODING IN PROGRESS
-Heavy Assault Rifle - a slower rifle that hits hard, pirate drop
+Tactical Assault Rifle - accurate fast yet weak gun, unknown
 ____________________ 
 FINISHED
-
+Ranger Assault Rifle - an average speed rifle that hits hard but is inaccurate, pirate drop 
+Heavy Assault Rifle - a slowish rifle that hit hard, mothron drop
+Striker Burst Assault Rifle - a more accurate and powerfull burst ar, chlorophyte
 ____________________
 LIVE
 Hammer Assault Rifle - a hellstone explosive assault rifle, hellstone
@@ -32,11 +32,7 @@ Combat Shotgun
 Heavy Shotgun
 Heavy Sniper Rifle
 Primal Shotgun
-Assault Rifle
-Suppressed Assault Rifle
 Vindertech Grenade
-Thermal Scoped Assault Rifle
-Scoped Assault Rifle
 Makeshift Assault Rifle
 Sideways Rifle 
 Drum Gun
@@ -44,3 +40,9 @@ Combat Assault Rifle
 Infantry Rifle
 
 my main issue that Im trying to figure out is how to choose a custom color and not "DiscoB" "DiscoG" or "DiscoR", not the timing inbetween
+____________________
+BALANCED
+Assault Rifle - Mega Shark
+Suppressed Assault Rifle - Chlorophyte Shotbow
+Scoped Assault Rifle - Chain gun
+Thermal Scoped Assault Rifle - SDMG

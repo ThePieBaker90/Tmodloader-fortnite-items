@@ -18,7 +18,7 @@ namespace FortniteItems.Items
 		//a direct upgrade to the assault rifle (or scar)
 		public override void SetDefaults()
 		{
-			Item.damage = 60;
+			Item.damage = 50;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 5);
-			Item.rare = ItemRarityID.LightPurple; //Post Twins & Destroyer made with souls of sight
+			Item.rare = ItemRarityID.LightPurple; //Post mech bosses
 			Item.UseSound = SoundID.Item48;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
@@ -41,8 +41,7 @@ namespace FortniteItems.Items
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ModContent.ItemType<Scar>());
-			recipe.AddIngredient(ItemID.HallowedBar, 5);
-			recipe.AddIngredient(ItemID.SoulofSight, 5);
+			recipe.AddIngredient(ItemID.ChlorophyteBar, 10);
 			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 		}

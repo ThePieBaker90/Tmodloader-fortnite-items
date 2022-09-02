@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Infantary Rifle");
-			Tooltip.SetDefault("a slower firing assault rifle that hits hard\n\"When a sniper rifle and an assault rifle meet...\"");
+			Tooltip.SetDefault("a slower firing rifle that hits hard\n\"When a sniper rifle and an assault rifle meet...\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
