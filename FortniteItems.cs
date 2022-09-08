@@ -22,7 +22,7 @@ namespace FortniteItems
 {
 	public class FortniteItems : Mod
 	{
-		public override void AddRecipeGroups()
+		public override void AddRecipeGroups()/* tModPorter Note: Removed. Use ModSystem.AddRecipeGroups */
 		{
 			RecipeGroup MagicMirror = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.MagicMirror)}", ItemID.IceMirror, ItemID.MagicMirror);
 			RecipeGroup.RegisterGroup(nameof(ItemID.MagicMirror), MagicMirror);

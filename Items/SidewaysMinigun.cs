@@ -15,10 +15,10 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a post skeletron gun that has infinite ammo
+		//gun that has infinite ammo
 		public override void SetDefaults()
 		{
-			Item.damage = 8;
+			Item.damage = 5;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -26,23 +26,28 @@ namespace FortniteItems.Items
 			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2);
-			Item.rare = ItemRarityID.Green; //Post World Evil Boss crafted with Tissue Sample/Shadow Scales
+			Item.value = Item.sellPrice(silver: 36);
+			Item.rare = ItemRarityID.Blue; //Post EoC
 			Item.UseSound = SoundID.Item72;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.ShadowBeamFriendly;
 			Item.shootSpeed = 6.76f;
 			Item.noMelee = true;
-			Item.ArmorPenetration = 5;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddRecipeGroup(nameof(ItemID.DemoniteBar), 10);
-			recipe.AddRecipeGroup(nameof(ItemID.ShadowScale), 12);
-			recipe.AddTile(TileID.DemonAltar);
+			recipe.AddIngredient(ItemID.DemoniteBar, 10);
+			recipe.AddIngredient(ItemID.CorruptSeeds, 1);
+			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
+
+			Recipe recipe2 = CreateRecipe();
+			recipe2.AddIngredient(ItemID.CrimtaneBar, 10);
+			recipe2.AddIngredient(ItemID.CrimsonSeeds, 1);
+			recipe2.AddTile(TileID.Anvils);
+			recipe2.Register();
 		}
 
 		public override Vector2? HoldoutOffset()

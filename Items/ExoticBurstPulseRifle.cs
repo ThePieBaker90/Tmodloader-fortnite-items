@@ -19,7 +19,7 @@ namespace FortniteItems.Items
 		//UNFINISHED Obtained post plantera
 		public override void SetDefaults()
 		{
-			Item.damage = 55;
+			Item.damage = 80;
 			Item.DamageType = DamageClass.Magic; // Makes the damage register as magic.
 			Item.width = 34;
 			Item.height = 40;
@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.noMelee = true;
 			Item.knockBack = 2;
-			Item.value = Item.sellPrice(gold: 25);
+			Item.value = Item.sellPrice(gold: 15);
 			Item.rare = ModContent.RarityType<Exotic>(); //UNFINISHED
 			Item.UseSound = SoundID.Item72;
 			Item.autoReuse = true;
@@ -44,18 +44,11 @@ namespace FortniteItems.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.HeatRay, 1);
 			recipe.AddIngredient(ModContent.ItemType<PulseRifle>(), 1);
-			recipe.AddIngredient(ItemID.SpectreBar, 5);
-			recipe.AddTile(TileID.Autohammer);
+			recipe.AddIngredient(ItemID.ChlorophyteBar, 25);
+			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.Register();
 
-			Recipe recipe2 = CreateRecipe();
-			recipe2.AddIngredient(ItemID.StaffofEarth, 1);
-			recipe2.AddIngredient(ModContent.ItemType<PulseRifle>(), 1);
-			recipe2.AddIngredient(ItemID.SpectreBar, 5);
-			recipe2.AddTile(TileID.Autohammer);
-			recipe2.Register();
 
 		}
 		public override Vector2? HoldoutOffset()

@@ -11,14 +11,14 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Infantary Rifle");
-			Tooltip.SetDefault("a slower firing rifle that hits hard\n\"When a sniper rifle and an assault rifle meet...\"");
+			Tooltip.SetDefault("a rifle that is good in many situations\nFires a high velocity bullet instead of musket balls\n\"When a sniper rifle and an assault rifle meet...\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
 		//a slow firing assault rifle acquired from mimics
 		public override void SetDefaults()
 		{
-			Item.damage = 70;
+			Item.damage = 29;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 65;
 			Item.height = 40;
@@ -31,7 +31,7 @@ namespace FortniteItems.Items
 			Item.UseSound = SoundID.Item40;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 40;
+			Item.shootSpeed = 100;
 			Item.noMelee = true;
 			Item.ArmorPenetration = 30;
 			Item.useAmmo = AmmoID.Bullet;
@@ -50,7 +50,10 @@ namespace FortniteItems.Items
 			{
 				position += muzzleOffset;
 			}
-
+			if (type == ProjectileID.Bullet)
+			{
+				type = ProjectileID.BulletHighVelocity;
+			}
 		}
 
 

@@ -15,20 +15,20 @@ namespace FortniteItems.Items
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//Intended to be an early game smg with a low chance to drop from man eaters and other npcs like that
+		//Intended to be an early game smg
 		public override void SetDefaults()
 		{
 
-			Item.damage = 10;
+			Item.damage = 2;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 3;
-			Item.useAnimation = 12;
+			Item.useTime = 4;
+			Item.useAnimation = 16;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2, silver: 50);
-			Item.rare = ItemRarityID.Orange; //Pre Hardmode Jungle Drop
+			Item.value = Item.sellPrice(gold: 2);
+			Item.rare = ItemRarityID.Orange; //Pre Hardmode King Slime
 			Item.UseSound = SoundID.Item31;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;

@@ -31,41 +31,29 @@ namespace FortniteItems.NPCs
 				if (NPC.downedBoss3 == true)
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<PumpShotgun>(), false);
 
+				if (NPC.downedEmpressOfLight == true)
+					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<MK7AR>(), false);
+
 				if (Main.hardMode == true)
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<HeavyShotgun>(), false);
 			}
 
 			if (type == NPCID.Demolitionist == true)
-            {
+			{
 				if (NPC.downedBoss1 == true)
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<VGrenade>(), false);
-				
 
-            }
+
+			}
 		}
 		public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
 		{
-			
-			if (npc.type == NPCID.Pixie) //Combat Shotgun Drop from Pixies
-			{
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 80));
-			}
 
-			if (npc.type == NPCID.ManEater) //Burst SMG Drop from man eaters
-			{
-					npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 100));
-			}
 
-			if (npc.type == NPCID.Snatcher) //Burst SMG Drop from Snatchers
+			if (npc.type == NPCID.KingSlime) //Burst SMG Drop from King Slime
 			{
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 100));
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 2));
 			}
-
-			if (npc.type == NPCID.AngryTrapper) //Burst SMG Drop from angry trappers
-			{
-				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 40));
-			}
-
 
 			if (npc.type == NPCID.Mimic) //Infantary Rifle drop from regular mimics
 			{
@@ -105,6 +93,48 @@ namespace FortniteItems.NPCs
 			{
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 3));
 			}
+			if (npc.type == NPCID.PirateCaptain) //Combat Shotgun Drop from Pirate Captain
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
+			}
+
+			if (npc.type == NPCID.PirateCorsair) //Combat Shotgun Drop from Pirate Corsair
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
+			}
+
+			if (npc.type == NPCID.PirateCrossbower) //Combat Shotgun Drop from Pirate Crossbower
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
+			}
+
+			if (npc.type == NPCID.PirateDeadeye) //Combat Shotgun Drop from Pirate Deadeye
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
+			}
+
+			if (npc.type == NPCID.PirateDeckhand) //Combat Shotgun Drop from Pirate Deckhand
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
+			}
+
+			if (npc.type == NPCID.ElfCopter) //Charge SMG Drop from Elf Copter
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ChargeSMG>(), 75));
+			}
+
+			if (npc.type == NPCID.ElfArcher) //Tactical AR Drop from Elf Archer
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TacticalAR>(), 75));
+			}
+			if (npc.type == NPCID.ZombieElf) //Tactical AR Drop from Elf Zombie
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TacticalAR>(), 75));
+			}
+			if (npc.type == NPCID.DukeFishron) //LMG drop from Duke fishron
+			{
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<LMG>(), 5));
+			}
 		}
 	}
-	}
+}

@@ -19,7 +19,7 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 22;
+			Item.damage = 11;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 9;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2, silver: 50);
+			Item.value = Item.sellPrice(silver: 40);
 			Item.rare = ItemRarityID.Green; //Mid Pre Hardmode Craft from Meteorite
 			Item.UseSound = SoundID.Item31;
 			Item.autoReuse = true;

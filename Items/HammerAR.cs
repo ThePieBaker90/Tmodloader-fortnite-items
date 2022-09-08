@@ -19,7 +19,7 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 20;
+			Item.damage = 25;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -44,6 +44,7 @@ namespace FortniteItems.Items
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
 			recipe.AddIngredient(ItemID.HellstoneBar, 15);
+			recipe.AddIngredient(ItemID.Bone, 15);
 			recipe.AddTile(TileID.Hellforge); //Hell forge
 			recipe.Register();
 

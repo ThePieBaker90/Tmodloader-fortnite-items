@@ -5,44 +5,49 @@ SPRITING IN PROGRESS
 
 ____________________
 IDEA MAKING IN PROGRESS
-LMG - Inaccurate rifle, Pre-Hardmode Dungeon Drop
+
 
 ____________________
 CODING IN PROGRESS
-Tactical Assault Rifle - accurate fast yet weak gun, unknown
+
 ____________________ 
 FINISHED
-Ranger Assault Rifle - an average speed rifle that hits hard but is inaccurate, pirate drop 
-Heavy Assault Rifle - a slowish rifle that hit hard, mothron drop
-Striker Burst Assault Rifle - a more accurate and powerfull burst ar, chlorophyte
+
 ____________________
 LIVE
-Hammer Assault Rifle - a hellstone explosive assault rifle, hellstone
-Minigun - an alternative to the hallowed repeater, hallowed
-Custom Rarity for Exotic Weapons
-MK-SEVEN Assault Rifle - a more accurate combat ar, luminite 
-Pulse Rifle - rifle that uses magic instead of bullets, spectre
-EXOTIC Burst Pulse Rifle - a pulse rifle upgrade that fires in a burst of 3
-Primal Assault Rifle - an inaccurate rifle that is fast and powerful, chlorophyte
-Sideways Minigun
-Burst Assault Rifle
-Burst SMG
-Charge SMG
-Combat Shotgun
-Heavy Shotgun
-Heavy Sniper Rifle
-Primal Shotgun
-Vindertech Grenade
-Makeshift Assault Rifle
-Sideways Rifle 
-Drum Gun
-Combat Assault Rifle
-Infantry Rifle
 
-my main issue that Im trying to figure out is how to choose a custom color and not "DiscoB" "DiscoG" or "DiscoR", not the timing inbetween
+
+
+
 ____________________
 BALANCED
-Assault Rifle - Mega Shark
-Suppressed Assault Rifle - Chlorophyte Shotbow
-Scoped Assault Rifle - Chain gun
+LMG - Inaccurate rifle - Typhoon
+Tactical Assault Rifle - razorpine
+Pump Shotgun - Quad barrel shotgun
+Hammer Assault Rifle - Phoenix Blaster
+Heavy Assault Rifle - Nailgun
+Makeshift Assault Rifle - Silver Bow
+Combat Shotgun - Coin Gun (Copper Coins)
+Ranger Assault Rifle - Cutlass
+Combat Assault Rifle - True Nights Edge
+MK-SEVEN Assault Rifle - Eventide
+Vindertech Grenade - N/A
+Burst SMG - Gold Bow
+Charge SMG - Chain Gun
+Primal Shotgun - Grenade Launcher
+Primal Assault Rifle - Venus Magnum
+Minigun - PEW matic horn
+Pulse Rifle - Laser Machine Gun
+EXOTIC Burst Pulse Rifle - N/A
+Scoped Assault Rifle - Stynger
+Assault Rifle - Musket
+Suppressed Assault Rifle - Megashark
+Striker Burst Assault Rifle - Candy Corn Rifle
+Burst Assault Rifle - Space Gun
+Infantry Rifle - Ice Bow
+Heavy Shotgun - Shotgun
+Heavy Sniper Rifle - N/A
+Drum Gun - Bees Knees
 Thermal Scoped Assault Rifle - SDMG
+Sideways Rifle - Blade Staff (5 Summons)
+Sideways Minigun - Tendon Bow

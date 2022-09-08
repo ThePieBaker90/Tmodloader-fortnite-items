@@ -28,7 +28,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 22;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 15);
+			Item.value = Item.sellPrice(gold: 7);
 			Item.rare = ItemRarityID.LightPurple; //Pre Plantera Shotgun made with Chlorophyte
 			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;

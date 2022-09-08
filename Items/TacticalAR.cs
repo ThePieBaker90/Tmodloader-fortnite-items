@@ -6,12 +6,12 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class MK7AR : ModItem
+	public class TacticalAR : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("MK7 Assault Rifle");
-			Tooltip.SetDefault("70% chance to not consume ammo\nTurns musket balls into twilight lances\n\"One of the seven\"");
+			DisplayName.SetDefault("Tactical Assault Rifle");
+			Tooltip.SetDefault("45% chance to not consume ammo\n\"Standard issue I.O. guard rifle\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -19,24 +19,24 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 33;
+			Item.damage = 46;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 4;
-			Item.useAnimation = 4;
+			Item.useTime = 8;
+			Item.useAnimation = 8;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.1f;
-			Item.value = Item.sellPrice(gold: 5);
-			Item.value = Item.buyPrice(gold: 15);
-			Item.rare = ItemRarityID.Red; //Post EoL
+			Item.value = Item.sellPrice(gold: 8, silver: 50);
+			Item.rare = ItemRarityID.Lime; //frost moon
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 20;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 30;
+			Item.crit = 21;
+			Item.ArmorPenetration = 10;
 		}
 
 
@@ -53,17 +53,11 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			if (type == ProjectileID.Bullet)
-			{
-				type = ProjectileID.FairyQueenRangedItemShot;
-			}
-
-			
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.70f;
+			return Main.rand.NextFloat() >= 0.45f;
 
 		}
 

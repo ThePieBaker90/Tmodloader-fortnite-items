@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 5;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.1f;
-			Item.value = Item.sellPrice(gold: 7, silver: 50);
+			Item.value = Item.sellPrice(gold: 10);
 			Item.rare = ItemRarityID.Pink; //Post Mech Crafted with all souls and hallowed bars
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;

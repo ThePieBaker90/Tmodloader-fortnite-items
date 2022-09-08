@@ -19,7 +19,7 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 45; 
+			Item.damage = 28; 
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40; 
 			Item.height = 40;
@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 17;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 1f;
-			Item.value = Item.sellPrice(gold: 3, silver: 20);
+			Item.value = Item.sellPrice(gold: 3, silver: 60);
 			Item.rare = ItemRarityID.LightRed; //Pirate Invasion drop
 			Item.UseSound = SoundID.Item11; 
 			Item.autoReuse = true; 

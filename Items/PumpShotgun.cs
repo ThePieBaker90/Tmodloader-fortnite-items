@@ -20,7 +20,7 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 23;
+			Item.damage = 17;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -28,8 +28,8 @@ namespace FortniteItems.Items
 			Item.useAnimation = 70;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 5;
-			Item.value = Item.buyPrice(gold: 7, silver: 50);
-			Item.value = Item.sellPrice(gold: 1, silver: 25);
+			Item.value = Item.buyPrice(gold: 20);
+			Item.value = Item.sellPrice(gold: 4);
 			Item.rare = ItemRarityID.Green; //Post skeletron shotgun sold by arms dealer
 			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;

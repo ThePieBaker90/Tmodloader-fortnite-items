@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Primal Assault Rifle");
-			Tooltip.SetDefault("25% chance to not consume ammo\nTurns chlorophyte bullets into high velocity bullets that deal extra damage\nInaccurate yet fast and powerful\n\"Atleast you can craft with it\""); //UNFINISHED
+			Tooltip.SetDefault("25% chance to not consume ammo\nTurns chlorophyte bullets into primal bullets that deal extra damage and fire faster\n\"There is a primal force that binds us all\""); //UNFINISHED
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 12; 
 			Item.useStyle = ItemUseStyleID.Shoot; 
 			Item.knockBack = 0.5f;
-			Item.value = Item.sellPrice(gold: 15); 
+			Item.value = Item.sellPrice(gold: 5); 
 			Item.rare = ItemRarityID.LightPurple; //Pre Plantera Shotgun made with Chlorophyte
 			Item.UseSound = SoundID.Item11; 
 			Item.autoReuse = true;

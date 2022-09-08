@@ -18,7 +18,7 @@ namespace FortniteItems.Items
 		//UNFINISHED Obtained post plantera
 		public override void SetDefaults()
 		{
-			Item.damage = 50;
+			Item.damage = 75;
 			Item.DamageType = DamageClass.Magic; // Makes the damage register as magic.
 			Item.width = 34;
 			Item.height = 40;
@@ -27,8 +27,8 @@ namespace FortniteItems.Items
 			Item.useStyle = ItemUseStyleID.Shoot; 
 			Item.noMelee = true; 
 			Item.knockBack = 3;
-			Item.value = Item.sellPrice(gold: 15);
-			Item.rare = ItemRarityID.LightRed; //UNFINISHED
+			Item.value = Item.sellPrice(gold: 10);
+			Item.rare = ItemRarityID.LightRed; //Post Martian Madness
 			Item.UseSound = SoundID.Item72;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.MagicMissile; // shoots a blue laser bolt
@@ -41,9 +41,9 @@ namespace FortniteItems.Items
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.SpectreBar, 10);
-			recipe.AddIngredient(ModContent.ItemType<Scar>(), 1);
+			recipe.AddIngredient(ItemID.MartianConduitPlating, 25);
 			recipe.AddIngredient(ItemID.MagicMissile, 1);
-			recipe.AddTile(TileID.Autohammer);
+			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 
 		}

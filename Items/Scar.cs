@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Assault Rifle");
-			Tooltip.SetDefault("25% chance to not consume ammo\nTurns musket balls into high velocity bullets\n\"Gotta get that W\"");
+			Tooltip.SetDefault("25% chance to not consume ammo\n\"Gotta get that W\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -19,7 +19,7 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 40;
+			Item.damage = 8;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -27,25 +27,31 @@ namespace FortniteItems.Items
 			Item.useAnimation = 13;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 4 ,silver: 10);
-			Item.rare = ItemRarityID.Pink; //Mid Mech bosses crafted with souls of might
+			Item.value = Item.sellPrice(gold: 1 ,silver: 50);
+			Item.rare = ItemRarityID.Green; //Goblin Army 
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 70;
+			Item.shootSpeed = 7;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 25;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-			recipe.AddRecipeGroup(nameof(ItemID.AdamantiteBar), 12);
-			recipe.AddIngredient(ItemID.SoulofMight, 5);
-			recipe.AddTile(TileID.AdamantiteForge); //Works as both titanium and adamantite forges
+			recipe.AddIngredient(ItemID.SpikyBall, 25);
+			recipe.AddIngredient(ItemID.GoldBar, 12);
+			recipe.AddTile(TileID.Anvils); 
 			recipe.Register();
+
+			Recipe recipe2 = CreateRecipe();
+			recipe2.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
+			recipe2.AddIngredient(ItemID.SpikyBall, 25);
+			recipe2.AddIngredient(ItemID.PlatinumBar, 12);
+			recipe2.AddTile(TileID.Anvils);
+			recipe2.Register();
 
 		}
 
@@ -62,10 +68,6 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			if (type == ProjectileID.Bullet)
-			{
-				type = ProjectileID.BulletHighVelocity;
-			}
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)

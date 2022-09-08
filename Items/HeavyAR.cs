@@ -18,7 +18,7 @@ namespace FortniteItems.Items
 		//a slow firing assault rifle dropped by mothron with high armor penetration
 		public override void SetDefaults()
 		{
-			Item.damage = 80; 
+			Item.damage = 150; 
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 65;
 			Item.height = 40;
@@ -26,7 +26,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 2f;
-			Item.value = Item.sellPrice(gold: 5);
+			Item.value = Item.sellPrice(gold: 10);
 			Item.rare = ItemRarityID.Yellow;//Mothron Drop
 			Item.UseSound = SoundID.Item40;
 			Item.autoReuse = true; 

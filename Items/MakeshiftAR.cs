@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Makeshift Assault Rifle");
-			Tooltip.SetDefault("10% chance to not consume ammo\nInaccurate yet consistent\n\"Atleast you can craft with it\"");
+			Tooltip.SetDefault("10% chance to not consume ammo\n\"Atleast you can craft with it\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 25;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.1f;
-			Item.value = Item.sellPrice(silver: 50);
+			Item.value = Item.sellPrice(silver: 5);
 			Item.rare = ItemRarityID.Blue; //Early prehardmode crafted with demonite(or crimtane)
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;

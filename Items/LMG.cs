@@ -6,43 +6,41 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class MK7AR : ModItem
+	public class LMG : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("MK7 Assault Rifle");
-			Tooltip.SetDefault("70% chance to not consume ammo\nTurns musket balls into twilight lances\n\"One of the seven\"");
+			DisplayName.SetDefault("Light Machine Gun");
+			Tooltip.SetDefault("70% chance not to consume ammo\n\"Hit em hard and fast... or miss em hard and fast\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//a fast rifle 
+		//a hardmode minigun equivalent
 		public override void SetDefaults()
 		{
-
-			Item.damage = 33;
+			Item.damage = 75;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 4;
-			Item.useAnimation = 4;
+			Item.useTime = 7;
+			Item.useAnimation = 7;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 0.1f;
+			Item.knockBack = 0.3f;
 			Item.value = Item.sellPrice(gold: 5);
-			Item.value = Item.buyPrice(gold: 15);
-			Item.rare = ItemRarityID.Red; //Post EoL
+			Item.rare = ItemRarityID.Yellow; //Duke fishron drop
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 20;
+			Item.shootSpeed = 7f;
 			Item.noMelee = true;
+			Item.ArmorPenetration = 3;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 30;
 		}
 
 
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-9f, 0);
+			return new Vector2(-5f, 7f);
 		}
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{
@@ -53,12 +51,8 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			if (type == ProjectileID.Bullet)
-			{
-				type = ProjectileID.FairyQueenRangedItemShot;
-			}
+			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(7f)); //Random Bullet Spread
 
-			
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)
@@ -66,6 +60,5 @@ namespace FortniteItems.Items
 			return Main.rand.NextFloat() >= 0.70f;
 
 		}
-
 	}
 }

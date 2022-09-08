@@ -24,12 +24,12 @@ namespace FortniteItems.Items
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 30;
-			Item.useAnimation = 30;
+			Item.useTime = 45;
+			Item.useAnimation = 45;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 3f;
-			Item.value = Item.sellPrice(gold: 1 , silver: 25);
-			Item.value = Item.buyPrice(gold: 10 , silver: 50);
+			Item.value = Item.sellPrice(gold: 5);
+			Item.value = Item.buyPrice(gold: 25);
 			Item.rare = ItemRarityID.LightRed; //Early Hardmode Sold by Arms Dealer
 			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;

@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Suppressed Assault Rifle");
-			Tooltip.SetDefault("30% chance to not consume ammo\nTurns musket balls into high velocity bullets\n\"Gotta get that W, quietly...\"");
+			Tooltip.SetDefault("30% chance to not consume ammo\n\"Gotta get that W, quietly...\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -26,12 +26,12 @@ namespace FortniteItems.Items
 			Item.useAnimation = 13;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 5);
+			Item.value = Item.sellPrice(gold: 7);
 			Item.rare = ItemRarityID.LightPurple; //Post mech bosses
 			Item.UseSound = SoundID.Item48;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 70;
+			Item.shootSpeed = 10;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
 			Item.ArmorPenetration = 30;
@@ -41,7 +41,7 @@ namespace FortniteItems.Items
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ModContent.ItemType<Scar>());
-			recipe.AddIngredient(ItemID.ChlorophyteBar, 10);
+			recipe.AddIngredient(ItemID.HallowedBar, 12) ;
 			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 		}
@@ -59,10 +59,6 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			if (type == ProjectileID.Bullet)
-			{
-				type = ProjectileID.BulletHighVelocity;
-			}
 		}
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)

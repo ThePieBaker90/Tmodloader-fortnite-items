@@ -1,0 +1,174 @@
+﻿__________________
+Pre Boss
+__________________
+Makeshift Assault Rifle - Crafted - ASSAULT RIFLE
+(Shoul only be makeshift weapons here)
+
+
+__________________
+King Slime Defeated
+__________________
+Burst SMG - Man Eater or Snatcher Drop - SUBMACHINE GUN 
+
+
+
+__________________
+Eye of Cthulu Defeated
+__________________
+Sideways Minigun - Corrupt Seeds Crafting - ASSAULT RIFLE
+Vindertech Grenade - Demoman post-EoC sell - GRENADE
+
+
+__________________
+Goblin Army Defeated
+__________________
+Assault Rifle - Spiky Balls Crafting - ASSAULT RIFLE 
+
+
+
+__________________
+EoW or BoC defeated
+__________________
+Burst Assault Rifle - Meteorite Crafting - ASSAULT RIFLE
+
+
+
+__________________
+Queen Bee Defeated
+__________________
+Drum Gun - Beewax Crafting - ASSAULT RIFLE
+
+
+
+__________________
+Skeletron Defeated
+__________________
+Hammer Assault Rifle - Hellstone / Bones Crafting - ASSAULT RIFLE
+Pump Shotgun - Arms Dealer post-skeletron sell - SHOTGUN
+
+
+__________________
+Deerclops Defeated
+__________________
+Minigun - Radio Thing Crafting - ASSAULT RIFLE 
+
+
+
+=====HARDMODE=====
+__________________
+Wall of flesh Defeated
+__________________
+Infantary Rifle - Mimic drop - ASSAULT RIFLE
+Heavy Shotgun - Arms Dealer Hardmode Sell - SHOTGUN
+
+__________________
+Pirate Invasion Defeated
+__________________
+Ranger Assault Rifle - Pirate Drop - ASSAULT RIFLE
+Combat Shotgun - Pirate Drop - SHOTGUN
+
+
+__________________
+Queen Slime Defeated
+__________________
+Sideways Rifle - Sparkle Slime Balloon Crafting - ASSAULT RIFLE
+
+
+
+__________________
+1 Mech boss Defeated
+__________________
+Suppressed Assault Rifle - Hallowed Bar Crafting - ASSAULT RIFLE 
+
+
+__________________
+Pre Plantera Solar Eclipse Defeated
+__________________
+
+
+
+
+__________________
+All Mechs Defeated
+__________________
+Combat Assault Rifle - Souls of Fright, Might, and Sight Crafting - ASSAULT RIFLE 
+
+
+
+__________________
+Plantera Defeated
+__________________
+Primal Assault Rifle - Chlorophyte Bar Crafting - ASSAULT RIFLE 
+Primal Shotgun - Chlorophyte Bar Crafting - SHOTGUN 
+Heavy Sniper Rifle - Shroomite Bars Crafting - SNIPER RIFLE
+(Primal SMG Should be here)
+__________________
+Post Plantera Solar Eclipse Defeated
+__________________
+Heavy Assault Rifle - Mothron Drop - ASSAULT RIFLE
+
+
+
+__________________
+Pumpkin Moon Defeated
+__________________
+Striker Burst Assault Rifle - Spooky wood Crafting - ASSAULT RIFLE
+
+
+
+__________________
+Frost Moon Defeated
+__________________
+Tactical Assault Rifle - Zombie Elf, Elf Archer Drop - ASSAULT RIFLE
+Charge SMG - Elf copter drop - SUBMACHINE GUN 
+
+
+__________________
+Golem Defeated
+__________________
+Scoped Assault Rifle - Rifle Scope Crafting - ASSAULT RIFLE 
+
+
+
+__________________
+Martian Madness Defeated
+__________________
+Pulse Rifle - Martian Conduit Plating Crafting - ASSAULT RIFLE
+
+
+
+__________________
+Duke Fishron Defeated
+__________________
+LMG - UNFINISHED ASSAULT RIFLE -
+
+
+
+__________________
+Empress of Light Defeated
+__________________
+MK7 Assault Rifle - Luminite Crafting - ASSAULT RIFLE 
+
+
+
+__________________
+Lunatic Cultist Defeated
+__________________
+Burst Pulse Rifle - Ancient Manipulator Crafting - ASSAULT RIFLE 
+
+
+
+__________________
+Lunar Events Defeated
+__________________
+
+
+
+
+===POSTMOONLORD===
+__________________
+Moonlord Defeated
+__________________
+Thermal Scoped Assault Rifle - Luminite Crafting - ASSAULT RIFLE
+
+

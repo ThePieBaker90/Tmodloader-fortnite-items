@@ -19,15 +19,15 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 24;
+			Item.damage = 13;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 9;
-			Item.useAnimation = 9;
+			Item.useTime = 10;
+			Item.useAnimation = 10;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2, silver: 50);
+			Item.value = Item.sellPrice(gold: 2);
 			Item.rare = ItemRarityID.Orange; //Obtained after the meteor has landed and a minishark has been bought
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
@@ -41,7 +41,7 @@ namespace FortniteItems.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.MeteoriteBar, 12);
+			recipe.AddIngredient(ItemID.BeeWax, 12);
 			recipe.AddIngredient(ItemID.Minishark, 1);
 			recipe.AddIngredient(ItemID.IllegalGunParts, 1);
 			recipe.AddTile(TileID.Anvils);
@@ -66,7 +66,7 @@ namespace FortniteItems.Items
 				type = ProjectileID.MeteorShot;
 			}
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(5f)); //Random Bullet Spread
+			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(8f)); //Random Bullet Spread
 
 		}
 	}

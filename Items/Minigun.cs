@@ -18,7 +18,7 @@ namespace FortniteItems.Items
 		//a hallowed gun alternative to the hallowed repeater
 		public override void SetDefaults()
 		{
-			Item.damage = 15; 
+			Item.damage = 5; 
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -26,7 +26,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 5;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.3f; 
-			Item.value = Item.sellPrice(gold: 4);
+			Item.value = Item.sellPrice(gold: 1, silver: 50);
 			Item.rare = ItemRarityID.Pink; 
 			Item.UseSound = SoundID.Item11; 
 			Item.autoReuse = true;
@@ -40,8 +40,9 @@ namespace FortniteItems.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.HallowedBar, 12);
-			recipe.AddTile(TileID.MythrilAnvil);
+			recipe.AddIngredient(ItemID.DontStarveShaderItem, 1);
+			recipe.AddIngredient(ItemID.HellstoneBar, 12);
+			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}
 

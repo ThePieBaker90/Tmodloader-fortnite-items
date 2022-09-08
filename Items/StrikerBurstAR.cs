@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 9;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 5, silver: 10);
+			Item.value = Item.sellPrice(gold: 10);
 			Item.rare = ItemRarityID.LightPurple; //chlorophyte craft
 			Item.UseSound = SoundID.Item31;
 			Item.autoReuse = true;
@@ -43,7 +43,7 @@ namespace FortniteItems.Items
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+			recipe.AddIngredient(ItemID.SpookyWood, 300);
 			recipe.AddIngredient(ModContent.ItemType<BurstAR>(), 1);
 			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();

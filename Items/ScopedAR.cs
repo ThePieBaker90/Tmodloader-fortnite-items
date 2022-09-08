@@ -26,8 +26,8 @@ namespace FortniteItems.Items
 			Item.useAnimation = 12;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 15);
-			Item.rare = ItemRarityID.Yellow; //Post Plantera Crafted with Shroomite
+			Item.value = Item.sellPrice(gold: 7);
+			Item.rare = ItemRarityID.Yellow; //Post Golem
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
