@@ -1,42 +1,42 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
+using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class MakeshiftAR : ModItem
+	public class MakeshiftShotgun : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Makeshift Assault Rifle");
-			Tooltip.SetDefault("10% chance to not consume ammo\n\"Atleast you can craft with it\"");
+			DisplayName.SetDefault("Makeshift Shotgun");
+			Tooltip.SetDefault("\"Better than nothin'\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//an early game rifle that is outclassed by nearly every other rifle in the game and is mainly used as a material
+		//a basic post skeletron shotgun that hits hard 
 		public override void SetDefaults()
 		{
 
-			Item.damage = 8;
+			Item.damage = 2;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 25;
-			Item.useAnimation = 25;
+			Item.useTime = 65;
+			Item.useAnimation = 65;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 0.1f;
+			Item.knockBack = 2;
 			Item.value = Item.sellPrice(silver: 5);
 			Item.rare = ItemRarityID.Blue; //Early prehardmode crafted with demonite(or crimtane)
-			Item.UseSound = SoundID.Item11;
+			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 15;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
 		}
-
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
@@ -61,6 +61,7 @@ namespace FortniteItems.Items
 		}
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{
+
 			Vector2 muzzleOffset = Vector2.Normalize(velocity) * 25f;
 
 			if (Collision.CanHit(position, 0, 0, position + muzzleOffset, 0, 0))
@@ -68,13 +69,25 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(10)); //Random Bullet Spread
-
 		}
-		public override bool CanConsumeAmmo(Item ammo, Player player)
+		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+
 		{
-			return Main.rand.NextFloat() >= 0.10f;
-		}
+			const int NumProjectiles = 4; // The humber of projectiles that this gun will shoot.
 
+			for (int i = 0; i < NumProjectiles; i++)
+			{
+				// Rotate the velocity randomly by 30 degrees at max.
+				Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(10));
+
+				// Decrease velocity randomly for nicer visuals.
+				newVelocity *= 1f - Main.rand.NextFloat(0.5f);
+
+				// Create a projectile.
+				Projectile.NewProjectileDirect(source, position, newVelocity, type, damage, knockback, player.whoAmI);
+			}
+
+			return false; // Return false because we don't want tModLoader to shoot projectile
+		}
 	}
 }

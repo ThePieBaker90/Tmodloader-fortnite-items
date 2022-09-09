@@ -6,12 +6,12 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class MakeshiftAR : ModItem
+	public class MakeshiftPistol : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Makeshift Assault Rifle");
-			Tooltip.SetDefault("10% chance to not consume ammo\n\"Atleast you can craft with it\"");
+			DisplayName.SetDefault("Makeshift Pistol");
+			Tooltip.SetDefault("\"It shoots\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -19,14 +19,14 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 8;
+			Item.damage = 17;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 25;
-			Item.useAnimation = 25;
+			Item.useTime = 60;
+			Item.useAnimation = 60;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 0.1f;
+			Item.knockBack = 3f;
 			Item.value = Item.sellPrice(silver: 5);
 			Item.rare = ItemRarityID.Blue; //Early prehardmode crafted with demonite(or crimtane)
 			Item.UseSound = SoundID.Item11;
@@ -52,12 +52,11 @@ namespace FortniteItems.Items
 			recipe2.AddIngredient(ItemID.CrimstoneBlock, 15);
 			recipe2.AddTile(TileID.Anvils);
 			recipe2.Register();
-
 		}
 
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-9f, 0);
+			return new Vector2(0, 0);
 		}
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{
@@ -68,12 +67,11 @@ namespace FortniteItems.Items
 				position += muzzleOffset;
 			}
 
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(10)); //Random Bullet Spread
 
 		}
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.10f;
+			return Main.rand.NextFloat() >= 0.25f;
 		}
 
 	}

@@ -1,8 +1,86 @@
 ﻿CURRENTLY TODO:
 BUG - Reduce all Crit chances (except pulse rifle and exotic pulse and any at 4% by 4%)
+
+
+
 ____________________
 SPRITING IN PROGRESS
-
+Mechanical Explosive Bow - 1 sec reload - Golem
+Mechanical Shockwave Bow - 1 sec reload - All Mechs
+Primal Stink Bow - 0.7 sec reload - Plant
+Ripsaw Launcher - 1.5 sps - Frost Moon
+Fiend Hunter Crossbow - 1.8 sps - Lunar Events
+Hop rock Dualies - 3.96 sps (exotic) (2 shot burst) - EoL
+Shadow Tracker - 6.75 sps (exotic) - Pumpkin Moon
+Hand cannon - 0.8 sps - Post Plant Solar
+Sidearm Pistol - 6.75 sps - WoF
+Combat Pistol - 6.75 sps - Skeletron
+Dual Pistols - 3.96 sps (2 shot burst) - Duke Fishron
+Mechanical Bow - 1.1 sec reload - Mech Boss
+Primal Fire Bow - 0.7 sec reload - Skeletron
+Primal Bow - 0.7 sec reload - EoW or BoC
+Hunter Bolt Action Sniper Rifle - 0.64 sps - Cultist
+Storm Scout - 0.9 sps (exotic ver.) (will be called "The Storm Scout") - Moon Lord
+Dragon's Breath Sniper - 2.3 sec reload (exotic) - Golem
+Prime Shotgun - 1.05 sps - Queen Bee
+Dub - 2.7 sec reload (exotic) - EoL
+Double Barrel - 2.7 sec Reload (for mod will be 2 shot burst) - Pre Plant Solar
+Infinity Blade - N/A - Moon Lord
+Drum Shotgun - 3 sps - Frost Moon
+Cupid's Crossbow - 0.9 sps - Queen Slime
+Charge Shotgun - 0.85 sps - Duke Fishron
+Dual Fiend Hunters - 4 sps - Pumpkin Moon
+Boom Sniper Rifle - 1 sps (exotic) - Pumpkin Moon
+Boom Bow - 1 sec reload - Pirate
+Flint Knock Pistol - 3.2 sec reload - Pirate
+Machine Pistol - 13.5 sps - Lunar Events
+Combat SMG - 12 sps - Skeletron
+Rapid fire SMG - 15 sps - WoF
+Stinger SMG - 12 sps - Pre Plant Solar
+Submachine Gun - 11 sps - EoW or BoC
+Night Hawk - 1.6 sps (exotic) - Martian Madness
+Scoped Revolver - 1.6 sps - Golem
+Revolver - 1.5 sps - All Mechs
+Suppressed SMG - 7.8 sps - Mech Boss
+Suppressed Pistol - 6.75 sps - Mech Boss
+Suppressed Sniper Rifle - 1.9 Sec Reload - Mech Boss
+Semi Auto Sniper Rifle - 1.2 sps - deerclops
+Compact SMG - 10 sps - Cultist
+Tactical SMG - 9 sps - Goblin Army
+Two Shot Shotgun - 1.55 sps - Golem
+Striker Pump Shotgun - 0.65 sps - Queen Slime
+Ranger Shotgun - 1.4 sec reload - Moonlord
+Lever Action Shotgun - 0.95 sps - Post Plant Solar
+Auto Shotgun - 1.5 sps - All Mechs
+Bolt Action Sniper Rifle - 3.3 Sec Reload - All Mechs 
+Storm Scout Sniper Rifle - 0.9 sps (non exotic ver.) (will be called "scout sniper rifle") - Pre Plant Solar
+Hunting Rifle - 1.9 sec reload - EoC
+Lever Action Rifle - 1.25 sps - Post Plant Solar
+Automatic Sniper Rifle - 4 sps - EoW or BoC
+Marksman Six Shooter - 5 sps (exotic) - Pre Plant Solar
+DMR - 2.5 sps - Bee
+Firework Flare Gun - 0.56 sps - Queen Slime
+Anvil Rocket Launcher 3.2 sec reload <-> 3.6 sec reload - Skeletron
+Recycler - 1 sps - King Slime 
+Shockwave Launcher - 1 sps - WoF
+Burst Quad Launcher - 1.39 sps (exotic) (3 shot burst) - Lunar Events
+Quad Launcher - 1.0 sps - Post Plant Solar 
+Proximity Grenade Launcher - 0.65 sps - Cultist
+Grenade Launcher - 1.0 sps (will be called "vindertech grenade launcher") - Pre Plant Solar
+Plasma Cannon - 1 sps - Martian Madness
+The Big Chill - 0.75 sps (exotic) - Frost moon
+Pumpkin Launcher 2.5 sec reload <-> 4.1 sec reload - Pumpkin moon
+Rocket Launcher 2.5 sec reload <-> 4.7 sec reload (will be called "vindertech rocket launcher") - Golem 
+Sideways Scythe - N/A - Deerclops 
+Primal Pistol - 2.47 sps - Plant 
+Six Shooter - 5 sps - EoW or BoC 
+Flare gun - 0.56 sps - Goblin Army
+Rail gun - 3 sec reload - Martian Madness
+Kymera Ray Gun - 15 sps - Martian Madness
+Pistol - 6.75 sps - King slime
+Makeshift Bow - 0.8 sec reload - Pre boss
+Tactical Shotgun - 1.5 sps - EoC 
+Primal SMG - 10 sps - Plant 
 ____________________
 IDEA MAKING IN PROGRESS
 
@@ -10,9 +88,12 @@ IDEA MAKING IN PROGRESS
 ____________________
 CODING IN PROGRESS
 
+
 ____________________ 
 FINISHED
-
+Makeshift SMG - Silver Bow
+Makeshift Pistol - Silver Bow
+Makeshift Shotgun - Silver Bow
 ____________________
 LIVE
 

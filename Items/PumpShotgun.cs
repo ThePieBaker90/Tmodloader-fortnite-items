@@ -30,7 +30,7 @@ namespace FortniteItems.Items
 			Item.knockBack = 5;
 			Item.value = Item.buyPrice(gold: 20);
 			Item.value = Item.sellPrice(gold: 4);
-			Item.rare = ItemRarityID.Green; //Post skeletron shotgun sold by arms dealer
+			Item.rare = ItemRarityID.Green; //Early prehardmode crafted with demonite(or crimtane)
 			Item.UseSound = SoundID.Item36;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
@@ -41,6 +41,7 @@ namespace FortniteItems.Items
 			Item.ArmorPenetration = 10;
 		}
 
+	
 
 		public override Vector2? HoldoutOffset()
 		{
