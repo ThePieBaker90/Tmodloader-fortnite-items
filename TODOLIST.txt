@@ -79,11 +79,10 @@ Rail gun - 3 sec reload - Martian Madness
 Kymera Ray Gun - 15 sps - Martian Madness
 Pistol - 6.75 sps - King slime
 Makeshift Bow - 0.8 sec reload - Pre boss
-Tactical Shotgun - 1.5 sps - EoC 
+Tactical Shotgun - 1.5 sps (will be called "vindertech tactical shotgun") - EoC 
 Primal SMG - 10 sps - Plant 
 ____________________
 IDEA MAKING IN PROGRESS
-
 
 ____________________
 CODING IN PROGRESS
@@ -91,9 +90,7 @@ CODING IN PROGRESS
 
 ____________________ 
 FINISHED
-Makeshift SMG - Silver Bow
-Makeshift Pistol - Silver Bow
-Makeshift Shotgun - Silver Bow
+
 ____________________
 LIVE
 
@@ -102,6 +99,10 @@ LIVE
 
 ____________________
 BALANCED
+Dragons Breath Shotgun - Phoenix Blaster
+Makeshift SMG - Silver Bow
+Makeshift Pistol - Silver Bow
+Makeshift Shotgun - Silver Bow
 LMG - Inaccurate rifle - Typhoon
 Tactical Assault Rifle - razorpine
 Pump Shotgun - Quad barrel shotgun

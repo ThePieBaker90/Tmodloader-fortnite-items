@@ -1,6 +1,9 @@
 This mod adds items from the hit game "Fortnite Battle Royale"
 
-Currently there are 30 Items;
+Currently there are 31 Items;
+- Dragon's Breath Shotgun - Crafted at a hellforge with 1 Makeshift Shotgun, 15 bones, and 10 hellstone bars
+This is intended to be a post dungeon shotgun that fires flames instead of bullets
+
 - Makeshift Shotgun - Crafted at an anvil with 15 Ebonwood, 12 Iron bars (or equivalent), and 15 Ebonstone (Or Equivalent)
 This is intended to be an early game shotgun that requires the corruption to have been visited atleast once and some mining to have been done
 
