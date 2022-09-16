@@ -1,2 +1,1 @@
-﻿Added the Dragon's Breath Shotgun
-
+﻿Changed Every Sprite to be more consistent with base game terraria

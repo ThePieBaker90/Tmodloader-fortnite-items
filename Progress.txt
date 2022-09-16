@@ -47,6 +47,7 @@ Skeletron Defeated
 __________________
 Hammer Assault Rifle - Hellstone / Bones Crafting - ASSAULT RIFLE
 Pump Shotgun - Arms Dealer post-skeletron sell - SHOTGUN
+Dragon's Breath Shotgun - Hellstone / Bones Crafting - SHOTGUN
 Anvil Rocket Launcher - UNFINISHED - ROCKET LAUNCHER
 Combat SMG - UNFINISHED - SMG
 Primal Fire Bow - UNFINISHED - BOW
