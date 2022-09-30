@@ -10,7 +10,7 @@ __________________
 King Slime Defeated
 __________________
 Burst SMG - King slime drop - SUBMACHINE GUN 
-Pistol - UNFINISHED - PISTOL
+Pistol - Solidifier Craft - PISTOL
 Recycler - UNFINISHED - GRENADE LAUNCHER
 
 __________________
@@ -177,6 +177,8 @@ Burst Pulse Rifle - Ancient Manipulator Crafting - ASSAULT RIFLE
 Proximity Grenade Launcher - UNFINISHED - GRENADE LAUNCHER
 Compact SMG - UNFINISHED - SMG
 Hunter Bolt Action Sniper Rifle - UNFINISHED - SNIPER RIFLE
+EvoChrome Assault Rifle - UNFINISHED - ASSAULT RIFLE
+EvoChrome Shotgun - UNFINISHED - SHOTGUN
 __________________
 Lunar Events Defeated
 __________________

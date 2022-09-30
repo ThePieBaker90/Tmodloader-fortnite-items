@@ -1,6 +1,23 @@
 This mod adds items from the hit game "Fortnite Battle Royale"
 
-Currently there are 31 Items;
+Currently there are 34 Items;
+- Pistol - Crafted at a Solidifier with 99 gel and 1 Makeshift Pistol
+This is intended to be a faster alternative to the flintlock pistol
+
+- EvoChrome Shotgun - MKI Crafted at an Ancient Manipulator with 10 Vortex Fragments and 1 Makeshift Shotgun
+MKII Crafted at an Ancient Manipulator with 10 Nebula Fragments and 1 EvoChrome Shotgun MKI
+MKIII Crafted at an Ancient Manipulator with 10 Stardust Fragments and 1 EvoChrome Shotgun MKII
+MKIV Crafted at an Ancient Manipulator with 10 Solar Fragments and 1 EvoChrome Shotgun MKIII
+MKV Crafted at an Ancient Manipulator with 10 Luminite Bars and 1 EvoChrome Shotgun MKIV
+This is intended to be a lunar events shotgun that grows in power throughout the event
+
+- EvoChrome Assault Rifle - MKI Crafted at an Ancient Manipulator with 10 Vortex Fragments and 1 Makeshift Assault Rifle
+MKII Crafted at an Ancient Manipulator with 10 Nebula Fragments and 1 EvoChrome Assault Rifle MKI
+MKIII Crafted at an Ancient Manipulator with 10 Stardust Fragments and 1 EvoChrome Assault Rifle MKII
+MKIV Crafted at an Ancient Manipulator with 10 Solar Fragments and 1 EvoChrome Assault Rifle MKIII
+MKV Crafted at an Ancient Manipulator with 10 Luminite Bars and 1 EvoChrome Assault Rifle MKIV
+This is intended to be a lunar events burst Assault Rifle that grows in power throughout the event
+
 - Dragon's Breath Shotgun - Crafted at a hellforge with 1 Makeshift Shotgun, 15 bones, and 10 hellstone bars
 This is intended to be a post dungeon shotgun that fires flames instead of bullets
 
