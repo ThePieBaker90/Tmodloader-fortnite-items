@@ -6,51 +6,51 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class DrumGun : ModItem
+	public class SuppressedPistol : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Drum Gun");
-			Tooltip.SetDefault("25% chance to not consume ammo\nShoots a consistent yet inaccurate stream of bullets\n\"It's back for round Two!\"");
+			DisplayName.SetDefault("Suppressed Pistol");
+			Tooltip.SetDefault("35% chance to not use ammo\nShoots high velocity bullets instead of musket balls\n\"A staple of the Fog of War LTM\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
-		//Intended to be an early game upgrade to the Minishark
+		//mech boss suppressed pistol
 		public override void SetDefaults()
 		{
 
-			Item.damage = 13;
+			Item.damage = 30;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
-			Item.useTime = 10;
-			Item.useAnimation = 10;
+			Item.useTime = 8;
+			Item.useAnimation = 8;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 0.2f;
-			Item.value = Item.sellPrice(gold: 2);
-			Item.rare = ItemRarityID.Orange; //Obtained after the meteor has landed and a minishark has been bought
-			Item.UseSound = SoundID.Item11;
+			Item.knockBack = 3f;
+			Item.value = Item.sellPrice(gold: 5);
+			Item.rare = ItemRarityID.LightPurple; //Mech Boss
+			Item.UseSound = SoundID.Item48;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 10;
+			Item.shootSpeed = 70;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 0;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.BeeWax, 12);
-			recipe.AddIngredient(ItemID.Minishark, 1);
-			recipe.AddIngredient(ItemID.IllegalGunParts, 1);
-			recipe.AddTile(TileID.Anvils);
+			recipe.AddIngredient(ItemID.HallowedBar, 5); ;
+			recipe.AddIngredient(ModContent.ItemType<MakeshiftPistol>());
+			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 
+
 		}
+
 		public override Vector2? HoldoutOffset()
 		{
-			return new Vector2(-9f, 0);
+			return new Vector2(0, 0);
 		}
 		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
 		{
@@ -63,16 +63,14 @@ namespace FortniteItems.Items
 
 			if (type == ProjectileID.Bullet)
 			{
-				type = ProjectileID.MeteorShot;
+				type = ProjectileID.BulletHighVelocity;
 			}
-
-			velocity = velocity.RotatedByRandom(MathHelper.ToRadians(8f)); //Random Bullet Spread
-
 
 		}
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.25f;
+			return Main.rand.NextFloat() >= 0.35f;
 		}
+
 	}
 }

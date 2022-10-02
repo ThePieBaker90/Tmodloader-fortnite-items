@@ -1,7 +1,10 @@
 ﻿EXTENDED DESCRIPTION
 Steam has a limit on the length of descriptions so here is the full desciption:
 
-Currently there are 34 Items;
+Currently there are 35 Items;
+- Suppressed Pistol - Crafted at an Adamantite Forge with 5 Hallowed Bars and 1 Makeshift Pistol
+This is intended to be an easier to use and faster firing equivalent to the silenced assault rifle.
+
 - Pistol - Crafted at a Solidifier with 99 gel and 1 Makeshift Pistol
 This is intended to be a faster alternative to the flintlock pistol
 

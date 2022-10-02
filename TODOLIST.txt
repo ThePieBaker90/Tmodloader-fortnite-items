@@ -75,10 +75,8 @@ ____________________
 IDEA MAKING IN PROGRESS
 Shadow Tracker - 6.75 sps (exotic) - Pumpkin Moon 
 Dual Pistols - 3.96 sps (2 shot burst) - Duke Fishron
-Suppressed Pistol - 6.75 sps - Mech Boss
 Combat Pistol - 6.75 sps - Skeletron
 Sidearm Pistol - 6.75 sps - WoF
-
 Revolver - 1.5 sps - All Mechs
 Scoped Revolver - 1.6 sps - Golem
 Night Hawk - 1.6 sps (exotic) - Martian Madness
@@ -86,8 +84,8 @@ Flare gun - 0.56 sps - Goblin Army
 Firework Flare Gun - 0.56 sps - Queen Slime
 ____________________
 CODING IN PROGRESS
-
-
+Suppressed Pistol - 6.75 sps - Mech Boss
+Copper Bullet - 
 ____________________ 
 FINISHED
 
