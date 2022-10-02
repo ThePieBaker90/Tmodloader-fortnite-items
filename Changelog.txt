@@ -14,3 +14,5 @@ Resprited the Exotic Burst Pulse Rifle to Look more like the Fortnite Model, Rem
 Drum Gun now has a 25% chance to not consume ammo
 
 Suppressed Assault Rifle now requires 10 souls of might
+
+Assault Rifle Damage Changed to 11 (from 8)

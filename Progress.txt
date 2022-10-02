@@ -19,7 +19,7 @@ __________________
 Sideways Minigun - Corrupt Seeds Crafting - ASSAULT RIFLE
 Vindertech Tactical Shotgun - UNFINISHED - SHOTGUN
 Vindertech Grenade - Demoman post-EoC sell - GRENADE
-Hunting Rifle - UNFINISHED - SNIPER RIFLE
+Bolt Action Sniper Rifle - UNFINISHED - SNIPER RIFLE
 __________________
 Goblin Army Defeated
 __________________
@@ -102,7 +102,7 @@ __________________
 All Mechs Defeated
 __________________
 Combat Assault Rifle - Souls of Fright, Might, and Sight Crafting - ASSAULT RIFLE 
-Bolt Action Sniper Rifle - UNFINISHED - SNIPER RIFLE
+Hunting Rifle - UNFINISHED - SNIPER RIFLE
 Auto Shotgun - UNFINISHED - SHOTGUN
 Revolver - UNFINISHED - PISTOL
 Mechanical Shockwave Bow - UNFINISHED - BOW

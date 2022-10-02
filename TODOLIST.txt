@@ -11,7 +11,6 @@ Primal Stink Bow - 0.7 sec reload - Plant
 Ripsaw Launcher - 1.5 sps - Frost Moon
 Fiend Hunter Crossbow - 1.8 sps - Lunar Events
 Hop rock Dualies - 3.96 sps (exotic) (2 shot burst) - EoL
-
 Hand cannon - 0.8 sps - Post Plant Solar
 Mechanical Bow - 1.1 sec reload - Mech Boss
 Primal Fire Bow - 0.7 sec reload - Skeletron
@@ -36,7 +35,6 @@ Rapid fire SMG - 15 sps - WoF
 Stinger SMG - 12 sps - Pre Plant Solar
 Submachine Gun - 11 sps - EoW or BoC
 Suppressed SMG - 7.8 sps - Mech Boss
-Suppressed Sniper Rifle - 1.9 Sec Reload - Mech Boss
 Semi Auto Sniper Rifle - 1.2 sps - deerclops
 Compact SMG - 10 sps - Cultist
 Tactical SMG - 9 sps - Goblin Army
@@ -45,9 +43,8 @@ Striker Pump Shotgun - 0.65 sps - Queen Slime
 Ranger Shotgun - 1.4 sec reload - Moonlord
 Lever Action Shotgun - 0.95 sps - Post Plant Solar
 Auto Shotgun - 1.5 sps - All Mechs
-Bolt Action Sniper Rifle - 3.3 Sec Reload - All Mechs 
 Storm Scout Sniper Rifle - 0.9 sps (non exotic ver.) (will be called "scout sniper rifle") - Pre Plant Solar
-Hunting Rifle - 1.9 sec reload - EoC
+Hunting Rifle - 1.9 sec reload - All Mech
 Lever Action Rifle - 1.25 sps - Post Plant Solar
 Automatic Sniper Rifle - 4 sps - EoW or BoC
 Marksman Six Shooter - 5 sps (exotic) - Pre Plant Solar
@@ -84,13 +81,15 @@ Flare gun - 0.56 sps - Goblin Army
 Firework Flare Gun - 0.56 sps - Queen Slime
 ____________________
 CODING IN PROGRESS
-
+Bolt Action Sniper Rifle - 3.3 Sec Reload - EoC
+Suppressed Sniper Rifle - 1.9 Sec Reload - Mech Boss
 ____________________ 
 FINISHED
-Suppressed Pistol - 6.75 sps - Mech Boss
-Copper Bullet - Weaker Musket Ball
+
 ____________________
 LIVE
+Suppressed Pistol - 6.75 sps - Mech Boss
+Copper Bullet - Weaker Musket Ball
 EvoChrome Assault Rifle - Vortex Beater
 EvoChrome Shotgun - Vortex Beater 
 Pistol - Flintlock Pistol

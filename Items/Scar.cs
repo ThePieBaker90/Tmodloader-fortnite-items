@@ -19,7 +19,7 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 8;
+			Item.damage = 11;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
