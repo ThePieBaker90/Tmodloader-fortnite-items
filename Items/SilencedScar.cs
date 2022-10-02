@@ -42,6 +42,7 @@ namespace FortniteItems.Items
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ModContent.ItemType<Scar>());
 			recipe.AddIngredient(ItemID.HallowedBar, 12) ;
+			recipe.AddIngredient(ItemID.SoulofMight, 10);
 			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 		}

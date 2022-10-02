@@ -11,14 +11,14 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Copper Bullet");
-			Tooltip.SetDefault("A Very Basic Ammo"); // The item's description, can be set to whatever you want.
+			Tooltip.SetDefault("a crude bullet made out of a soft metal"); // The item's description, can be set to whatever you want.
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 99;
 		}
 
 		public override void SetDefaults()
 		{
-			Item.damage = 1; // The damage for projectiles isn't actually 12, it actually is the damage combined with the projectile and the item together.
+			Item.damage = 1; //Damage is weak as it is added to the musket ball projectile. the reason the musket ball projectile is used is so it is overlapped by bullet modifications
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 8;
 			Item.height = 8;
@@ -37,12 +37,12 @@ namespace FortniteItems.Items
 		{
 			Recipe recipe = CreateRecipe(75);
 			recipe.AddIngredient(ItemID.CopperBar, 1); ;
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 
 			Recipe recipe2 = CreateRecipe(75);
 			recipe2.AddIngredient(ItemID.TinBar, 1); ;
-			recipe2.AddTile(TileID.WorkBenches);
+			recipe2.AddTile(TileID.Anvils);
 			recipe2.Register();
 
 

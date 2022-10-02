@@ -84,11 +84,11 @@ Flare gun - 0.56 sps - Goblin Army
 Firework Flare Gun - 0.56 sps - Queen Slime
 ____________________
 CODING IN PROGRESS
-Suppressed Pistol - 6.75 sps - Mech Boss
-Copper Bullet - 
+
 ____________________ 
 FINISHED
-
+Suppressed Pistol - 6.75 sps - Mech Boss
+Copper Bullet - Weaker Musket Ball
 ____________________
 LIVE
 EvoChrome Assault Rifle - Vortex Beater

@@ -85,10 +85,10 @@ Cupid's Crossbow - UNFINISHED - BOW
 __________________
 1 Mech boss Defeated
 __________________
-Suppressed Assault Rifle - Hallowed Bar Crafting - ASSAULT RIFLE 
-Suppressed Sniper Rifle - UNFINISHED - SNIPER RIFLE
-Suppressed Pistol - UNFINISHED - PISTOL
-Suppressed SMG - UNFINISHED - SMG
+Suppressed Assault Rifle - Soul of Might Crafting - ASSAULT RIFLE 
+Suppressed Sniper Rifle - Soul of Sight Crafting - SNIPER RIFLE
+Suppressed Pistol - Hallowed Bar Crafting - PISTOL
+Suppressed SMG - Soul of Fright Crafting - SMG
 Mechanical Bow - UNFINISHED - BOW
 __________________
 Pre Plantera Solar Eclipse Defeated
