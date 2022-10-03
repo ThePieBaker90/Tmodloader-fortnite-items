@@ -33,8 +33,8 @@ Machine Pistol - 13.5 sps - Lunar Events
 Combat SMG - 12 sps - Skeletron
 Rapid fire SMG - 15 sps - WoF
 Stinger SMG - 12 sps - Pre Plant Solar
-Submachine Gun - 11 sps - EoW or BoC
-Suppressed SMG - 7.8 sps - Mech Boss
+
+
 Semi Auto Sniper Rifle - 1.2 sps - deerclops
 Compact SMG - 10 sps - Cultist
 Tactical SMG - 9 sps - Goblin Army
@@ -81,14 +81,17 @@ Flare gun - 0.56 sps - Goblin Army
 Firework Flare Gun - 0.56 sps - Queen Slime
 ____________________
 CODING IN PROGRESS
-Bolt Action Sniper Rifle - 3.3 Sec Reload - EoC
-Suppressed Sniper Rifle - 1.9 Sec Reload - Mech Boss
+
+
 ____________________ 
 FINISHED
-
+Suppressed SMG - Suppressed Assault Rifle
+Submachine Gun - Meat Ball
+Suppressed Sniper Rifle - Suppressed Assault Rifle
+Bolt Action Sniper Rifle - Tendon Bow
 ____________________
 LIVE
-Suppressed Pistol - 6.75 sps - Mech Boss
+Suppressed Pistol - Suppressed AR
 Copper Bullet - Weaker Musket Ball
 EvoChrome Assault Rifle - Vortex Beater
 EvoChrome Shotgun - Vortex Beater 

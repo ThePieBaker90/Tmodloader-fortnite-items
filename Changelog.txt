@@ -1,18 +1,1 @@
-﻿Added Suppressed Pistol and Copper Bullets
-
-Currently The plan is for all suppressed weapons to be aquired after one mech boss has been defeated:
-Pistol after any mech boss
-AR after destroyer
-SMG after Skeletron Prime
-Sniper after Twins
-
-The reason coppper bullets are being added is to give an ammo to early game guns without the need for the arms dealer
-
-Changes:
-Resprited the Exotic Burst Pulse Rifle to Look more like the Fortnite Model, Removed the exotic outline for aesthetic purposes
-
-Drum Gun now has a 25% chance to not consume ammo
-
-Suppressed Assault Rifle now requires 10 souls of might
-
-Assault Rifle Damage Changed to 11 (from 8)
+﻿Added Bolt Action Sniper Rifle, Suppressed Sniper Rifle, Submachine Gun, and Suppressed Submachine Gun

@@ -1,7 +1,19 @@
 ﻿EXTENDED DESCRIPTION
 Steam has a limit on the length of descriptions so here is the full desciption:
 
-Currently there are 36 Items;
+Currently there are 40 Items:
+- Suppressed Submachine Gun - Crafted at an Adamantite Forge with 12 Hallowed Bars, 10 Souls of Fright, and 1 Submachine Gun
+This is intended to be a post skeletron prime SMG with a tighter spread than the regular submachine gun and higher damage
+
+- Submachine Gun - Crafted at an Anvil with 5 Shadow Scales (or 5 Tissue Samples), 10 Demonite Bars (or 10 Crimtane Bars), and 1 Makeshift SMG
+This is intended to be a post EoW or BoC SMG that has high sustained close range damage
+
+- Suppressed Sniper Rifle - Crafted at an Adamantite Forge with 12 Hallowed Bars, 10 Souls of Sight, and 1 Bolt Action Sniper Rifle
+This is intended to be a post twins sniper rifle that has high damage and armor pierce but low speed
+
+- Bolt Action Sniper Rifle - Crafted at an Anvil with 10 Crimtane or Demonite Bars and 1 Black Lens
+This is intended to be an early sniper rifle that gives a use to black lens in the early game and excels at taking out single targets
+
 - Copper Bullets - Crafted at an Anvil with 1 Copper Bar (Makes 75)
 This is intended to be an early bullet so the arms dealer is not required for ammo to use in early guns
 
