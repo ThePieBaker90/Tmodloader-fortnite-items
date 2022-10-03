@@ -1,3 +1,3 @@
 displayName = Fortnite Items
 author = Rift90_
-version = 2.2.2
+version = 2.2.3

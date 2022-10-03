@@ -1,6 +1,6 @@
 This mod adds items from the hit game "Fortnite Battle Royale"
 
-Currently there are 34 Items;
+Currently there are 44 Items;
 Here are some examples of items: (full list on https://github.com/ThePieBaker90/Tmodloader-fortnite-items under FullDescription.txt in the root file)
 
 - Dragon's Breath Shotgun - Crafted at a hellforge with 1 Makeshift Shotgun, 15 bones, and 10 hellstone bars
