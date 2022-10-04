@@ -1,5 +1,6 @@
-﻿OUT OF DATE, REFER TO THE GITHUB PROJECT FOR CURRENT TODO LIST
-
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+OUT OF DATE, REFER TO THE GITHUB PROJECT FOR CURRENT TODO LIST
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ____________________
 SPRITING IN PROGRESS
 Mechanical Explosive Bow - 1 sec reload - Golem
