@@ -2,9 +2,7 @@ This mod adds items from the hit game "Fortnite Battle Royale"
 
 Currently there are 44 Items;
 Here are some examples of items: (full list on https://github.com/ThePieBaker90/Tmodloader-fortnite-items under FullDescription.txt in the root file)
-
-- Dragon's Breath Shotgun - Crafted at a hellforge with 1 Makeshift Shotgun, 15 bones, and 10 hellstone bars
-This is intended to be a post dungeon shotgun that fires flames instead of bullets
+(The github also features what items are currently being worked on and the intended progression throughout the game with these items)
 
 - Makeshift Shotgun - Crafted at an anvil with 15 Ebonwood, 12 Iron bars (or equivalent), and 15 Ebonstone (Or Equivalent)
 This is intended to be an early game shotgun that requires the corruption to have been visited atleast once and some mining to have been done
