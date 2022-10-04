@@ -1,7 +1,4 @@
-﻿CURRENTLY TODO:
-BUG - Reduce all Crit chances (except pulse rifle and exotic pulse and any at 4% by 4%)
-
-
+﻿OUT OF DATE, REFER TO THE GITHUB PROJECT FOR CURRENT TODO LIST
 
 ____________________
 SPRITING IN PROGRESS
@@ -31,7 +28,7 @@ Boom Bow - 1 sec reload - Pirate
 Flint Knock Pistol - 3.2 sec reload - Pirate
 Machine Pistol - 13.5 sps - Lunar Events
 Combat SMG - 12 sps - Skeletron
-Rapid fire SMG - 15 sps - WoF
+
 Stinger SMG - 12 sps - Pre Plant Solar
 
 
@@ -70,7 +67,7 @@ Tactical Shotgun - 1.5 sps (will be called "vindertech tactical shotgun") - EoC
 Primal SMG - 10 sps - Plant 
 ____________________
 IDEA MAKING IN PROGRESS
-Shadow Tracker - 6.75 sps (exotic) - Pumpkin Moon 
+
 Dual Pistols - 3.96 sps (2 shot burst) - Duke Fishron
 Combat Pistol - 6.75 sps - Skeletron
 Sidearm Pistol - 6.75 sps - WoF
@@ -79,18 +76,20 @@ Scoped Revolver - 1.6 sps - Golem
 Night Hawk - 1.6 sps (exotic) - Martian Madness
 Flare gun - 0.56 sps - Goblin Army
 Firework Flare Gun - 0.56 sps - Queen Slime
+Rapid fire SMG - 15 sps - WoF
 ____________________
 CODING IN PROGRESS
-
+Shadow Tracker - 6.75 sps (exotic) - Pumpkin Moon 
 
 ____________________ 
 FINISHED
+
+____________________
+LIVE
 Suppressed SMG - Suppressed Assault Rifle
 Submachine Gun - Meat Ball
 Suppressed Sniper Rifle - Suppressed Assault Rifle
 Bolt Action Sniper Rifle - Tendon Bow
-____________________
-LIVE
 Suppressed Pistol - Suppressed AR
 Copper Bullet - Weaker Musket Ball
 EvoChrome Assault Rifle - Vortex Beater

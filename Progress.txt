@@ -1,4 +1,7 @@
-﻿__________________
+﻿OUT OF DATE, REFER TO THE GITHUB PROJECT FOR THE CURRENT PROGRESSION OF ITEMS THROUGH A PLAYTHROUGH
+
+
+__________________
 Pre Boss
 __________________
 Makeshift Assault Rifle - Crafted - ASSAULT RIFLE
@@ -17,9 +20,9 @@ __________________
 Eye of Cthulu Defeated
 __________________
 Sideways Minigun - Corrupt Seeds Crafting - ASSAULT RIFLE
-Vindertech Tactical Shotgun - UNFINISHED - SHOTGUN
 Vindertech Grenade - Demoman post-EoC sell - GRENADE
 Bolt Action Sniper Rifle - Demonite Bar Crafting (not technically post EoC) - SNIPER RIFLE
+Vindertech Tactical Shotgun - UNFINISHED - SHOTGUN
 __________________
 Goblin Army Defeated
 __________________
@@ -31,16 +34,16 @@ __________________
 EoW or BoC defeated
 __________________
 Burst Assault Rifle - Meteorite Crafting - ASSAULT RIFLE
+Submachine Gun - Tissue/Scale Crafting - SMG
 Six Shooter - UNFINISHED - PISTOL
 Automatic Sniper Rifle - UNFINISHED - SNIPER RIFLE
-Submachine Gun - Tissue/Scale Crafting - SMG
 Primal Bow - UNFINISHED - BOW
 __________________
 Queen Bee Defeated
 __________________
-Drum Gun - Beewax Crafting - ASSAULT RIFLE
+Drum Gun - Beeswax Crafting - ASSAULT RIFLE
 DMR - UNFINISHED - MARKSMAN RIFLE
-Prime Shotgun - UNFINISHE - SHOTGUN
+Prime Shotgun - UNFINISHED - SHOTGUN
 
 __________________
 Skeletron Defeated
@@ -93,11 +96,11 @@ Mechanical Bow - UNFINISHED - BOW
 __________________
 Pre Plantera Solar Eclipse Defeated
 __________________
+Double Barrel - UNFINISHED - SHOTGUN
 Vindertech Grenade Launcher - UNFINISHED - GRENADE LAUNCHER
 Scout Sniper Rifle - UNFINISHED - SNIPER RIFLE
 Marksman Six Shooter - UNFINISHED - PISTOL
 Stinger SMG - UNFINISHED - SMG
-Double Barrel - UNFINISHED - SHOTGUN
 __________________
 All Mechs Defeated
 __________________
@@ -127,10 +130,10 @@ __________________
 Pumpkin Moon Defeated
 __________________
 Striker Burst Assault Rifle - Spooky wood Crafting - ASSAULT RIFLE
+Shadow Tracker - UNFINISHED - PISTOL
 Pumpkin Launcher - UNFINISHED - ROCKET LAUNCHER
 Boom Sniper Rifle - UNFINISHED - SNIPER RIFLE
 Dual Fiend Hunters - UNFINISHED - BOW
-Shadow Tracker - UNFINISHED - PISTOL
 __________________
 Frost Moon Defeated
 __________________
@@ -177,11 +180,11 @@ Burst Pulse Rifle - Ancient Manipulator Crafting - ASSAULT RIFLE
 Proximity Grenade Launcher - UNFINISHED - GRENADE LAUNCHER
 Compact SMG - UNFINISHED - SMG
 Hunter Bolt Action Sniper Rifle - UNFINISHED - SNIPER RIFLE
-EvoChrome Assault Rifle - UNFINISHED - ASSAULT RIFLE
-EvoChrome Shotgun - UNFINISHED - SHOTGUN
 __________________
 Lunar Events Defeated
 __________________
+EvoChrome Assault Rifle - All Fragment Crafting - ASSAULT RIFLE
+EvoChrome Shotgun - All Fragment Crafting - SHOTGUN
 Burst Quad Launcher - UNFINISHED - ROCKET LAUNCHER
 Machine Pistol - UNFINISHED - SMG
 Fiend Hunter Crossbow - UNFINISHED - BOW
