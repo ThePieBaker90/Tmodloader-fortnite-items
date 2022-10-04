@@ -1,14 +1,18 @@
 This is the repository for the Terraria 1.4.3.6 mod "Fortnite Items"
 There is many text files that show current progress on the mod, here are their names and what you should expect to be within the file
 
+TODO.txt - This is a redundant txt file, for current progress go the the "Projects" tab, click "Fortnite Items Planned Items",
+There you will see each weapon separated by where in development it is
 
-Progress.txt - This is the outline for the planned progression of the mod, each weapon is categorized into a boss 
-prerequisite and if they are far enough along in development it will have a planned form of obtainment next to the name.
-An example of the syntax:
-Unstarted Weapon:
-{Weapon Name} - UNFINISHED - {Weapon Type}
-Weapon in development:
-{Weapon Name} - {Obtainment Method} - {Weapon Type}
+To Start - No Progress has been made on the weapon
+Sprite Done - The sprite for the weapon is done, these weapons will tend to come out before weapons that are in "to start
+Idea Making Done - The general concept for the weapon is done, these will likley be in the next update
+Coding Done - The code for the weapon is all done
+Balancing Done - The weapon is balanced for when it is aquired, these weapons are completely done
+
+
+Progress.txt - This is a redundant txt file, for current progress go the the "Projects" tab, click "Fortnite Items Planned Items", and Click the "Progression Tab" 
+There you will see each weapon separated by which boss is required to aquire the item
 
 README.txt - This is the file you are currently reading! It has all of the information on what is within each .txt file
 
