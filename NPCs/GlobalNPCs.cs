@@ -36,7 +36,16 @@ namespace FortniteItems.NPCs
 
 				if (Main.hardMode == true)
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<HeavyShotgun>(), false);
-			}
+			}//if arms dealer
+
+			if (type == NPCID.Merchant)
+            {
+				if (Main.LocalPlayer.HasItem(ModContent.ItemType<Flaregun>()) == true || Main.LocalPlayer.HasItem(ModContent.ItemType<FireworkFlaregun>()) == true) 
+				{
+					shop.item[nextSlot++].SetDefaults(ItemID.Flare, false);
+					shop.item[nextSlot++].SetDefaults(ItemID.BlueFlare, false);
+				}
+			}//if merchant
 
 			if (type == NPCID.Demolitionist == true)
 			{
@@ -44,8 +53,8 @@ namespace FortniteItems.NPCs
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<VGrenade>(), false);
 
 
-			}
-		}
+			}//if demolitionist
+		}//public override setupshop
 		public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
 		{
 
@@ -135,6 +144,6 @@ namespace FortniteItems.NPCs
 			{
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<LMG>(), 5));
 			}
-		}
-	}
-}
+		}//public override modifyNPCLoot
+	}//public class
+}//namespace
