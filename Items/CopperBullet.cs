@@ -26,7 +26,7 @@ namespace FortniteItems.Items
 			Item.consumable = true; // This marks the item as consumable, making it automatically be consumed when it's used as ammunition, or something else, if possible.
 			Item.knockBack = 1.5f;
 			Item.value = Item.sellPrice(copper: 2);
-			Item.rare = ItemRarityID.Green;
+			Item.rare = ItemRarityID.White;
 			Item.shoot = ProjectileID.Bullet; // The projectile that weapons fire when using this item as ammunition.
 			Item.shootSpeed = 16f; // The speed of the projectile.
 			Item.ammo = AmmoID.Bullet; // The ammo class this ammo belongs to.
