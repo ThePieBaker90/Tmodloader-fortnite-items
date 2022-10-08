@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Drum Gun");
-			Tooltip.SetDefault("25% chance to not consume ammo\nShoots a consistent yet inaccurate stream of bullets\n\"It's back for round Two!\"");
+			Tooltip.SetDefault("25% chance to not consume ammo\nTurns musket balls into meteor shot\n\"It's back for round Two!\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
