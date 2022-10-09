@@ -2,7 +2,7 @@ This mod adds items from the hit game "Fortnite Battle Royale"
 
 Currently there are 47 Items;
 Here are some examples of items: (full list on https://github.com/ThePieBaker90/Tmodloader-fortnite-items under FullDescription.txt in the root file)
-(The github also features what items are currently being worked on and the intended progression throughout the game with these items)
+(The github also features a wiki, what items are currently being worked on, and the intended progression throughout the game with these items)
 
 - Makeshift Shotgun - Crafted at an anvil with 15 Ebonwood, 12 Iron bars (or equivalent), and 15 Ebonstone (Or Equivalent)
 This is intended to be an early game shotgun that requires the corruption to have been visited atleast once and some mining to have been done
