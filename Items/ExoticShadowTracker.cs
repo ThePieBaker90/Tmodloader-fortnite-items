@@ -12,7 +12,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Shadow Tracker");
-			Tooltip.SetDefault("Exotic Weapon\n35% chance to not use ammo\nShoots high velocity bullets instead of musket balls\n\"Track them and wait for your moment to strike\"");
+			Tooltip.SetDefault("Exotic Weapon\n35% chance to not use ammo\nShoots ichor bullets instead of musket balls\n\"Track them and wait for your moment to strike\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
