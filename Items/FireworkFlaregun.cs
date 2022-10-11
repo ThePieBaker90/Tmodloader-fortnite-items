@@ -10,7 +10,7 @@ namespace FortniteItems.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Fire Work Flare Gun");
+			DisplayName.SetDefault("Firework Flare Gun");
 			Tooltip.SetDefault("\"Take them out with style\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
