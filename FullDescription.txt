@@ -1,7 +1,10 @@
 ﻿EXTENDED DESCRIPTION
 Steam has a limit on the length of descriptions so here is the full desciption:
 
-Currently there are 49 Items: (as of v2.2.3)
+Currently there are 49 Items: (as of v2.2.3.1)
+- Firework Flare Gun - Crafted at a hardmode anvil with 1 flare gun, 1 confetti gun, and 25 gel balloons
+This is intended to be an upgrade to the flare gun that also shoots fireworks
+
 - Flare Gun - Crafted at a tinker's workbench with 12 Gold Bars (or 12 Platinum Bars), 1 Illegal Gun Parts, and 5 Hellstone Bricks
 This is intended to be a flare gun that specializes in crowd control
 
