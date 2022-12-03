@@ -10,8 +10,8 @@ namespace FortniteItems.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Infantary Rifle");
-			Tooltip.SetDefault("a rifle that is good in many situations\nFires a high velocity bullet instead of musket balls\n\"When a sniper rifle and an assault rifle meet...\"");
+			DisplayName.SetDefault("Infantry Rifle");
+			Tooltip.SetDefault("a longer range rifle\nFires a high velocity bullet instead of musket balls\n\"When a sniper rifle and an assault rifle meet...\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
