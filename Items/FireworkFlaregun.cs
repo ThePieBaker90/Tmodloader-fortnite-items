@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useAnimation = 50;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 6f;
-			Item.value = Item.sellPrice(gold: 1);
+			Item.value = Item.sellPrice(gold: );
 			Item.rare = ItemRarityID.LightRed; //Queen Slime
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
