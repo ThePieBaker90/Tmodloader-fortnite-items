@@ -100,7 +100,7 @@ This is intended to be a post plantera assault rifle that turns chlorophyte bull
 -Combat Assault Rifle - Crafted at an adamantite forge (or equivalent) with 12 hallowed bars, 1 makeshift assault rifle, 1 soul of might, 1 soul of fright, and 1 soul of sight
 This is intended to be a post mech gun with a fast firing rate but low damage
 
--Infantary Rifle - Dropped by mimics (16.6%) and ice mimics (33.33%)
+-Infantry Rifle - Dropped by mimics (16.6%) and ice mimics (33.33%)
 This is intended to be an early hardmode cross between a sniper rifle and assault rifle
 
 -Drum Gun - Crafted at an anvil with 12 beeswax, 1 minishark, and 1 illegal gun parts
