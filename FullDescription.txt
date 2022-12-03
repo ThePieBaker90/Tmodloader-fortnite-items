@@ -91,8 +91,8 @@ This is intended to be a magic gun useful against groups of enemies
 -Burst Pulse Rifle - Crafted at an ancient manipulator with 1 Pulse Rifle and 25 chlorophyte bars
 This is intended to be a direct upgrade to the Pulse Rifle
 
--Primal Assault Rifle - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, 3 jungle spores, and 1 makeshift assault rifle
-This is intended to be a post mech shotgun that turns chlorophyte bullets into primal bullets that increase the fire rate and damage of the gun
+-Primal Assault Rifle - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, 3 jungle spores, 10 ectoplasm, and 1 makeshift assault rifle
+This is intended to be a post plantera assault rifle that turns chlorophyte bullets into primal bullets that increase the fire rate and damage of the gun
 
 -Combat Assault Rifle - Crafted at an adamantite forge (or equivalent) with 12 hallowed bars, 1 makeshift assault rifle, 1 soul of might, 1 soul of fright, and 1 soul of sight
 This is intended to be a post mech gun with a fast firing rate but low damage
@@ -134,8 +134,8 @@ This is intended to be an early hardmode shotgun with high armor penetration and
 -Heavy Shotgun - Sold by the Arms Dealer for 25 gold in hardmode
 This is intended to be an early hardmode shotgun that fires a single high damage slug with a high crit chance
 
--Primal Shotgun - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, 3 jungle spores, and 1 pump shotgun
-This is intended to be a post mech shotgun that turns chlorophyte bullets into primal bullets that increase the fire rate and damage of the gun
+-Primal Shotgun - Crafted at an adamantite forge (or equivalent) with 8 chlorophyte bars, 5 stingers, 3 jungle spores, 10 ectoplasm, and 1 makeshift shotgun
+This is intended to be a post plantera shotgun that turns chlorophyte bullets into primal bullets that increase the fire rate and damage of the gun
 
 -Pump Shotgun - Sold by  the Arms Dealer for 7 gold and 50 silver once skeletron has been defeated
 This is intended to be a post skeletron shotgun that deals high damage and knockback at the cost of speed

@@ -6,12 +6,12 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Items
 {
-	public class Revolver : ModItem
+	public class ScopedRevolver : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Revolver");
-			Tooltip.SetDefault("\"A staple of the wild west LTM\"");
+			DisplayName.SetDefault("Scoped Revolver");
+			Tooltip.SetDefault("10% chance to not consume ammo\"Slap a scope on it!\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -19,7 +19,7 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 78;
+			Item.damage = 130;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
@@ -27,22 +27,24 @@ namespace FortniteItems.Items
 			Item.useAnimation = 25;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.knockBack = 3f;
-			Item.value = Item.sellPrice(gold: 4, silver: 80);
-			Item.rare = ItemRarityID.LightRed; //Post WoF
+			Item.value = Item.sellPrice(gold: 7);
+			Item.rare = ItemRarityID.Lime; //Post Golem
 			Item.UseSound = SoundID.Item11;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 15;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
+			Item.ArmorPenetration = 40;
+			Item.crit = 16;
 		}
 
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.SpiderFang, 12); ;
-			recipe.AddIngredient(ModContent.ItemType<MakeshiftPistol>());
-			recipe.AddTile(TileID.MythrilAnvil);
+			recipe.AddIngredient(ItemID.SniperScope, 1); ;
+			recipe.AddIngredient(ModContent.ItemType<Revolver>());
+			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 
 
@@ -63,5 +65,10 @@ namespace FortniteItems.Items
 
 
 		}
+		public override bool CanConsumeAmmo(Item ammo, Player player)
+		{
+			return Main.rand.NextFloat() >= 0.1f;
+		}
+
 	}
 }

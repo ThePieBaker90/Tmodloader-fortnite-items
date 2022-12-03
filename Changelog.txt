@@ -1,2 +1,4 @@
-﻿Version 2.2.4 Changelog
-Added Revolver
+﻿Version 2.2.5 Changelog
+Added Scoped Revolver
+Changed the Primal AR recipe and Primal Shotgun recipe to make them post-plantera instead of pre-plantera
+Removed the revolvering having a 25% chance to not use ammo

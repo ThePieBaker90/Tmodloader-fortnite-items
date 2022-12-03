@@ -43,6 +43,7 @@ namespace FortniteItems.Items
 			recipe.AddIngredient(ItemID.ChlorophyteBar, 8);
 			recipe.AddIngredient(ItemID.Stinger, 5);
 			recipe.AddIngredient(ItemID.JungleSpores, 3);
+			recipe.AddIngredient(ItemID.Ectoplasm, 10);
 			recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
 			recipe.AddTile(TileID.AdamantiteForge); //Works as both titanium and adamantite forges
 			recipe.Register();
