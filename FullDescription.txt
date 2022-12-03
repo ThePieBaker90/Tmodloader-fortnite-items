@@ -1,7 +1,10 @@
 ﻿EXTENDED DESCRIPTION
 Steam has a limit on the length of descriptions so here is the full desciption:
 
-Currently there are 50 Items: (as of v2.2.4)
+Currently there are 51 Items: (as of v2.2.5)
+- Scoped Revolver - Crafted at a hardmode forge with 1 revolver and 1 sniper scope
+This is intended to be a post golem revolver with a slow firing rate but high damage
+
 - Revolver - Crafted at a hardmode anvil with 1 makeshift pistol and 12 spider fangs
 This is intended to be an early hardmode pistol with a slower firing rate but high damage.
 
