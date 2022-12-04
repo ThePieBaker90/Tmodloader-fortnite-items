@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Chug Jug");
-			Tooltip.SetDefault("Heals the User 400 Health\nGrants \"100% Shield\" buff\nQuick heal grants health and has an instant drinking time but grants no buff\nStandard drinking grants health and buff but has a 2 second drinking time");
+			Tooltip.SetDefault("Heals the User 400 Health\nGrants \"100% Shield\" buff\nQuick heal grants health and has an instant drinking time but grants no buff\nStandard drinking grants health and buff but has a 2 second drinking time\n\"I really love to Chug Jug with you\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 20;
 
