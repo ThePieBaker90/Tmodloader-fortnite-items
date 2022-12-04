@@ -36,7 +36,6 @@ namespace FortniteItems.Items
 			Item.shootSpeed = 20;
 			Item.noMelee = true;
 			Item.useAmmo = AmmoID.Bullet;
-			Item.ArmorPenetration = 30;
 		}
 
 
