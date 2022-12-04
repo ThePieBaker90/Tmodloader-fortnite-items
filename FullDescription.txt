@@ -1,5 +1,5 @@
 ﻿EXTENDED DESCRIPTION
-Steam has a limit on the length of descriptions so here is the full desciption:
+Steam has a limit on the length of descriptions so here is the full description:
 
 Currently there are 51 Items: (as of v2.2.5)
 - Scoped Revolver - Crafted at a hardmode forge with 1 revolver and 1 sniper scope
@@ -56,19 +56,19 @@ This is intended to be a lunar events burst Assault Rifle that grows in power th
 This is intended to be a post dungeon shotgun that fires flames instead of bullets
 
 - Makeshift Shotgun - Crafted at an anvil with 15 Ebonwood, 12 Iron bars (or equivalent), and 15 Ebonstone (Or Equivalent)
-This is intended to be an early game shotgun that requires the corruption to have been visited atleast once and some mining to have been done
+This is intended to be an early game shotgun that requires the corruption to have been visited at least once and some mining to have been done
 
 - Makeshift Pistol - Crafted at an anvil with 15 Ebonwood, 12 Iron bars (or equivalent), and 15 Ebonstone (Or Equivalent)
-This is intended to be an early game pistol that requires the corruption to have been visited atleast once and some mining to have been done
+This is intended to be an early game pistol that requires the corruption to have been visited at least once and some mining to have been done
 
 - Makeshift SMG - Crafted at an anvil with 15 Ebonwood, 12 Iron bars (or equivalent), and 15 Ebonstone (Or Equivalent)
-This is intended to be an early game smg that requires the corruption to have been visited atleast once and some mining to have been done
+This is intended to be an early game smg that requires the corruption to have been visited at least once and some mining to have been done
 
 - Light Machine Gun - Dropped by Duke fishron (20%)
-This is intended to be an innacurate but fast and hard hitting assault rifle
+This is intended to be an inaccurate but fast and hard hitting assault rifle
 
 - Tactical Assault Rifle - Dropped by Zombie Elves (1.3%) and Elf Archers (1.3%)
-This is intedended to be an accurate and fast assault rifle that deals a moderate amount of damage each shot
+This is intended to be an accurate and fast assault rifle that deals a moderate amount of damage each shot
 
 -Striker Burst Assault Rifle - Crafted at an adamantite forge (or equivalent) with 1 Burst Assault Rifle and 300 Spooky Wood
 This is intended to be a hardmode upgrade to the burst assault rifle that fires nanite bullets
@@ -80,7 +80,7 @@ This is intended a slow firing assault rifle with high armor penetration
 This is intended to be an early hardmode gun equivalent to a 3rd tier repeater that shoots explosive bullets
 
 -Minigun - Crafted at an anvil with 12 hellstone bars
-This is intended to be an innacurate but fast gun used for groups of enemies
+This is intended to be an inaccurate but fast gun used for groups of enemies
 
 -Hammer Assault Rifle - Crafted at a hell forge with 15 hellstone bars, 15 bones, and 1 makeshift assault rifle
 This is intended to be a hellstone assault rifle that fires explosive bullets when musket balls are fired
@@ -116,16 +116,16 @@ This is intended to be a post plantera direct upgrade to the suppressed assault 
 This is intended to be a post moon-lord direct upgrade to the scoped assault rifle
 
 -Makeshift Assault Rifle - Crafted at an anvil with 15 Ebonwood, 12 Iron bars (or equivalent), and 15 Ebonstone (Or Equivalent)
-This is intended to be an early game rifle that requires the corruption to have been visited atleast once and some mining to have been done
+This is intended to be an early game rifle that requires the corruption to have been visited at least once and some mining to have been done
 
--Sideways Rifle - Crafted at an anvil with 10 Colbat Bars / Palladium Bars and 25 sparkle slime balloons
+-Sideways Rifle - Crafted at an anvil with 10 Cobalt Bars / Palladium Bars and 25 sparkle slime balloons
 This is intended to be a post Slime queen rifle that does not use any ammunition and bounces off walls
 
 -Heavy Sniper Rifle - Crafted at an autohammer with 12 shroomite bars and a sniper rifle
 This is intended to be a very high single target weapon that rewards precision with high damage and punishes missing with a slow speed
 
--Vindertech Grenade - Sold by the Demolitionist once the Eye of Cthulu has been defeated
-This is intended to be a grenade that doesnt explode upon impact but rewards predictions with higher damage 
+-Vindertech Grenade - Sold by the Demolitionist once the Eye of Cthulhu has been defeated
+This is intended to be a grenade that doesn't explode upon impact but rewards predictions with higher damage 
 (This weapon is a bit janky at the moment, any feedback would be appreciated)
 
 -Burst SMG - Dropped by King Slime (50%)
@@ -150,9 +150,10 @@ This is intended to be an alternative to the Undertaker / Musket that fires quic
 This is intended to be a direct upgrade to the assault rifle with higher damage and armor penetration. Also intended to be a longer range version of the mega shark
 
 -Charge SMG - Dropped by Elf Copter (1.3%)
-This is intended to be a post plantera, pre golem smg with long uptime yet long downtime aswell
+This is intended to be a post plantera, pre golem smg with long uptime yet long downtime as well
 
 -Burst Assault Rifle - Made at an anvil with 12 meteorite bars, 1 makeshift assault rifle, and 1 illegal gun parts
 This is intended to be a pre-skeletron rifle used for sustained fire
 
 NOTE: weapons are still being balanced, it would be appreciated if you point out if a weapon is too strong or weak!
+
