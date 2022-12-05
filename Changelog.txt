@@ -1,2 +1,3 @@
 ﻿Version 2.2.6 Changelog
 Added the Chug Jug
+Added 100% Shield Buff

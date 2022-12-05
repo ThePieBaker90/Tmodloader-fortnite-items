@@ -23,10 +23,11 @@ namespace FortniteItems.Items
 			};
 		}
 
+
 		public override void SetDefaults()
 		{
 			Item.width = 20;
-			Item.height = 20;
+			Item.height = 26;
 			Item.useStyle = ItemUseStyleID.DrinkLiquid;
 			Item.useAnimation = 120;
 			Item.useTime = 120;

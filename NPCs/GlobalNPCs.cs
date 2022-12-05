@@ -144,6 +144,10 @@ namespace FortniteItems.NPCs
 			{
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<LMG>(), 5));
 			}
+			if (npc.type == NPCID.MoonLordCore) //Chug Jug Drop from Moon lord
+            {
+				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ChugJug>(), 1, 5, 15));
+            }
 		}//public override modifyNPCLoot
 	}//public class
 }//namespace
