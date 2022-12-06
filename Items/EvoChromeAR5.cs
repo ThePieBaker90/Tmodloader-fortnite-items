@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -29,7 +30,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 3, silver: 60);
 			Item.rare = ItemRarityID.Red; //Lunar Events
-			Item.UseSound = SoundID.Item31;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/MK5EvoChromeBurstShoot")
+			{
+				Volume = 0.7f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 70;

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -29,7 +30,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 2f;
 			Item.value = Item.sellPrice(gold: 10, silver: 50);
 			Item.rare = ItemRarityID.Lime; //Post Plantera Sniper Rifle Crafted with Shroomite
-			Item.UseSound = SoundID.Item40;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/HeavySniperShoot")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 200;

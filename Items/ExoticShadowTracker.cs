@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using FortniteItems.Rarities;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -30,7 +31,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 3f;
 			Item.value = Item.sellPrice(gold: 8);
 			Item.rare = ModContent.RarityType<Exotic>();  //Exotic
-			Item.UseSound = SoundID.Item48;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SuppressedPistolShoot")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 200;

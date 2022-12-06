@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -29,7 +30,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.1f;
 			Item.value = Item.sellPrice(silver: 5);
 			Item.rare = ItemRarityID.Blue; //Early prehardmode crafted with demonite(or crimtane)
-			Item.UseSound = SoundID.Item11;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/MakeshiftSMGShoot")
+			{
+				Volume = 0.4f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 15;

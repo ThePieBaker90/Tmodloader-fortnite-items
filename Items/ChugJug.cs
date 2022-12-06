@@ -3,6 +3,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -32,7 +33,12 @@ namespace FortniteItems.Items
 			Item.useAnimation = 120;
 			Item.useTime = 120;
 			Item.useTurn = true;
-			Item.UseSound = SoundID.Item3;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Consumables/ChugJugDrink")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 1,
+			};
 			Item.maxStack = 30;
 			Item.consumable = true;
 			Item.rare = ItemRarityID.Purple; //Post Moonlord

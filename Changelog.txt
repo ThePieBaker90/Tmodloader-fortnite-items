@@ -1,3 +1,4 @@
-﻿Version 2.2.6 Changelog
-Added the Chug Jug
-Added 100% Shield Buff
+﻿Version 2.2.6.2 Changelog
+Changed display name of MK7 Assault Rifle to MK-Seven Assault Rifle
+Changed all sounds to match those found in Fortnite
+!!!if a noise is too loud or too quiet, PLEASE tell me!!!

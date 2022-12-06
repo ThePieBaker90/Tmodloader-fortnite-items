@@ -28,14 +28,19 @@ namespace FortniteItems.Projectiles
 			Projectile.tileCollide = true; //Can the projectile collide with tiles?\
 			Projectile.timeLeft = 180;
 
-			AIType = ProjectileID.Grenade; //Act exactly like default Bullet
+			AIType = ProjectileID.Grenade; //Act exactly like default grenade
 		}
 
 
 		public override void Kill(int timeLeft)
 		{
 			Vector2 position = Projectile.Center;
-			SoundEngine.PlaySound(SoundID.Item14);
+			SoundEngine.PlaySound(new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/GrenadeExplosion")
+			{
+				Volume = 0.6f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			});
 			int radius = 40;
 			for (int x = -radius; x <= radius; x++)
 			{

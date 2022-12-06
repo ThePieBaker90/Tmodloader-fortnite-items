@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -10,7 +11,7 @@ namespace FortniteItems.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("MK7 Assault Rifle");
+			DisplayName.SetDefault("MK-Seven Assault Rifle");
 			Tooltip.SetDefault("70% chance to not consume ammo\nTurns musket balls into twilight lances\n\"One of the seven\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
@@ -30,7 +31,12 @@ namespace FortniteItems.Items
 			Item.value = Item.sellPrice(gold: 5);
 			Item.value = Item.buyPrice(gold: 15);
 			Item.rare = ItemRarityID.Red; //Post EoL
-			Item.UseSound = SoundID.Item11;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/MK7ARShoot")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 20;

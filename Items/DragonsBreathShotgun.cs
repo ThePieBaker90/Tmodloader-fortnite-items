@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -30,7 +31,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 2;
 			Item.value = Item.sellPrice(gold: 3,silver: 50);
 			Item.rare = ItemRarityID.Orange; //Hellstone post skeletron
-			Item.UseSound = SoundID.Item36;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/DragonsBreathShotgunShoot")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.Flames;
 			Item.shootSpeed = 15;

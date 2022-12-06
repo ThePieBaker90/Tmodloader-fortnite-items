@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -30,7 +31,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 3, silver: 60);
 			Item.rare = ItemRarityID.Cyan; //Lunar Events
-			Item.UseSound = SoundID.Item36;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/EvoChromeShotgunShoot")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 100;

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -28,7 +29,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 1);
 			Item.rare = ItemRarityID.LightRed; //Post Slime Queen
-			Item.UseSound = SoundID.Item72;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SidewaysRifleShoot")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.ShadowBeamFriendly;
 			Item.shootSpeed = 20;

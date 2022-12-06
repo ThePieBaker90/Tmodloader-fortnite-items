@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -29,7 +30,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.01f;
 			Item.value = Item.sellPrice(gold: 9);
 			Item.rare = ItemRarityID.Lime; //Frost moon elf copter drop
-			Item.UseSound = SoundID.Item31;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ChargeSMGShoot")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 70;

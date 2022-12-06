@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -29,7 +30,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 2f;
 			Item.value = Item.sellPrice(gold: 7);
 			Item.rare = ItemRarityID.LightPurple; //Post Twin craft
-			Item.UseSound = SoundID.Item48;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SuppressedSniperShoot")
+			{
+				Volume = 0.6f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 200;

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -29,7 +30,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 6f;
 			Item.value = Item.sellPrice(gold: 1);
 			Item.rare = ItemRarityID.Green; //Goblin Army
-			Item.UseSound = SoundID.Item11;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/FlareGunShoot")
+			{
+				Volume = 0.7f,
+				PitchVariance = 0.2f,
+				MaxInstances = 1,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 15;

@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -31,7 +32,12 @@ namespace FortniteItems.Items
 			Item.value = Item.sellPrice(gold: 5);
 			Item.value = Item.buyPrice(gold: 25);
 			Item.rare = ItemRarityID.LightRed; //Early Hardmode Sold by Arms Dealer
-			Item.UseSound = SoundID.Item36;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/HeavyShotgunShoot")
+			{
+				Volume = 0.75f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 30;

@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -28,7 +29,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 2f;
 			Item.value = Item.sellPrice(gold: 10);
 			Item.rare = ItemRarityID.Yellow;//Mothron Drop
-			Item.UseSound = SoundID.Item40;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/HeavyARShoot")
+			{
+				Volume = 0.9f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true; 
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 40;

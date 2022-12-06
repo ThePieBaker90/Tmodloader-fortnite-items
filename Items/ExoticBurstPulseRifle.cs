@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using FortniteItems.Rarities;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -30,7 +31,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 2;
 			Item.value = Item.sellPrice(gold: 15);
 			Item.rare = ModContent.RarityType<Exotic>(); //UNFINISHED
-			Item.UseSound = SoundID.Item72;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/BurstPulseRifleShoot")
+			{
+				Volume = 0.7f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.MagicMissile; // shoots a blue laser bolt
 			Item.shootSpeed = 7; // How fast the item shoots the projectile.

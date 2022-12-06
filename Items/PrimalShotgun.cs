@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
@@ -30,7 +31,12 @@ namespace FortniteItems.Items
 			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 7);
 			Item.rare = ItemRarityID.LightPurple; //Pre Plantera Shotgun made with Chlorophyte
-			Item.UseSound = SoundID.Item36;
+			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/PrimalShotgunShoot")
+			{
+				Volume = 0.6f,
+				PitchVariance = 0.2f,
+				MaxInstances = 3,
+			};
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.PurificationPowder;
 			Item.shootSpeed = 5;
