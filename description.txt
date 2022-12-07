@@ -15,4 +15,5 @@ Guide to weapon progression: https://github.com/users/ThePieBaker90/projects/1/v
 NOTE: weapons are still being balanced, feedback on weapon strength is greatly appreciated!
 ANOTHER NOTE: weapons use custom sounds from the game; if a sound effect is too loud or quiet, please let me know!
 
+After all the weapons and consumables are done, I plan to add vehicles (as mounts) and NPCs.
 
