@@ -110,7 +110,7 @@ This is intended to be a post queen bee upgrade to the minishark
 This is intended to be a post EoC minigun that does not use any ammunition and bounces off walls
 
 -Scoped Assault Rifle - Crafted at an autohammer with 10 shroomite bars, 1 sniper scope, and 1 suppressed assault rifle
-This is intended to be a post plantera direct upgrade to the suppressed assault rifle
+This is intended to be a post golem direct upgrade to the suppressed assault rifle
 
 -Thermal Scoped Assault Rifle - Crafted at an Ancient Manipulator with 12 Luminite Bars, 10 Vortex Fragments, and a scoped assault rifle
 This is intended to be a post moon-lord direct upgrade to the scoped assault rifle
