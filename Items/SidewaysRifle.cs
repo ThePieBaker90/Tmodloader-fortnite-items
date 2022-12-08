@@ -12,7 +12,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Sideways Rifle");
-			Tooltip.SetDefault("Does not use ammo and shoots a bouncing laser\n\"Miss? try again!\"");
+			Tooltip.SetDefault("Does not use ammo and shoots a bouncing laser\n\"Forged from Cube Monster Parts\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
