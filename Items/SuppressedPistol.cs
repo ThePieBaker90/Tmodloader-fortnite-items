@@ -47,7 +47,7 @@ namespace FortniteItems.Items
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.HallowedBar, 5); ;
-			recipe.AddIngredient(ModContent.ItemType<MakeshiftPistol>());
+			recipe.AddIngredient(ModContent.ItemType<Pistol>());
 			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 
