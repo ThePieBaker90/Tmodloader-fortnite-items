@@ -4,5 +4,6 @@ Add NPCs of fortnite characters
 Add Clothing of Notable outfits
 Add consumables
 Add Klombo
+Add Kinetic Ore (Fortanium) as a minable resource, proboably within marble biomes after queen slime has been defeated
 
 
