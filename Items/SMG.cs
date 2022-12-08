@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useTime = 6;
 			Item.useAnimation = 6;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 3f;
+			Item.knockBack = 0.1f;
 			Item.value = Item.sellPrice(silver: 75);
 			Item.rare = ItemRarityID.Blue; //EoW BoC
 			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SMGShoot")
