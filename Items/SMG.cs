@@ -12,7 +12,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Submachine Gun");
-			Tooltip.SetDefault("50% chance to not use ammo\n\"The old Spray 'n Pray\"");
+			Tooltip.SetDefault("25% chance to not use ammo\n\"The old Spray 'n Pray\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -80,7 +80,7 @@ namespace FortniteItems.Items
 		}
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.50f;
+			return Main.rand.NextFloat() >= 0.25f;
 		}
 
 	}
