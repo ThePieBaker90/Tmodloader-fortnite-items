@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Vindertech Grenade");
-			Tooltip.SetDefault("25% chance not to consume grenade\nExplodes after a set amount of time instead of upon impact\n\"Throw 'em and hope\"");
+			Tooltip.SetDefault("Explodes after a set amount of time instead of upon impact\n\"Throw 'em and hope\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 99;
 		}
