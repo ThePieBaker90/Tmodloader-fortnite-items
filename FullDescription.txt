@@ -1,4 +1,7 @@
 ﻿EXTENDED DESCRIPTION
+ 
+         !!!NO LONGER BEING UPDATED AS OF 2.2.7!!!
+ !!!CHECK THE WIKI FOR INFORMATION ON ITEMS PAST 2.2.7!!!
 Steam has a limit on the length of descriptions so here is the full description:
 
 Currently there are 57 Items: (as of v2.2.6)
