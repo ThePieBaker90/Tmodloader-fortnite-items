@@ -12,7 +12,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ranger Assault Rifle");
-			Tooltip.SetDefault("10% chance to not consume ammo\nfires explosive bullets but is slightly inaccurate\n\"Hit them hard and hit them fast!\"");
+			Tooltip.SetDefault("30% chance to not consume ammo\nTurns musket balls into explosive bullets\n\"Hit them hard and hit them fast!\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
@@ -70,7 +70,7 @@ namespace FortniteItems.Items
 
 		public override bool CanConsumeAmmo(Item ammo, Player player)
 		{
-			return Main.rand.NextFloat() >= 0.1f;
+			return Main.rand.NextFloat() >= 0.3f;
 		}
 
 	}

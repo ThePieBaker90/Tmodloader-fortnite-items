@@ -11,7 +11,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Vindertech Grenade");
-			Tooltip.SetDefault("25% chance not to consume grenade\nExplodes after a set amount of time instead of upon impact\n\"Throw 'em and hope\"");
+			Tooltip.SetDefault("Explodes after a set amount of time instead of upon impact\n\"Throw 'em and hope\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 99;
 		}
@@ -19,14 +19,14 @@ namespace FortniteItems.Items
 		public override void SetDefaults()
 		{
 
-			Item.damage = 180;
+			Item.damage = 100;
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 40;
 			Item.height = 40;
 			Item.useTime = 30;
 			Item.useAnimation = 30;
 			Item.useStyle = ItemUseStyleID.Swing;
-			Item.knockBack = 0.2f;
+			Item.knockBack = 10f;
 			Item.value = Item.sellPrice(copper: 50);
 			Item.value = Item.buyPrice(silver: 5);
 			Item.rare = ItemRarityID.Blue; //Post Eye Sold by Demo

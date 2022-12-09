@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useTime = 6;
 			Item.useAnimation = 6;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 3f;
+			Item.knockBack = 0.2f;
 			Item.value = Item.sellPrice(gold: 7);
 			Item.rare = ItemRarityID.LightPurple; //Post Skeletron Prime
 			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SuppressedPistolShoot")

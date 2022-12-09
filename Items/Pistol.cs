@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useTime = 10;
 			Item.useAnimation = 10;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 3f;
+			Item.knockBack = 0.1f;
 			Item.value = Item.sellPrice(silver: 5);
 			Item.rare = ItemRarityID.Blue; //Early prehardmode crafted with demonite(or crimtane)
 			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/PistolShoot")

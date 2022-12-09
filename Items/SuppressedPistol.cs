@@ -27,7 +27,7 @@ namespace FortniteItems.Items
 			Item.useTime = 9;
 			Item.useAnimation = 9;
 			Item.useStyle = ItemUseStyleID.Shoot;
-			Item.knockBack = 3f;
+			Item.knockBack = 0.5f;
 			Item.value = Item.sellPrice(gold: 5);
 			Item.rare = ItemRarityID.LightPurple; //Mech Boss
 			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SuppressedPistolShoot")
@@ -47,7 +47,7 @@ namespace FortniteItems.Items
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.HallowedBar, 5); ;
-			recipe.AddIngredient(ModContent.ItemType<MakeshiftPistol>());
+			recipe.AddIngredient(ModContent.ItemType<Pistol>());
 			recipe.AddTile(TileID.AdamantiteForge);
 			recipe.Register();
 
