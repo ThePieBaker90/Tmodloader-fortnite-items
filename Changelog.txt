@@ -1,5 +1,1 @@
-﻿Version 2.2.7 Changelog
-Changed several weapon stats
-Changed Icon of Vindertech Grenade
-Finished Wiki
-Added Rapid-Fire SMG
+﻿Version 2.2.9 Changelog

@@ -16,3 +16,5 @@ ANOTHER NOTE: weapons use custom sounds from the game; if a sound effect is too 
 
 After all the weapons and consumables are done, I plan to add vehicles (as mounts) and NPCs.
 
+It would be greatly appreciated if you took this 2 question form on the future of the mod:
+https://docs.google.com/forms/d/e/1FAIpQLSfhet1X4tLY3rDuEiRNd46U_yQUGhnslPDGb8BtW5matX1HYA/viewform?usp=sf_link

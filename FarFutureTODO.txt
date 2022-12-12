@@ -5,5 +5,7 @@ Add Clothing of Notable outfits
 Add consumables
 Add Klombo
 Add Kinetic Ore (Fortanium) as a minable resource, proboably within marble biomes after queen slime has been defeated
+Add BluGlo as a material
+Add Armor that resembles fortnite skins, such as; drift, the default skin outfit, raptor, members of the seven, and black knight. 
 
 

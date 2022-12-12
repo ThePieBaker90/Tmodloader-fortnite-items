@@ -12,7 +12,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Chug Jug");
-			Tooltip.SetDefault("Heals the User 400 Health\nGrants \"100% Shield\" buff\nQuick heal grants health and has an instant drinking time but grants no buff\nStandard drinking grants health and buff but has a 2 second drinking time\n\"I really love to Chug Jug with you\"");
+			Tooltip.SetDefault("Heals the User 400 Health\nGrants \"100% Shield\" buff\nHas a 12 second drink time but applies no potion sickness\n\"I really love to Chug Jug with you\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 20;
 
@@ -30,12 +30,12 @@ namespace FortniteItems.Items
 			Item.width = 20;
 			Item.height = 26;
 			Item.useStyle = ItemUseStyleID.DrinkLiquid;
-			Item.useAnimation = 120;
-			Item.useTime = 120;
+			Item.useAnimation = 900;
+			Item.useTime = 900;
 			Item.useTurn = true;
 			Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Consumables/ChugJugDrink")
 			{
-				Volume = 0.9f,
+				Volume = 0.3f,
 				PitchVariance = 0.2f,
 				MaxInstances = 1,
 			};
@@ -45,10 +45,24 @@ namespace FortniteItems.Items
 			Item.value = Item.buyPrice(gold: 1);
 
 			Item.buffType = ModContent.BuffType<Buffs.Shield100>(); // Applies "Shield 100" (40 Defense)
-			Item.buffTime = 28800; // Lasts 8 Minutes
+			Item.buffTime = 14400; // Lasts 8 Minutes
 
 			Item.healLife = 400; // While we change the actual healing value in GetHealLife, Item.healLife still needs to be higher than 0 for the item to be considered a healing item
-			Item.potion = true; // Makes it so this item applies potion sickness on use and allows it to be used with quick heal
+		}
+
+		public override void AddRecipes()
+		{
+			ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
+
+			if (calamityMod != null && calamityMod.TryFind<ModItem>("BloodOrb", out ModItem BloodOrb))
+			{
+				Recipe recipe = CreateRecipe();
+				recipe.AddIngredient(ItemID.BottledWater, 1);
+				recipe.AddIngredient(BloodOrb.Type, 60);
+				recipe.AddTile(TileID.LunarCraftingStation);
+				recipe.Register();
+			}//Adds bloodorb recipe if calamity mod is installed
+
 		}
 	}
 }
