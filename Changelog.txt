@@ -1,1 +1,3 @@
 ﻿Version 2.2.9 Changelog
+Added Vindertech Tactical Shotgun
+Pump Shotgun 17 -> 23
