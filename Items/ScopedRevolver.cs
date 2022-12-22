@@ -12,7 +12,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Scoped Revolver");
-			Tooltip.SetDefault("10% chance to not consume ammo\"Slap a scope on it!\"");
+			Tooltip.SetDefault("10% chance to not consume ammo\n\"Slap a scope on it!\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}

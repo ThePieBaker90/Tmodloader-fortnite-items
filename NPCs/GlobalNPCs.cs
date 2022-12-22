@@ -28,7 +28,8 @@ namespace FortniteItems.NPCs
 		{
 			if (type == NPCID.ArmsDealer)
 			{
-				if (NPC.downedBoss3 == true)
+
+                if (NPC.downedBoss3 == true)
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<PumpShotgun>(), false);
 
 				if (NPC.downedEmpressOfLight == true)
