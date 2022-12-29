@@ -50,9 +50,11 @@ namespace FortniteItems.NPCs
 
 			if (type == NPCID.Demolitionist == true)
 			{
-				if (NPC.downedBoss1 == true)
-					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<VGrenade>(), false);
+                ModLoader.TryGetMod("SOTS", out Mod SOTS);
 
+				if (NPC.downedBoss1 == true && SOTS == null) 
+				{ shop.item[nextSlot++].SetDefaults(ModContent.ItemType<VGrenade>(), false); }
+					
 
 			}//if demolitionist
 		}//public override setupshop

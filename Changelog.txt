@@ -1,2 +1,2 @@
-﻿Version 2.3.1 Changelog
-Changed Night Hawk Sell Price (7g -> 24g)
+﻿Version 2.3.0.2.1 Changelog
+Fixed Steam and Terraria Icons reverting to the old versions

@@ -10,8 +10,20 @@ namespace FortniteItems.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Vindertech Grenade");
-			Tooltip.SetDefault("Explodes after a set amount of time instead of upon impact\n\"Throw 'em and hope\"");
+
+            ModLoader.TryGetMod("SOTS", out Mod SOTS);
+
+            if (SOTS == null)
+            {
+                DisplayName.SetDefault("Vindertech Grenade");
+                Tooltip.SetDefault("Explodes after a set amount of time instead of upon impact\n\"Throw 'em and hope\"");
+            }
+            else
+            {
+                DisplayName.SetDefault("THIS IS INCOMPATABLE WITH SOTS");
+                Tooltip.SetDefault("THIS ITEM DOES NOT FUNCTION PROPERLY IN SECRETS OF THE SHADOWS\nDO NOT USE THIS ITEM IF YOU SEE THIS\nyou are not missing out on much, it is simply a grenade that does greater damage but that does not explode upon entity impact");
+            }
+
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 99;
 		}
@@ -29,7 +41,16 @@ namespace FortniteItems.Items
 			Item.knockBack = 10f;
 			Item.value = Item.sellPrice(copper: 50);
 			Item.value = Item.buyPrice(silver: 5);
-			Item.rare = ItemRarityID.Blue; //Post Eye Sold by Demo
+            ModLoader.TryGetMod("SOTS", out Mod SOTS);
+
+			if (SOTS == null)
+			{
+				Item.rare = ItemRarityID.Blue; //Post Eye Sold by Demo
+			}
+			else
+			{
+				Item.rare = ItemRarityID.Red; //to show the item is incompatable
+			}
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<Projectiles.VGrenade>();

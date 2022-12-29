@@ -18,19 +18,29 @@ namespace FortniteItems.Projectiles
 
 		public override void SetDefaults()
 		{
-			Projectile.width = 16; //The width of projectile hitbox
-			Projectile.height = 16; //The height of projectile hitbox
-			Projectile.aiStyle = 16; //The ai style of the projectile, please reference the source code of Terraria
-			Projectile.friendly = true; //Can the projectile deal damage to enemies?
-			Projectile.hostile = false; //Can the projectile deal damage to the player?
-			Projectile.DamageType = DamageClass.Ranged; //Is the projectile shoot by a ranged weapon?
-			Projectile.ignoreWater = false; //Does the projectile's speed be influenced by water?
-			Projectile.tileCollide = true; //Can the projectile collide with tiles?\
-			Projectile.timeLeft = 180;
-			Projectile.CanExplodeTile(0, 0);
-			Projectile.velocity = new Vector2();
+            ModLoader.TryGetMod("SOTS", out Mod SOTS);
 
-			AIType = ProjectileID.Bomb; //Act exactly like default grenade
+            if (SOTS == null)
+			{
+
+                Projectile.width = 16; //The width of projectile hitbox
+                Projectile.height = 16; //The height of projectile hitbox
+                Projectile.aiStyle = 16; //The ai style of the projectile, please reference the source code of Terraria
+                Projectile.friendly = true; //Can the projectile deal damage to enemies?
+                Projectile.hostile = false; //Can the projectile deal damage to the player?
+                Projectile.DamageType = DamageClass.Ranged; //Is the projectile shoot by a ranged weapon?
+                Projectile.ignoreWater = false; //Does the projectile's speed be influenced by water?
+                Projectile.tileCollide = true; //Can the projectile collide with tiles?\
+                Projectile.timeLeft = 180;
+                Projectile.CanExplodeTile(0, 0);
+                Projectile.velocity = new Vector2();
+
+                AIType = ProjectileID.Bomb; //Act exactly like default grenade
+            }
+			else
+			{
+				AIType = ProjectileID.PurificationPowder;
+			}
 
 
 		}
