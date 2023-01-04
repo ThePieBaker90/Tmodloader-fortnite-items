@@ -75,6 +75,10 @@ namespace FortniteItems.Items
 		{
 			return Main.rand.NextFloat() >= 0.1f;
 		}
+        public override void HoldItem(Player player)
+        {
+            player.scope = true;
+        }
 
-	}
+    }
 }

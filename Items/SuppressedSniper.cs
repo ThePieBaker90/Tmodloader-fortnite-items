@@ -77,7 +77,11 @@ namespace FortniteItems.Items
 
 
 		}
+        public override void HoldItem(Player player)
+        {
+            player.scope = true;
+        }
 
 
-	}
+    }
 }

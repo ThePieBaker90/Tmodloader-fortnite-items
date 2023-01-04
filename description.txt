@@ -1,10 +1,10 @@
 This mod adds items from the hit game "Fortnite Battle Royale"
 
-Currently there currently are 64 Items all using sounds from Fortnite.
+Currently there currently are 65 Items all using sounds from Fortnite.
 
 From the Chug Jug to the Scar to even the Dragon's Breath Shotgun this mod implements many items from Fortnite.
 
-Although not all of the items are currently implemented, all of them are planned to come in the future.
+Although not all of the items in Fortnite are currently implemented, all of them are planned to come in the future.
 
 Wiki: https://github.com/ThePieBaker90/Tmodloader-fortnite-items/wiki
 Github: https://github.com/ThePieBaker90/Tmodloader-fortnite-items

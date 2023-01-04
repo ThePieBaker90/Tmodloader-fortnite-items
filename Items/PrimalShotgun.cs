@@ -13,7 +13,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Primal Shotgun");
-			Tooltip.SetDefault("A two burst shotgun with a wide spread but fast speed and high damage\nChlorophyte bullets make the shot gun deal extra damage and fire faster, but they get turned into high velocity bullets\n\"The island has grown wild, and so must you\"");
+			Tooltip.SetDefault("A two burst shotgun with a wide spread but fast speed and high damage\nChlorophyte bullets make the shot gun deal extra damage and fire faster, but they get turned into primal bullets\n\"The island has grown wild, and so must you\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}

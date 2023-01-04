@@ -75,7 +75,11 @@ namespace FortniteItems.Items
 				type = ProjectileID.NanoBullet;
 			}
 		}
+        public override void HoldItem(Player player)
+        {
+            player.scope = true;
+        }
 
 
-	}
+    }
 }
