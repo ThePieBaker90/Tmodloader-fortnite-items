@@ -42,6 +42,9 @@ namespace FortniteItems
 			RecipeGroup GoldandPlat = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.GoldBar)}", ItemID.GoldBar, ItemID.PlatinumBar);
 			RecipeGroup.RegisterGroup(nameof(ItemID.GoldBar), GoldandPlat);
 
-		}
+            RecipeGroup FourthBow = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.GoldBow)}", ItemID.GoldBow, ItemID.PlatinumBow);
+            RecipeGroup.RegisterGroup(nameof(ItemID.GoldBow), FourthBow);
+
+        }
 	}
 }

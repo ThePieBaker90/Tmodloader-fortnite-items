@@ -49,8 +49,8 @@ namespace FortniteItems.Projectiles
 		{
 			Vector2 position = Projectile.Center;
 			position.Y -= 60;
-			
-			SoundEngine.PlaySound(new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/GrenadeExplosion")
+            Vector2 Zero = new Vector2(0, 0);
+            SoundEngine.PlaySound(new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/GrenadeExplosion")
 			{
 				Volume = 0.2f,
 				PitchVariance = 0.2f,
@@ -59,7 +59,7 @@ namespace FortniteItems.Projectiles
 			if (Main.myPlayer == Projectile.owner)
             {
 				Lighting.AddLight(Projectile.Center, Color.Orange.ToVector3() * 0.78f);
-				var projectile = Projectile.NewProjectileDirect(Projectile.InheritSource(Projectile), position, Projectile.velocity, ProjectileID.DD2ExplosiveTrapT3Explosion, 100, 10, Main.myPlayer);
+				var projectile = Projectile.NewProjectileDirect(Projectile.InheritSource(Projectile), position, Zero, ProjectileID.DD2ExplosiveTrapT3Explosion, 100, 10, Main.myPlayer);
 			}
 			
 			//int radius = 40;
