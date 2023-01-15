@@ -7,7 +7,7 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-	public class SuppressedSniper : ModItem
+    public class SuppressedSniper : ModItem
 	{
 		public override void SetStaticDefaults()
 		{

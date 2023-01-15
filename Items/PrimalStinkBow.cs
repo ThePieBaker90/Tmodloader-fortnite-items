@@ -12,11 +12,11 @@ namespace FortniteItems.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Primal Stink Bow");
-            Tooltip.SetDefault("Shoots arrows at a high velocity\nChanges Wooden Arrows into Stink Arrows\n\"How Primal!\"");
+            Tooltip.SetDefault("Shoots arrows at a high velocity\nChanges Wooden Arrows into Primal Stink Arrows\n\"Like a long range stink grenade\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //an early game pistol
+
         public override void SetDefaults()
         {
 
@@ -29,7 +29,7 @@ namespace FortniteItems.Items
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
             Item.value = Item.sellPrice(gold: 10);
-            Item.rare = ItemRarityID.Green; //Pre Hardmode, crabulon recommended but not required
+            Item.rare = ItemRarityID.Yellow; //Post Plant Lunar Eclipse Craft
             Item.UseSound = SoundID.Item5;
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
@@ -44,7 +44,7 @@ namespace FortniteItems.Items
             recipe.AddIngredient(ItemID.ToxicFlask, 1);
             recipe.AddIngredient(ModContent.ItemType<PrimalBow>(), 1);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 5);
-            recipe.AddTile(TileID.Anvils);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 
         }

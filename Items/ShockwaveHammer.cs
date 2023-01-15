@@ -31,7 +31,7 @@ namespace FortniteItems.Items
             Item.value = Item.sellPrice(gold: 24);
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            if (calamityMod != null && calamityMod.TryFind<ModRarity>("Turquoise", out ModRarity Turquoise))
+            if (calamityMod != null && calamityMod.TryFind("Turquoise", out ModRarity Turquoise))
             {
                 Item.rare = Turquoise.Type; //Post stormweaver
             }
@@ -49,7 +49,7 @@ namespace FortniteItems.Items
         {
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            if (calamityMod != null && calamityMod.TryFind<ModItem>("ArmoredShell", out ModItem ArmoredShell) && calamityMod.TryFind<ModItem>("UnholyEssence", out ModItem UnholyEssence) && calamityMod.TryFind<ModItem>("GalacticaSingularity", out ModItem GalacticaSingularity))
+            if (calamityMod != null && calamityMod.TryFind("ArmoredShell", out ModItem ArmoredShell) && calamityMod.TryFind("UnholyEssence", out ModItem UnholyEssence) && calamityMod.TryFind("GalacticaSingularity", out ModItem GalacticaSingularity))
             {
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ArmoredShell.Type, 2);

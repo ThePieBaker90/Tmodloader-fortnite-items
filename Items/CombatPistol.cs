@@ -82,10 +82,10 @@ namespace FortniteItems.Items
             int NumProjectiles = 1;
             if (Main.rand.NextBool(3))
             {
-                 NumProjectiles = 2;
+                NumProjectiles = 2;
             }
-                
-         
+
+
             for (int i = 0; i < NumProjectiles; i++)
             {
                 // Rotate the velocity randomly by 30 degrees at max.

@@ -18,10 +18,9 @@ using ReLogic.Content;
 using Terraria.ModLoader.IO;
 using FortniteItems.Items;
 
-
 namespace FortniteItems.NPCs
 {
-	public class ExampleGlobalNPC : GlobalNPC
+    public class ExampleGlobalNPC : GlobalNPC
 	{
 
 		public override void SetupShop(int type, Chest shop, ref int nextSlot)

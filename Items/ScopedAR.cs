@@ -7,7 +7,7 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-	public class ScopedAR : ModItem
+    public class ScopedAR : ModItem
 	{
 		public override void SetStaticDefaults()
 		{

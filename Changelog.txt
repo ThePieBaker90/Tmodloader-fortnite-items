@@ -1,3 +1,3 @@
-﻿Version 2.3.2 Changelog
-Added Makeshift Bow, Primal Bow, and Primal Stink Bow
-Copper Bullet Sell Price Halved
+﻿Version 2.3.3 Changelog
+Added the Primal Flame Bow, Mechanical Bow, Mechanical Shockwave Bow, Mechanical Explosive Bow, Primal Flame Arrow, Mechanical Shockwave Arrow, and Mechanical Explosive Arrow
+Renamed the Stink Arrow to the Primal Stink Arrow

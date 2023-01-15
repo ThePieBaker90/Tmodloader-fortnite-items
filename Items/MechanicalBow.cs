@@ -7,48 +7,51 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-    public class BurstSMG : ModItem
+    public class MechanicalBow : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Burst Submachine Gun");
-            Tooltip.SetDefault("75% chance to not consume ammo\nShoots in bursts of 4\n\"The Future is Yours\"");
+            DisplayName.SetDefault("Mechanical Bow");
+            Tooltip.SetDefault("Shoots arrows at a high velocity\n\"How Mechanical!\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //Intended to be an early game smg
+        //an early game pistol
         public override void SetDefaults()
         {
 
-            Item.damage = 2;
+            Item.damage = 38;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 4;
-            Item.useAnimation = 16;
+            Item.useTime = 25;
+            Item.useAnimation = 25;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 0.2f;
-            Item.value = Item.sellPrice(gold: 2);
-            Item.rare = ItemRarityID.Orange; //Pre Hardmode King Slime
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/BurstSMGShoot")
-            {
-                Volume = 0.6f,
-                PitchVariance = 0.2f,
-                MaxInstances = 3,
-            };
+            Item.knockBack = 2f;
+            Item.value = Item.sellPrice(silver: 40);
+            Item.rare = ItemRarityID.Green; //Pre Hardmode, crabulon recommended but not required
+            Item.UseSound = SoundID.Item5;
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 70;
+            Item.shootSpeed = 20;
             Item.noMelee = true;
-            Item.useAmmo = AmmoID.Bullet;
-            Item.reuseDelay = 14;
-            Item.ArmorPenetration = 3;
+            Item.useAmmo = AmmoID.Arrow;
         }
 
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.GlowingMushroom, 20);
+            recipe.AddIngredient(ModContent.ItemType<MakeshiftBow>(), 1);
+            recipe.AddIngredient(ItemID.MushroomGrassSeeds, 3);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
+
+        }
 
         public override Vector2? HoldoutOffset()
         {
-            return new Vector2(-9f, 0);
+            return new Vector2(0, 0);
         }
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
@@ -60,14 +63,10 @@ namespace FortniteItems.Items
             }
 
 
-            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(9)); //Random Bullet Spread
         }
-
-        public override bool CanConsumeAmmo(Item ammo, Player player)
+        public override void HoldItem(Player player)
         {
-            return Main.rand.NextFloat() >= 0.75f;
+            player.scope = true;
         }
-
-
     }
 }

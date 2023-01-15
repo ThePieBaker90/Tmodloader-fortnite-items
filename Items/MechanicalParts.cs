@@ -7,48 +7,51 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-    public class TacticalAR : ModItem
+    public class MechanicalParts : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tactical Assault Rifle");
-            Tooltip.SetDefault("45% chance to not consume ammo\n\"Standard issue I.O. guard rifle\"");
+            DisplayName.SetDefault("Mechanical Parts");
+            Tooltip.SetDefault("Used to craft mechanical weapons");
 
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 20;
         }
-        //a fast rifle 
+        //an early game pistol
         public override void SetDefaults()
         {
 
-            Item.damage = 46;
+            Item.damage = 38;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 8;
-            Item.useAnimation = 8;
+            Item.useTime = 25;
+            Item.useAnimation = 25;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 0.1f;
-            Item.value = Item.sellPrice(gold: 8, silver: 50);
-            Item.rare = ItemRarityID.Lime; //frost moon
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/TacticalARShoot")
-            {
-                Volume = 0.9f,
-                PitchVariance = 0.2f,
-                MaxInstances = 3,
-            };
+            Item.knockBack = 2f;
+            Item.value = Item.sellPrice(silver: 40);
+            Item.rare = ItemRarityID.Green; //Pre Hardmode, crabulon recommended but not required
+            Item.UseSound = SoundID.Item5;
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
             Item.shootSpeed = 20;
             Item.noMelee = true;
-            Item.useAmmo = AmmoID.Bullet;
-            Item.crit = 21;
-            Item.ArmorPenetration = 10;
+            Item.useAmmo = AmmoID.Arrow;
         }
 
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.GlowingMushroom, 20);
+            recipe.AddIngredient(ModContent.ItemType<MakeshiftBow>(), 1);
+            recipe.AddIngredient(ItemID.MushroomGrassSeeds, 3);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
+
+        }
 
         public override Vector2? HoldoutOffset()
         {
-            return new Vector2(-9f, 0);
+            return new Vector2(0, 0);
         }
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
@@ -59,17 +62,11 @@ namespace FortniteItems.Items
                 position += muzzleOffset;
             }
 
-        }
-
-        public override bool CanConsumeAmmo(Item ammo, Player player)
-        {
-            return Main.rand.NextFloat() >= 0.45f;
 
         }
         public override void HoldItem(Player player)
         {
             player.scope = true;
         }
-
     }
 }

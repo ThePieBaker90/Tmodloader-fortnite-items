@@ -7,7 +7,7 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-	public class Revolver : ModItem
+    public class Revolver : ModItem
 	{
 		public override void SetStaticDefaults()
 		{

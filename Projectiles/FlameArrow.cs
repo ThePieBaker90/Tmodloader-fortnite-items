@@ -9,11 +9,11 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Projectiles
 {
-    public class StinkArrow : ModProjectile
+    public class FlameArrow : ModProjectile
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Stink Arrow"); // The English name of the projectile
+            DisplayName.SetDefault("Flame Arrow"); // The English name of the projectile
             ProjectileID.Sets.TrailCacheLength[Projectile.type] = 5; // The length of old position to be recorded
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0; // The recording mode
         }
@@ -60,7 +60,7 @@ namespace FortniteItems.Projectiles
             if (Main.myPlayer == Projectile.owner)
             {
                 Lighting.AddLight(Projectile.Center, Color.Orange.ToVector3() * 0.78f);
-                var projectile = Projectile.NewProjectileDirect(Projectile.InheritSource(Projectile), position, Projectile.velocity, ProjectileID.ToxicFlask, 25 , 10, Main.myPlayer);
+                var projectile = Projectile.NewProjectileDirect(Projectile.InheritSource(Projectile), position, Projectile.velocity, ProjectileID.MolotovCocktail, 25, 10, Main.myPlayer);
                 projectile.timeLeft = 1;
             }
         }

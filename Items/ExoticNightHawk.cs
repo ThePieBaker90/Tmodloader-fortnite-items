@@ -50,7 +50,7 @@ namespace FortniteItems.Items
         {
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            if (calamityMod != null && calamityMod.TryFind<ModItem>("TwistingNether", out ModItem TwistingNether))
+            if (calamityMod != null && calamityMod.TryFind("TwistingNether", out ModItem TwistingNether))
             {
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ModContent.ItemType<ScopedRevolver>(), 1);
