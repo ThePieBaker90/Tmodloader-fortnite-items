@@ -42,7 +42,7 @@ namespace FortniteItems.Items
             Item.shootSpeed = 15;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 40;
+            Item.ArmorPenetration = 60;
             Item.crit = 16;
         }
 

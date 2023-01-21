@@ -60,7 +60,7 @@ namespace FortniteItems.Projectiles
             if (Main.myPlayer == Projectile.owner)
             {
                 Lighting.AddLight(Projectile.Center, Color.Orange.ToVector3() * 0.78f);
-                var projectile = Projectile.NewProjectileDirect(Projectile.InheritSource(Projectile), position, Projectile.velocity, ProjectileID.ToxicFlask, 25 , 10, Main.myPlayer);
+                var projectile = Projectile.NewProjectileDirect(Projectile.InheritSource(Projectile), position, Projectile.velocity, ProjectileID.ToxicFlask, 40 , 10, Main.myPlayer);
                 projectile.timeLeft = 1;
             }
         }

@@ -19,7 +19,7 @@ namespace FortniteItems.Items
         //a direct upgrade to the scoped assault rifle
         public override void SetDefaults()
         {
-            Item.damage = 140;
+            Item.damage = 155;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;

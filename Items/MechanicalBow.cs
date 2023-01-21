@@ -16,24 +16,24 @@ namespace FortniteItems.Items
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //an early game pistol
+        
         public override void SetDefaults()
         {
 
-            Item.damage = 38;
+            Item.damage = 92;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 25;
-            Item.useAnimation = 25;
+            Item.useTime = 29;
+            Item.useAnimation = 29;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
-            Item.value = Item.sellPrice(silver: 40);
-            Item.rare = ItemRarityID.Green; //Pre Hardmode, crabulon recommended but not required
+            Item.value = Item.sellPrice(gold: 1);
+            Item.rare = ItemRarityID.Pink; //Post Solar
             Item.UseSound = SoundID.Item5;
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 20;
+            Item.shootSpeed = 28;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Arrow;
         }
@@ -41,10 +41,9 @@ namespace FortniteItems.Items
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.GlowingMushroom, 20);
+            recipe.AddIngredient(ModContent.ItemType<MechanicalParts>(), 5);
             recipe.AddIngredient(ModContent.ItemType<MakeshiftBow>(), 1);
-            recipe.AddIngredient(ItemID.MushroomGrassSeeds, 3);
-            recipe.AddTile(TileID.Anvils);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 
         }
