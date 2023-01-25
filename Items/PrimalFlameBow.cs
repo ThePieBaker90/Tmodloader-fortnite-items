@@ -20,12 +20,12 @@ namespace FortniteItems.Items
         public override void SetDefaults()
         {
 
-            Item.damage = 75;
+            Item.damage = 112;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 23;
-            Item.useAnimation = 23;
+            Item.useTime = 21;
+            Item.useAnimation = 21;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
             Item.value = Item.sellPrice(gold: 10);
@@ -37,6 +37,7 @@ namespace FortniteItems.Items
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Arrow;
             Item.crit = 16;
+            Item.ArmorPenetration = 20;
         }
 
         public override void AddRecipes()

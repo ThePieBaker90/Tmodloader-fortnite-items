@@ -1,5 +1,7 @@
 ﻿Version 2.3.3 Changelog
-Added the Primal Flame Bow, Mechanical Bow, Mechanical Shockwave Bow, Mechanical Explosive Bow, Primal Flame Arrow, Mechanical Shockwave Arrow, Mechanical Explosive Arrow, and Mechanical Parts
+Added the Primal Flame Bow, Mechanical Bow, Primal Flame Arrow, and Mechanical Parts
 Renamed the Stink Arrow to the Primal Stink Arrow
 Increased Thermal Scoped AR Damage (140 -> 155)
 Increased Exotic Night Hawk Armor Penetration (40 -> 60)
+Increased Primal Stink Bow Damage (59 -> 120)
+Reduced Primal Stink Bow Use time (25 -> 21)

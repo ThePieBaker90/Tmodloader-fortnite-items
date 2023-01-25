@@ -12,7 +12,7 @@ namespace FortniteItems.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Primal Stink Bow");
-            Tooltip.SetDefault("Shoots arrows at a high velocity\nChanges Wooden Arrows into Primal Stink Arrows\n\"Like a long range stink grenade\"");
+            Tooltip.SetDefault("Shoots arrows at a high velocity\nChanges Wooden Arrows into Primal Stink Arrows\n\"Like a long range stink grenade!\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -20,12 +20,12 @@ namespace FortniteItems.Items
         public override void SetDefaults()
         {
 
-            Item.damage = 59;
+            Item.damage = 120;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 25;
-            Item.useAnimation = 25;
+            Item.useTime = 21;
+            Item.useAnimation = 21;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
             Item.value = Item.sellPrice(gold: 10);

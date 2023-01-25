@@ -20,14 +20,14 @@ namespace FortniteItems.Items
         public override void SetDefaults()
         {
 
-            Item.damage = 92;
+            Item.damage = 95;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
             Item.useTime = 29;
             Item.useAnimation = 29;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 2f;
+            Item.knockBack = 4f;
             Item.value = Item.sellPrice(gold: 1);
             Item.rare = ItemRarityID.Pink; //Post Solar
             Item.UseSound = SoundID.Item5;
