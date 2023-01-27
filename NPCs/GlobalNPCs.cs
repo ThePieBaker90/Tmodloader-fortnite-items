@@ -56,7 +56,14 @@ namespace FortniteItems.NPCs
 					
 
 			}//if demolitionist
-		}//public override setupshop
+
+            if (type == NPCID.GoblinTinkerer)
+            {
+				shop.item[nextSlot++].SetDefaults(ModContent.ItemType<NutsnBolts>(), false);
+
+
+            }//if Goblin Tinkerer
+        }//public override setupshop
 		public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
 		{
 

@@ -7,24 +7,24 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-    public class HeavyAR : ModItem
+    public class ModifiedHeavyAR : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Heavy Assault Rifle");
-            Tooltip.SetDefault("Fires high velocity bullets instead of musket balls\na slow assault rifle that deals lots of damage\n\"Hit em Hard!\"");
+            DisplayName.SetDefault("Modified Heavy Assault Rifle");
+            Tooltip.SetDefault("50% chance not to consume ammo\nan extremely fast firing assault rifle that suffers from high spread\n\"Hit em Faster than they can blink!\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         //a slow firing assault rifle dropped by mothron with high armor penetration
         public override void SetDefaults()
         {
-            Item.damage = 150;
+            Item.damage = 65;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 65;
             Item.height = 40;
-            Item.useTime = 20;
-            Item.useAnimation = 20;
+            Item.useTime = 8;
+            Item.useAnimation = 8;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
             Item.value = Item.sellPrice(gold: 10);
@@ -37,16 +37,15 @@ namespace FortniteItems.Items
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 40;
+            Item.shootSpeed = 20;
             Item.noMelee = true;
-            Item.ArmorPenetration = 70;
             Item.useAmmo = AmmoID.Bullet;
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<ModifiedHeavyAR>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<HeavyAR>(), 1);
             recipe.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
@@ -65,12 +64,14 @@ namespace FortniteItems.Items
             {
                 position += muzzleOffset;
             }
-            if (type == ProjectileID.Bullet)
-            {
-                type = ProjectileID.BulletHighVelocity;
-            }
+
+            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(5f)); //Random Bullet Spread
         }
 
+        public override bool CanConsumeAmmo(Item ammo, Player player)
+        {
+            return Main.rand.NextFloat() >= 0.5f;
 
+        }
     }
 }
