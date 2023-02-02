@@ -19,7 +19,7 @@ namespace FortniteItems.Items
         //a slow firing assault rifle dropped by mothron with high armor penetration
         public override void SetDefaults()
         {
-            Item.damage = 65;
+            Item.damage = 60;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 65;
             Item.height = 40;
@@ -65,7 +65,7 @@ namespace FortniteItems.Items
                 position += muzzleOffset;
             }
 
-            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(5f)); //Random Bullet Spread
+            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(2.5f)); //Random Bullet Spread
         }
 
         public override bool CanConsumeAmmo(Item ammo, Player player)

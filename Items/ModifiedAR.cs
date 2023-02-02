@@ -7,12 +7,12 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-    public class Scar : ModItem
+    public class ModifiedAR : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Assault Rifle");
-            Tooltip.SetDefault("25% chance to not consume ammo\n\"Gotta get that W\"");
+            DisplayName.SetDefault("Modified Assault Rifle");
+            Tooltip.SetDefault("20% chance to not consume ammo\nHas a chance to fire a crystal bullet\n\"Give them the L\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -20,12 +20,12 @@ namespace FortniteItems.Items
         public override void SetDefaults()
         {
 
-            Item.damage = 11;
+            Item.damage = 20;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 13;
-            Item.useAnimation = 13;
+            Item.useTime = 20;
+            Item.useAnimation = 20;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.2f;
             Item.value = Item.sellPrice(gold: 1, silver: 50);
@@ -46,24 +46,11 @@ namespace FortniteItems.Items
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-            recipe.AddIngredient(ItemID.SpikyBall, 25);
-            recipe.AddIngredient(ItemID.GoldBar, 12);
-            recipe.AddTile(TileID.Anvils);
+            recipe.AddIngredient(ModContent.ItemType<Scar>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
+            recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
 
-            Recipe recipe2 = CreateRecipe();
-            recipe2.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-            recipe2.AddIngredient(ItemID.SpikyBall, 25);
-            recipe2.AddIngredient(ItemID.PlatinumBar, 12);
-            recipe2.AddTile(TileID.Anvils);
-            recipe2.Register();
-
-            Recipe recipe3 = CreateRecipe();
-            recipe3.AddIngredient(ModContent.ItemType<Scar>(), 1);
-            recipe3.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
-            recipe3.AddTile(TileID.TinkerersWorkbench);
-            recipe3.Register();
 
         }
 
@@ -74,17 +61,23 @@ namespace FortniteItems.Items
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
             Vector2 muzzleOffset = Vector2.Normalize(velocity) * 25f;
-
+            
             if (Collision.CanHit(position, 0, 0, position + muzzleOffset, 0, 0))
             {
                 position += muzzleOffset;
             }
 
+            int NumProjectiles = 1;
+            if (Main.rand.NextBool(3))
+            {
+                type = ProjectileID.CrystalBullet;
+                NumProjectiles = 2;
+            }
         }
 
         public override bool CanConsumeAmmo(Item ammo, Player player)
         {
-            return Main.rand.NextFloat() >= 0.25f;
+            return Main.rand.NextFloat() >= 0.20f;
         }
 
     }

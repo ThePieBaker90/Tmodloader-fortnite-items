@@ -1,0 +1,22 @@
+﻿List of Modified Weapons
+Not Started-
+Scoped Assault Rifle
+Infantry Rifle
+Rocket Launcher
+Pistol
+Revolver
+Tactical Shotgun
+Charge Shotgun
+Bolt Action Sniper Rifle
+Hunting Rifle
+
+Sprite Done-
+
+Burst Assault Rifle
+
+Code Done-
+Pump Shotgun
+Assault Rifle
+
+Implemented-
+Heavy Assault Rifle

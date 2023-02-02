@@ -8,12 +8,12 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-    public class PumpShotgun : ModItem
+    public class ModifiedPumpShotgun : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Pump Shotgun");
-            Tooltip.SetDefault("Slow firing shotgun that does high damage and knockback\n\"He's cracked! He's cracked!\"");
+            DisplayName.SetDefault("Modified Pump Shotgun");
+            Tooltip.SetDefault("Slow firing shotgun that fires lots of bullets with low velocity but high damage and knockback\n\"I'm cracked! I'm cracked!\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -21,7 +21,7 @@ namespace FortniteItems.Items
         public override void SetDefaults()
         {
 
-            Item.damage = 23;
+            Item.damage = 24;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -40,7 +40,7 @@ namespace FortniteItems.Items
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 3;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.crit = 5;
@@ -50,7 +50,7 @@ namespace FortniteItems.Items
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<ModifiedPumpShotgun>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<PumpShotgun>(), 1);
             recipe.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
             recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
@@ -75,12 +75,12 @@ namespace FortniteItems.Items
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
 
         {
-            const int NumProjectiles = 5; // The humber of projectiles that this gun will shoot.
+            const int NumProjectiles = 7; // The humber of projectiles that this gun will shoot.
 
             for (int i = 0; i < NumProjectiles; i++)
             {
                 // Rotate the velocity randomly by 30 degrees at max.
-                Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(10));
+                Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(7));
 
                 // Decrease velocity randomly for nicer visuals.
                 newVelocity *= 1f - Main.rand.NextFloat(0.5f);

@@ -1,2 +1,4 @@
-﻿Version 2.3.4 Changelog
-Added Nuts 'n' Bolts and Modified Heavy Assault Rifle 
+﻿Version 2.3.5 Changelog
+Added Modified Pump Shotgun
+Modified Heavy AR Spread 5 -> 2.5
+Modified Heavy AR Damage 65 -> 60
