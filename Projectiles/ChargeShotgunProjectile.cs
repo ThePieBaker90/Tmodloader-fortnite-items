@@ -29,7 +29,7 @@ namespace FortniteItems.Projectiles
             Projectile.friendly = false; // Can the projectile deal damage to enemies?
             Projectile.hostile = false; // Can the projectile deal damage to the player?
             Projectile.DamageType = DamageClass.Ranged; // Is the projectile shoot by a ranged weapon?
-            Projectile.timeLeft = 420; // The live time for the projectile (60 = 1 second, so 600 is 10 seconds)
+            Projectile.timeLeft = 280; // The live time for the projectile (60 = 1 second, so 600 is 10 seconds)
             Projectile.light = 0; // How much light emit around the projectile
             Projectile.ignoreWater = false; // Does the projectile's speed be influenced by water?
             Projectile.tileCollide = false; // Can the projectile collide with tiles?
@@ -72,14 +72,14 @@ namespace FortniteItems.Projectiles
              */
 
             Vector2 position = Projectile.Center;
-            var projectile = Projectile.NewProjectileDirect(Projectile.InheritSource(Projectile), position, rotatedVelocity, ProjectileID.MeteorShot, 40, 10, Main.myPlayer);
-            SoundStyle shootSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/PumpShotgunShoot")
+            var projectile = Projectile.NewProjectileDirect(Projectile.InheritSource(Projectile), position, rotatedVelocity, ProjectileID.MeteorShot, 500, 10, Main.myPlayer);
+            SoundStyle shootSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ChargeShotgunFire")
             {
                 Volume = 0.9f,
                 PitchVariance = 0.2f,
                 MaxInstances = 1,
             };
-            SoundStyle misfireSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SuppressedPistolShoot")
+            SoundStyle misfireSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ChargeShotgunMisfire")
             {
                 Volume = 0.9f,
                 PitchVariance = 0.2f,
@@ -91,7 +91,7 @@ namespace FortniteItems.Projectiles
             }
             else if(misfire == true)
             {
-                SoundEngine.PlaySound();
+                SoundEngine.PlaySound(misfireSound);
             }
             
         }

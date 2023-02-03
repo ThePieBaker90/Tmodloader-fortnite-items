@@ -36,6 +36,10 @@ namespace FortniteItems.NPCs
 
 				if (Main.hardMode == true)
 					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<HeavyShotgun>(), false);
+
+				if (NPC.downedFishron == true)
+					shop.item[nextSlot++].SetDefaults(ModContent.ItemType<ChargeShotgun>(), false);
+
 			}//if arms dealer
 
 			if (type == NPCID.Merchant)
