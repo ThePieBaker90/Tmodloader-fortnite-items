@@ -8,9 +8,11 @@ using Terraria.Audio;
 namespace FortniteItems.Items
 {
 	public class InfantaryRifle : ModItem
-	{
-		public override void SetStaticDefaults()
+    //The spelling mistake also bothers me
+    {
+        public override void SetStaticDefaults()
 		{
+			
 			DisplayName.SetDefault("Infantry Rifle");
 			Tooltip.SetDefault("a longer range rifle\nFires a high velocity bullet instead of musket balls\n\"When a sniper rifle and an assault rifle meet...\"");
 

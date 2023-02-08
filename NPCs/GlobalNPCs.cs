@@ -20,7 +20,7 @@ using FortniteItems.Items;
 
 namespace FortniteItems.NPCs
 {
-    public class ExampleGlobalNPC : GlobalNPC
+    public class GlobalNPCs : GlobalNPC
 	{
 
 		public override void SetupShop(int type, Chest shop, ref int nextSlot)

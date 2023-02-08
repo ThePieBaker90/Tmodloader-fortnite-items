@@ -21,6 +21,7 @@ namespace FortniteItems.Projectiles
             
         }
 
+        //public override string Texture => $"Terraria/Images/Item_{ItemID.BreakerBlade}";
         public override void SetDefaults()
         {
             Projectile.width = 0; // The width of projectile hitbox

@@ -46,5 +46,7 @@ namespace FortniteItems
             RecipeGroup.RegisterGroup(nameof(ItemID.GoldBow), FourthBow);
 
         }
+
+		
 	}
 }

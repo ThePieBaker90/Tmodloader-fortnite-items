@@ -51,8 +51,13 @@ namespace FortniteItems.Items
 			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.Register();
 
+            Recipe recipe2 = CreateRecipe();
+            recipe2.AddIngredient(ModContent.ItemType<ModifiedRevolver>(), 1);
+            recipe2.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
+            recipe2.AddTile(TileID.TinkerersWorkbench);
+            recipe2.Register();
 
-		}
+        }
 
 		public override Vector2? HoldoutOffset()
 		{

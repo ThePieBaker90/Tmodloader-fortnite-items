@@ -1,21 +1,20 @@
 ﻿List of Modified Weapons
 Not Started-
-Scoped Assault Rifle
 Infantry Rifle
-Rocket Launcher
-Pistol
-Revolver
 Tactical Shotgun
+Rocket Launcher
 
-Bolt Action Sniper Rifle
-Hunting Rifle
 
 Sprite Done-
+Hunting Rifle
 Charge Shotgun
-Burst Assault Rifle
+Pistol
+Bolt Action Sniper Rifle
+Scoped Assault Rifle
 
 Code Done-
-
+Burst Assault Rifle
+Revolver
 
 Implemented-
 Pump Shotgun

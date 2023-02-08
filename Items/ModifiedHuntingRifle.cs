@@ -7,58 +7,50 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-    public class BurstAR : ModItem
+    public class ModifiedHuntingRifle : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Burst Assault Rifle");
-            Tooltip.SetDefault("Shoots in bursts of 3, Musket balls are turned into meteor shot\n\"Gotta get that W, 3 shots at a time\"");
-
+            DisplayName.SetDefault("Modified Hunting Rifle");
+            Tooltip.SetDefault("Has a chance to fire a star\n\"For... the funny...\"");
+            //NEW IDEA: chance to fire falling star projectile and a very small chance to firw 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a post evil boss rifle intended for early game sustained damage
         public override void SetDefaults()
         {
-
-            Item.damage = 11;
+            Item.damage = 90;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 3;
-            Item.useAnimation = 9;
+            Item.useTime = 30;
+            Item.useAnimation = 30;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 0.2f;
-            Item.value = Item.sellPrice(silver: 40);
-            Item.rare = ItemRarityID.Green; //Mid Pre Hardmode Craft from Meteorite
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/BurstARShoot")
+            Item.knockBack = 2f;
+            Item.value = Item.sellPrice(gold: 2);
+            Item.rare = ItemRarityID.Yellow; //Post EoC Craft
+            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/HuntingRifleShoot")
             {
-                Volume = 0.9f,
+                Volume = 0.6f,
                 PitchVariance = 0.2f,
                 MaxInstances = 3,
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 70;
+            Item.shootSpeed = 30;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.ArmorPenetration = 30;
-            Item.reuseDelay = 30;
-            Item.consumeAmmoOnLastShotOnly = true;
+            Item.crit = 6;
+
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.MeteoriteBar, 12);
-            recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-            recipe.AddTile(TileID.Anvils);
+            recipe.AddIngredient(ModContent.ItemType<HuntingRifle>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
+            recipe.AddTile(TileID.TinkerersWorkbench);
             recipe.Register();
-
-            Recipe recipe2 = CreateRecipe();
-            recipe2.AddIngredient(ModContent.ItemType<ModifiedBurstAR>(), 1);
-            recipe2.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
-            recipe2.AddTile(TileID.TinkerersWorkbench);
-            recipe2.Register();
 
         }
 
@@ -75,14 +67,30 @@ namespace FortniteItems.Items
                 position += muzzleOffset;
             }
 
-            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(3.5f)); //Random Bullet Spread
-
-            if (type == ProjectileID.Bullet)
+            int randomValue = Main.rand.Next(100)+1;
+            if (randomValue >= 2 && randomValue <= 35)
             {
-                type = ProjectileID.MeteorShot;
+                damage = 200;
+                type = ProjectileID.FallingStar;
             }
+            else if (randomValue == 1)
+            {
+                damage = 100;
+                type = ProjectileID.ElectrosphereMissile;
+            }
+            else
+            {
+                damage = 90;
+            }
+            
+
+
         }
 
+        public override void HoldItem(Player player)
+        {
+            player.scope = true;
+        }
 
     }
 }
