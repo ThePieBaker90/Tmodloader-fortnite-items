@@ -52,6 +52,7 @@ namespace FortniteItems.Items
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ModContent.ItemType<PulseRifle>(), 1);
             recipe.AddIngredient(ItemID.FragmentNebula, 15);
+            recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.Register();
 

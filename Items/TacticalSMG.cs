@@ -29,7 +29,7 @@ namespace FortniteItems.Items
             Item.useAnimation = 8;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
-            Item.value = Item.sellPrice(silver: 5);
+            Item.value = Item.sellPrice(gold: 1);
             Item.rare = ItemRarityID.Orange; //Early prehardmode crafted with demonite(or crimtane)
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/MakeshiftSMGShoot")
             {

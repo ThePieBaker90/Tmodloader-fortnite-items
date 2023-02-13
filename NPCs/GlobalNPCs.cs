@@ -51,7 +51,7 @@ namespace FortniteItems.NPCs
 				}
 			}//if merchant
 
-			if (type == NPCID.Demolitionist == true)
+			if (type == NPCID.Demolitionist)
 			{
                 ModLoader.TryGetMod("SOTS", out Mod SOTS);
 
@@ -67,27 +67,43 @@ namespace FortniteItems.NPCs
 
 
             }//if Goblin Tinkerer
+
+            if (type == NPCID.Wizard)
+            {
+                shop.item[nextSlot++].SetDefaults(ModContent.ItemType<ExoticEssence>(), false);
+
+
+            }//if Wizzzzzard
         }//public override setupshop
 		public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
 		{
 
+            if (npc.type == NPCID.EyeofCthulhu) //Six Shooter drop from EoC if calamity is not installed
+            {
+                ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
+				if (calamityMod == null)
+				{
+                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<SixShooter>(), 2));
+                }
+                
+            }
 
-			if (npc.type == NPCID.KingSlime) //Burst SMG Drop from King Slime
+            if (npc.type == NPCID.KingSlime) //Burst SMG Drop from King Slime
 			{
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 2));
 			}
 
-            		if (npc.type == NPCID.Frankenstein) //Mechanical Parts Drop from frankenstein
-            		{
-                		npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 10));
-            		}
+            if (npc.type == NPCID.Frankenstein) //Mechanical Parts Drop from frankenstein
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 10));
+            }
 
-            		if (npc.type == NPCID.Fritz) //Mechanical Parts Drop from Fritz
-           		 {
-              			npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 10));
-            		}
+            if (npc.type == NPCID.Fritz) //Mechanical Parts Drop from Fritz
+           	{
+              	npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 10));
+            }
 
-           		 if (npc.type == NPCID.Mimic) //Infantary Rifle drop from regular mimics
+           	if (npc.type == NPCID.Mimic) //Infantary Rifle drop from regular mimics
 			{
 				npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfantaryRifle>(), 6));
 			}

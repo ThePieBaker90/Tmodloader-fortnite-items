@@ -54,6 +54,7 @@ namespace FortniteItems.Items
             {
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ModContent.ItemType<ScopedRevolver>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
                 recipe.AddIngredient(TwistingNether.Type, 1);
                 recipe.AddIngredient(ItemID.LunarBar, 10);
                 recipe.AddIngredient(ItemID.SoulofSight, 5);

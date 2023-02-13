@@ -8,12 +8,12 @@ using FortniteItems.Rarities;
 
 namespace FortniteItems.Items
 {
-    public class MechanicalParts : ModItem
+    public class ExoticEssence : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mechanical Parts");
-            Tooltip.SetDefault("Used to craft mechanical weapons");
+            DisplayName.SetDefault("Exotic Essence");
+            Tooltip.SetDefault("Used to craft exotic weapons");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 20;
         }

@@ -51,12 +51,14 @@ namespace FortniteItems.Items
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.BlackFairyDust, 1); ;
             recipe.AddIngredient(ModContent.ItemType<SuppressedPistol>());
+            recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
             recipe.AddTile(TileID.AdamantiteForge);
             recipe.Register();
 
             Recipe recipe2 = CreateRecipe();
             recipe2.AddIngredient(ItemID.SpookyTwig, 1); ;
             recipe2.AddIngredient(ModContent.ItemType<SuppressedPistol>());
+            recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
             recipe2.AddTile(TileID.AdamantiteForge);
             recipe2.Register();
 
