@@ -58,7 +58,7 @@ namespace FortniteItems.Items
                 recipe.AddIngredient(Chaos.Type, 5);
                 recipe.AddIngredient(Sunlight.Type, 5);
                 recipe.AddIngredient(Eleum.Type, 5);
-                recipe.AddIngredient(ModContent.ItemType<MakeshiftPistol>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<SixShooter>(), 1);
                 recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();

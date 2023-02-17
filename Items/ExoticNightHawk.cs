@@ -12,7 +12,7 @@ namespace FortniteItems.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Night Hawk");
+            DisplayName.SetDefault("Exotic Night Hawk");
             Tooltip.SetDefault("Exotic Weapon\nTurns musket balls into chlorophyte bullets\n20% chance to not consume ammo\n\"Mancake's Weapon of Choice\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

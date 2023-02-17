@@ -12,8 +12,8 @@ namespace FortniteItems.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Burst Pulse Rifle");
-            Tooltip.SetDefault("Exotic Weapon\na Magic rifle that fires a 3 projectiles in a burst that explodes upon impact\n\"The last Reality's weapon of choice\"");
+            DisplayName.SetDefault("Exotic Burst Pulse Rifle");
+            Tooltip.SetDefault("Exotic Weapon\na Magic rifle that fires a 3 projectiles in a burst that explodes upon impact\n\"Kymera's weapon of choice\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

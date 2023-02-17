@@ -1,8 +1,1 @@
-﻿Version 2.3.7 Changelog
-Added Six Shooter, Exotic Marksman Six Shooter, Exotic Essence
-Changed Tactical SMG texture slightly
-Tactical SMG sell price 5 silver -> 1 gold
-Hunting Rifle Sprite Shortened by 20%
-Modified Hunting Rifle Sprite Shortened by 25%
-Changed Scoped AR texture moderatley to be more like the old texture but still resemble the fortnite texture
-Changed Recipe of All Exotic Items to require Exotic Essence
+﻿Version 2.3.8 Changelog
