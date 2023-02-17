@@ -31,7 +31,7 @@ namespace FortniteItems.Items
             Item.useAnimation = 13;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 3f;
-            Item.value = Item.sellPrice(gold: 4, silver: 80);
+            Item.value = Item.sellPrice(silver: 80);
             Item.rare = ItemRarityID.Green; //Post EoC/Acid Rain
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SixShooterShoot")
             {

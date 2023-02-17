@@ -24,7 +24,7 @@ namespace FortniteItems.Items
         public override void SetDefaults()
         {
 
-            Item.damage = 50;
+            Item.damage = 60;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -32,7 +32,7 @@ namespace FortniteItems.Items
             Item.useAnimation = 13;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 3f;
-            Item.value = Item.sellPrice(gold: 4, silver: 80);
+            Item.value = Item.sellPrice(gold: 2, silver: 80);
             Item.rare = ModContent.RarityType<Exotic>(); //Essence Crafting
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SixShooterShoot")
             {
