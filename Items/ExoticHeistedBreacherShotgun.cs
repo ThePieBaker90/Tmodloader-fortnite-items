@@ -7,6 +7,8 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Projectiles;
 using Microsoft.Xna.Framework.Graphics;
+using System;
+using FortniteItems.Rarities;
 
 namespace FortniteItems.Items
 {
@@ -23,9 +25,11 @@ namespace FortniteItems.Items
         public override string Texture => $"{nameof(FortniteItems)}/Items/ExoticHeistedBreacherShotgun";
 
         //intended to be an early hardmode "shotgun" (more like a utility rocket launcher)
+        //Although this has a high dps, it destroys tiles making it a difficult "weapon" to use
+        //My intent is for this to be more of a tool.
         public override void SetDefaults()
         {
-
+            
             Item.damage = 103;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
@@ -36,7 +40,7 @@ namespace FortniteItems.Items
             Item.knockBack = 3f;
             Item.value = Item.sellPrice(gold: 5);
             Item.value = Item.buyPrice(gold: 25);
-            Item.rare = ItemRarityID.LightRed; //Early Hardmode Sold by Arms Dealer
+            Item.rare = ModContent.RarityType<Exotic>(); //exotic early hardmode craft
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/HeavyShotgunShoot")
             {
                 Volume = 0.75f,
@@ -45,13 +49,22 @@ namespace FortniteItems.Items
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 50;
+            Item.shootSpeed = 20;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.crit = -4;
             Item.ArmorPenetration = 0;
         }
 
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.Explosives, 4);
+            recipe.AddIngredient(ModContent.ItemType<HeavyShotgun>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.Register();
+        }
 
         public override Vector2? HoldoutOffset()
         {
@@ -75,7 +88,7 @@ namespace FortniteItems.Items
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             Projectile.NewProjectile(source, position, velocity, ProjectileID.RocketIV, damage, knockback, player.whoAmI);
-
+            
             return false;
         }
 

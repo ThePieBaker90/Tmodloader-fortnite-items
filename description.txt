@@ -1,18 +1,17 @@
 This mod adds items from the hit game "Fortnite Battle Royale"
 
-Currently there currently are 83 Items all using sounds from Fortnite.
+Currently there currently are 95 Items (as of 2.4) all using sounds from Fortnite.
 
-From the Chug Jug to the Scar to even the Dragon's Breath Shotgun this mod implements many items from Fortnite.
+From the Chug Jug to the Scar to even the Exotic Heisted Blink Mag SMG, this mod implements many items from Fortnite.
 
 Although not all of the items in Fortnite are currently implemented, all of them are planned to come in the future.
+
+Calamity is not required to play but is highly recommended for balance purposes, additionally certain weapons are only obtainable when calamity is installed.
 
 Wiki: https://github.com/ThePieBaker90/Tmodloader-fortnite-items/wiki
 Github: https://github.com/ThePieBaker90/Tmodloader-fortnite-items
 Progress on upcoming weapons: https://github.com/users/ThePieBaker90/projects/1
 Guide to weapon progression: https://github.com/users/ThePieBaker90/projects/1/views/5
-
-NOTE: weapons are still being balanced, feedback on weapon strength is greatly appreciated!
-ANOTHER NOTE: weapons use custom sounds from the game; if a sound effect is too loud or quiet, please let me know!
 
 After all the weapons and consumables are done, I plan to add vehicles (as mounts) and NPCs.
 
