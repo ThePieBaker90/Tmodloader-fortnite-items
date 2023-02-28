@@ -5,6 +5,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using FortniteItems.Rarities;
 
 namespace FortniteItems.Items
 {
@@ -13,7 +14,7 @@ namespace FortniteItems.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Exotic Heisted Explosive Assault Rifle");
-            Tooltip.SetDefault("20% chance to not consume ammo\nFires an explosive projectile\nRight click to zoom out\n\"Cold Blooded Ace's weapon of choice\"");
+            Tooltip.SetDefault("25% chance to not consume ammo\nFires an explosive projectile\nRight click to zoom out\n\"Cold Blooded Ace's weapon of choice\"");
             //Front towards enemy
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -29,7 +30,7 @@ namespace FortniteItems.Items
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.2f;
             Item.value = Item.sellPrice(gold: 7, silver: 20);
-            Item.rare = ItemRarityID.Pink; //Post Cryo
+            Item.rare = ModContent.RarityType<Exotic>(); //post plant
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ScopedARShoot")
             {
                 Volume = 0.8f,
@@ -47,13 +48,13 @@ namespace FortniteItems.Items
         {
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            if (calamityMod != null && calamityMod.TryFind("CryonicBar", out ModItem Cryonic))
+            if (calamityMod != null && calamityMod.TryFind("PerennialBar", out ModItem Perennial))
             {
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(Cryonic.Type, 6);
-                recipe.AddIngredient(ModContent.ItemType<Scar>(), 1);
-                recipe.AddIngredient(ItemID.IllegalGunParts, 1);
-                recipe.AddTile(TileID.Anvils);
+                recipe.AddIngredient(Perennial.Type, 6);
+                recipe.AddIngredient(ModContent.ItemType<RedEyeAR>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+                recipe.AddTile(TileID.MythrilAnvil);
                 recipe.Register();
             }//Adds exotic recipe if calamity is installed
             else
@@ -88,7 +89,7 @@ namespace FortniteItems.Items
 
         public override bool CanConsumeAmmo(Item ammo, Player player)
         {
-            return Main.rand.NextFloat() >= 0.20f;
+            return Main.rand.NextFloat() >= 0.25f;
         }
         public override void HoldItem(Player player)
         {

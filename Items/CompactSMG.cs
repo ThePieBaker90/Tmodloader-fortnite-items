@@ -7,37 +7,38 @@ using Terraria.Audio;
 
 namespace FortniteItems.Items
 {
-    public class RedEyeAR : ModItem
+    public class CompactSMG : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Red-Eye Assault Rifle");
-            Tooltip.SetDefault("20% chance to not consume ammo\nRight click to zoom out\n\"Directions: Place red dot on enemy, shoot gun.\"");
-            //Front towards enemy
+            DisplayName.SetDefault("Compact Submachine Gun");
+            Tooltip.SetDefault("70% chance to not use ammo\nTurns musket balls into high velocity bullets\n\"The gun with many names\"");
+
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //
+        //EoW SMG
         public override void SetDefaults()
         {
-            Item.damage = 73;
+
+            Item.damage = 121;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 17;
-            Item.useAnimation = 17;
+            Item.useTime = 3;
+            Item.useAnimation = 3;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 0.2f;
-            Item.value = Item.sellPrice(gold: 7, silver: 20);
-            Item.rare = ItemRarityID.Pink; //Post Cryo
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ScopedARShoot")
+            Item.knockBack = 0.1f;
+            Item.value = Item.sellPrice(silver: 75);
+            Item.rare = ItemRarityID.Blue; //EoW BoC
+            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/CompactSMGShoot")
             {
-                Volume = 0.8f,
+                Volume = 0.7f,
                 PitchVariance = 0.2f,
                 MaxInstances = 3,
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 18;
+            Item.shootSpeed = 5;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
         }
@@ -46,21 +47,20 @@ namespace FortniteItems.Items
         {
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            if (calamityMod != null && calamityMod.TryFind("CryonicBar", out ModItem Cryonic))
+            if (calamityMod != null && calamityMod.TryFind<ModItem>("DepthCells", out ModItem Cells) && calamityMod.TryFind("ReaperTooth", out ModItem Tooth))
             {
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(Cryonic.Type, 6);
-                recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<MakeshiftSMG>(), 1);
                 recipe.AddIngredient(ItemID.IllegalGunParts, 1);
-                recipe.AddTile(TileID.Anvils);
+                recipe.AddIngredient(Cells.Type, 15);
+                recipe.AddIngredient(Tooth.Type, 5);
+                recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.Register();
-            }//Adds exotic recipe if calamity is installed
+            }//Adds recipe if calamity mod is installed
             else
             {
                 //NOTHING! this item is calamity exclusive!
             }
-
-
         }
 
         public override Vector2? HoldoutOffset()
@@ -76,15 +76,17 @@ namespace FortniteItems.Items
                 position += muzzleOffset;
             }
 
-        }
+            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(6));
 
+            if (type == ProjectileID.Bullet)
+            {
+                type = ProjectileID.BulletHighVelocity;
+            }
+
+        }
         public override bool CanConsumeAmmo(Item ammo, Player player)
         {
-            return Main.rand.NextFloat() >= 0.20f;
-        }
-        public override void HoldItem(Player player)
-        {
-            player.scope = true;
+            return Main.rand.NextFloat() >= 0.7f;
         }
 
     }
