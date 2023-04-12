@@ -28,7 +28,7 @@ namespace FortniteItems.Items
             Item.useAnimation = 3;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
-            Item.value = Item.sellPrice(silver: 75);
+            Item.value = Item.sellPrice(Gold: 26);
             if (calamityMod != null && calamityMod.TryFind("PureGreen", out ModRarity PureGreen))
             {
                 Item.rare = PureGreen.Type; //Post Polter
