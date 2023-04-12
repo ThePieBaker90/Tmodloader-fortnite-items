@@ -12,7 +12,7 @@ namespace FortniteItems.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Exotic Heisted Run 'N' Gun SMG");
+            DisplayName.SetDefault("Exotic Heisted Run 'N' Gun Submachine Gun");
             Tooltip.SetDefault("70% chance to not use ammo\nTurns musket balls into high velocity bullets\nGrants the holder the \"Slapped Up\" buff\n\"Hotwire's weapon of choice\"");
             //since no NPC sells this item or is associated with this item, I just chose to put a favorite skin of mine as the weapon holder.
 
