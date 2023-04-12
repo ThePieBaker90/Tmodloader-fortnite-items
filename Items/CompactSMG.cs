@@ -29,7 +29,14 @@ namespace FortniteItems.Items
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
             Item.value = Item.sellPrice(silver: 75);
-            Item.rare = ItemRarityID.Blue; //EoW BoC
+            if (calamityMod != null && calamityMod.TryFind("PureGreen", out ModRarity PureGreen))
+            {
+                Item.rare = PureGreen.Type; //Post Polter
+            }
+            else
+            {
+                Item.rare = -11; //Amber Rarity as this weapon is unobtainable without calamity
+            }
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/CompactSMGShoot")
             {
                 Volume = 0.7f,
