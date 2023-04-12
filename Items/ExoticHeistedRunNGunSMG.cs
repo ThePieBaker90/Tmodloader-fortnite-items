@@ -30,7 +30,7 @@ namespace FortniteItems.Items
             Item.useAnimation = 2;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
-            Item.value = Item.sellPrice(silver: 75);
+            Item.value = Item.sellPrice(gold: 30);
             Item.rare = ModContent.RarityType<Exotic>(); //Exotic
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/CompactSMGShoot")
             {
