@@ -65,7 +65,7 @@ namespace FortniteItems.Items
             Item.maxStack = 30;
             Item.consumable = true;
             Item.rare = ItemRarityID.Green; //Post 
-            Item.value = Item.buyPrice(silver: 50);
+            Item.value = Item.sellPrice(silver: 50);
 
             Item.buffType = ModContent.BuffType<Buffs.SlappedUp>(); // Applies "Slapped Up"
             Item.buffTime = 36000; // Lasts 10 Minutes
