@@ -33,7 +33,7 @@ namespace FortniteItems.Items
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ItemID.BottledWater, 1);
                 recipe.AddIngredient(BloodOrb.Type, 10);
-                recipe.AddTile(TileID.Bottles);
+                recipe.AddTile(TileID.AlchemyTable);
                 recipe.Register();
             }//Adds bloodorb recipe if calamity mod is installed
 
