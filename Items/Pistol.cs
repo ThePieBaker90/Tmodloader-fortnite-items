@@ -12,7 +12,7 @@ namespace FortniteItems.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Pistol");
-			Tooltip.SetDefault("25% chance to not use ammo\"Infests every part of the island\"");
+			Tooltip.SetDefault("25% chance to not use ammo\n\"Infests every part of the island\"");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}

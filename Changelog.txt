@@ -1,9 +1,5 @@
-﻿Version 2.4 Changelog
-Added Exotic Heisted Breacher Shotgun, Twin Mag SMG, Exotic Heisted Blink Mag SMG, Red-Eye Assault Rifle, Exotic Heisted Explosive Assault Rifle, Maven Auto Shotgun, Exotic Heisted Accelerant Shotgun, Compact SMG, Exotic Heisted Run 'N' Gun SMG, and Slap Juice
+﻿Version 2.5 Changelog
 
+Fixed an error with the Pistol Tooltip
 
-
-THANK YOU FOR 10K SUBSCRIBERS! 
-I never expected this mod to pass even 100 subscribers, much less 10 thousand! thank you all so much!
-I have a lot still planned for this mod, such as augments as accessories, vehicles as mounts, skins as vanity and armor sets, and improvements to items previously implemented!
-again, thank you all so much!
+Apologies for the haitus, university course work took up too much time and burnout from coding caused this break, hopefully the stream of content will speed up in the future!
