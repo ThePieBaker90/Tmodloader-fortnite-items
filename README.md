@@ -1,4 +1,4 @@
-This is the repository for the Terraria 1.4.3.6 mod "Fortnite Items"
+This is the repository for the Terraria 1.4.4.9 mod "Fortnite Items"
 To see current todo and progress check the projects tab
 
 TODO.txt - This is a redundant txt file, for current progress go the the "Projects" tab, click "Fortnite Items Planned Items",
