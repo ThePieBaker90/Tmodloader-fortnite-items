@@ -6,6 +6,7 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.Projectiles;
 using Terraria.DataStructures;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -71,7 +72,10 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds bloodorb recipe if calamity mod is installed
             else
             {
-                //NOTHING! this item is calamity exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+                recipe.AddTile(TileID.Anvils);
+                recipe.Register();
             }
         }
 

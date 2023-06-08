@@ -78,7 +78,12 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds exotic recipe if calamity is installed
             else
             {
-                //NOTHING! this item is calamity exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.ShroomiteBar, 12);
+                recipe.AddIngredient(ModContent.ItemType<TwinMagSMG>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+                recipe.AddTile(TileID.Anvils);
+                recipe.Register();
             }
 
 

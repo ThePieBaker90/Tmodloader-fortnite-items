@@ -64,7 +64,10 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds recipe if calamity mod is installed
             else
             {
-                //NOTHING! this item is calamity exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.LunarBar, 12);
+                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.Register();
             }
         }
 

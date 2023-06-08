@@ -71,7 +71,12 @@ namespace FortniteItems.Content.Items.Weapons
             }//adds calamity recipe
             else
             {
-                //NOTHING! this recipe is calamity exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 10);
+                recipe.AddIngredient(ModContent.ItemType<DualPistols>(), 1);
+                recipe.AddIngredient(ItemID.LunarBar, 12);
+                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.Register();
             }
 
         }

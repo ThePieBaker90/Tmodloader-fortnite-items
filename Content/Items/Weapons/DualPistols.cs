@@ -69,7 +69,10 @@ namespace FortniteItems.Content.Items.Weapons
             }//adds calamity recipe
             else
             {
-                //NOTHING! this recipe is calamity exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.ShroomiteBar, 12);
+                recipe.AddTile(TileID.Autohammer);
+                recipe.Register();
             }
 
         }

@@ -67,7 +67,11 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds calamity recipe if calamity is... installed
             else
             {
-                //RECIPE NOT YET ADDED
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+                recipe.AddTile(TileID.Anvils);
+                recipe.Register();
             }
         }
 

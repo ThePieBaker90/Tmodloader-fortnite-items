@@ -65,7 +65,10 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds bloodorb recipe if calamity mod is installed
             else
             {
-                ///NOTHING, this weapon is Calamity Exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.LunarBar, 12);
+                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.Register();
             }
         }
 

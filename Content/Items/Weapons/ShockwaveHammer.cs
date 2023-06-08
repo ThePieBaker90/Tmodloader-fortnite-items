@@ -62,7 +62,10 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds Recipe
             else
             {
-                ///NOTHING, this weapon is Calamity Exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.LunarBar, 12);
+                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.Register();
             }
         }
 
