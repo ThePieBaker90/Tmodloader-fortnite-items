@@ -1,5 +1,7 @@
 ﻿Version 2.5 Changelog
 
+Added Dual Barrel Pistol, Exotic Hoprock Dual Barrel Pistols, Hop Rock, Hop Rock Chunk, Sidearm Pistol,
+
 Fixed an error with the Pistol Tooltip
 
 Apologies for the haitus, university course work took up too much time and burnout from coding caused this break, hopefully the stream of content will speed up in the future!

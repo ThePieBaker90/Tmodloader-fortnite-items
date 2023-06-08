@@ -6,17 +6,19 @@ Rocket Launcher
 
 
 Sprite Done-
-Hunting Rifle
+
 Charge Shotgun
 Pistol
 Bolt Action Sniper Rifle
 Scoped Assault Rifle
 
 Code Done-
-Burst Assault Rifle
-Revolver
+
 
 Implemented-
+Hunting Rifle
+Burst Assault Rifle
+Revolver
 Pump Shotgun
 Assault Rifle
 Heavy Assault Rifle

@@ -1,0 +1,973 @@
+Mods: {
+	FortniteItems: {
+		Buffs: {
+			MatterDerealization: {
+				DisplayName: Matter Derealized
+				Description: Your matter is spread across countless realities! Zero Point Blinking is Disabled
+			}
+
+			OtherworldlyGravity: {
+				DisplayName: Otherworldly Gravity
+				Description: Gravity is greatly reduced!
+			}
+
+			Shield025: {
+				DisplayName: 25% Shield
+				Description: Grants 10 defense.
+			}
+
+			Shield050: {
+				DisplayName: 50% Shield
+				Description: Grants 20 defense.
+			}
+
+			Shield075: {
+				DisplayName: 75% Shield
+				Description: Grants 30 defense.
+			}
+
+			Shield100: {
+				DisplayName: 100% Shield
+				Description: Grants 40 defense.
+			}
+
+			SlappedUp: {
+				DisplayName: Slapped Up
+				Description: 75% increased movement speed
+			}
+		}
+
+		Items: {
+			BoltActionSniper: {
+				DisplayName: Bolt Action Sniper Rifle
+				Tooltip:
+					'''
+					Turns musket balls into high velocity bullets
+					"Hit 'em where they can't reach you"
+					'''
+			}
+
+			BurstAR: {
+				DisplayName: Burst Assault Rifle
+				Tooltip:
+					'''
+					Shoots in bursts of 3, Musket balls are turned into meteor shot
+					"Gotta get that W, 3 shots at a time"
+					'''
+			}
+
+			BurstSMG: {
+				DisplayName: Burst Submachine Gun
+				Tooltip:
+					'''
+					75% chance to not consume ammo
+					Shoots in bursts of 4
+					"The Future is Yours"
+					'''
+			}
+
+			ChargeShotgun: {
+				DisplayName: Charge Shotgun
+				Tooltip:
+					'''
+					a Shotgun which charges up shots with the use button
+					Can load a maximum of 7 shots before bullets start misfiring
+					"Get ready for the pain train!"
+					'''
+			}
+
+			ChargeSMG: {
+				DisplayName: Charge SMG
+				Tooltip:
+					'''
+					90% chance not to consume ammo
+					Shoots in bursts of 32 but has a long reuse time
+					"The new spray and pray"
+					'''
+			}
+
+			ChugJug: {
+				DisplayName: Chug Jug
+				Tooltip:
+					'''
+					Heals the User 400 Health
+					Grants "100% Shield" buff
+					Has a 15 second drink time but applies no potion sickness
+					"I really love to Chug Jug with you"
+					'''
+			}
+
+			CombatAR: {
+				DisplayName: Combat Assault Rifle
+				Tooltip:
+					'''
+					60% chance to not consume ammo
+					Turns musket balls into high velocity bullets
+					"Speed over power!"
+					'''
+			}
+
+			CombatPistol: {
+				DisplayName: Combat Pistol
+				Tooltip:
+					'''
+					Has a chance to fire 2 bullets
+					30% chance to not use ammo
+					"Hits Harder, Better, Faster, Stronger"
+					'''
+			}
+
+			CombatShotgun: {
+				DisplayName: Combat Shotgun
+				Tooltip:
+					'''
+					A longer range shotgun that penetrates armor
+					"Looks like someone needs a better gaming chair"
+					'''
+			}
+
+			CompactSMG: {
+				DisplayName: Compact Submachine Gun
+				Tooltip:
+					'''
+					70% chance to not use ammo
+					Turns musket balls into high velocity bullets
+					"The gun with many names"
+					'''
+			}
+
+			CopperBullet: {
+				DisplayName: Copper Bullet
+				Tooltip: a crude bullet made out of a soft metal
+			}
+
+			DragonsBreathShotgun: {
+				DisplayName: Dragon's Breath Shotgun
+				Tooltip:
+					'''
+					Shoots fire instead of musket balls
+					"Fight fire with fire"
+					'''
+			}
+
+			DrumGun: {
+				DisplayName: Drum Gun
+				Tooltip:
+					'''
+					25% chance to not consume ammo
+					Turns musket balls into meteor shot
+					"It's back for round Two!"
+					'''
+			}
+
+			DualPistols: {
+				DisplayName: Dual Barrel Pistol
+				Tooltip:
+					'''
+					33% chance to not use ammo
+					"It's a shame you can't just hold two pistols at once"
+					'''
+			}
+
+			EvoChromeAR1: {
+				DisplayName: EvoChrome Assault Rifle MKI
+				Tooltip:
+					'''
+					An assault rifle that is upgraded throughout the lunar events!
+					Each upgrade increases damage and adds 1 additional bullet
+					"Chrome Runs Rampant"
+					'''
+			}
+
+			EvoChromeAR2: {
+				DisplayName: EvoChrome Assault Rifle MKII
+				Tooltip:
+					'''
+					An assault rifle that is upgraded throughout the lunar events!
+					Shoots in a 3 bullet burst
+					"Chrome Runs Rampant"
+					'''
+			}
+
+			EvoChromeAR3: {
+				DisplayName: EvoChrome Assault Rifle MKIII
+				Tooltip:
+					'''
+					An assault rifle that is upgraded throughout the lunar events!
+					Shoots in a 4 bullet burst
+					"Chrome Runs Rampant"
+					'''
+			}
+
+			EvoChromeAR4: {
+				DisplayName: EvoChrome Assault Rifle MKIV
+				Tooltip:
+					'''
+					An assault rifle that is upgraded throughout the lunar events!
+					Shoots in a 5 bullet burst
+					"Chrome Runs Rampant"
+					'''
+			}
+
+			EvoChromeAR5: {
+				DisplayName: EvoChrome Assault Rifle MKV
+				Tooltip:
+					'''
+					Shoots in a 6 bullet burst
+					"Chrome Runs Rampant"
+					'''
+			}
+
+			EvoChromeShotgun1: {
+				DisplayName: EvoChrome Shotgun MKI
+				Tooltip:
+					'''
+					A shotgun that is upgraded throughout the lunar events!
+					Each upgrade increases damage and adds 1 additional bullet
+					"Chrome will consume all"
+					'''
+			}
+
+			EvoChromeShotgun2: {
+				DisplayName: EvoChrome Shotgun MKII
+				Tooltip:
+					'''
+					A shotgun that is upgraded throughout the lunar events!
+					Fires 5 Bullets
+					"Chrome will consume all"
+					'''
+			}
+
+			EvoChromeShotgun3: {
+				DisplayName: EvoChrome Shotgun MKIII
+				Tooltip:
+					'''
+					A shotgun that is upgraded throughout the lunar events!
+					Fires 6 Bullets
+					"Chrome will consume all"
+					'''
+			}
+
+			EvoChromeShotgun4: {
+				DisplayName: EvoChrome Shotgun MKIV
+				Tooltip:
+					'''
+					A shotgun that is upgraded throughout the lunar events!
+					Fires 7 Bullets
+					"Chrome will consume all"
+					'''
+			}
+
+			EvoChromeShotgun5: {
+				DisplayName: EvoChrome Shotgun MKV
+				Tooltip:
+					'''
+					Fires 8 Bullets
+					"Chrome will consume all"
+					'''
+			}
+
+			ExoticBurstPulseRifle: {
+				DisplayName: Exotic Burst Pulse Rifle
+				Tooltip:
+					'''
+					Exotic Weapon
+					a Magic rifle that fires a 3 projectiles in a burst that explodes upon impact
+					"Kymera's weapon of choice"
+					'''
+			}
+
+			ExoticEssence: {
+				DisplayName: Exotic Essence
+				Tooltip: Used to craft exotic weapons
+			}
+
+			ExoticHeistedAccelerantShotgun: {
+				DisplayName: Exotic Heisted Accelerant Shotgun
+				Tooltip:
+					'''
+					The more enemies that are nearby, the faster the gun shoots
+					"Goldie's Weapon of Choice"
+					'''
+			}
+
+			ExoticHeistedBlinkMagSMG: {
+				DisplayName: Exotic Heisted Blink Mag SMG
+				Tooltip: How are you seeing this? Are you magic? Or Did You Accidentally Uninstall Calamity?
+			}
+
+			ExoticHeistedBreacherShotgun: {
+				DisplayName: Exotic Heisted Breacher Shotgun
+				Tooltip:
+					'''
+					A single slug "Shotgun" that fires a projectile which destroys tiles
+					"Chaos Double Agent's weapon of choice"
+					'''
+			}
+
+			ExoticHeistedExplosiveAR: {
+				DisplayName: Exotic Heisted Explosive Assault Rifle
+				Tooltip:
+					'''
+					25% chance to not consume ammo
+					Fires an explosive projectile
+					Right click to zoom out
+					"Cold Blooded Ace's weapon of choice"
+					'''
+			}
+
+			ExoticHeistedRunNGunSMG: {
+				DisplayName: Exotic Heisted Run 'N' Gun Submachine Gun
+				Tooltip:
+					'''
+					70% chance to not use ammo
+					Turns musket balls into high velocity bullets
+					Grants the holder the "Slapped Up" buff
+					"Hotwire's weapon of choice"
+					'''
+			}
+
+			ExoticHoprockDualies: {
+				DisplayName: Exotic Hoprock Dual Barrel Pistols
+				Tooltip:
+					'''
+					33% chance to not use ammo
+					Gives the user the "Otherworldly Gravity" buff
+					"To space!!"
+					'''
+			}
+
+			ExoticMarksmanSixShooter: {
+				DisplayName: Exotic Marksman Six Shooter
+				Tooltip:
+					'''
+					Shoots six shots before needing to reload
+					Incapable of critical shots, however has a 5% chance to fire a shot for 5x damage
+					"Deadfire's Weapon of Choice"
+					'''
+			}
+
+			ExoticNightHawk: {
+				DisplayName: Exotic Night Hawk
+				Tooltip:
+					'''
+					Exotic Weapon
+					Turns musket balls into chlorophyte bullets
+					20% chance to not consume ammo
+					"Mancake's Weapon of Choice"
+					'''
+			}
+
+			ExoticShadowTracker: {
+				DisplayName: Exotic Shadow Tracker
+				Tooltip:
+					'''
+					Exotic Weapon
+					35% chance to not use ammo
+					Shoots ichor bullets instead of musket balls
+					"Reese's weapon of choice"
+					'''
+			}
+
+			FireworkFlaregun: {
+				DisplayName: Firework Flare Gun
+				Tooltip: '''"Take them out with style"'''
+			}
+
+			FlameArrow: {
+				DisplayName: Primal Flame Arrow
+				Tooltip: A glass headed arrow filled with alchohol which ignites upon impact
+			}
+
+			Flaregun: {
+				DisplayName: Flare Gun
+				Tooltip: '''"Unconventional, but who cares"'''
+			}
+
+			HammerAR: {
+				DisplayName: Hammer Assault Rifle
+				Tooltip:
+					'''
+					20% chance to not consume ammo
+					Turns musket balls into explosive bullets
+					"Drop the Hammer"
+					'''
+			}
+
+			HeavyAR: {
+				DisplayName: Heavy Assault Rifle
+				Tooltip:
+					'''
+					Fires high velocity bullets instead of musket balls
+					a slow assault rifle that deals lots of damage
+					"Hit em Hard!"
+					'''
+			}
+
+			HeavyShotgun: {
+				DisplayName: Heavy Shotgun
+				Tooltip:
+					'''
+					A single slug shotgun with a high crit rate
+					"Is it really a shotgun at this point?"
+					'''
+			}
+
+			HeavySniper: {
+				DisplayName: Heavy Sniper Rifle
+				Tooltip:
+					'''
+					Cannot fire chlorophyte bullets
+					Turns musket balls into high velocity bullets
+					Fires a high damage bullet at the cost of firing speed
+					"Boom, Headshot"
+					'''
+			}
+
+			HopRock: {
+				DisplayName: Hop Rock
+				Tooltip:
+					'''
+					Grants "Otherworld Gravity" buff
+					"Crystaline floatiness from another reality"
+					'''
+			}
+
+			HuntingRifle: {
+				DisplayName: Hunting Rifle
+				Tooltip:
+					'''
+					Turns musket balls into high velocity bullets
+					"For... Hunting..."
+					'''
+			}
+
+			InfantaryRifle: {
+				DisplayName: Infantry Rifle
+				Tooltip:
+					'''
+					a longer range rifle
+					Fires a high velocity bullet instead of musket balls
+					"When a sniper rifle and an assault rifle meet..."
+					'''
+			}
+
+			LMG: {
+				DisplayName: Light Machine Gun
+				Tooltip:
+					'''
+					70% chance not to consume ammo
+					"Hit em hard and fast... or miss em hard and fast"
+					'''
+			}
+
+			LockOnPistol: {
+				DisplayName: Lock On Pistol
+				Tooltip:
+					'''
+					25% chance to not use ammo
+					Bullets lock on to the nearest enemy
+					"MEGA City's most manufactured firearm 30 years in a row!"
+					'''
+			}
+
+			MakeshiftAR: {
+				DisplayName: Makeshift Assault Rifle
+				Tooltip:
+					'''
+					10% chance to not consume ammo
+					"Atleast you can craft with it"
+					'''
+			}
+
+			MakeshiftBow: {
+				DisplayName: Makeshift Bow
+				Tooltip:
+					'''
+					Shoots arrows at a high velocity
+					"a precursor to the sniper rifle"
+					'''
+			}
+
+			MakeshiftPistol: {
+				DisplayName: Makeshift Pistol
+				Tooltip: '''"It shoots"'''
+			}
+
+			MakeshiftShotgun: {
+				DisplayName: Makeshift Shotgun
+				Tooltip: '''"Better than nothin'"'''
+			}
+
+			MakeshiftSMG: {
+				DisplayName: Makeshift Submachine Gun
+				Tooltip:
+					'''
+					20% chance to not consume ammo
+					"Can kill with enough time"
+					'''
+			}
+
+			MavenAutoShotgun: {
+				DisplayName: Maven Auto Shotgun
+				Tooltip:
+					'''
+					Fast firing shotgun that excels at sustained close range damage
+					"Daughter of the Tactical Shotgun"
+					'''
+			}
+
+			MechanicalBow: {
+				DisplayName: Mechanical Bow
+				Tooltip:
+					'''
+					Shoots arrows at a high velocity
+					"How Mechanical!"
+					'''
+			}
+
+			MechanicalParts: {
+				DisplayName: Mechanical Parts
+				Tooltip: Used to craft mechanical weapons
+			}
+
+			Minigun: {
+				DisplayName: Minigun
+				Tooltip:
+					'''
+					70% chance not to consume ammo
+					Has a large spread and fast fire rate
+					"Miss? you'll hit eventually!"
+					'''
+			}
+
+			MK7AR: {
+				DisplayName: MK-Seven Assault Rifle
+				Tooltip:
+					'''
+					70% chance to not consume ammo
+					Turns musket balls into twilight lances
+					"One of the seven"
+					'''
+			}
+
+			ModifiedAR: {
+				DisplayName: Modified Assault Rifle
+				Tooltip:
+					'''
+					20% chance to not consume ammo
+					Has a chance to fire a crystal bullet
+					"Give them the L"
+					'''
+			}
+
+			ModifiedBurstAR: {
+				DisplayName: Modified Burst Assault Rifle
+				Tooltip:
+					'''
+					Shoots in random bursts
+					"Gotta give them that L, with 1 to 7 shots at a time"
+					'''
+			}
+
+			ModifiedHeavyAR: {
+				DisplayName: Modified Heavy Assault Rifle
+				Tooltip:
+					'''
+					50% chance not to consume ammo
+					an extremely fast firing assault rifle that suffers from high spread
+					"Hit em Faster than they can blink!"
+					'''
+			}
+
+			ModifiedHuntingRifle: {
+				DisplayName: Modified Hunting Rifle
+				Tooltip:
+					'''
+					Has a chance to fire a star
+					"For... the funny..."
+					'''
+			}
+
+			ModifiedPumpShotgun: {
+				DisplayName: Modified Pump Shotgun
+				Tooltip:
+					'''
+					Slow firing shotgun that fires lots of bullets with low velocity but high damage and knockback
+					"I'm cracked! I'm cracked!"
+					'''
+			}
+
+			ModifiedRevolver: {
+				DisplayName: Modified Revolver
+				Tooltip:
+					'''
+					Fires a weak spread of venom bullets along with its powerful shot
+					"A staple of revolver gods"
+					'''
+			}
+
+			NutsnBolts: {
+				DisplayName: Nuts 'n' Bolts
+				Tooltip:
+					'''
+					Can be crafted with of certain weapons to modify the texture and/or stats
+					Modified weapons can be reverted to its original state with these
+					'''
+			}
+
+			Pistol: {
+				DisplayName: Pistol
+				Tooltip:
+					'''
+					25% chance to not use ammo
+					"Infests every part of the island"
+					'''
+			}
+
+			PrimalAR: {
+				DisplayName: Primal Assault Rifle
+				Tooltip:
+					'''
+					25% chance to not consume ammo
+					Turns chlorophyte bullets into primal bullets that deal extra damage and fire faster
+					"There is a primal force that binds us all"
+					'''
+			}
+
+			PrimalBow: {
+				DisplayName: Primal Bow
+				Tooltip:
+					'''
+					Shoots arrows at a high velocity
+					"How Primal!"
+					'''
+			}
+
+			PrimalFlameBow: {
+				DisplayName: Primal Flame Bow
+				Tooltip:
+					'''
+					Shoots arrows at a high velocity
+					Changes Wooden Arrows into Primal Flame Arrows
+					"Like a long range firefly jar!"
+					'''
+			}
+
+			PrimalShotgun: {
+				DisplayName: Primal Shotgun
+				Tooltip:
+					'''
+					A two burst shotgun with a wide spread but fast speed and high damage
+					Chlorophyte bullets make the shot gun deal extra damage and fire faster, but they get turned into primal bullets
+					"The island has grown wild, and so must you"
+					'''
+			}
+
+			PrimalStinkBow: {
+				DisplayName: Primal Stink Bow
+				Tooltip:
+					'''
+					Shoots arrows at a high velocity
+					Changes Wooden Arrows into Primal Stink Arrows
+					"Like a long range stink grenade!"
+					'''
+			}
+
+			PulseRifle: {
+				DisplayName: Pulse Rifle
+				Tooltip:
+					'''
+					a Magic rifle that fires a projectile that explodes upon impact
+					"Dr Slone's weapon of choice"
+					'''
+			}
+
+			PumpShotgun: {
+				DisplayName: Pump Shotgun
+				Tooltip:
+					'''
+					Slow firing shotgun that does high damage and knockback
+					"He's cracked! He's cracked!"
+					'''
+			}
+
+			RangerAR: {
+				DisplayName: Ranger Assault Rifle
+				Tooltip:
+					'''
+					30% chance to not consume ammo
+					Turns musket balls into explosive bullets
+					"Hit them hard and hit them fast!"
+					'''
+			}
+
+			RapidFireSMG: {
+				DisplayName: Rapid-Fire Submachine Gun
+				Tooltip:
+					'''
+					75% chance to not consume ammo
+					"Shadow standard issue SMG"
+					'''
+			}
+
+			RedEyeAR: {
+				DisplayName: Red-Eye Assault Rifle
+				Tooltip:
+					'''
+					20% chance to not consume ammo
+					Right click to zoom out
+					"Directions: Place red dot on enemy, shoot gun."
+					'''
+			}
+
+			Revolver: {
+				DisplayName: Revolver
+				Tooltip: '''"A staple of the wild west LTM"'''
+			}
+
+			Scar: {
+				DisplayName: Assault Rifle
+				Tooltip:
+					'''
+					25% chance to not consume ammo
+					"Gotta get that W"
+					'''
+			}
+
+			ScopedAR: {
+				DisplayName: Scoped Assault Rifle
+				Tooltip:
+					'''
+					35% chance to not consume ammo
+					Turns musket balls into high velocity bullets
+					"Gotta get that W, from a range"
+					'''
+			}
+
+			ScopedRevolver: {
+				DisplayName: Scoped Revolver
+				Tooltip:
+					'''
+					10% chance to not consume ammo
+					"Slap a scope on it!"
+					'''
+			}
+
+			ShieldPotion: {
+				DisplayName: Shield Potion
+				Tooltip:
+					'''
+					Grants "50% Shield" buff
+					"Big Pot Here!"
+					'''
+			}
+
+			ShockwaveHammer: {
+				DisplayName: Shockwave Hammer
+				Tooltip:
+					'''
+					Has a high knockback and damage but does not fire a projectile
+					"Personal Defense of the Ageless Champion"
+					'''
+			}
+
+			SidearmPistol: {
+				DisplayName: Sidearm Pistol
+				Tooltip:
+					'''
+					40% chance to not use ammo
+					Gains a stat buff when the user is below 30% health
+					"New and improved from chapter 3!"
+					'''
+			}
+
+			SidewaysMinigun: {
+				DisplayName: Sideways Minigun
+				Tooltip:
+					'''
+					Does not use ammo, has a large spread, and shoots a bouncing laser
+					"Miss? try again!... and again!... and again!"
+					'''
+			}
+
+			SidewaysRifle: {
+				DisplayName: Sideways Rifle
+				Tooltip:
+					'''
+					Does not use ammo and shoots a bouncing laser
+					"Forged from Cube Monster Parts"
+					'''
+			}
+
+			SilencedScar: {
+				DisplayName: Suppressed Assault Rifle
+				Tooltip:
+					'''
+					30% chance to not consume ammo
+					"Gotta get that W, quietly..."
+					'''
+			}
+
+			SixShooter: {
+				DisplayName: Six Shooter
+				Tooltip:
+					'''
+					Shoots six shots before needing to reload
+					Incapable of critical shots
+					"This town ain't big enough..."
+					'''
+			}
+
+			SlapJuice: {
+				DisplayName: Slap Juice
+				Tooltip:
+					'''
+					Grants "Slapped Up!" buff
+					"Get Slapped Up with Slap Juice!"
+					'''
+			}
+
+			SlurpJuice: {
+				DisplayName: Slurp Juice
+				Tooltip:
+					'''
+					Grants "75% Shield" buff and "Regeneration" Buff
+					"The Original Slurp! Product"
+					'''
+			}
+
+			SmallShieldPotion: {
+				DisplayName: Small Shield Potion
+				Tooltip:
+					'''
+					Grants "25% Shield" buff
+					"Minis Here!"
+					'''
+			}
+
+			SMG: {
+				DisplayName: Submachine Gun
+				Tooltip:
+					'''
+					25% chance to not use ammo
+					"The old Spray 'n Pray"
+					'''
+			}
+
+			StinkArrow: {
+				DisplayName: Primal Stink Arrow
+				Tooltip: An Arrow that explodes into a cloud of stink gas upon impact
+			}
+
+			StrikerBurstAR: {
+				DisplayName: Striker Burst Assault Rifle
+				Tooltip:
+					'''
+					Shoots in bursts of 3, Musket balls are turned into nanite bullets
+					"Bounce back at em!"
+					'''
+			}
+
+			SuppressedPistol: {
+				DisplayName: Suppressed Pistol
+				Tooltip:
+					'''
+					35% chance to not use ammo
+					Shoots high velocity bullets instead of musket balls
+					"A staple of the Fog of War LTM"
+					'''
+			}
+
+			SuppressedSMG: {
+				DisplayName: Suppressed Submachine Gun
+				Tooltip:
+					'''
+					50% chance to not use ammo
+					"Sounds like a whisper"
+					'''
+			}
+
+			SuppressedSniper: {
+				DisplayName: Suppressed Sniper Rifle
+				Tooltip:
+					'''
+					Turns musket balls into high velocity bullets
+					"Strike from the shadows"
+					'''
+			}
+
+			TacticalAR: {
+				DisplayName: Tactical Assault Rifle
+				Tooltip:
+					'''
+					45% chance to not consume ammo
+					"Standard issue I.O. guard rifle"
+					'''
+			}
+
+			TacticalSMG: {
+				DisplayName: Tactical Submachine Gun
+				Tooltip:
+					'''
+					20% chance to not consume ammo
+					"Looks a bit... different"
+					'''
+			}
+
+			ThermalScopedAR: {
+				DisplayName: Thermal Scoped Assault Rifle
+				Tooltip:
+					'''
+					40% chance to not consume ammo
+					Turns musket balls into chlorophyte bullets
+					"Gotta get that W, in thermal vision"
+					'''
+			}
+
+			TwinMagSMG: {
+				DisplayName: Twin Mag SMG
+				Tooltip: How are you seeing this? Are you magic? Or Did You Accidentally Uninstall Calamity?
+			}
+
+			VGrenade: {
+				DisplayName: Vindertech Grenade
+				Tooltip:
+					'''
+					Explodes after a set amount of time instead of upon impact
+					"Throw 'em and hope"
+					'''
+			}
+
+			VTacticalShotgun: {
+				DisplayName: Vindertech Tactical Shotgun
+				Tooltip:
+					'''
+					Fast firing shotgun that excels at sustained close range damage
+					"With you since the first loop"
+					'''
+			}
+
+			HopRockOreItem: {
+				DisplayName: Hop Rock Chunk
+				Tooltip: A Chunk of Hop Rocks
+			}
+
+			ExampleHelmet: {
+				DisplayName: Test Helmet
+				Tooltip: If you see this yell at me in the comments on steam
+			}
+		}
+
+		Projectiles: {
+			ChargeShotgunProjectile.DisplayName: Charge Shotgun Projectile
+			FlameArrow.DisplayName: Flame Arrow
+			LockOnBullet.DisplayName: Lock On Bullet
+			PrimalBullet.DisplayName: Primal Bullet
+			StinkArrow.DisplayName: Stink Arrow
+			VGrenade.DisplayName: Vindertech Grenade
+		}
+
+		Tiles.HopRockOreTile.MapEntry: Hop Rock Chunk
+	}
+}

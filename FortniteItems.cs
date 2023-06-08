@@ -16,7 +16,7 @@ using Terraria.DataStructures;
 using System.Collections.Generic;
 using ReLogic.Content;
 using Terraria.ModLoader.IO;
-using FortniteItems.Items;
+using FortniteItems.Content;
 
 namespace FortniteItems
 {
@@ -27,7 +27,13 @@ namespace FortniteItems
 			RecipeGroup MagicMirror = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.MagicMirror)}", ItemID.IceMirror, ItemID.MagicMirror);
 			RecipeGroup.RegisterGroup(nameof(ItemID.MagicMirror), MagicMirror);
 
-			RecipeGroup Tier3Metals = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.AdamantiteBar)}", ItemID.AdamantiteBar, ItemID.TitaniumBar);
+            RecipeGroup Tier1Metals = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.CobaltBar)}", ItemID.CobaltBar, ItemID.PalladiumBar);
+            RecipeGroup.RegisterGroup(nameof(ItemID.CobaltBar), Tier1Metals);
+
+            RecipeGroup Tier2Metals = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.MythrilBar)}", ItemID.MythrilBar, ItemID.OrichalcumBar);
+            RecipeGroup.RegisterGroup(nameof(ItemID.MythrilBar), Tier2Metals);
+
+            RecipeGroup Tier3Metals = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.AdamantiteBar)}", ItemID.AdamantiteBar, ItemID.TitaniumBar);
 			RecipeGroup.RegisterGroup(nameof(ItemID.AdamantiteBar), Tier3Metals);
 
 			RecipeGroup IronAndLead = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.IronBar)}", ItemID.IronBar, ItemID.LeadBar);
