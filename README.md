@@ -32,4 +32,5 @@ Build.txt - Name and version of the mod for tmod loader
 LICENSE.txt - the "GNU AFFERO GENERAL PUBLIC LICENSE" attatched to the mod
 
 Created by Rift90_ on Steam
+
 Portions of the materials used are trademarks and/or copyrighted works of Epic Games, Inc. All rights reserved by Epic. This material is not official and is not endorsed by Epic.
