@@ -62,7 +62,10 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds recipe if calamity mod is installed
             else
             {
-                //NOTHING! this item is calamity exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+                recipe.AddTile(TileID.AdamantiteForge);
+                recipe.Register();
             }
         }
 

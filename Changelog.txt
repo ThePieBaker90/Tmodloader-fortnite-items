@@ -1,6 +1,8 @@
 ﻿Version 2.5 Changelog
 
-Added Dual Barrel Pistol, Exotic Hoprock Dual Barrel Pistols, Hop Rock, Hop Rock Chunk, Sidearm Pistol,
+Added Dual Barrel Pistol, Exotic Hoprock Dual Barrel Pistols, Hop Rock, Hop Rock Chunk, Sidearm Pistol
+
+All Calamity exculsive items are now craftable with a set recipe if calamity is not installed (Post Moon Lord Recipies all have the same recipe and will be unbalanced! use at own risk!)
 
 Fixed an error with the Pistol Tooltip
 

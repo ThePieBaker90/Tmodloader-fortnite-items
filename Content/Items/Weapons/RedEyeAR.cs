@@ -58,7 +58,10 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds exotic recipe if calamity is installed
             else
             {
-                //NOTHING! this item is calamity exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.HallowedBar, 12);
+                recipe.AddTile(TileID.Anvils);
+                recipe.Register();
             }
 
 
