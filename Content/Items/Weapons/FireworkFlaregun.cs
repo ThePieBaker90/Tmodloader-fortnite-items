@@ -79,6 +79,16 @@ namespace FortniteItems.Content.Items.Weapons
                 type = ProjectileID.RocketFireworkBlue;
             }
 
+            if (type == ProjectileID.SpelunkerFlare)
+            {
+                type = ProjectileID.RocketFireworkYellow;
+            }
+
+            if (type == ProjectileID.CursedFlare)
+            {
+                type = ProjectileID.RocketFireworkGreen;
+            }
+
         }
     }
 }

@@ -23,28 +23,28 @@ namespace FortniteItems.Content.Items.Weapons
         {
             // DisplayName.SetDefault("Exotic Heisted Blink Mag SMG");
 
-            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
-            if (calamityMod != null)
-            {
-                // Tooltip.SetDefault("40% chance to not use ammo\n\nFires two bullets per shot\nRight click performs a Zero Point Blink\n\"Double Agent Hush's weapon of choice\"");
-            }
-            else
-            {
-                // Tooltip.SetDefault("How are you seeing this? Are you magic? Or Did You Accidentally Uninstall Calamity?");
-            }
-
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         //
         public override void SetDefaults()
         {
+            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            Item.damage = 33;
+            if (calamityMod != null && calamityMod.TryFind("AstralBar", out ModItem Astral))
+            {
+                Item.useTime = 6;
+                Item.useAnimation = 6;
+                Item.damage = 33;
+            }
+            {
+                Item.useTime = 5;
+                Item.useAnimation = 5;
+                Item.damage = 40;
+            }
+
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 6;
-            Item.useAnimation = 6;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
             Item.value = Item.sellPrice(gold: 16);
@@ -79,10 +79,11 @@ namespace FortniteItems.Content.Items.Weapons
             else
             {
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.ShroomiteBar, 12);
+                recipe.AddIngredient(ItemID.LunarBar, 12);
                 recipe.AddIngredient(ModContent.ItemType<TwinMagSMG>(), 1);
                 recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
-                recipe.AddTile(TileID.Anvils);
+                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.AddTile(TileID.ShimmerBlock);
                 recipe.Register();
             }
 

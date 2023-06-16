@@ -26,7 +26,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetDefaults()
         {
 
-            Item.damage = 60;
+            Item.damage = 65;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -60,19 +60,38 @@ namespace FortniteItems.Content.Items.Weapons
                 recipe.AddIngredient(Chaos.Type, 5);
                 recipe.AddIngredient(Sunlight.Type, 5);
                 recipe.AddIngredient(Eleum.Type, 5);
+                recipe.AddRecipeGroup(nameof(ItemID.MythrilBar), 10);
                 recipe.AddIngredient(ModContent.ItemType<SixShooter>(), 1);
                 recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();
-            }//Adds calamity recipe if calamity is... installed
+            }//Adds calamity recipe if calamity is installed
             else
             {
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+                recipe.AddIngredient(ItemID.HallowedBar, 10);
+                recipe.AddIngredient(ItemID.SoulofMight, 5);
+                recipe.AddIngredient(ModContent.ItemType<SixShooter>(), 1);
                 recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();
-            }
+
+                Recipe recipe2 = CreateRecipe();
+                recipe2.AddIngredient(ItemID.HallowedBar, 10);
+                recipe2.AddIngredient(ItemID.SoulofFright, 5);
+                recipe2.AddIngredient(ModContent.ItemType<SixShooter>(), 1);
+                recipe2.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+                recipe2.AddTile(TileID.Anvils);
+                recipe2.Register();
+
+                Recipe recipe3 = CreateRecipe();
+                recipe3.AddIngredient(ItemID.HallowedBar, 10);
+                recipe3.AddIngredient(ItemID.SoulofSight, 5);
+                recipe3.AddIngredient(ModContent.ItemType<SixShooter>(), 1);
+                recipe3.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+                recipe3.AddTile(TileID.Anvils);
+                recipe3.Register();
+            }//Otherwise we will use this post golem recipe
         }
 
         public override Vector2? HoldoutOffset()
@@ -89,7 +108,7 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            if (Main.rand.NextBool(20))
+            if (Main.rand.NextBool(10))
             {
                 damage *= 5;
             }
@@ -124,5 +143,13 @@ namespace FortniteItems.Content.Items.Weapons
 
             return true;
         }
+
+        /*public override void HoldItem(Player player)
+        {
+            if (!player.controlUseItem)
+            {
+
+            }
+        }*/
     }
 }

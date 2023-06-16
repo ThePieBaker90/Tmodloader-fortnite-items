@@ -99,6 +99,26 @@ namespace FortniteItems.Content.NPCs
 
             }
 
+            if (npc.type == NPCID.MartianSaucerCore) //Compact SMG drop from martian saucer (core) if calamity is not installed
+            {
+                ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
+                if (calamityMod == null)
+                {
+                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CompactSMG>(), 3));
+                }
+
+            }
+
+            if (npc.type == NPCID.BloodNautilus) //Compact SMG drop from martian saucer (core) if calamity is not installed
+            {
+                ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
+                if (calamityMod == null)
+                {
+                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<DualPistols>(), 2));
+                }
+
+            }
+
             if (npc.type == NPCID.KingSlime) //Burst SMG Drop from King Slime
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 2));

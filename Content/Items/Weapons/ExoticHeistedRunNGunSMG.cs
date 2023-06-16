@@ -99,7 +99,7 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void HoldItem(Player player)
         {
-            player.AddBuff(ModContent.BuffType<Buffs.SlappedUp>(), 60);
+            player.AddBuff(ModContent.BuffType<Buffs.SlappedUp>(), 1);
         }
     }
 }

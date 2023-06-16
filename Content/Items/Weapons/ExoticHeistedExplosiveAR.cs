@@ -23,8 +23,18 @@ namespace FortniteItems.Content.Items.Weapons
         //
         public override void SetDefaults()
         {
-            Item.damage = 73;
-            Item.DamageType = DamageClass.Ranged;
+            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
+            if (calamityMod != null && calamityMod.TryFind("PerennialBar", out ModItem Perennial))
+            {
+                Item.damage = 73;
+            }
+            else
+            {
+                Item.damage = 37;
+            }
+
+            
+            
             Item.width = 40;
             Item.height = 40;
             Item.useTime = 17;
@@ -40,10 +50,13 @@ namespace FortniteItems.Content.Items.Weapons
                 MaxInstances = 3,
             };
             Item.autoReuse = true;
-            Item.shoot = ProjectileID.PurificationPowder;
             Item.shootSpeed = 20;
+
+            Item.shoot = ProjectileID.PurificationPowder;
+            Item.DamageType = DamageClass.Ranged;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
+
         }
 
         public override void AddRecipes()
@@ -61,7 +74,13 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds exotic recipe if calamity is installed
             else
             {
-                //NOTHING! this item is calamity exclusive!
+                Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ItemID.Nanites, 25);
+                recipe.AddIngredient(ItemID.GrenadeLauncher, 1);
+                recipe.AddIngredient(ModContent.ItemType<RedEyeAR>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+                recipe.AddTile(TileID.MythrilAnvil);
+                recipe.Register();
             }
 
 
@@ -84,7 +103,7 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            Projectile.NewProjectile(source, position, velocity, ProjectileID.RocketIII, damage, knockback, player.whoAmI);
+            Projectile.NewProjectile(source, position, velocity, ProjectileID.RocketI, damage, knockback, player.whoAmI);
 
             return false;
         }

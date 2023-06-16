@@ -20,25 +20,33 @@ namespace FortniteItems.Content.Items.Weapons
         //EoW SMG
         public override void SetDefaults()
         {
-
-            Item.damage = 121;
-            Item.DamageType = DamageClass.Ranged;
-            Item.width = 40;
-            Item.height = 40;
-            Item.useTime = 3;
-            Item.useAnimation = 3;
-            Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 0.1f;
-            Item.value = Item.sellPrice(gold: 26);
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
+            //If calamity is installed this is a post polter acid rain
             if (calamityMod != null && calamityMod.TryFind("PureGreen", out ModRarity PureGreen))
             {
                 Item.rare = PureGreen.Type; //Post Polter
+                Item.damage = 121;
+                Item.useTime = 3;
+                Item.useAnimation = 3;
+                Item.shootSpeed = 5;
+                Item.value = Item.sellPrice(gold: 26);
             }
             else
             {
-                Item.rare = -11; //Amber Rarity as this weapon is unobtainable without calamity
+                Item.rare = ItemRarityID.Yellow; //Martian Saucer Drop
+                Item.damage = 20;
+                Item.useTime = 3;
+                Item.useAnimation = 3;
+                Item.shootSpeed = 5;
+                Item.value = Item.sellPrice(gold: 10);
             }
+            
+
+            Item.width = 40;
+            Item.height = 40;
+            Item.DamageType = DamageClass.Ranged;
+            Item.useStyle = ItemUseStyleID.Shoot;
+            Item.knockBack = 0.1f;
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/CompactSMGShoot")
             {
                 Volume = 0.7f,
@@ -47,7 +55,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 5;
+            
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
         }
@@ -68,10 +76,7 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds recipe if calamity mod is installed
             else
             {
-                Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.LunarBar, 12);
-                recipe.AddTile(TileID.LunarCraftingStation);
-                recipe.Register();
+                //Martian Saucer Drop
             }
         }
 

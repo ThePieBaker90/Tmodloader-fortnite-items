@@ -25,8 +25,20 @@ namespace FortniteItems.Content.Items.Weapons
         //a post plague burst pistol
         public override void SetDefaults()
         {
+            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            Item.damage = 600;
+            if (calamityMod != null
+                && calamityMod.TryFind("CosmiliteBar", out ModItem CosmiliteBar))
+            {
+                Item.damage = 600;
+                Item.value = Item.sellPrice(gold: 28);
+            }
+            else
+            {
+                Item.damage = 130;
+                Item.value = Item.sellPrice(gold: 28);
+            }
+                
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -35,7 +47,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.reuseDelay = 9;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 3f;
-            Item.value = Item.sellPrice(gold: 28);
+            
             Item.rare = ModContent.RarityType<Exotic>(); //Post DoG
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/DualPistolsShoot")
             {
@@ -75,6 +87,8 @@ namespace FortniteItems.Content.Items.Weapons
                 recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 10);
                 recipe.AddIngredient(ModContent.ItemType<DualPistols>(), 1);
                 recipe.AddIngredient(ItemID.LunarBar, 12);
+                recipe.AddIngredient(ItemID.FragmentVortex, 10);
+                recipe.AddIngredient(ModContent.ItemType<HopRock>(), 10);
                 recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.Register();
             }

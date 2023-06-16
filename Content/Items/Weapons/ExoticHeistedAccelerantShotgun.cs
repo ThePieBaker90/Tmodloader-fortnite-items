@@ -23,8 +23,18 @@ namespace FortniteItems.Content.Items.Weapons
         }
         public override void SetDefaults()
         {
+            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            Item.damage = 120;
+            if (calamityMod != null && calamityMod.TryFind("Phantoplasm", out ModItem Phantoplasm) && calamityMod.TryFind("RuinousSoul", out ModItem Soul))
+            {
+                Item.damage = 120;
+            }
+            else
+            {
+                Item.damage = 60;
+            }
+
+            Item.value = Item.sellPrice(gold: 7);
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -32,7 +42,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useAnimation = 30;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
-            Item.value = Item.sellPrice(gold: 7);
+            
             Item.rare = ModContent.RarityType<Exotic>(); //Exotic
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/VTacticalShotgunShoot")
             {
@@ -66,7 +76,10 @@ namespace FortniteItems.Content.Items.Weapons
             else
             {
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.LunarBar, 12);
+                recipe.AddIngredient(ItemID.FragmentVortex, 12);
+                recipe.AddIngredient(ItemID.IllegalGunParts, 1);
+                recipe.AddIngredient(ModContent.ItemType<MavenAutoShotgun>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
                 recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.Register();
             }

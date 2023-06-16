@@ -22,17 +22,30 @@ namespace FortniteItems.Content.Items.Weapons
         //a post plague burst pistol
         public override void SetDefaults()
         {
+            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
+            if (calamityMod != null
+                && calamityMod.TryFind("InfectedArmorPlating", out ModItem InfectedPlate)
+                && calamityMod.TryFind("DubiousPlating", out ModItem DubiousPlate)
+                && calamityMod.TryFind("PlagueCellCanister", out ModItem PlagueCanister))
+            {
+                Item.damage = 223;
+                Item.value = Item.sellPrice(gold: 12);
+            }
+            else
+            {
+                Item.damage = 57;
+                Item.value = Item.sellPrice(gold: 5);
+            }
 
-            Item.damage = 223;
+            Item.knockBack = 1f;
+            Item.useTime = 6;
+            Item.useAnimation = 12 ;
+            Item.reuseDelay = 12;
+            Item.shootSpeed = 15;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 6;
-            Item.useAnimation = 12;
-            Item.reuseDelay = 12;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 3f;
-            Item.value = Item.sellPrice(gold: 12);
             Item.rare = ItemRarityID.Yellow; //Post plaguebringer goliath
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/DualPistolsShoot")
             {
@@ -42,10 +55,8 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.consumeAmmoOnLastShotOnly = true;
 
         }
 
@@ -69,10 +80,7 @@ namespace FortniteItems.Content.Items.Weapons
             }//adds calamity recipe
             else
             {
-                Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.ShroomiteBar, 12);
-                recipe.AddTile(TileID.Autohammer);
-                recipe.Register();
+
             }
 
         }

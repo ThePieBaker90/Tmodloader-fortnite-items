@@ -1,9 +1,24 @@
-﻿Version 2.5 Changelog
+﻿Version 3.0 Changelog
 
-Added Dual Barrel Pistol, Exotic Hoprock Dual Barrel Pistols, Hop Rock, Hop Rock Chunk, Sidearm Pistol
+Added Dual Barrel Pistol, Exotic Hoprock Dual Barrel Pistols, Hop Rock, Hop Rock Chunk, Sidearm Pistol, Kinetic Boomerang,
 
-All Calamity exculsive items are now craftable with a set recipe if calamity is not installed (Post Moon Lord Recipies all have the same recipe and will be unbalanced! use at own risk!)
+Updated Mod to be compatable with Terraria version 1.4.4.9
+
+Updated Firework Flaregun to work the the new flares
+
+When Calamity Is not installed the following changes now happen:
+-The Compact Submachine Gun drops from the Martian Saucer, damage is lowered to match items that would be earned during that event.
+-The Exotic Marksman Sixshooter can now be crafted with hallowed bars and souls from any mechanical boss, its stats are unchanged.
+-The Exotic Heisted Explosive Assault Rifle can now be crafted with nanites and a grenade launcher, its damage is lowered to match other post plantera items.
+-The Exotic Heisted Accelerant Shotgun can now be crafted with vortex fragments and some illegal gun parts, its damage is lowered to match other post pillar items.
+-The Exotic Heisted Blink Mag SMG can now be crafted with XXXXX, its damage is increased to match other post moon lord items
+
+NOT DONE:
+ExoticHeistedRunNGunSMG
+ExoticNighHawk
+ShockwaveHammer
+TwinMagSMG
+MavenAutoShotgun
+RedEyeAR
 
 Fixed an error with the Pistol Tooltip
-
-Apologies for the haitus, university course work took up too much time and burnout from coding caused this break, hopefully the stream of content will speed up in the future!

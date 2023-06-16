@@ -293,7 +293,13 @@ Mods: {
 
 			ExoticHeistedBlinkMagSMG: {
 				DisplayName: Exotic Heisted Blink Mag SMG
-				Tooltip: How are you seeing this? Are you magic? Or Did You Accidentally Uninstall Calamity?
+				Tooltip:
+					'''
+					40% chance to not use ammo
+					Fires two bullets per shot
+					Right click performs a Zero Point Blink
+					"Double Agent Hush's weapon of choice"
+					'''
 			}
 
 			ExoticHeistedBreacherShotgun: {
@@ -342,7 +348,7 @@ Mods: {
 				Tooltip:
 					'''
 					Shoots six shots before needing to reload
-					Incapable of critical shots, however has a 5% chance to fire a shot for 5x damage
+					Incapable of critical shots, however has a 10% chance to fire a shot for 5x damage
 					"Deadfire's Weapon of Choice"
 					'''
 			}
@@ -955,7 +961,22 @@ Mods: {
 
 			ExampleHelmet: {
 				DisplayName: Test Helmet
-				Tooltip: If you see this yell at me in the comments on steam
+				Tooltip: How are you seeing this, are you magic?
+			}
+
+			ModifiedPistol: {
+				DisplayName: Modified Pistol
+				Tooltip:
+					'''
+					A pistol that changes its effects based on your equipped pet
+					Only works with vanilla terraria pets
+					"Finally pulling their own weight"
+					'''
+			}
+
+			KineticBoomerang: {
+				DisplayName: Kinetic Boomerang
+				Tooltip: How are you seeing this, are you magic?
 			}
 		}
 
@@ -966,6 +987,7 @@ Mods: {
 			PrimalBullet.DisplayName: Primal Bullet
 			StinkArrow.DisplayName: Stink Arrow
 			VGrenade.DisplayName: Vindertech Grenade
+			KineticBoomerangProjectile.DisplayName: Kinetic Boomerang Projectile
 		}
 
 		Tiles.HopRockOreTile.MapEntry: Hop Rock Chunk

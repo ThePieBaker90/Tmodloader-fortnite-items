@@ -8,12 +8,12 @@ Rocket Launcher
 Sprite Done-
 
 Charge Shotgun
-Pistol
+
 Bolt Action Sniper Rifle
 Scoped Assault Rifle
 
 Code Done-
-
+Pistol
 
 Implemented-
 Hunting Rifle

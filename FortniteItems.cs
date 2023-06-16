@@ -36,7 +36,10 @@ namespace FortniteItems
             RecipeGroup Tier3Metals = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.AdamantiteBar)}", ItemID.AdamantiteBar, ItemID.TitaniumBar);
 			RecipeGroup.RegisterGroup(nameof(ItemID.AdamantiteBar), Tier3Metals);
 
-			RecipeGroup IronAndLead = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.IronBar)}", ItemID.IronBar, ItemID.LeadBar);
+            RecipeGroup BossSouls = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.SoulofMight)}", ItemID.SoulofMight, ItemID.SoulofFright, ItemID.SoulofSight);
+            RecipeGroup.RegisterGroup(nameof(ItemID.SoulofMight), BossSouls);
+
+            RecipeGroup IronAndLead = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.IronBar)}", ItemID.IronBar, ItemID.LeadBar);
 			RecipeGroup.RegisterGroup(nameof(ItemID.IronBar), IronAndLead);
 
 			RecipeGroup DemonandCrim = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.DemoniteBar)}", ItemID.DemoniteBar, ItemID.CrimtaneBar);
