@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using FortniteItems.Content.Projectiles;
+using FortniteItems.Content.Items.Weapons;
 
 namespace FortniteItems.Content.Items.Consumables
 {
@@ -50,6 +51,17 @@ namespace FortniteItems.Content.Items.Consumables
                 }
             }
             return true;
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.HallowedBar, 1);
+            recipe.AddIngredient(ItemID.LargeAmethyst, 1);
+            recipe.AddIngredient(ItemID.LightDisc, 1);
+            recipe.AddTile(TileID.AdamantiteForge);
+            recipe.Register();
+
         }
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
