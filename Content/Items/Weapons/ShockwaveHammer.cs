@@ -22,6 +22,7 @@ namespace FortniteItems.Content.Items.Weapons
         {
 
             Item.damage = 735;
+            //when calamity comes out, this needs to be rebalanced 
             Item.DamageType = DamageClass.Melee;
             Item.width = 76;
             Item.height = 76;
@@ -31,19 +32,11 @@ namespace FortniteItems.Content.Items.Weapons
             Item.knockBack = 20;
             Item.value = Item.sellPrice(gold: 24);
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
-
-            if (calamityMod != null && calamityMod.TryFind("Turquoise", out ModRarity Turquoise))
-            {
-                Item.rare = Turquoise.Type; //Post stormweaver
-            }
-            else
-            {
-                Item.rare = -11; //Amber Rarity as this weapon is unobtainable without calamity
-            }
+            Item.rare = ItemRarityID.Purple; //post moonlord
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
             Item.ArmorPenetration = 100;
-            Item.crit = 92;
+            Item.crit = 46;
         }
 
         public override void AddRecipes()
@@ -64,6 +57,8 @@ namespace FortniteItems.Content.Items.Weapons
             {
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ItemID.LunarBar, 12);
+                recipe.AddIngredient(ItemID.LargeAmethyst, 1);
+                recipe.AddIngredient(ItemID.Pwnhammer, 1);
                 recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.Register();
             }

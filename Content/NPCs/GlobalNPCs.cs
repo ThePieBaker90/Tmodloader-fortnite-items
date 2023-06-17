@@ -126,12 +126,12 @@ namespace FortniteItems.Content.NPCs
 
             if (npc.type == NPCID.Frankenstein) //Mechanical Parts Drop from frankenstein
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 10));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 30));
             }
 
             if (npc.type == NPCID.Fritz) //Mechanical Parts Drop from Fritz
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 10));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 30));
             }
 
             if (npc.type == NPCID.Mimic) //Infantary Rifle drop from regular mimics

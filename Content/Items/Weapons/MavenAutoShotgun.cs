@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -63,9 +64,20 @@ namespace FortniteItems.Content.Items.Weapons
             else
             {
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
-                recipe.AddTile(TileID.AdamantiteForge);
+                recipe.AddIngredient(ModContent.ItemType<MakeshiftShotgun>(), 1);
+                recipe.AddIngredient(ItemID.TitaniumBar, 8);
+                recipe.AddIngredient(ModContent.ItemType<MechanicalParts>(), 5);
+                recipe.DisableDecraft();
+                recipe.AddTile(TileID.Anvils);
                 recipe.Register();
+
+                Recipe recipe2 = CreateRecipe();
+                recipe2.AddIngredient(ModContent.ItemType<MakeshiftShotgun>(), 1);
+                recipe2.AddIngredient(ItemID.AdamantiteBar, 8);
+                recipe2.AddIngredient(ModContent.ItemType<MechanicalParts>(), 5);
+                recipe2.DisableDecraft();
+                recipe2.AddTile(TileID.Anvils);
+                recipe2.Register();
             }
         }
 

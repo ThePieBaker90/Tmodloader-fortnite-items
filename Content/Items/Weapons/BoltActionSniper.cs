@@ -55,12 +55,14 @@ namespace FortniteItems.Content.Items.Weapons
             recipe.AddIngredient(ItemID.CrimtaneBar, 10);
             recipe.AddIngredient(ItemID.BlackLens, 1);
             recipe.AddTile(TileID.Anvils);
+            recipe.AddDecraftCondition(Condition.CrimsonWorld);
             recipe.Register();
 
             Recipe recipe2 = CreateRecipe();
             recipe2.AddIngredient(ItemID.DemoniteBar, 10);
             recipe2.AddIngredient(ItemID.BlackLens, 1);
             recipe2.AddTile(TileID.Anvils);
+            recipe2.AddDecraftCondition(Condition.CorruptWorld);
             recipe2.Register();
 
         }

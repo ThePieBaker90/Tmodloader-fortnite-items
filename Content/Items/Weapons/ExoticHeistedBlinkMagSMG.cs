@@ -78,13 +78,7 @@ namespace FortniteItems.Content.Items.Weapons
             }//Adds exotic recipe if calamity is installed
             else
             {
-                Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.LunarBar, 12);
-                recipe.AddIngredient(ModContent.ItemType<TwinMagSMG>(), 1);
-                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
-                recipe.AddTile(TileID.LunarCraftingStation);
-                recipe.AddTile(TileID.ShimmerBlock);
-                recipe.Register();
+                //Gotten by putting a TwinMagSMG into shimmer after the moonlord has been defeated
             }
 
 

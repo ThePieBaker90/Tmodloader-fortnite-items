@@ -24,8 +24,19 @@ namespace FortniteItems.Content.Items.Weapons
         //EoW SMG
         public override void SetDefaults()
         {
+            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            Item.damage = 230;
+            if (calamityMod != null && calamityMod.TryFind("AuricBar", out ModItem Auric) && calamityMod.TryFind("CosmicAnvil", out ModTile CosmicAnvil))
+            {
+                Item.damage = 230;
+                Item.sellPrice(gold: 30);
+            }
+            else
+            {
+                Item.damage = 27;
+                Item.sellPrice(gold: 16);
+            }
+                
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -33,7 +44,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useAnimation = 2;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
-            Item.value = Item.sellPrice(gold: 30);
             Item.rare = ModContent.RarityType<Exotic>(); //Exotic
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/CompactSMGShoot")
             {
@@ -65,6 +75,9 @@ namespace FortniteItems.Content.Items.Weapons
             else
             {
                 Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ModContent.ItemType<CompactSMG>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<SlapJuice>(), 5);
                 recipe.AddIngredient(ItemID.LunarBar, 12);
                 recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.Register();

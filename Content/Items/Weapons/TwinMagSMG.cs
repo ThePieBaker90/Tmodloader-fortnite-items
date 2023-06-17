@@ -17,31 +17,36 @@ namespace FortniteItems.Content.Items.Weapons
         {
             // DisplayName.SetDefault("Twin Mag SMG");
 
-            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
-            if (calamityMod != null)
-            {
-                // Tooltip.SetDefault("40% chance to not use ammo\nFires two bullets per shot\n\"Double the magazines! Double the fun!\"");
-            }
-            else
-            {
-                // Tooltip.SetDefault("How are you seeing this? Are you magic? Or Did You Accidentally Uninstall Calamity?");
-            }
+
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         //
         public override void SetDefaults()
         {
+            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            Item.damage = 30;
+            if (calamityMod != null && calamityMod.TryFind("LeviathanAmbergris", out ModItem LA))
+            {
+                Item.damage = 30;
+                Item.useTime = 6;
+                Item.useAnimation = 6;
+            }
+            else
+            {
+                Item.damage = 16;
+                Item.useTime = 9;
+                Item.useAnimation = 9;
+                
+            }
+                
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 6;
-            Item.useAnimation = 6;
+            Item.value = Item.sellPrice(gold: 11);
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
-            Item.value = Item.sellPrice(gold: 11);
+            
             Item.rare = ItemRarityID.Lime; //post leviathan
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/SMGShoot")
             {
@@ -73,9 +78,18 @@ namespace FortniteItems.Content.Items.Weapons
             else
             {
                 Recipe recipe = CreateRecipe();
+                recipe.AddIngredient(ModContent.ItemType<MakeshiftSMG>(), 2);
                 recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
-                recipe.AddTile(TileID.Anvils);
+                recipe.AddIngredient(ItemID.IllegalGunParts, 1);
+                recipe.AddTile(TileID.AdamantiteForge);
+                recipe.DisableDecraft();
                 recipe.Register();
+
+                Recipe recipe2 = CreateRecipe();
+                recipe2.AddIngredient(ModContent.ItemType<TwinMagSMG>(), 1);
+                recipe2.AddCustomShimmerResult(ModContent.ItemType<ExoticHeistedBlinkMagSMG>(), 1);
+                recipe2.AddDecraftCondition(Condition.DownedMoonLord);
+                recipe2.Register();
             }
         }
 

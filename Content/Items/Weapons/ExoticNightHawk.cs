@@ -22,8 +22,10 @@ namespace FortniteItems.Content.Items.Weapons
         //an early game pistol
         public override void SetDefaults()
         {
+            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
             Item.damage = 300;
+            //needs a buff when calamity comes out
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -66,7 +68,10 @@ namespace FortniteItems.Content.Items.Weapons
             else
             {
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ItemID.LunarBar, 12);
+                recipe.AddIngredient(ModContent.ItemType<ScopedRevolver>(), 1);
+                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+                recipe.AddIngredient(ItemID.LunarBar, 10);
+                recipe.AddIngredient(ItemID.SoulofSight, 5);
                 recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.Register();
             }

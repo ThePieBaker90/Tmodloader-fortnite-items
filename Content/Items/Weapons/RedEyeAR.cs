@@ -60,6 +60,10 @@ namespace FortniteItems.Content.Items.Weapons
             {
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ItemID.HallowedBar, 12);
+                recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
+                recipe.AddIngredient(ItemID.SoulofMight, 1);
+                recipe.AddIngredient(ItemID.SoulofFright, 1);
+                recipe.AddIngredient(ItemID.SoulofSight, 1);
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();
             }

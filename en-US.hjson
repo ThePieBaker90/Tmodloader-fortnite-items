@@ -933,7 +933,12 @@ Mods: {
 
 			TwinMagSMG: {
 				DisplayName: Twin Mag SMG
-				Tooltip: How are you seeing this? Are you magic? Or Did You Accidentally Uninstall Calamity?
+				Tooltip:
+					'''
+					40% chance to not use ammo
+					Fires two bullets per shot
+					"Double the magazines! Double the fun!"
+					'''
 			}
 
 			VGrenade: {
