@@ -981,7 +981,11 @@ Mods: {
 
 			KineticBoomerang: {
 				DisplayName: Kinetic Boomerang
-				Tooltip: How are you seeing this, are you magic?
+				Tooltip: 
+					'''
+					A boomerang with strong knockback and high speed!
+					"a necessity to explore the wilds"
+					'''
 			}
 		}
 
