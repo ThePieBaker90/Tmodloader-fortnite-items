@@ -49,6 +49,8 @@ namespace FortniteItems.Content.NPCs
                     shop.Add<ChargeShotgun>();
                 }
 
+                shop.Add<DMR>();
+                
             }//if arms dealer
 
             if (shop.NpcType == NPCID.Merchant)
@@ -58,6 +60,8 @@ namespace FortniteItems.Content.NPCs
                     shop.GetEntry(ItemID.Flare);
                     shop.GetEntry(ItemID.BlueFlare);
                 }
+
+                
             }//if merchant
 
             if (shop.NpcType == NPCID.Demolitionist)

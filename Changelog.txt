@@ -1,3 +1,7 @@
 ﻿Version 3.1 Changelog
 
-Added Kinetic Boomerang
+Added Kinetic Boomerang, DMR, Thermal DMR, 
+
+Added the Hunter buff to all items with a thermal scope (Exotic Night Hawk, Thermal Scoped AR)
+
+Changed the Drum Gun Sprite Slightly

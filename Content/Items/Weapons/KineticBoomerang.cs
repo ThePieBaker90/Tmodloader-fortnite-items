@@ -21,7 +21,7 @@ namespace FortniteItems.Content.Items.Consumables
         public override void SetDefaults()
         {
 
-            Item.damage = 315;
+            Item.damage = 200;
             Item.DamageType = DamageClass.Melee;
             Item.width = 40;
             Item.height = 40;
@@ -33,7 +33,7 @@ namespace FortniteItems.Content.Items.Consumables
             Item.rare = ItemRarityID.Purple;
             Item.UseSound = SoundID.Item7;
             Item.autoReuse = true;
-            Item.shootSpeed = 28;
+            Item.shootSpeed = 30;
             Item.noMelee = true;
             Item.ArmorPenetration = 25;
             Item.crit = 16;
@@ -58,8 +58,8 @@ namespace FortniteItems.Content.Items.Consumables
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.FragmentSolar, 12);
+            recipe.AddIngredient(ItemID.LihzahrdBrick, 20);
             recipe.AddIngredient(ItemID.LargeAmethyst, 1);
-            recipe.AddIngredient(ItemID.LightDisc, 1);
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.Register();
 

@@ -7,57 +7,64 @@ using Terraria.Audio;
 
 namespace FortniteItems.Content.Items.Weapons
 {
-    public class ThermalScopedAR : ModItem
+    public class ThermalDMR : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ThermalScopedAR";
+
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ThermalDMR";
+
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Thermal Scoped Assault Rifle");
-            // Tooltip.SetDefault("40% chance to not consume ammo\nTurns musket balls into chlorophyte bullets\n\"Gotta get that W, in thermal vision\"");
+            // DisplayName.SetDefault("Bolt Action Sniper Rifle");
+            // Tooltip.SetDefault("Turns musket balls into high velocity bullets\n\"Hit 'em where they can't reach you\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a direct upgrade to the scoped assault rifle
+        //a post EoC sniper rifle
         public override void SetDefaults()
         {
-            Item.damage = 155;
+
+            Item.damage = 27;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 12;
-            Item.useAnimation = 12;
+            Item.useTime = 19;
+            Item.useAnimation = 19;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 0.2f;
-            Item.value = Item.sellPrice(gold: 15);
-            Item.rare = ItemRarityID.Cyan; //Post Moonlord Crafted with Luminite
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ThermalScopedARShoot")
+            Item.knockBack = 2f;
+            Item.value = Item.sellPrice(gold: 10);
+            Item.rare = ItemRarityID.Orange; //Post BEEEEEEEEEEEEEEEEEEEE craft
+            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/DMRShoot")
             {
-                Volume = 0.7f,
+                Volume = 0.6f,
                 PitchVariance = 0.2f,
                 MaxInstances = 3,
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 70;
+            Item.shootSpeed = 30;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 70;
-            Item.crit = 14;
+            Item.ArmorPenetration = 25;
+            Item.crit = 10;
+
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<ScopedAR>());
-            recipe.AddIngredient(ItemID.LunarBar, 12);
-            recipe.AddIngredient(ItemID.FragmentVortex, 10);
-            recipe.AddTile(TileID.LunarCraftingStation);
+            recipe.AddIngredient(ItemID.Radar, 1);
+            recipe.AddIngredient(ItemID.BeeWax, 10);
+            recipe.AddIngredient(ItemID.Stinger, 5);
+            recipe.AddIngredient(ItemID.JungleSpores, 10);
+            recipe.AddIngredient(ModContent.ItemType<DMR>());
+            recipe.AddTile(TileID.Anvils);
             recipe.Register();
+
         }
 
         public override Vector2? HoldoutOffset()
         {
-            return new Vector2(-11f, 0);
+            return new Vector2(-16f, 0);
         }
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
@@ -68,16 +75,9 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            if (type == ProjectileID.Bullet)
-            {
-                type = ProjectileID.ChlorophyteBullet;
-            }
+
         }
 
-        public override bool CanConsumeAmmo(Item ammo, Player player)
-        {
-            return Main.rand.NextFloat() >= 0.40f;
-        }
         public override void HoldItem(Player player)
         {
             player.scope = true;
