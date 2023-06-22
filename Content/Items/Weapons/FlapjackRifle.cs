@@ -20,7 +20,7 @@ namespace FortniteItems.Content.Items.Weapons
         //a hardmode minigun equivalent
         public override void SetDefaults()
         {
-            Item.damage = 75;
+            Item.damage = 40;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -29,7 +29,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.3f;
             Item.value = Item.sellPrice(gold: 5);
-            Item.rare = ItemRarityID.Yellow; //Duke fishron drop
+            Item.rare = ItemRarityID.Lime; //Post wall buy from Arms Dealer in jungle
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/FlapjackRifleShoot")
             {
                 Volume = 0.8f,
@@ -40,10 +40,26 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shoot = ProjectileID.PurificationPowder;
             Item.shootSpeed = 7f;
             Item.noMelee = true;
-            Item.ArmorPenetration = 3;
             Item.useAmmo = AmmoID.Bullet;
         }
 
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.TurtleShell, 1);
+            recipe.AddIngredient(ItemID.MythrilBar, 10);
+            recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>());
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.Register();
+
+            Recipe recipe2 = CreateRecipe();
+            recipe2.AddIngredient(ItemID.TurtleShell, 1);
+            recipe2.AddIngredient(ItemID.OrichalcumBar, 10);
+            recipe2.AddIngredient(ModContent.ItemType<MakeshiftAR>());
+            recipe2.AddTile(TileID.MythrilAnvil);
+            recipe2.Register();
+
+        }
 
         public override Vector2? HoldoutOffset()
         {

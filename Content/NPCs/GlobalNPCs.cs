@@ -49,6 +49,7 @@ namespace FortniteItems.Content.NPCs
                     shop.Add<ChargeShotgun>();
                 }
 
+                
                 shop.Add<DMR>();
                 
             }//if arms dealer
