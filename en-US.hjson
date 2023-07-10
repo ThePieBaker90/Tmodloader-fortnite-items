@@ -596,7 +596,7 @@ Mods: {
 			}
 
 			ModifiedPumpShotgun: {
-				DisplayName: Modified Pump Shotgun
+				DisplayName: Sharptooth Shotgun
 				Tooltip:
 					'''
 					Slow firing shotgun that fires lots of bullets with low velocity but high damage and knockback

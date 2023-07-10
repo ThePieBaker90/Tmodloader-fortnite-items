@@ -1,7 +1,5 @@
-﻿Version 3.1 Changelog
+﻿Version 3.11 Changelog
 
-Added Kinetic Boomerang, DMR, Thermal DMR, 
+Added MK-Alpha Assault Rifle, Explosive Repeater Rifle
 
-Added the Hunter buff to all items with a thermal scope (Exotic Night Hawk, Thermal Scoped AR)
-
-Changed the Drum Gun Sprite Slightly
+Changed the Modified Pump Shotgun into the Sharptooth Shotgun
