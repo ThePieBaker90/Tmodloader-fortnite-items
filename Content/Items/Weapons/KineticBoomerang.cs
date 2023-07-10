@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using FortniteItems.Content.Projectiles;
+using FortniteItems.Content.Items.Weapons;
 
 namespace FortniteItems.Content.Items.Consumables
 {
@@ -20,21 +21,22 @@ namespace FortniteItems.Content.Items.Consumables
         public override void SetDefaults()
         {
 
-            Item.damage = 100;
+            Item.damage = 200;
             Item.DamageType = DamageClass.Melee;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 10;
-            Item.useAnimation = 10;
+            Item.useTime = 13;
+            Item.useAnimation = 13;
             Item.useStyle = ItemUseStyleID.Swing;
-            Item.knockBack = 10f;
-            Item.value = Item.sellPrice(copper: 50);
-            Item.value = Item.buyPrice(silver: 5);
+            Item.knockBack = 20f;
+            Item.value = Item.sellPrice(gold: 12);
+            Item.rare = ItemRarityID.Purple;
             Item.UseSound = SoundID.Item7;
             Item.autoReuse = true;
-            Item.shootSpeed = 25;
+            Item.shootSpeed = 30;
             Item.noMelee = true;
             Item.ArmorPenetration = 25;
+            Item.crit = 16;
             Item.shoot = ModContent.ProjectileType<Projectiles.KineticBoomerangProjectile>();
             Item.noUseGraphic = true;
         }
@@ -50,6 +52,17 @@ namespace FortniteItems.Content.Items.Consumables
                 }
             }
             return true;
+        }
+
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.FragmentSolar, 12);
+            recipe.AddIngredient(ItemID.LihzahrdBrick, 20);
+            recipe.AddIngredient(ItemID.LargeAmethyst, 1);
+            recipe.AddTile(TileID.LunarCraftingStation);
+            recipe.Register();
+
         }
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)

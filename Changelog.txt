@@ -1,21 +1,7 @@
-﻿Version 3.0 Changelog
+﻿Version 3.1 Changelog
 
-Added Dual Barrel Pistol, Exotic Hoprock Dual Barrel Pistols, Hop Rock, Hop Rock Chunk, and Sidearm Pistol
+Added Kinetic Boomerang, DMR, Thermal DMR, 
 
-Updated Mod to be compatable with Terraria version 1.4.4.9
+Added the Hunter buff to all items with a thermal scope (Exotic Night Hawk, Thermal Scoped AR)
 
-Updated Firework Flaregun to work the the new flares
-
-When Calamity Is not installed the following changes now happen:
--The Compact Submachine Gun drops from the Martian Saucer, damage is lowered to match items that would be earned during that event.
--The Exotic Marksman Sixshooter can now be crafted with hallowed bars and souls from any mechanical boss, its stats are unchanged.
--The Exotic Heisted Explosive Assault Rifle can now be crafted with nanites and a grenade launcher, its damage is lowered to match other post plantera items.
--The Exotic Heisted Accelerant Shotgun can now be crafted with vortex fragments and some illegal gun parts, its damage is lowered to match other post pillar items.
--The Exotic Heisted Blink Mag SMG can now be obtained by throwing the Twin Mag SMG into shimmer after the Moon Lord has been defeated, its damage is increased to match other post moon lord items
--The Shockwave Hammer can now be obtained with luminite, its stats are unchanged. (This will be buffed when calamity 1.4.4.9 comes out)
--The Exotic Night Hawk can be crafted with luminite and souls of sight, its stats are unchanged. (This will be buffed when calamity 1.4.4.9 comes out)
--The Exotic Heisted Run N Gun SMG can be crafted with luminite, its damage is significantly lowered to match other post moon lord items
--The Maven Auto Shotgun can be crafted with a tier 3 hardmode bar and 5 mechanical parts, its stats are unchanged.
--The Red Eye Assault Rifle can be crafted with hallowed bars and 1 of each boss soul, its stats are unchanged.
-
-Fixed an error with the Pistol Tooltip
+Changed the Drum Gun Sprite Slightly

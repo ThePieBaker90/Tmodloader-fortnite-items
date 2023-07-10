@@ -981,7 +981,39 @@ Mods: {
 
 			KineticBoomerang: {
 				DisplayName: Kinetic Boomerang
-				Tooltip: How are you seeing this, are you magic?
+				Tooltip:
+					'''
+					A boomerang with strong knockback and high speed
+					"a necessity to explore the wilds"
+					'''
+			}
+
+			DMR: {
+				DisplayName: DMR
+				Tooltip:
+					'''
+					A marksman rifle with solid damage and a solid fire rate
+					"Scope out the competition"
+					'''
+			}
+
+			ThermalDMR: {
+				DisplayName: Thermal DMR
+				Tooltip:
+					'''
+					A marksman rifle with a fast fire rate and thermal vision
+					"Take the heat off of you"
+					'''
+			}
+
+			FlapjackRifle: {
+				DisplayName: Flapjack Rifle
+				Tooltip:
+					'''
+					50% chance not to consume ammo
+					A rifle with a spinning magazine and a fast fire rate
+					"Make heads turn"
+					'''
 			}
 		}
 
