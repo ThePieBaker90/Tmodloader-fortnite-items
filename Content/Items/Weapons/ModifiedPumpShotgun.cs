@@ -14,8 +14,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ModifiedPumpShotgun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Modified Pump Shotgun");
-            // Tooltip.SetDefault("Slow firing shotgun that fires lots of bullets with low velocity but high damage and knockback\n\"I'm cracked! I'm cracked!\"");
+            //Display name is "Sharptooth Shotgun"
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -23,7 +22,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetDefaults()
         {
 
-            Item.damage = 24;
+            Item.damage = 6;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
@@ -52,9 +51,9 @@ namespace FortniteItems.Content.Items.Weapons
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<PumpShotgun>(), 1);
-            recipe.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
-            recipe.AddTile(TileID.TinkerersWorkbench);
+            recipe.AddIngredient(ModContent.ItemType<MakeshiftShotgun>(), 1);
+            recipe.AddIngredient(ItemID.SharkToothNecklace, 1);
+            recipe.AddTile(TileID.Anvils);
             recipe.Register();
 
         }
@@ -77,7 +76,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
 
         {
-            const int NumProjectiles = 7; // The humber of projectiles that this gun will shoot.
+            const int NumProjectiles = 5; // The humber of projectiles that this gun will shoot.
 
             for (int i = 0; i < NumProjectiles; i++)
             {

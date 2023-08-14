@@ -2,4 +2,9 @@
 
 Added MK-Alpha Assault Rifle, Explosive Repeater Rifle
 
-Changed the Modified Pump Shotgun into the Sharptooth Shotgun
+Reworked the Modified Pump Shotgun into the Sharptooth Shotgun
+
+Reduced the damage and firing rate of the assault rifle
+Reduced the damage of the modified assault rifle
+
+Fixed an error where 99 kinetic boomerangs were required to research it in journey mode

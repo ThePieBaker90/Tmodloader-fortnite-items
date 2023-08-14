@@ -600,7 +600,7 @@ Mods: {
 				Tooltip:
 					'''
 					Slow firing shotgun that fires lots of bullets with low velocity but high damage and knockback
-					"I'm cracked! I'm cracked!"
+					"What's so sharp about it?"
 					'''
 			}
 
@@ -1013,6 +1013,24 @@ Mods: {
 					50% chance not to consume ammo
 					A rifle with a spinning magazine and a fast fire rate
 					"Make heads turn"
+					'''
+			}
+
+			ExplosiveRepeaterRifle: {
+				DisplayName: Explosive Repeater Rifle
+				Tooltip:
+					'''
+					A sniper rifle that shoots explosive rounds
+					"Add some boom to your shot!"
+					'''
+			}
+
+			LeverActionRifle: {
+				DisplayName: Lever Action Rifle
+				Tooltip: 
+					'''
+					A sniper rifle that shoots faster when not scoped in
+					"Not to be confused with a button action rifle"
 					'''
 			}
 		}

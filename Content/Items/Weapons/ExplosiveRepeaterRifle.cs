@@ -4,68 +4,65 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
-using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
-    public class Scar : ModItem
+    public class ExplosiveRepeaterRifle : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/Scar";
+
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExplosiveRepeaterRifle";
+
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Assault Rifle");
-            // Tooltip.SetDefault("25% chance to not consume ammo\n\"Gotta get that W\"");
+
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a hardmode rifle that is a long range alternative to the mega shark
+        //a post EoC sniper rifle
         public override void SetDefaults()
         {
 
-            Item.damage = 8;
+            Item.damage = 80;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 17;
-            Item.useAnimation = 17;
+            Item.useTime = 50;
+            Item.useAnimation = 48;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 0.2f;
-            Item.value = Item.sellPrice(gold: 1, silver: 50);
-            Item.rare = ItemRarityID.Green; //Goblin Army 
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ARShoot")
+            Item.knockBack = 2f;
+            Item.value = Item.sellPrice(silver: 50);
+            Item.rare = ItemRarityID.Blue; //Post EoC Craft
+            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/LeverActionShoot")
             {
-                Volume = 0.9f,
+                Volume = 0.6f,
                 PitchVariance = 0.2f,
                 MaxInstances = 3,
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 7;
+            Item.shootSpeed = 200;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
+            Item.ArmorPenetration = 30;
+            Item.crit = 10;
+
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-            recipe.AddIngredient(ItemID.SpikyBall, 25);
-            recipe.AddIngredient(ItemID.GoldBar, 12);
+            recipe.AddIngredient(ItemID.CrimtaneBar, 10);
+            recipe.AddIngredient(ItemID.BlackLens, 1);
             recipe.AddTile(TileID.Anvils);
+            recipe.AddDecraftCondition(Condition.CrimsonWorld);
             recipe.Register();
 
             Recipe recipe2 = CreateRecipe();
-            recipe2.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-            recipe2.AddIngredient(ItemID.SpikyBall, 25);
-            recipe2.AddIngredient(ItemID.PlatinumBar, 12);
+            recipe2.AddIngredient(ItemID.DemoniteBar, 10);
+            recipe2.AddIngredient(ItemID.BlackLens, 1);
             recipe2.AddTile(TileID.Anvils);
+            recipe2.AddDecraftCondition(Condition.CorruptWorld);
             recipe2.Register();
-
-            Recipe recipe3 = CreateRecipe();
-            recipe3.AddIngredient(ModContent.ItemType<Scar>(), 1);
-            recipe3.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
-            recipe3.AddTile(TileID.TinkerersWorkbench);
-            recipe3.Register();
 
         }
 
@@ -82,11 +79,15 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
+            type = ProjectileID.ExplosiveBullet;
+
+
+
         }
 
-        public override bool CanConsumeAmmo(Item ammo, Player player)
+        public override void HoldItem(Player player)
         {
-            return Main.rand.NextFloat() >= 0.25f;
+            player.scope = true;
         }
 
     }
