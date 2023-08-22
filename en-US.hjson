@@ -926,7 +926,7 @@ Mods: {
 				Tooltip:
 					'''
 					40% chance to not consume ammo
-					Turns musket balls into chlorophyte bullets
+					An assault rifle that turns musket balls into chlorophyte bullets
 					"Gotta get that W, in thermal vision"
 					'''
 			}
@@ -936,7 +936,7 @@ Mods: {
 				Tooltip:
 					'''
 					40% chance to not use ammo
-					Fires two bullets per shot
+					A submachine gun which fires two bullets per shot
 					"Double the magazines! Double the fun!"
 					'''
 			}
@@ -954,7 +954,7 @@ Mods: {
 				DisplayName: Vindertech Tactical Shotgun
 				Tooltip:
 					'''
-					Fast firing shotgun that excels at sustained close range damage
+					A fast firing shotgun that excels at sustained close range damage
 					"With you since the first loop"
 					'''
 			}
@@ -1027,10 +1027,19 @@ Mods: {
 
 			LeverActionRifle: {
 				DisplayName: Lever Action Rifle
-				Tooltip: 
+				Tooltip:
 					'''
-					A sniper rifle that shoots faster when not scoped in
+					A sniper rifle that shoots at a faster than usual speed
 					"Not to be confused with a button action rifle"
+					'''
+			}
+
+			MammothPistol: {
+				DisplayName: Mammoth Pistol
+				Tooltip:
+					'''
+					A pistol with high damage, armor pierce, and knockback but a very slow firing speed
+					"The big iron on his hip"
 					'''
 			}
 		}

@@ -4,36 +4,33 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
-    public class LeverActionRifle : ModItem
+    public class MammothPistol : ModItem
     {
-
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/LeverActionRifle";
-
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MammothPistol";
         public override void SetStaticDefaults()
         {
 
-
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a post EoC sniper rifle
+        //an early game pistol
         public override void SetDefaults()
         {
 
-            Item.damage = 44;
+            Item.damage = 675;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 50;
-            Item.useAnimation = 48;
+            Item.useTime = 100;
+            Item.useAnimation = 100;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 2f;
-            Item.value = Item.buyPrice(gold: 10);
-            Item.value = Item.sellPrice(gold: 7, silver: 50);
-            Item.rare = ItemRarityID.Green; //Goblin Army Drop
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/LeverActionShoot")
+            Item.knockBack = 20;
+            Item.value = Item.sellPrice(gold: 8);
+            Item.rare = ItemRarityID.Lime; //Post Golem
+            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/HandCannonShoot")
             {
                 Volume = 0.6f,
                 PitchVariance = 0.2f,
@@ -41,18 +38,15 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 10;
+            Item.shootSpeed = 20;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 10;
-            Item.crit = 11;
-
         }
 
 
         public override Vector2? HoldoutOffset()
         {
-            return new Vector2(-9f, 0);
+            return new Vector2(0, 0);
         }
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
@@ -63,15 +57,9 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-
+            type = ProjectileID.BulletHighVelocity;
 
 
         }
-
-        public override void HoldItem(Player player)
-        {
-            player.scope = true;
-        }
-
     }
 }

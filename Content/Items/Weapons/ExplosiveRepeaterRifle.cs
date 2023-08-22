@@ -22,16 +22,16 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetDefaults()
         {
 
-            Item.damage = 80;
+            Item.damage = 112;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 50;
-            Item.useAnimation = 48;
+            Item.useTime = 46;
+            Item.useAnimation = 46;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
             Item.value = Item.sellPrice(silver: 50);
-            Item.rare = ItemRarityID.Blue; //Post EoC Craft
+            Item.rare = ItemRarityID.LightRed; //Post WoF Craft
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/LeverActionShoot")
             {
                 Volume = 0.6f,
@@ -44,24 +44,26 @@ namespace FortniteItems.Content.Items.Weapons
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.ArmorPenetration = 30;
-            Item.crit = 10;
+            Item.crit = 21;
 
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.CrimtaneBar, 10);
-            recipe.AddIngredient(ItemID.BlackLens, 1);
-            recipe.AddTile(TileID.Anvils);
-            recipe.AddDecraftCondition(Condition.CrimsonWorld);
+            recipe.AddIngredient(ItemID.SoulofNight, 5);
+            recipe.AddIngredient(ItemID.Dynamite, 10);
+            recipe.AddIngredient(ItemID.MythrilBar, 12);
+            recipe.AddIngredient(ModContent.ItemType<LeverActionRifle>(), 1);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 
             Recipe recipe2 = CreateRecipe();
-            recipe2.AddIngredient(ItemID.DemoniteBar, 10);
-            recipe2.AddIngredient(ItemID.BlackLens, 1);
-            recipe2.AddTile(TileID.Anvils);
-            recipe2.AddDecraftCondition(Condition.CorruptWorld);
+            recipe2.AddIngredient(ItemID.SoulofNight, 5);
+            recipe2.AddIngredient(ItemID.Dynamite, 10);
+            recipe2.AddIngredient(ItemID.OrichalcumBar, 12);
+            recipe2.AddIngredient(ModContent.ItemType<LeverActionRifle>(), 1);
+            recipe2.AddTile(TileID.MythrilAnvil);
             recipe2.Register();
 
         }
