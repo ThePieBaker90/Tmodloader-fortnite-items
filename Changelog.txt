@@ -1,7 +1,13 @@
-﻿Version 3.1 Changelog
+﻿Version 3.11 Changelog
 
-Added Kinetic Boomerang, DMR, Thermal DMR, 
+Added the Explosive Repeater Rifle, Lever Action Rifle, Mammoth Pistol
 
-Added the Hunter buff to all items with a thermal scope (Exotic Night Hawk, Thermal Scoped AR)
+Reworked the Modified Pump Shotgun into the Sharptooth Shotgun
 
-Changed the Drum Gun Sprite Slightly
+Reduced the damage and firing rate of the assault rifle
+Reduced the damage of the modified assault rifle
+
+Modified the Flaregun Sprite
+
+Fixed an error where 99 kinetic boomerangs were required to research it in journey mode
+Fixed an error with the Heavy sniper rifle's recipe

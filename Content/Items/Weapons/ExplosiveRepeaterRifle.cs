@@ -4,55 +4,67 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
-using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
-    public class ModifiedAR : ModItem
+    public class ExplosiveRepeaterRifle : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ModifiedAR";
+
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExplosiveRepeaterRifle";
+
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Modified Assault Rifle");
-            // Tooltip.SetDefault("20% chance to not consume ammo\nHas a chance to fire a crystal bullet\n\"Give them the L\"");
+
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a hardmode rifle that is a long range alternative to the mega shark
+        //a post EoC sniper rifle
         public override void SetDefaults()
         {
 
-            Item.damage = 14;
+            Item.damage = 112;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 20;
-            Item.useAnimation = 20;
+            Item.useTime = 46;
+            Item.useAnimation = 46;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 0.2f;
-            Item.value = Item.sellPrice(gold: 1, silver: 50);
-            Item.rare = ItemRarityID.Green; //Goblin Army 
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ARShoot")
+            Item.knockBack = 2f;
+            Item.value = Item.sellPrice(silver: 50);
+            Item.rare = ItemRarityID.LightRed; //Post WoF Craft
+            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/LeverActionShoot")
             {
-                Volume = 0.9f,
+                Volume = 0.6f,
                 PitchVariance = 0.2f,
                 MaxInstances = 3,
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 7;
+            Item.shootSpeed = 200;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
+            Item.ArmorPenetration = 30;
+            Item.crit = 21;
+
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<Scar>(), 1);
-            recipe.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
-            recipe.AddTile(TileID.TinkerersWorkbench);
+            recipe.AddIngredient(ItemID.SoulofNight, 5);
+            recipe.AddIngredient(ItemID.Dynamite, 10);
+            recipe.AddIngredient(ItemID.MythrilBar, 12);
+            recipe.AddIngredient(ModContent.ItemType<LeverActionRifle>(), 1);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 
+            Recipe recipe2 = CreateRecipe();
+            recipe2.AddIngredient(ItemID.SoulofNight, 5);
+            recipe2.AddIngredient(ItemID.Dynamite, 10);
+            recipe2.AddIngredient(ItemID.OrichalcumBar, 12);
+            recipe2.AddIngredient(ModContent.ItemType<LeverActionRifle>(), 1);
+            recipe2.AddTile(TileID.MythrilAnvil);
+            recipe2.Register();
 
         }
 
@@ -69,17 +81,15 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            int NumProjectiles = 1;
-            if (Main.rand.NextBool(3))
-            {
-                type = ProjectileID.CrystalBullet;
-                NumProjectiles = 2;
-            }
+            type = ProjectileID.ExplosiveBullet;
+
+
+
         }
 
-        public override bool CanConsumeAmmo(Item ammo, Player player)
+        public override void HoldItem(Player player)
         {
-            return Main.rand.NextFloat() >= 0.20f;
+            player.scope = true;
         }
 
     }

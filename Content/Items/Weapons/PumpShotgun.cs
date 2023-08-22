@@ -49,16 +49,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.ArmorPenetration = 10;
         }
 
-        public override void AddRecipes()
-        {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<ModifiedPumpShotgun>(), 1);
-            recipe.AddIngredient(ModContent.ItemType<NutsnBolts>(), 1);
-            recipe.AddTile(TileID.TinkerersWorkbench);
-            recipe.Register();
-
-        }
-
         public override Vector2? HoldoutOffset()
         {
             return new Vector2(-9f, 0);

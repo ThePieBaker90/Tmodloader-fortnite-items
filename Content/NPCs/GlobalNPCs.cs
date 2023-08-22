@@ -49,7 +49,12 @@ namespace FortniteItems.Content.NPCs
                     shop.Add<ChargeShotgun>();
                 }
 
-                
+                if (NPC.downedGoblins == true)
+                {
+                    shop.Add<LeverActionRifle>();
+                }
+
+
                 shop.Add<DMR>();
                 
             }//if arms dealer
@@ -127,6 +132,11 @@ namespace FortniteItems.Content.NPCs
             if (npc.type == NPCID.KingSlime) //Burst SMG Drop from King Slime
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 2));
+            }
+
+            if (npc.type == NPCID.Golem) //Mammoth Pistol Drop from golem
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MammothPistol>(), 12));
             }
 
             if (npc.type == NPCID.Frankenstein) //Mechanical Parts Drop from frankenstein

@@ -22,12 +22,12 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetDefaults()
         {
 
-            Item.damage = 11;
+            Item.damage = 8;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 13;
-            Item.useAnimation = 13;
+            Item.useTime = 17;
+            Item.useAnimation = 17;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.2f;
             Item.value = Item.sellPrice(gold: 1, silver: 50);

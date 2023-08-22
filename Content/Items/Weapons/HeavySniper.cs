@@ -59,7 +59,7 @@ namespace FortniteItems.Content.Items.Weapons
             altrecipe.AddIngredient(ItemID.ShroomiteBar, 12);
             altrecipe.AddIngredient(ItemID.SniperScope, 1);
             altrecipe.AddIngredient(ItemID.IllegalGunParts, 1);
-            altrecipe.AddIngredient(ModContent.ItemType<Scar>());
+            altrecipe.AddIngredient(ModContent.ItemType<BoltActionSniper>());
             altrecipe.AddTile(TileID.Autohammer);
             altrecipe.Register();
 

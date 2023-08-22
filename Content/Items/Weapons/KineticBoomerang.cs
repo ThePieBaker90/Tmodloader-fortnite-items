@@ -15,7 +15,7 @@ namespace FortniteItems.Content.Items.Consumables
         public override void SetStaticDefaults()
         {
 
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 99;
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         //Post eye consumable gotten from the demo man
         public override void SetDefaults()
