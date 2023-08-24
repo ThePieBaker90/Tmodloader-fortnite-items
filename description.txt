@@ -2,11 +2,11 @@ This mod adds items from the hit game "Fortnite Battle Royale"
 
 Currently there currently are 101 Items (as of 3.0) all using sounds from Fortnite.
 
-From the Chug Jug to the Scar to even the Exotic Heisted Blink Mag SMG, this mod implements many items from Fortnite.
+From the Chug Jug to the MK7-AR to even the Exotic Heisted Blink Mag SMG, this mod implements many items from Fortnite.
 
 Although not all of the items in Fortnite are currently implemented, all of them are planned to come in the future.
 
-Calamity is not required to play but is highly recommended for balance purposes, additionally certain weapons are only obtainable when calamity is installed.
+Recipes and weapon stats change when calamity is installed.
 
 Wiki: https://github.com/ThePieBaker90/Tmodloader-fortnite-items/wiki
 Github: https://github.com/ThePieBaker90/Tmodloader-fortnite-items

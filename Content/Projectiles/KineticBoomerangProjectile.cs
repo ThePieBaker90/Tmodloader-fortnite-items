@@ -21,9 +21,9 @@ namespace FortniteItems.Content.Projectiles
 
         public override void SetDefaults()
         {
-            Projectile.CloneDefaults(ProjectileID.LightDisc);
+            Projectile.CloneDefaults(ProjectileID.PossessedHatchet);
             Projectile.penetrate = -1;
-            AIType = ProjectileID.LightDisc; // Act exactly like a light disccccccc
+            AIType = ProjectileID.PossessedHatchet; // Act exactly like a light disccccccc
         }
 
 

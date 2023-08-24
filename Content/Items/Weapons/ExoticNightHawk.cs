@@ -103,6 +103,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void HoldItem(Player player)
         {
             player.scope = true;
+            player.AddBuff(BuffID.Hunter, 1);
         }
 
     }
