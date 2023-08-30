@@ -1,13 +1,5 @@
-﻿Version 3.11 Changelog
+﻿Version 3.12 Changelog
 
-Added the Explosive Repeater Rifle, Lever Action Rifle, Mammoth Pistol
+Fixed a bug where the lever action rifle's sounds would become desynced from the weapon firing
 
-Reworked the Modified Pump Shotgun into the Sharptooth Shotgun
-
-Reduced the damage and firing rate of the assault rifle
-Reduced the damage of the modified assault rifle
-
-Modified the Flaregun Sprite
-
-Fixed an error where 99 kinetic boomerangs were required to research it in journey mode
-Fixed an error with the Heavy sniper rifle's recipe
+Fixed a typo in the name of the exotic hoprock dual barreled pistol where it was implied there were multiple pistols (I wish!).

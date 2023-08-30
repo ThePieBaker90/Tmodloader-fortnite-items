@@ -27,7 +27,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.width = 40;
             Item.height = 40;
             Item.useTime = 50;
-            Item.useAnimation = 48;
+            Item.useAnimation = 50;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
             Item.value = Item.buyPrice(gold: 10);

@@ -80,7 +80,7 @@ namespace FortniteItems.Content.Items.Weapons
             }//adds calamity recipe
             else
             {
-
+                //dropped by blood nautilus when calamity isnt installed
             }
 
         }
