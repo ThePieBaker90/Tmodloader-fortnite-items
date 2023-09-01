@@ -36,6 +36,7 @@ namespace FortniteItems.Content.Items.Weapons
                 Item.useAnimation = 6;
                 Item.damage = 33;
             }
+            else
             {
                 Item.useTime = 5;
                 Item.useAnimation = 5;

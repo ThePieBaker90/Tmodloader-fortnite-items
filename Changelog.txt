@@ -1,13 +1,21 @@
-﻿Version 3.11 Changelog
+﻿Version 3.12 Changelog
 
-Added the Explosive Repeater Rifle, Lever Action Rifle, Mammoth Pistol
+Added the rotating gizmo
 
-Reworked the Modified Pump Shotgun into the Sharptooth Shotgun
+Renamed mechanical parts to sleek mechanical parts
 
-Reduced the damage and firing rate of the assault rifle
-Reduced the damage of the modified assault rifle
+Updated the minigun recipe.
+Updated the makeshift assault rifle sprite.
+Updated the mechanical parts sprite.
 
-Modified the Flaregun Sprite
+Adjusted the sell price of the lever action rifle (7 gold 50 silver -> 2 gold 50 silver).
+Adjusted the sell price of the explosive repeater rifle (50 silver -> 15 gold).
+Adjusted the bullet velocity of the explosive repeater rifle (200 -> 20).
 
-Fixed an error where 99 kinetic boomerangs were required to research it in journey mode
-Fixed an error with the Heavy sniper rifle's recipe
+Removed the ability for the thermal scoped assault rifle to transform musket balls into chlorophyte bullets.
+Removed the tooltip from the mechanical parts
+
+Fixed a bug where the lever action rifle's sounds would become desynced from the weapon firing.
+Fixed a typo in the name of the exotic hoprock dual barreled pistol where it was implied there were multiple pistols.
+Fixed a typo in the rarity of the mechanical parts causing it to be exotic
+Fixed a typo in the description of the nuts n bolts

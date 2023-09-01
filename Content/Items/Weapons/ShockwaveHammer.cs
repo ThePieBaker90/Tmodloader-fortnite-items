@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using Terraria.DataStructures;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -28,6 +29,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.height = 76;
             Item.useTime = 40;
             Item.useAnimation = 40;
+            //Item.reuseDelay = 30;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 20;
             Item.value = Item.sellPrice(gold: 24);
@@ -37,6 +39,8 @@ namespace FortniteItems.Content.Items.Weapons
             Item.autoReuse = true;
             Item.ArmorPenetration = 100;
             Item.crit = 46;
+            //Item.shoot = ProjectileID.DeathSickle;
+            Item.shootSpeed = 20;
         }
 
         public override void AddRecipes()
@@ -63,6 +67,27 @@ namespace FortniteItems.Content.Items.Weapons
                 recipe.Register();
             }
         }
+
+        /*
+        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+
+        {
+            const int NumProjectiles = 3; // The humber of projectiles that this gun will shoot.
+
+            type = ProjectileID.DeathSickle;
+
+            for (int i = 0; i < NumProjectiles; i++)
+            {
+                // Rotate the velocity randomly by 30 degrees at max.
+                Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(4));
+
+                // Create a projectile.
+                Projectile.NewProjectileDirect(source, position, newVelocity, type, damage, knockback, player.whoAmI);
+            }
+
+            return false; // Return false because we don't want tModLoader to shoot projectile
+        }
+        */
 
         public override Vector2? HoldoutOffset()
         {
