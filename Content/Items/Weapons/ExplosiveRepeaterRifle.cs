@@ -30,7 +30,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useAnimation = 46;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
-            Item.value = Item.sellPrice(silver: 50);
+            Item.value = Item.sellPrice(gold: 15);
             Item.rare = ItemRarityID.LightRed; //Post WoF Craft
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/LeverActionShoot")
             {
@@ -40,7 +40,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 200;
+            Item.shootSpeed = 20;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.ArmorPenetration = 30;

@@ -99,6 +99,11 @@ namespace FortniteItems.Content.NPCs
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
         {
 
+            if (npc.type == NPCID.Deerclops) //Rotating Gizmo drop from Deerclops
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RotatingGizmo>(), 1));
+            }
+
             if (npc.type == NPCID.EyeofCthulhu) //Six Shooter drop from EoC if calamity is not installed
             {
                 ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
@@ -119,7 +124,7 @@ namespace FortniteItems.Content.NPCs
 
             }
 
-            if (npc.type == NPCID.BloodNautilus) //Compact SMG drop from martian saucer (core) if calamity is not installed
+            if (npc.type == NPCID.BloodNautilus) //Dual Pistol drop from blood nautilus if calamity is not installed
             {
                 ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
                 if (calamityMod == null)

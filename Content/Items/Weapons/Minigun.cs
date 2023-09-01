@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -47,7 +48,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.DontStarveShaderItem, 1);
+            recipe.AddIngredient(ModContent.ItemType<RotatingGizmo>(), 1);
             recipe.AddIngredient(ItemID.HellstoneBar, 12);
             recipe.AddTile(TileID.Anvils);
             recipe.Register();

@@ -31,8 +31,8 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
             Item.value = Item.buyPrice(gold: 10);
-            Item.value = Item.sellPrice(gold: 7, silver: 50);
-            Item.rare = ItemRarityID.Green; //Goblin Army Drop
+            Item.value = Item.sellPrice(gold: 2, silver: 50);
+            Item.rare = ItemRarityID.Green; //Goblin Army Buy
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/LeverActionShoot")
             {
                 Volume = 0.6f,
@@ -62,9 +62,6 @@ namespace FortniteItems.Content.Items.Weapons
             {
                 position += muzzleOffset;
             }
-
-
-
 
         }
 

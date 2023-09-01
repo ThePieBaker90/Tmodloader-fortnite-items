@@ -8,14 +8,11 @@ using FortniteItems.Content.Rarities;
 
 namespace FortniteItems.Content.Items.Materials
 {
-    public class MechanicalParts : ModItem
+    public class RotatingGizmo : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MechanicalParts";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/RotatingGizmo";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Mechanical Parts");
-            // Tooltip.SetDefault("Used to craft mechanical weapons");
-
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 20;
         }
         //an early game pistol
@@ -25,7 +22,7 @@ namespace FortniteItems.Content.Items.Materials
             Item.width = 40;
             Item.height = 40;
             Item.value = Item.sellPrice(gold: 1);
-            Item.rare = ItemRarityID.Pink; //Solar eclipse drop
+            Item.rare = ItemRarityID.Green; //Deerclops drop
             Item.maxStack = 999;
         }
 

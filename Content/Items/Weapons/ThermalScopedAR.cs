@@ -68,10 +68,6 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            if (type == ProjectileID.Bullet)
-            {
-                type = ProjectileID.ChlorophyteBullet;
-            }
         }
 
         public override bool CanConsumeAmmo(Item ammo, Player player)
