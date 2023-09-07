@@ -1047,6 +1047,11 @@ Mods: {
 				DisplayName: Rotating Gizmo
 				Tooltip: ""
 			}
+
+			FirstShotgun: {
+				DisplayName: First Shotgun
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {

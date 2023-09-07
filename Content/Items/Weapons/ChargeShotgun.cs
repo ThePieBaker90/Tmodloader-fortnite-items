@@ -10,6 +10,7 @@ using FortniteItems.Content.Projectiles;
 
 namespace FortniteItems.Content.Items.Weapons
 {
+
     public class ChargeShotgun : ModItem
     {
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ChargeShotgun";
@@ -21,6 +22,8 @@ namespace FortniteItems.Content.Items.Weapons
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         //a basic post skeletron shotgun that hits hard 
+
+        
         public override void SetDefaults()
         {
 
@@ -49,8 +52,9 @@ namespace FortniteItems.Content.Items.Weapons
             Item.crit = 5;
             Item.ArmorPenetration = 10;
 
+            
+            
         }
-
 
         public override Vector2? HoldoutOffset()
         {
@@ -73,5 +77,7 @@ namespace FortniteItems.Content.Items.Weapons
 
             return false; // Return false because we don't want tModLoader to shoot projectile
         }
+
+
     }
 }

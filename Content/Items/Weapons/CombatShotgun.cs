@@ -64,7 +64,6 @@ namespace FortniteItems.Content.Items.Weapons
 
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-
         {
             const int NumProjectiles = 3; // The humber of projectiles that this gun will shoot.
 
@@ -82,5 +81,7 @@ namespace FortniteItems.Content.Items.Weapons
 
             return false; // Return false because we don't want tModLoader to shoot projectile
         }
+
+        
     }
 }

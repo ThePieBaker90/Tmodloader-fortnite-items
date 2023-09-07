@@ -112,6 +112,10 @@ namespace FortniteItems.Content.Items.Weapons
             //A modified version of the equation from ror2's safer spaces calculation. Dont ask why because I dont know why either.
             //I realize critters count to the total but I cant figure out how to fix it, this weapon is already a nightmare to
             //bug check and balance so it is going to be kept in as a cheese strategy
+            if (fireRateInt <= 1)
+            {
+                fireRateInt = 1;
+            }//Check to make sure fire rate does not go out of bounds
             Item.useTime = fireRateInt;
             Item.useAnimation = fireRateInt;
 
