@@ -8,14 +8,16 @@ using FortniteItems.Content.Items.Materials;
 using FortniteItems.Content.Items.Weapons;
 using System;
 using Terraria.DataStructures;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Accessories
 {
     public class FirstShotgun : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/LastShots";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/FirstShotgun";
 
         public static int timer = 180;
+        public static bool effectsPlayed = false;
 
         public override void SetStaticDefaults()
         {
@@ -33,21 +35,14 @@ namespace FortniteItems.Content.Items.Accessories
             //check to see that we are looking at the wearer
             if (player.whoAmI == Main.myPlayer)
             {
-                //checks every slot in the inventory
-                foreach (Item item in player.inventory)
+                //if the timer is complete we give a damage bonus to items ending with shotgun
+                if (timer <= 0)
                 {
-                    //if the timer is complete we give a damage bonus to items ending with shotgun
-                    if (timer <= 0)
-                    {
-                        if (item.Name.EndsWith("Shotgun") || item.Name.EndsWith("shotgun"))
-                        {
-                            player.GetDamage(DamageClass.Generic) += 0.05f;
-                            
-                        }
-                    }
+                    player.GetDamage(ModContent.GetInstance<ShotgunClass>()) += 0.20f;
                 }
                 if (player.controlUseItem)
                 {
+                    effectsPlayed = false;
                     timer = 180;//3 second timer
                 }
 
@@ -58,6 +53,12 @@ namespace FortniteItems.Content.Items.Accessories
                 timer--;
             }
 
+            if(timer == 0 && effectsPlayed == false)
+            {
+                effectsPlayed = true;
+                SoundEngine.PlaySound(SoundID.Item149);
+                
+            }
         }
 
 

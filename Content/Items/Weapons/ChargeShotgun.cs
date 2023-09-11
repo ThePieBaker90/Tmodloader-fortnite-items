@@ -7,6 +7,7 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using Microsoft.Xna.Framework.Input;
 using FortniteItems.Content.Projectiles;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -28,7 +29,7 @@ namespace FortniteItems.Content.Items.Weapons
         {
 
             Item.damage = 300;
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<ShotgunClass>();
             Item.width = 40;
             Item.height = 40;
             Item.useTime = 40;
