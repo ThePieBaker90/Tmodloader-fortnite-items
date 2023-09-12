@@ -12,6 +12,7 @@ using Microsoft.Xna.Framework.Input;
 using FortniteItems.Content.Items.Materials;
 using FortniteItems.Content.Buffs;
 using FortniteItems.Content.Rarities;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -43,7 +44,7 @@ namespace FortniteItems.Content.Items.Weapons
                 Item.damage = 40;
             }
 
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<SubmachineGunClass>();
             Item.width = 40;
             Item.height = 40;
             Item.useStyle = ItemUseStyleID.Shoot;

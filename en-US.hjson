@@ -1,6 +1,14 @@
 Mods: {
 	FortniteItems: {
-		DamageClasses.ShotgunClass.DisplayName: shotgun damage
+		DamageClasses.ShotgunClass.DisplayName: ranged damage
+		DamageClasses.AssaultRifleClass.DisplayName: ranged damage
+		DamageClasses.SubmachineGunClass.DisplayName: ranged damage
+		DamageClasses.BowClass.DisplayName: ranged damage
+		DamageClasses.ExplosiveClass.DisplayName: ranged damage
+		DamageClasses.MarksmanRifleClass.DisplayName: ranged damage
+		DamageClasses.PistolClass.DisplayName: ranged damage
+		DamageClasses.SniperRifleClass.DisplayName: ranged damage
+
 
 		Buffs: {
 			MatterDerealization: {

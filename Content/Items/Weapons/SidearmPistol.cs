@@ -8,6 +8,7 @@ using System;
 using System.Reflection.PortableExecutable;
 using Terraria.DataStructures;
 using System.Transactions;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -37,7 +38,7 @@ namespace FortniteItems.Content.Items.Weapons
         {
 
             Item.damage = fullLifeDmg;
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<PistolClass>();
             Item.width = 40;
             Item.height = 40;
             Item.useTime = fullLifeUse;

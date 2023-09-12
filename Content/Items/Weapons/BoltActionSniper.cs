@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -24,7 +25,7 @@ namespace FortniteItems.Content.Items.Weapons
         {
 
             Item.damage = 80;
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<SniperRifleClass>();
             Item.width = 40;
             Item.height = 40;
             Item.useTime = 90;

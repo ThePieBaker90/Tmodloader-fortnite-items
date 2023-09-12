@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -44,7 +45,7 @@ namespace FortniteItems.Content.Items.Weapons
 
             Item.width = 40;
             Item.height = 40;
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<SubmachineGunClass>();
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/CompactSMGShoot")

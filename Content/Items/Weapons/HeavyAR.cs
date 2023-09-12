@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.Items.Materials;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -22,7 +23,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetDefaults()
         {
             Item.damage = 150;
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<AssaultRifleClass>();
             Item.width = 65;
             Item.height = 40;
             Item.useTime = 20;

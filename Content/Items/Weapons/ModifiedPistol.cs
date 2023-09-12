@@ -9,6 +9,7 @@ using System.Reflection.PortableExecutable;
 using Terraria.DataStructures;
 using System.Transactions;
 using FortniteItems.Content.Items.Materials;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -40,7 +41,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shootSpeed = baseShoot;
             Item.knockBack = baseKnock;
 
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<PistolClass>();
             Item.width = 40;
             Item.height = 40;
             Item.useStyle = ItemUseStyleID.Shoot;

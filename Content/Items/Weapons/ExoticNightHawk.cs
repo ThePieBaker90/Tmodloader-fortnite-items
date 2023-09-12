@@ -6,6 +6,7 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.Items.Materials;
 using FortniteItems.Content.Rarities;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -26,7 +27,7 @@ namespace FortniteItems.Content.Items.Weapons
 
             Item.damage = 300;
             //needs a buff when calamity comes out
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<PistolClass>();
             Item.width = 40;
             Item.height = 40;
             Item.useTime = 21;

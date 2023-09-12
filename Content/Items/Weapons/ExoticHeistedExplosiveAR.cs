@@ -7,6 +7,7 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.Items.Materials;
 using FortniteItems.Content.Rarities;
+using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -53,7 +54,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shootSpeed = 20;
 
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.DamageType = DamageClass.Ranged;
+            Item.DamageType = ModContent.GetInstance<AssaultRifleClass>();
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
 
