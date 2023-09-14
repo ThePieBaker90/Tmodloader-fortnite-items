@@ -1,6 +1,6 @@
 ﻿Version 3.13 Changelog
 
-Added 
+Added First Shotgun Augment, First Assault Augment
 
 Modified the Charge SMG sprite.
 

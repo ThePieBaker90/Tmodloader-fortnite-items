@@ -1,14 +1,47 @@
 Mods: {
 	FortniteItems: {
-		DamageClasses.ShotgunClass.DisplayName: ranged damage
-		DamageClasses.AssaultRifleClass.DisplayName: ranged damage
-		DamageClasses.SubmachineGunClass.DisplayName: ranged damage
-		DamageClasses.BowClass.DisplayName: ranged damage
-		DamageClasses.ExplosiveClass.DisplayName: ranged damage
-		DamageClasses.MarksmanRifleClass.DisplayName: ranged damage
-		DamageClasses.PistolClass.DisplayName: ranged damage
-		DamageClasses.SniperRifleClass.DisplayName: ranged damage
-
+		DamageClasses: {
+			ShotgunClass.DisplayName:
+				'''
+				ranged damage
+				Shotgun 
+				'''
+			AssaultRifleClass.DisplayName:
+				'''
+				ranged damage
+				Assault Weapon
+				'''
+			SubmachineGunClass.DisplayName:
+				'''
+				ranged damage
+				Submachine Gun
+				'''
+			BowClass.DisplayName:
+				'''
+				ranged damage
+				Bow
+				'''
+			ExplosiveClass.DisplayName:
+				'''
+				ranged damage
+				Explosive Weapon
+				'''
+			MarksmanRifleClass.DisplayName:
+				'''
+				ranged damage
+				Marksman Weapon
+				'''
+			PistolClass.DisplayName:
+				'''
+				ranged damage
+				Pistol
+				'''
+			SniperRifleClass.DisplayName:
+				'''
+				ranged damage
+				Sniper Rifle
+				'''
+		}
 
 		Buffs: {
 			MatterDerealization: {
@@ -1061,6 +1094,25 @@ Mods: {
 			FirstShotgun: {
 				DisplayName: First Shotgun
 				Tooltip: 50% increased damage on shotguns after not firing for 3 seconds
+			}
+
+			PistolSalvo: {
+				DisplayName: Pistol Salvo
+				Tooltip: 45% increased damage on pistols, but 10% slower firing speed
+			}
+
+			FirstAssault: {
+				DisplayName: First Assault
+				Tooltip:
+					'''
+					50% increased damage on assault weapons after not firing for 3 seconds
+					For weapons that fire in a burst, only the first bullet has a damage increase
+					'''
+			}
+
+			CobraDMR: {
+				DisplayName: Cobra DMR
+				Tooltip: ""
 			}
 		}
 

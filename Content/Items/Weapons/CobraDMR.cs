@@ -8,10 +8,10 @@ using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
-    public class ThermalDMR : ModItem
+    public class CobraDMR : ModItem
     {
 
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ThermalDMR";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/CobraDMR";
 
         public override void SetStaticDefaults()
         {
@@ -31,7 +31,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
             Item.value = Item.sellPrice(gold: 10);
-            Item.rare = ItemRarityID.Orange; //Post BEEEEEEEEEEEEEEEEEEEE craft
+            Item.rare = ItemRarityID.Orange; //
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/DMRShoot")
             {
                 Volume = 0.6f,
@@ -45,19 +45,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useAmmo = AmmoID.Bullet;
             Item.ArmorPenetration = 25;
             Item.crit = 10;
-
-        }
-
-        public override void AddRecipes()
-        {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.Radar, 1);
-            recipe.AddIngredient(ItemID.BeeWax, 10);
-            recipe.AddIngredient(ItemID.Stinger, 5);
-            recipe.AddIngredient(ItemID.JungleSpores, 10);
-            recipe.AddIngredient(ModContent.ItemType<DMR>());
-            recipe.AddTile(TileID.Anvils);
-            recipe.Register();
 
         }
 

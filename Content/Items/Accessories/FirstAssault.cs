@@ -12,9 +12,9 @@ using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Accessories
 {
-    public class FirstShotgun : ModItem
+    public class FirstAssault : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/FirstShotgun";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/FirstAssault";
 
         public static int timer = 180;
         public static bool effectsPlayed = false;
@@ -37,10 +37,10 @@ namespace FortniteItems.Content.Items.Accessories
             //check to see that we are looking at the wearer
             if (player.whoAmI == Main.myPlayer)
             {
-                //if the timer is complete we give a damage bonus to items in the shotgun class
+                //if the timer is complete we give a damage bonus to items in the assault class
                 if (timer <= 0)
                 {
-                    player.GetDamage(ModContent.GetInstance<ShotgunClass>()) *= 1.50f;
+                    player.GetDamage(ModContent.GetInstance<AssaultRifleClass>()) *= 1.50f;
                 }
                 if (player.controlUseItem)
                 {
@@ -66,9 +66,9 @@ namespace FortniteItems.Content.Items.Accessories
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.ShroomiteBar, 5);
+            recipe.AddIngredient(ItemID.StoneBlock, 5);
             recipe.AddIngredient(ItemID.Stopwatch, 1);
-            recipe.AddIngredient(ModContent.ItemType<MakeshiftShotgun>());
+            recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>());
             recipe.AddTile(TileID.Autohammer);
             recipe.Register();
 
