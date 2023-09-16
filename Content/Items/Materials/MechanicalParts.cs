@@ -10,7 +10,7 @@ namespace FortniteItems.Content.Items.Materials
 {
     public class MechanicalParts : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MechanicalParts";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/SleekMechanicalParts";
         public override void SetStaticDefaults()
         {
             // DisplayName.SetDefault("Mechanical Parts");

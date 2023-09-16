@@ -1,7 +1,4 @@
-﻿using Microsoft.Xna.Framework;
-using System;
-using System.Linq;
-using Terraria;
+﻿using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.Localization;
@@ -20,55 +17,55 @@ using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.GlobalItems
 {
-    public class DamageClassAssaultGlobalItem : GlobalItem
+    public class DamageClassPistolGlobalItem : GlobalItem
     {
         public override bool AppliesToEntity(Item item, bool lateInstatiation)
         {
-            if(item.type == ItemID.Minishark)
+            if (item.type == ItemID.FlintlockPistol)
             {
                 return true;
             }
-            else if(item.type == ItemID.ClockworkAssaultRifle){
-                return true;
-            }
-            else if (item.type == ItemID.CoinGun)
+            else if (item.type == ItemID.TheUndertaker)
             {
                 return true;
             }
-            else if (item.type == ItemID.Megashark)
+            else if (item.type == ItemID.Revolver)
             {
                 return true;
             }
-            else if (item.type == ItemID.CandyCornRifle)
+            else if (item.type == ItemID.Handgun)
             {
                 return true;
             }
-            else if (item.type == ItemID.VortexBeater)
+            else if (item.type == ItemID.PhoenixBlaster)
             {
                 return true;
             }
-            else if (item.type == ItemID.SDMG)
+            else if (item.type == ItemID.VenusMagnum)
             {
                 return true;
             }
-            else if (item.type == ItemID.DartRifle)
+            else if (item.type == ItemID.FlareGun)
             {
                 return true;
             }
-            else if (item.type == ItemID.NailGun)
+            else if (item.type == ItemID.PainterPaintballGun)
             {
                 return true;
             }
-            else 
-            { 
-                return false; 
+            else if (item.type == ItemID.DartPistol)
+            {
+                return true;
             }
-            
+            else
+            {
+                return false;
+            }
         }
 
         public override void SetDefaults(Item item)
         {
-            item.DamageType = ModContent.GetInstance<AssaultRifleClass>();
+            item.DamageType = ModContent.GetInstance<PistolClass>();
         }
     }
 }
