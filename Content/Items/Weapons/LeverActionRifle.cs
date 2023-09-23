@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.DamageClasses;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -23,7 +24,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetDefaults()
         {
 
-            Item.damage = 44;
+            Item.damage = 39;
             Item.DamageType = ModContent.GetInstance<SniperRifleClass>();
             Item.width = 40;
             Item.height = 40;
@@ -50,6 +51,23 @@ namespace FortniteItems.Content.Items.Weapons
 
         }
 
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.IllegalGunParts, 1);
+            recipe.AddIngredient(ModContent.ItemType<RustyMechanicalParts>(), 5);
+            recipe.AddIngredient(ItemID.GoldBar, 12);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
+
+            Recipe recipe2 = CreateRecipe();
+            recipe2.AddIngredient(ItemID.IllegalGunParts, 1);
+            recipe2.AddIngredient(ModContent.ItemType<RustyMechanicalParts>(), 5);
+            recipe2.AddIngredient(ItemID.PlatinumBar, 12);
+            recipe2.AddTile(TileID.Anvils);
+            recipe2.Register();
+
+        }
 
         public override Vector2? HoldoutOffset()
         {

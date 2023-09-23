@@ -49,11 +49,6 @@ namespace FortniteItems.Content.NPCs
                     shop.Add<ChargeShotgun>();
                 }
 
-                if (NPC.downedGoblins == true)
-                {
-                    shop.Add<LeverActionRifle>();
-                }
-
 
                 shop.Add<DMR>();
                 
@@ -137,6 +132,31 @@ namespace FortniteItems.Content.NPCs
             if (npc.type == NPCID.KingSlime) //Burst SMG Drop from King Slime
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 2));
+            }
+
+            if (npc.type == NPCID.ScutlixRider ||
+                npc.type == NPCID.MartianWalker ||
+                npc.type == NPCID.MartianDrone ||
+                npc.type == NPCID.GigaZapper ||
+                npc.type == NPCID.MartianEngineer ||
+                npc.type == NPCID.MartianOfficer ||
+                npc.type == NPCID.RayGunner ||
+                npc.type == NPCID.GrayGrunt ||
+                npc.type == NPCID.BrainScrambler ||
+                npc.type == NPCID.MartianSaucer
+                ) //Alien Nanites Drop from Martian Madness Enemies
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AlienNanites>(), 100));
+            }
+
+            if (npc.type == NPCID.GoblinPeon ||
+                npc.type == NPCID.GoblinSorcerer ||
+                npc.type == NPCID.GoblinThief ||
+                npc.type == NPCID.GoblinWarrior ||
+                npc.type == NPCID.GoblinArcher
+                ) //Rusty Mechanical Parts Drop from Goblin Army Enemies
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RustyMechanicalParts>(), 100));
             }
 
             if (npc.type == NPCID.Golem) //Mammoth Pistol Drop from golem

@@ -26,8 +26,8 @@ namespace FortniteItems.Content.Items.Accessories
 
         public override void SetDefaults()
         {
-            Item.rare = ItemRarityID.Lime; //shroomite craft
-            Item.value = Item.sellPrice(gold: 5);
+            Item.rare = ItemRarityID.Blue; //shroomite craft
+            Item.value = Item.sellPrice(gold: 1);
             Item.accessory = true;
             Item.width = 40;
             Item.height = 40;
@@ -66,10 +66,10 @@ namespace FortniteItems.Content.Items.Accessories
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.StoneBlock, 5);
+            recipe.AddIngredient(ItemID.Sapphire, 5);
             recipe.AddIngredient(ItemID.Stopwatch, 1);
             recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>());
-            recipe.AddTile(TileID.Autohammer);
+            recipe.AddTile(TileID.Anvils);
             recipe.Register();
 
         }

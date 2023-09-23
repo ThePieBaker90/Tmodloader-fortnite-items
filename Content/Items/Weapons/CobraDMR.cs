@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.DamageClasses;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -18,7 +19,7 @@ namespace FortniteItems.Content.Items.Weapons
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a post EoC sniper rifle
+        //a post deerclops sniper rifle
         public override void SetDefaults()
         {
 
@@ -26,12 +27,12 @@ namespace FortniteItems.Content.Items.Weapons
             Item.DamageType = ModContent.GetInstance<MarksmanRifleClass>();
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 19;
-            Item.useAnimation = 19;
+            Item.useTime = 15;
+            Item.useAnimation = 15;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
-            Item.value = Item.sellPrice(gold: 10);
-            Item.rare = ItemRarityID.Orange; //
+            Item.value = Item.sellPrice(gold: 11);
+            Item.rare = ItemRarityID.Pink; //Post deerclops
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/DMRShoot")
             {
                 Volume = 0.6f,
@@ -47,6 +48,17 @@ namespace FortniteItems.Content.Items.Weapons
             Item.crit = 10;
 
         }
+
+        /*
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ModContent.ItemType<RotatingGizmo>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<DMR>(), 1);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
+        }
+        */
 
         public override Vector2? HoldoutOffset()
         {
@@ -67,7 +79,6 @@ namespace FortniteItems.Content.Items.Weapons
         public override void HoldItem(Player player)
         {
             player.scope = true;
-            player.AddBuff(BuffID.Hunter, 1);
         }
 
     }

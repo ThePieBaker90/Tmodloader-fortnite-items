@@ -1114,6 +1114,16 @@ Mods: {
 				DisplayName: Cobra DMR
 				Tooltip: ""
 			}
+
+			AlienNanites: {
+				DisplayName: Alien Nanites
+				Tooltip: ""
+			}
+
+			RustyMechanicalParts: {
+				DisplayName: Rusty Mechanical Parts
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {

@@ -50,14 +50,14 @@ namespace FortniteItems.Content.Items.Weapons
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-            recipe.AddIngredient(ItemID.SpikyBall, 25);
+            recipe.AddIngredient(ModContent.ItemType<RustyMechanicalParts>(), 5);
             recipe.AddIngredient(ItemID.GoldBar, 12);
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
 
             Recipe recipe2 = CreateRecipe();
             recipe2.AddIngredient(ModContent.ItemType<MakeshiftAR>(), 1);
-            recipe2.AddIngredient(ItemID.SpikyBall, 25);
+            recipe2.AddIngredient(ModContent.ItemType<RustyMechanicalParts>(), 5);
             recipe2.AddIngredient(ItemID.PlatinumBar, 12);
             recipe2.AddTile(TileID.Anvils);
             recipe2.Register();

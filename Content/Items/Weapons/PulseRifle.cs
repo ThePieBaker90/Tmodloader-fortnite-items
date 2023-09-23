@@ -4,6 +4,7 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -47,8 +48,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.SpectreBar, 10);
-            recipe.AddIngredient(ItemID.MartianConduitPlating, 25);
+            recipe.AddIngredient(ModContent.ItemType<AlienNanites>(), 5);
             recipe.AddIngredient(ItemID.MagicMissile, 1);
             recipe.AddTile(TileID.AdamantiteForge);
             recipe.Register();
