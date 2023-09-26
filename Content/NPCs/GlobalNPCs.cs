@@ -28,28 +28,10 @@ namespace FortniteItems.Content.NPCs
         {
             if (shop.NpcType == NPCID.ArmsDealer)
             {
-
-                if (NPC.downedBoss3 == true)
-                {
-                    shop.Add<PumpShotgun>();
-                }
-
-                if (NPC.downedEmpressOfLight == true)
-                {
-                    shop.Add<MK7AR>();
-                }
-
-                if (Main.hardMode == true)
-                {
-                    shop.Add<HeavyShotgun>();
-                }
-
-                if (NPC.downedFishron == true)
-                {
-                    shop.Add<ChargeShotgun>();
-                }
-
-
+                shop.Add<MK7AR>(Condition.DownedEmpressOfLight);
+                shop.Add<HeavyShotgun>(Condition.Hardmode);
+                shop.Add<ChargeShotgun>(Condition.DownedDukeFishron);
+                shop.Add<PumpShotgun>(Condition.DownedSkeletron);
                 shop.Add<DMR>();
                 
             }//if arms dealer
@@ -69,9 +51,9 @@ namespace FortniteItems.Content.NPCs
             {
                 ModLoader.TryGetMod("SOTS", out Mod SOTS);
 
-                if (NPC.downedBoss1 == true && SOTS == null)
+                if (SOTS == null)
                 {
-                    shop.Add<VGrenade>();
+                    shop.Add<VGrenade>(Condition.DownedEyeOfCthulhu);
                 }
 
 

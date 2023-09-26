@@ -1,16 +1,3 @@
-﻿Version 3.13 Changelog
+﻿Version 3.131 Changelog
 
-Added first shotgun augment, first assault augment, alien nanites, and rusty mechanical parts.
-
-Modified the charge SMG sprite.
-Modified the pulse rifle sprite.
-Modified the exotic burst pulse rifle sprite.
-
-Adjusted the damage of the lever action rifle (44->39)
-
-Changed the assault rifle recipe.
-Changed the pulse rifle recipe.
-Changed the method of obtaining the lever action rifle
-
-Fixed a bug with the exotic heisted accelerant shotgun and items that lower use time.
-Fixed a bug with the lever action rifle causing it to not be sold by the arms dealer. (Thank you the guy with the lightning for pointing this out!)
+Fixed an issue causing the arms dealer to only add the DMR to his stock.
