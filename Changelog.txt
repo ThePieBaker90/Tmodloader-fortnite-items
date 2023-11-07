@@ -1,3 +1,13 @@
-﻿Version 3.131 Changelog
+﻿Version 3.2 Changelog
 
-Fixed an issue causing the arms dealer to only add the DMR to his stock.
+Added the Rail Gun, Cobra DMR, Pistol Salvo
+
+Adjusted the damage of the pulse rifle (75->100).
+Adjusted the use time of the pulse rifle (22->21).
+Adjusted the damage of the exotic burst pulse rifle (80->120).
+Adjusted the drop chance of alien nanites (1%->2%).
+Adjusted the drop chance of rusty mechanical parts (1%->2%).
+Adjusted the tooltip of the first shotgun augment to clarify its behavior in burst shots.
+
+Modified the sideways minigun sprite.
+Modified the sideways rifle sprite.

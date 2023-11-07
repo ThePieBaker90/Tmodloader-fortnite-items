@@ -21,12 +21,26 @@ namespace FortniteItems.Content.Items.Accessories
 
         public override void SetStaticDefaults()
         {
+            /* Name: 
+             *  First Shotgun
+             * 
+             * Description: 
+             *  50% increased damage on shotguns after not firing for 3 seconds
+             *  For weapons that fire in a burst, only the first shot has a damage increase
+             * 
+             * Obtain Point:
+             *  Pre Boss Craft
+             *  
+             * Intent:
+             *  Accessory which increases damage for shotgun class items when the user has laid in wait.
+             *  Useful for first shots but less useless for succesive shots.
+             */
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
         public override void SetDefaults()
         {
-            Item.rare = ItemRarityID.Blue; //shroomite craft
+            Item.rare = ItemRarityID.Blue; //Augment
             Item.value = Item.sellPrice(gold: 1);
             Item.accessory = true;
             Item.width = 40;

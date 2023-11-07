@@ -16,6 +16,20 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void SetStaticDefaults()
         {
+            /* Name: 
+             * Cobra DMR
+             * 
+             * Description: 
+             * A marksman rifle with a very fast rate of fire
+             * "Strike like a nondescript snake"
+             * 
+             * Obtain Point:
+             *  Post Deerclops Craft
+             *  
+             * Intent:
+             *  medium damage, with medium knockback and a fast use time (for a DMR).
+             *  Useful for sustained damage on distant enemies, less useful with groups or close enemies.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -23,7 +37,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetDefaults()
         {
 
-            Item.damage = 27;
+            Item.damage = 25;
             Item.DamageType = ModContent.GetInstance<MarksmanRifleClass>();
             Item.width = 40;
             Item.height = 40;
@@ -49,7 +63,7 @@ namespace FortniteItems.Content.Items.Weapons
 
         }
 
-        /*
+        
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
@@ -58,7 +72,7 @@ namespace FortniteItems.Content.Items.Weapons
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
         }
-        */
+        
 
         public override Vector2? HoldoutOffset()
         {

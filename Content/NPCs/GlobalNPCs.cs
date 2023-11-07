@@ -128,7 +128,7 @@ namespace FortniteItems.Content.NPCs
                 npc.type == NPCID.MartianSaucer
                 ) //Alien Nanites Drop from Martian Madness Enemies
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AlienNanites>(), 100));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AlienNanites>(), 50));
             }
 
             if (npc.type == NPCID.GoblinPeon ||
@@ -138,7 +138,7 @@ namespace FortniteItems.Content.NPCs
                 npc.type == NPCID.GoblinArcher
                 ) //Rusty Mechanical Parts Drop from Goblin Army Enemies
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RustyMechanicalParts>(), 100));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RustyMechanicalParts>(), 50));
             }
 
             if (npc.type == NPCID.Golem) //Mammoth Pistol Drop from golem

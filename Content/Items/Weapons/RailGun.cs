@@ -5,56 +5,58 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.DamageClasses;
+using Terraria.DataStructures;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
-    public class BoltActionSniper : ModItem
+    public class RailGun : ModItem
     {
 
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/BoltActionSniper";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/RailGun";
 
         public override void SetStaticDefaults()
         {
             /* Name: 
-             *  Bolt Action Sniper Rifle
+             *  Rail Gun
              * 
              * Description: 
-             *  Turns musket balls into high velocity bullets
-             *  "Hit 'em where they can't reach you"
+             *  A sniper rifle that shoots a piercing laser
+             *  "Pairs great with the recon scanner"
              * 
              * Obtain Point:
-             *  Post EoC Craft
+             *  Post Martian Madness Craft
              *  
              * Intent:
-             *  a high damage, high knockback, but high use time sniper rifle.
-             *  useful for hitting groups up to 3 and for those confident in their aim.
+             *  High damage, infinite pierce, with no knockback and a long use time.
+             *  Useful for big groups of enemies, less useful with bosses.
              */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a post EoC sniper rifle
+        
         public override void SetDefaults()
         {
 
-            Item.damage = 80;
+            Item.damage = 880;
             Item.DamageType = ModContent.GetInstance<SniperRifleClass>();
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 90;
-            Item.useAnimation = 90;
+            Item.useTime = 85;
+            Item.useAnimation = 85;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 2f;
-            Item.value = Item.sellPrice(silver: 50);
-            Item.rare = ItemRarityID.Blue; //Post EoC Craft
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/BoltActionSniperShoot")
+            Item.knockBack = 0;
+            Item.value = Item.sellPrice(gold: 10);
+            Item.rare = ItemRarityID.LightRed; 
+            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/RailGunShoot")
             {
-                Volume = 0.6f,
+                Volume = 0.7f,
                 PitchVariance = 0.2f,
                 MaxInstances = 3,
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 200;
+            Item.shootSpeed = 10;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.ArmorPenetration = 30;
@@ -65,18 +67,10 @@ namespace FortniteItems.Content.Items.Weapons
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.CrimtaneBar, 10);
-            recipe.AddIngredient(ItemID.BlackLens, 1);
-            recipe.AddTile(TileID.Anvils);
-            recipe.AddDecraftCondition(Condition.CrimsonWorld);
+            recipe.AddIngredient(ModContent.ItemType<AlienNanites>(), 5);
+            recipe.AddIngredient(ModContent.ItemType<BoltActionSniper>(), 1);
+            recipe.AddTile(TileID.AdamantiteForge);
             recipe.Register();
-
-            Recipe recipe2 = CreateRecipe();
-            recipe2.AddIngredient(ItemID.DemoniteBar, 10);
-            recipe2.AddIngredient(ItemID.BlackLens, 1);
-            recipe2.AddTile(TileID.Anvils);
-            recipe2.AddDecraftCondition(Condition.CorruptWorld);
-            recipe2.Register();
 
         }
 
@@ -84,6 +78,7 @@ namespace FortniteItems.Content.Items.Weapons
         {
             return new Vector2(-9f, 0);
         }
+
         public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
         {
             Vector2 muzzleOffset = Vector2.Normalize(velocity) * 25f;
@@ -93,14 +88,11 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-
-            if (type == ProjectileID.Bullet)
-            {
-                type = ProjectileID.BulletHighVelocity;
-            }
-
+            type = ModContent.ProjectileType<Projectiles.RailGunProjectile>();
 
         }
+
+        
 
         public override void HoldItem(Player player)
         {

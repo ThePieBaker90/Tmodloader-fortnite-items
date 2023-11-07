@@ -21,12 +21,12 @@ namespace FortniteItems.Content.Items.Weapons
         //UNFINISHED Obtained post plantera
         public override void SetDefaults()
         {
-            Item.damage = 75;
+            Item.damage = 100;
             Item.DamageType = DamageClass.Magic; // Makes the damage register as magic.
             Item.width = 34;
             Item.height = 40;
-            Item.useTime = 22;
-            Item.useAnimation = 22;
+            Item.useTime = 21;
+            Item.useAnimation = 21;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true;
             Item.knockBack = 3;
@@ -34,7 +34,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.rare = ItemRarityID.LightRed; //Post Martian Madness
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/PulseRifleShoot")
             {
-                Volume = 0.7f,
+                Volume = 0.3f,
                 PitchVariance = 0.2f,
                 MaxInstances = 3,
             };

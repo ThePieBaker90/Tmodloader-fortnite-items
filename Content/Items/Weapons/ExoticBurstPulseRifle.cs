@@ -22,7 +22,7 @@ namespace FortniteItems.Content.Items.Weapons
         //UNFINISHED Obtained post plantera
         public override void SetDefaults()
         {
-            Item.damage = 80;
+            Item.damage = 120;
             Item.DamageType = DamageClass.Magic; // Makes the damage register as magic.
             Item.width = 34;
             Item.height = 40;
@@ -35,7 +35,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.rare = ModContent.RarityType<Exotic>(); //UNFINISHED
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/BurstPulseRifleShoot")
             {
-                Volume = 0.7f,
+                Volume = 0.3f,
                 PitchVariance = 0.2f,
                 MaxInstances = 3,
             };

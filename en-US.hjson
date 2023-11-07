@@ -1093,7 +1093,11 @@ Mods: {
 
 			FirstShotgun: {
 				DisplayName: First Shotgun
-				Tooltip: 50% increased damage on shotguns after not firing for 3 seconds
+				Tooltip:
+					'''
+					50% increased damage on shotguns after not firing for 3 seconds
+					For weapons that fire in a burst, only the first shot has a damage increase
+					'''
 			}
 
 			PistolSalvo: {
@@ -1112,7 +1116,11 @@ Mods: {
 
 			CobraDMR: {
 				DisplayName: Cobra DMR
-				Tooltip: ""
+				Tooltip:
+					'''
+					A marksman rifle with a very fast rate of fire
+					"Strike like a nondescript snake"
+					'''
 			}
 
 			AlienNanites: {
@@ -1124,6 +1132,15 @@ Mods: {
 				DisplayName: Rusty Mechanical Parts
 				Tooltip: ""
 			}
+
+			RailGun: {
+				DisplayName: Rail Gun
+				Tooltip:
+					'''
+					A sniper rifle that shoots a piercing laser
+					"Pairs great with the recon scanner"
+					'''
+			}
 		}
 
 		Projectiles: {
@@ -1134,6 +1151,8 @@ Mods: {
 			StinkArrow.DisplayName: Stink Arrow
 			VGrenade.DisplayName: Vindertech Grenade
 			KineticBoomerangProjectile.DisplayName: Kinetic Boomerang Projectile
+			RailGunProjectile.DisplayName: Rail Gun Projectile
+			TestProjectile.DisplayName: Test Projectile
 		}
 
 		Tiles.HopRockOreTile.MapEntry: Hop Rock Chunk
