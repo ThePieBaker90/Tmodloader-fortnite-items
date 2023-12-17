@@ -1,13 +1,20 @@
 ﻿Version 3.2 Changelog
 
-Added the Rail Gun, Cobra DMR, Pistol Salvo
+Added the Rail Gun, Cobra DMR, Pistol Salvo, MK-Alpha Assault Rifle, Mechanical Explosive Bow, and Double Barrel Shotgun
 
 Adjusted the damage of the pulse rifle (75->100).
 Adjusted the use time of the pulse rifle (22->21).
 Adjusted the damage of the exotic burst pulse rifle (80->120).
 Adjusted the drop chance of alien nanites (1%->2%).
 Adjusted the drop chance of rusty mechanical parts (1%->2%).
+Adjusted the crit chance of the exotic marksman six shooter (0%->4%)
 Adjusted the tooltip of the first shotgun augment to clarify its behavior in burst shots.
+Adjusted when the primal flame bow fires primal flame arrows (Wooden Arrows Only -> Always).
+Adjusted when the primal stink bow fires primal stink arrows (Wooden Arrows Only -> Always).
 
 Modified the sideways minigun sprite.
 Modified the sideways rifle sprite.
+
+Updated the icon to match the current season (Fortnite: OG)
+
+Apologies for the long time between updates; college has been taking up a lot of my time and as you can tell by the icon, this has been in progress since November.

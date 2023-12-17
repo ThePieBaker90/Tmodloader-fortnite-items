@@ -4,17 +4,19 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using FortniteItems.Content.Items.Ammo;
+using FortniteItems.Content.Items.Materials;
 using FortniteItems.Content.DamageClasses;
 
 namespace FortniteItems.Content.Items.Weapons
 {
-    public class PrimalStinkBow : ModItem
+    public class MechanicalExplosiveBow : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/PrimalStinkBow";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MechanicalExplosiveBow";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Primal Stink Bow");
-            // Tooltip.SetDefault("Shoots arrows at a high velocity\nChanges Wooden Arrows into Primal Stink Arrows\n\"Like a long range stink grenade!\"");
+            // DisplayName.SetDefault("Mechanical Bow");
+            // Tooltip.SetDefault("Shoots arrows at a high velocity\n\"How Mechanical!\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -22,35 +24,36 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetDefaults()
         {
 
-            Item.damage = 120;
+            Item.damage = 95;
             Item.DamageType = ModContent.GetInstance<BowClass>();
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 21;
-            Item.useAnimation = 21;
+            Item.useTime = 29;
+            Item.useAnimation = 29;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.knockBack = 2f;
-            Item.value = Item.sellPrice(gold: 10);
-            Item.rare = ItemRarityID.Yellow; //Post Plant Lunar Eclipse Craft
+            Item.knockBack = 4f;
+            Item.value = Item.sellPrice(gold: 3, silver: 50);
+            Item.rare = ItemRarityID.Yellow; //Post Golem
             Item.UseSound = SoundID.Item5;
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 20;
+            Item.shootSpeed = 28;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Arrow;
         }
 
+        
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.ToxicFlask, 1);
-            recipe.AddIngredient(ModContent.ItemType<PrimalBow>(), 1);
-            recipe.AddIngredient(ItemID.ChlorophyteBar, 5);
+            recipe.AddIngredient(ModContent.ItemType<ExplosiveArrow>(), 50);
+            recipe.AddIngredient(ModContent.ItemType<MechanicalBow>(), 1);
+            recipe.AddIngredient(ItemID.ShroomiteBar, 10);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.Register();
 
         }
-
+        
         public override Vector2? HoldoutOffset()
         {
             return new Vector2(0, 0);
@@ -64,8 +67,8 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            type = ModContent.ProjectileType<Projectiles.StinkArrow>();
 
+            type = ModContent.ProjectileType<Projectiles.ExplosiveArrow>();
 
         }
         public override void HoldItem(Player player)

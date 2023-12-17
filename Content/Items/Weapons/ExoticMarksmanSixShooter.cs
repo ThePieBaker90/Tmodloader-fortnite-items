@@ -48,7 +48,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shootSpeed = 15;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.crit = -4;
         }
 
         public override void AddRecipes()

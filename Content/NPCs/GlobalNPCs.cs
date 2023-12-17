@@ -19,6 +19,7 @@ using Terraria.ModLoader.IO;
 using FortniteItems.Content.Items.Consumables;
 using FortniteItems.Content.Items.Materials;
 using FortniteItems.Content.Items.Weapons;
+using FortniteItems.Content.Items.Ammo;
 
 namespace FortniteItems.Content.NPCs
 {
@@ -33,6 +34,7 @@ namespace FortniteItems.Content.NPCs
                 shop.Add<ChargeShotgun>(Condition.DownedDukeFishron);
                 shop.Add<PumpShotgun>(Condition.DownedSkeletron);
                 shop.Add<DMR>();
+                shop.Add<DoubleBarrelShotgun>(Condition.BloodMoon, Condition.Hardmode);
                 
             }//if arms dealer
 
@@ -56,6 +58,7 @@ namespace FortniteItems.Content.NPCs
                     shop.Add<VGrenade>(Condition.DownedEyeOfCthulhu);
                 }
 
+                shop.Add<ExplosiveArrow>(Condition.DownedGolem);
 
             }//if demolitionist
 

@@ -98,10 +98,9 @@ namespace FortniteItems.Content.Items.Weapons
             {
                 position += muzzleOffset;
             }
-            if (type == ProjectileID.WoodenArrowFriendly)
-            {
-                type = ModContent.ProjectileType<Projectiles.FlameArrow>();
-            }
+
+            type = ModContent.ProjectileType<Projectiles.FlameArrow>();
+
 
         }
         public override void HoldItem(Player player)

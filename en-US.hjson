@@ -78,6 +78,11 @@ Mods: {
 				DisplayName: Slapped Up
 				Description: 75% increased movement speed
 			}
+
+			TestPetBuff: {
+				DisplayName: Test Pet Buff
+				Description: Mods.FortniteItems.Buffs.TestPetBuff.Description
+			}
 		}
 
 		Items: {
@@ -391,7 +396,7 @@ Mods: {
 				Tooltip:
 					'''
 					Shoots six shots before needing to reload
-					Incapable of critical shots, however has a 10% chance to fire a shot for 5x damage
+					Has a 10% chance to fire a shot for 5x damage
 					"Deadfire's Weapon of Choice"
 					'''
 			}
@@ -698,7 +703,7 @@ Mods: {
 				Tooltip:
 					'''
 					Shoots arrows at a high velocity
-					Changes Wooden Arrows into Primal Flame Arrows
+					Changes All Arrows into Primal Flame Arrows
 					"Like a long range firefly jar!"
 					'''
 			}
@@ -718,7 +723,7 @@ Mods: {
 				Tooltip:
 					'''
 					Shoots arrows at a high velocity
-					Changes Wooden Arrows into Primal Stink Arrows
+					Changes All Arrows into Primal Stink Arrows
 					"Like a long range stink grenade!"
 					'''
 			}
@@ -1141,6 +1146,55 @@ Mods: {
 					"Pairs great with the recon scanner"
 					'''
 			}
+
+			MKAlphaAR: {
+				DisplayName: MK-Alpha Assault Rifle
+				Tooltip:
+					'''
+					50% chance to not consume ammo
+					An assault rifle that deals consistent medium range damage
+					"Not to be confused with the MK-Seven Assault Rifle"
+					'''
+			}
+
+			TestPetItem: {
+				DisplayName: Test Pet Item
+				Tooltip: Something about the player not being able to see or obtain this
+			}
+
+			MechanicalExplosiveBow: {
+				DisplayName: Mechanical Explosive Bow
+				Tooltip:
+					'''
+					Shoots arrows at a high velocity
+					Changes All Arrows into Mechanical Explosive Arrows
+					"Like a long range grenade!"
+					'''
+			}
+
+			ExplosiveArrow: {
+				DisplayName: Mechanical Explosive Arrow
+				Tooltip: A dynamite headed arrow that releases 3 sticks of dynamite upon impact
+			}
+
+			DoubleBarrelShotgun: {
+				DisplayName: Double Barrel Shotgun
+				Tooltip:
+					'''
+					A Shotgun which can quickly fire two high damage shots before reloading
+					"Say some gangsta is dissin' your fly girl, ya just give em one of these."
+					'''
+			}
+
+			ExoticDub: {
+				DisplayName: Exotic Dub
+				Tooltip: ""
+			}
+
+			StrikerAR: {
+				DisplayName: Striker A R
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
@@ -1152,7 +1206,9 @@ Mods: {
 			VGrenade.DisplayName: Vindertech Grenade
 			KineticBoomerangProjectile.DisplayName: Kinetic Boomerang Projectile
 			RailGunProjectile.DisplayName: Rail Gun Projectile
-			TestProjectile.DisplayName: Test Projectile
+			TestPetProjectile.DisplayName: Test Pet Projectile
+			ExplosiveArrow.DisplayName: Explosive Arrow
+			DynamitePiece.DisplayName: Dynamite Piece
 		}
 
 		Tiles.HopRockOreTile.MapEntry: Hop Rock Chunk
