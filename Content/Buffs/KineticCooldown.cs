@@ -4,12 +4,11 @@ using Terraria.ModLoader;
 
 namespace FortniteItems.Content.Buffs
 {
-    public class MatterDerealization : ModBuff
+    public class KineticCooldown : ModBuff
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MatterDerealization";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/KineticCooldown";
         public override void SetStaticDefaults()
         {
-            
             Main.debuff[Type] = true;
         }
 

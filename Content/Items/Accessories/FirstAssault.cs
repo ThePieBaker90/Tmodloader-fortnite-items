@@ -26,7 +26,7 @@ namespace FortniteItems.Content.Items.Accessories
 
         public override void SetDefaults()
         {
-            Item.rare = ItemRarityID.Blue; //shroomite craft
+            Item.rare = ItemRarityID.Blue; 
             Item.value = Item.sellPrice(gold: 1);
             Item.accessory = true;
             Item.width = 40;

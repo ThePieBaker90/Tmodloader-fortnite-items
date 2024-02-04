@@ -1,7 +1,10 @@
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-REFER TO THE GITHUB PROJECT FOR CURRENT TODO LIST
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+TODO list 
 
-To get to the new progress, click the "Projects" Tab near the top of the screen
-Then Click the Name of the Project called "Fortnite Items Planned Items"
-You are now there, earlier in development is to the left while later in development is to the right
+implement shotgunshoot method in all shotguns
+add the sideways scythe
+add the stark rifle as a side-grade to the pulse rifle
+add the striker AR (augment rifle)
+add helicopter mount
+increase item stack size from 999 to 9999
+add loot llama pet
+

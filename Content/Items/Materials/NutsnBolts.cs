@@ -26,7 +26,7 @@ namespace FortniteItems.Content.Items.Materials
             Item.value = Item.sellPrice(silver: 5);
             Item.value = Item.buyPrice(silver: 50);
             Item.rare = ItemRarityID.Orange;
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
         }
 
     }

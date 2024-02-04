@@ -46,7 +46,7 @@ Mods: {
 		Buffs: {
 			MatterDerealization: {
 				DisplayName: Matter Derealized
-				Description: Your matter is spread across countless realities! Zero Point Blinking is Disabled
+				Description: Your matter is spread across countless realities! Zero point blinking is disabled!
 			}
 
 			OtherworldlyGravity: {
@@ -82,6 +82,11 @@ Mods: {
 			TestPetBuff: {
 				DisplayName: Test Pet Buff
 				Description: Mods.FortniteItems.Buffs.TestPetBuff.Description
+			}
+
+			KineticCooldown: {
+				DisplayName: Kinetic Cooldown
+				Description: Your kinetic energy must recharge! Using the kinetic blade alt use or shockwave hammer alt use is disabled!
 			}
 		}
 
@@ -1195,6 +1200,15 @@ Mods: {
 				DisplayName: Striker A R
 				Tooltip: ""
 			}
+
+			KineticBlade: {
+				DisplayName: Kinetic Blade
+				Tooltip:
+					'''
+					A katana which allows the user to dash forward on alt use
+					"*Teleports Behind You*"
+					'''
+			}
 		}
 
 		Projectiles: {
@@ -1209,6 +1223,8 @@ Mods: {
 			TestPetProjectile.DisplayName: Test Pet Projectile
 			ExplosiveArrow.DisplayName: Explosive Arrow
 			DynamitePiece.DisplayName: Dynamite Piece
+			KineticBladeTeleport.DisplayName: Kinetic Blade Teleport
+			ShockwaveHammerLaunch.DisplayName: Shockwave Hammer Launch
 		}
 
 		Tiles.HopRockOreTile.MapEntry: Hop Rock Chunk

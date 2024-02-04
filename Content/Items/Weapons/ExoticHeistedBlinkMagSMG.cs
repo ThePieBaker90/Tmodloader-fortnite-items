@@ -149,10 +149,11 @@ namespace FortniteItems.Content.Items.Weapons
             return Main.rand.NextFloat() >= 0.40f;
         }
 
-
+        
         public override bool AltFunctionUse(Player player)
         {
             return true;
         }
+        
     }
 }

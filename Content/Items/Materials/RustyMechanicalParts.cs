@@ -26,7 +26,7 @@ namespace FortniteItems.Content.Items.Materials
             Item.height = 40;
             Item.value = Item.sellPrice(silver: 10);
             Item.rare = ItemRarityID.Green; //Goblin Army Drop
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
         }
 
     }

@@ -27,7 +27,7 @@ namespace FortniteItems.Content.Items.Materials
             Item.value = Item.sellPrice(gold: 1);
             Item.value = Item.buyPrice(gold: 10);
             Item.rare = ModContent.RarityType<Exotic>(); //Wizard Buy
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
         }
 
     }

@@ -23,7 +23,7 @@ namespace FortniteItems.Content.Items.Materials
             Item.height = 40;
             Item.value = Item.sellPrice(gold: 1);
             Item.rare = ItemRarityID.Green; //Deerclops drop
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
         }
 
     }

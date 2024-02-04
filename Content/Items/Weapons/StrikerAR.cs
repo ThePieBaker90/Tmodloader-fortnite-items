@@ -10,15 +10,35 @@ namespace FortniteItems.Content.Items.Weapons
 {
     public class StrikerAR : ModItem
     {
-        //Scope Ranges From 0-4
-        //0 == Iron Sights (Default)
+        //Scope Mods Range From 0-4
+        //0 == Iron Sights
         //1 == Red Eye Sight 
         //2 == Holo-13 Optic
         //3 == P2X Optic
         //4 == Sniper Optic
         public int scope;
 
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/Scar";
+        //Magazine Mods Range From 0-2
+        //0 == Default Mag
+        //1 == Speed Mag
+        //2 == Drum Mag
+        public int magazine;
+
+        //Underbarrel Mods Range From 0-3
+        //0 == No Underbarrel
+        //1 == Vertical Foregrip
+        //2 == Angled Foregrip
+        //3 == Laser
+        public int underbarrel;
+
+        //Barrel Mods Range From 0-2
+        //0 == Default Barrel
+        //1 == Suppressor
+        //2 == Muzzle Brake
+        public int barrel;
+        
+
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/StrikerAR";
         public override void SetStaticDefaults()
         {
             // DisplayName.SetDefault("Tactical Assault Rifle");
@@ -29,7 +49,6 @@ namespace FortniteItems.Content.Items.Weapons
         //a fast rifle 
         public override void SetDefaults()
         {
-
             Item.damage = 46;
             Item.DamageType = ModContent.GetInstance<AssaultRifleClass>();
             Item.width = 40;

@@ -5,6 +5,9 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using Terraria.DataStructures;
+using FortniteItems.Content.Buffs;
+using FortniteItems.Content.Projectiles;
+using System.Threading;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -18,7 +21,7 @@ namespace FortniteItems.Content.Items.Weapons
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //Intended to be an early game upgrade to the Minishark
+        
         public override void SetDefaults()
         {
 
@@ -39,7 +42,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.autoReuse = true;
             Item.ArmorPenetration = 100;
             Item.crit = 46;
-            //Item.shoot = ProjectileID.DeathSickle;
+            Item.shoot = ProjectileID.PurificationPowder;
             Item.shootSpeed = 20;
         }
 
@@ -68,30 +71,27 @@ namespace FortniteItems.Content.Items.Weapons
             }
         }
 
-        /*
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-
         {
-            const int NumProjectiles = 3; // The humber of projectiles that this gun will shoot.
-
-            type = ProjectileID.DeathSickle;
-
-            for (int i = 0; i < NumProjectiles; i++)
+            if (player.altFunctionUse == 2)
             {
-                // Rotate the velocity randomly by 30 degrees at max.
-                Vector2 newVelocity = velocity.RotatedByRandom(MathHelper.ToRadians(4));
-
-                // Create a projectile.
-                Projectile.NewProjectileDirect(source, position, newVelocity, type, damage, knockback, player.whoAmI);
+                if (!player.HasBuff<KineticCooldown>())
+                {
+                    Projectile.NewProjectileDirect(source, position, velocity, ModContent.ProjectileType<ShockwaveHammerLaunch>(), damage, knockback, player.whoAmI);
+                    player.AddBuff(ModContent.BuffType<KineticCooldown>(), 180); //3 Seconds
+                }
             }
-
-            return false; // Return false because we don't want tModLoader to shoot projectile
+            return false;
         }
-        */
 
         public override Vector2? HoldoutOffset()
         {
             return new Vector2(-9f, -9f);
+        }
+
+        public override bool AltFunctionUse(Player player)
+        {
+            return true;
         }
 
     }
