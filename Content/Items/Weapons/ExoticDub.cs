@@ -18,18 +18,16 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetStaticDefaults()
         {
             /* Name: 
-             * Double Barrel Shotgun
+             * Exotic Dub
              * 
              * Description: 
-             * A Shotgun which can quickly fire two high damage shots before reloading
-             * "Hit 'em with the one, two, reload."
+             * TBD
              * 
              * Obtain Point:
-             *  Hardmode Bloodmoon / Cryogen Defeated
+             * TBD
              *  
              * Intent:
-             *  High damage, with medium knockback and a fast use time.
-             *  Useful for burst damage on close enemies, less useful on far away enemies and sustained damage.
+             * TBD
              */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;

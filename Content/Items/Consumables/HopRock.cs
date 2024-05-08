@@ -34,7 +34,7 @@ namespace FortniteItems.Content.Items.Consumables
             Item.useTime = 15;
             Item.useTurn = true;
             Item.UseSound = SoundID.Item4;
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
             Item.consumable = true;
             //Dropped by meteor heads
             Item.rare = ItemRarityID.Green;

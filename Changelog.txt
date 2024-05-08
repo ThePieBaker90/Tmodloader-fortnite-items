@@ -1,7 +1,4 @@
-﻿Version 3.21 Changelog
+﻿Version 3.220 Changelog
 
-Added the Kinetic Blade
-
-Added ground slam ability to the shockwave hammer
-
-Updated the stack size for ammo and materials
+The Assault Rifle has been given a slight amount of spread (0 degrees -> 2 degrees)
+The Assault Rifle has been been given increased damage (8 damage -> 9 damage)

@@ -13,8 +13,18 @@ namespace FortniteItems.Content.Items.Materials
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/RustyMechanicalParts";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Mechanical Parts");
-            // Tooltip.SetDefault("Used to craft mechanical weapons");
+            /* Name: 
+             * Rusty Mechanical Parts
+             * 
+             * Description: 
+             * A crafting material for early game
+             * 
+             * Obtain Point:
+             * Obtained as a drop chance from any goblin in the goblin army
+             *  
+             * Intent:
+             * Used as a way to make sure the player has passed the goblin army event
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 20;
         }

@@ -19,11 +19,11 @@ namespace FortniteItems.Content.Items.Weapons
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a hardmode rifle that is a long range alternative to the mega shark
+        
         public override void SetDefaults()
         {
 
-            Item.damage = 8;
+            Item.damage = 9;
             Item.DamageType = ModContent.GetInstance<AssaultRifleClass>();
             Item.width = 40;
             Item.height = 40;
@@ -82,6 +82,8 @@ namespace FortniteItems.Content.Items.Weapons
             {
                 position += muzzleOffset;
             }
+
+            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(1)); //Random Bullet Spread
 
         }
 

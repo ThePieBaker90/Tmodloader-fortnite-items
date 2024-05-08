@@ -70,11 +70,10 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            int NumProjectiles = 1;
+
             if (Main.rand.NextBool(3))
             {
                 type = ProjectileID.CrystalBullet;
-                NumProjectiles = 2;
             }
         }
 

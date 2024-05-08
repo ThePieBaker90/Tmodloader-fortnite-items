@@ -6,47 +6,18 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.DamageClasses;
 
-namespace FortniteItems.Content.Items.Weapons
+namespace FortniteItems.Content.Items.Weapons.Modded.StrikerAR
 {
     public class StrikerAR : ModItem
     {
-        //Scope Mods Range From 0-4
-        //0 == Iron Sights
-        //1 == Red Eye Sight 
-        //2 == Holo-13 Optic
-        //3 == P2X Optic
-        //4 == Sniper Optic
-        public int scope;
-
-        //Magazine Mods Range From 0-2
-        //0 == Default Mag
-        //1 == Speed Mag
-        //2 == Drum Mag
-        public int magazine;
-
-        //Underbarrel Mods Range From 0-3
-        //0 == No Underbarrel
-        //1 == Vertical Foregrip
-        //2 == Angled Foregrip
-        //3 == Laser
-        public int underbarrel;
-
-        //Barrel Mods Range From 0-2
-        //0 == Default Barrel
-        //1 == Suppressor
-        //2 == Muzzle Brake
-        public int barrel;
-        
 
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/StrikerAR";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Tactical Assault Rifle");
-            // Tooltip.SetDefault("45% chance to not consume ammo\n\"Standard issue I.O. guard rifle\"");
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a fast rifle 
+        //This rifle is a remnant and shouldn't be used.
         public override void SetDefaults()
         {
             Item.damage = 46;
@@ -99,6 +70,5 @@ namespace FortniteItems.Content.Items.Weapons
         {
             player.scope = true;
         }
-
     }
 }

@@ -979,7 +979,7 @@ Mods: {
 				Tooltip:
 					'''
 					40% chance to not consume ammo
-					An assault rifle that turns musket balls into chlorophyte bullets
+					An assault rifle that grants the user thermal vision
 					"Gotta get that W, in thermal vision"
 					'''
 			}
@@ -1193,12 +1193,20 @@ Mods: {
 
 			ExoticDub: {
 				DisplayName: Exotic Dub
-				Tooltip: ""
+				Tooltip:
+					'''
+					If you see this text either you took the item from cheatsheet or you crafted it.
+					If you crafted this item, please contact Rift90. They messed up.
+					'''
 			}
 
 			StrikerAR: {
-				DisplayName: Striker A R
-				Tooltip: ""
+				DisplayName: Striker Assault Rifle
+				Tooltip:
+					'''
+					You shouldn't see this unless you cheated it in.
+					If you didn't cheat this in, please contact Rift90.
+					'''
 			}
 
 			KineticBlade: {
@@ -1208,6 +1216,35 @@ Mods: {
 					A katana which allows the user to dash forward on alt use
 					"*Teleports Behind You*"
 					'''
+			}
+
+			ThunderboltOfZeus: {
+				DisplayName: Thunderbolt Of Zeus
+				Tooltip:
+					'''
+					If you see this text either you took the item from cheatsheet or you crafted it.
+					If you crafted this item, please contact Rift90. They messed up.
+					'''
+			}
+
+			StrikerAR0000: {
+				DisplayName: Striker Assault Rifle
+				Tooltip: A rifle with a fast fire rate
+			}
+
+			StrikerAR0001: {
+				DisplayName: Striker Assault Rifle
+				Tooltip: A 
+			}
+
+			RedDotSight: {
+				DisplayName: Red Dot Sight
+				Tooltip: ""
+			}
+
+			ExampleAdvancedAnimatedProjectileItem: {
+				DisplayName: Example Advanced Animated Projectile Item
+				Tooltip: ""
 			}
 		}
 
@@ -1225,6 +1262,8 @@ Mods: {
 			DynamitePiece.DisplayName: Dynamite Piece
 			KineticBladeTeleport.DisplayName: Kinetic Blade Teleport
 			ShockwaveHammerLaunch.DisplayName: Shockwave Hammer Launch
+			ThunderboltOfZeus.DisplayName: Thunderbolt Of Zeus
+			ExampleAdvancedAnimatedProjectile.DisplayName: Example Advanced Animated Projectile
 		}
 
 		Tiles.HopRockOreTile.MapEntry: Hop Rock Chunk

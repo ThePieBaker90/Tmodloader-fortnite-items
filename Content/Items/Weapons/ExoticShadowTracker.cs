@@ -61,7 +61,7 @@ namespace FortniteItems.Content.Items.Weapons
             Recipe recipe2 = CreateRecipe();
             recipe2.AddIngredient(ItemID.SpookyTwig, 1); ;
             recipe2.AddIngredient(ModContent.ItemType<SuppressedPistol>());
-            recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+            recipe2.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
             recipe2.AddTile(TileID.AdamantiteForge);
             recipe2.Register();
 

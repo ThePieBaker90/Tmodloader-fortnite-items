@@ -123,6 +123,7 @@ namespace FortniteItems.Content.Items.Weapons
                 };
             }
 
+
             const int NumProjectiles = 6; // The humber of projectiles that this gun will shoot.
 
             for (int i = 0; i < NumProjectiles; i++)
