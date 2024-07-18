@@ -33,7 +33,6 @@ namespace FortniteItems.Content.Items.Weapons
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //an early game pistol
         public override void SetDefaults()
         {
 
@@ -56,7 +55,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 6;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
         }  
