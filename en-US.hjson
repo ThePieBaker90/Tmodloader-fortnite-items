@@ -206,6 +206,7 @@ Mods: {
 			DrumGun: {
 				DisplayName: Drum Gun
 				Tooltip:
+
 					'''
 					25% chance to not consume ammo
 					Turns musket balls into meteor shot
@@ -1204,8 +1205,8 @@ Mods: {
 				DisplayName: Striker Assault Rifle
 				Tooltip:
 					'''
-					You shouldn't see this unless you cheated it in.
-					If you didn't cheat this in, please contact Rift90.
+					A modded assault rifle with a red dot sight, suppressor, angeled foregrip, and speed magazine.
+					"[Insert Witty Comment]"
 					'''
 			}
 
@@ -1225,21 +1226,6 @@ Mods: {
 					If you see this text either you took the item from cheatsheet or you crafted it.
 					If you crafted this item, please contact Rift90. They messed up.
 					'''
-			}
-
-			StrikerAR0000: {
-				DisplayName: Striker Assault Rifle
-				Tooltip: A rifle with a fast fire rate
-			}
-
-			StrikerAR0001: {
-				DisplayName: Striker Assault Rifle
-				Tooltip: A 
-			}
-
-			RedDotSight: {
-				DisplayName: Red Dot Sight
-				Tooltip: ""
 			}
 
 			ExampleAdvancedAnimatedProjectileItem: {

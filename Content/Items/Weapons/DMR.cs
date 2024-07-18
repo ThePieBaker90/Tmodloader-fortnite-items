@@ -15,12 +15,22 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Bolt Action Sniper Rifle");
-            // Tooltip.SetDefault("Turns musket balls into high velocity bullets\n\"Hit 'em where they can't reach you\"");
+            /* Name: 
+             * DMR
+             * 
+             * Description: 
+             * A marksman rifle with solid damage and a solid fire rate
+             * "Scope out the competition"
+             * 
+             * Obtain Point:
+             * Bought from Arms Dealer at any point.
+             *  
+             * Intent:
+             * This is intended to be a longer range, more accurate, higher damage, but slower firing alternative to the minishark.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a post EoC sniper rifle
         public override void SetDefaults()
         {
 
@@ -43,10 +53,9 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 30;
+            Item.shootSpeed = 9;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 25;
             Item.crit = 10;
 
         }

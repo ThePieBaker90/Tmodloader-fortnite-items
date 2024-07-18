@@ -17,12 +17,15 @@ using System.Collections.Generic;
 using ReLogic.Content;
 using Terraria.ModLoader.IO;
 using FortniteItems.Content;
+using System.Security.Cryptography.X509Certificates;
 
 namespace FortniteItems
 {
 	public class FortniteItems : Mod
 	{
-		public override void AddRecipeGroups()/* tModPorter Note: Removed. Use ModSystem.AddRecipeGroups */
+        public static ModKeybind testKey;
+
+        public override void AddRecipeGroups()/* tModPorter Note: Removed. Use ModSystem.AddRecipeGroups */
 		{
 			RecipeGroup MagicMirror = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.MagicMirror)}", ItemID.IceMirror, ItemID.MagicMirror);
 			RecipeGroup.RegisterGroup(nameof(ItemID.MagicMirror), MagicMirror);
@@ -57,6 +60,5 @@ namespace FortniteItems
             
         }
 
-		
-	}
+    }
 }

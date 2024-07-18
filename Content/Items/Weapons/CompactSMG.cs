@@ -13,8 +13,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/CompactSMG";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Compact Submachine Gun");
-            // Tooltip.SetDefault("70% chance to not use ammo\nTurns musket balls into high velocity bullets\n\"The gun with many names\"");
+            /* Name: 
+             * Compact Submachine Gun
+             * 
+             * Description: 
+             * 70% chance to not use ammo
+             * Turns musket balls into high velocity bullets
+             * "The gun with many names"
+             * 
+             * Obtain Point:
+             *  Post Polter Craft/Post Martian Drop
+             *  
+             * Intent:
+             *  This is intended to be an smg with an extremely high fire rate which shreds anything without armor in its path
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

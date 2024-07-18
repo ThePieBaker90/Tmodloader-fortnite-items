@@ -15,12 +15,23 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Burst Assault Rifle");
-            // Tooltip.SetDefault("Shoots in bursts of 3, Musket balls are turned into meteor shot\n\"Gotta get that W, 3 shots at a time\"");
+
+            /* Name: 
+             *  Burst Assault Rifle
+             * 
+             * Description: 
+             *  Shoots in bursts of 3, Musket balls are turned into meteor shot
+             *  "Gotta get that W, 3 shots at a time"
+             * 
+             * Obtain Point:
+             *  Metorite Craft
+             *  
+             * Intent:
+             *  This is intended to be a pre-skeletron rifle used for sustained fire
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a post evil boss rifle intended for early game sustained damage
         public override void SetDefaults()
         {
 
@@ -42,10 +53,9 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 70;
+            Item.shootSpeed = 8;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 30;
             Item.reuseDelay = 30;
             Item.consumeAmmoOnLastShotOnly = true;
         }

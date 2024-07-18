@@ -14,8 +14,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/CombatPistol";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Combat Pistol");
-            // Tooltip.SetDefault("Has a chance to fire 2 bullets\n30% chance to not use ammo\n\"Hits Harder, Better, Faster, Stronger\"");
+            /* Name: 
+             * Combat Pistol
+             * 
+             * Description: 
+             * Has a chance to fire 2 bullets
+             * 30% chance to not use ammo
+             * "Hits Harder, Better, Faster, Stronger"
+             * 
+             * Obtain Point:
+             *  PostSkeletron Craft
+             *  
+             * Intent:
+             *  This is intended to be a faster pistol and a use for the Book of Skulls for ranged players
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -41,7 +53,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 5;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
         }

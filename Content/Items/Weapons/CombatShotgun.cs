@@ -15,8 +15,19 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/CombatShotgun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Combat Shotgun");
-            // Tooltip.SetDefault("A longer range shotgun that penetrates armor\n\"Looks like someone needs a better gaming chair\"");
+            /* Name: 
+             * Combat Shotgun
+             * 
+             * Description: 
+             * A longer range shotgun that penetrates armor
+             * "Looks like someone needs a better gaming chair"
+             * 
+             * Obtain Point:
+             *  Pirate Drop
+             *  
+             * Intent:
+             *  This is intended to be an early hardmode shotgun with high armor penetration and range
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -42,11 +53,11 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 100;
+            Item.shootSpeed = 16;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.crit = 2;
-            Item.ArmorPenetration = 60;
+            Item.ArmorPenetration = 30;
         }
 
 

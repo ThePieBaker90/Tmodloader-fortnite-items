@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.DamageClasses;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {

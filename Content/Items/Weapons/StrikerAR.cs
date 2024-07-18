@@ -6,31 +6,31 @@ using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.DamageClasses;
 
-namespace FortniteItems.Content.Items.Weapons.Modded.StrikerAR
+namespace FortniteItems.Content.Items.Weapons
 {
     public class StrikerAR : ModItem
     {
 
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/StrikerAR";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/StrikerAR/0000StrikerAR";
         public override void SetStaticDefaults()
         {
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //This rifle is a remnant and shouldn't be used.
+
         public override void SetDefaults()
         {
-            Item.damage = 46;
+            Item.damage = 17;
             Item.DamageType = ModContent.GetInstance<AssaultRifleClass>();
             Item.width = 40;
             Item.height = 40;
-            Item.useTime = 8;
-            Item.useAnimation = 8;
+            Item.useTime = 9;
+            Item.useAnimation = 9;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 0.1f;
             Item.value = Item.sellPrice(gold: 8, silver: 50);
-            Item.rare = ItemRarityID.Lime; //frost moon
-            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/TacticalARShoot")
+            Item.rare = ItemRarityID.Lime;
+            Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ARShoot")
             {
                 Volume = 0.9f,
                 PitchVariance = 0.2f,
@@ -66,9 +66,15 @@ namespace FortniteItems.Content.Items.Weapons.Modded.StrikerAR
             return Main.rand.NextFloat() >= 0.45f;
 
         }
-        public override void HoldItem(Player player)
+
+        public override void AddRecipes()
         {
-            player.scope = true;
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.HallowedBar, 10);
+            recipe.AddIngredient(ModContent.ItemType<Scar>(), 1);
+            recipe.AddTile(TileID.Anvils);
+            recipe.Register();
+
         }
     }
 }

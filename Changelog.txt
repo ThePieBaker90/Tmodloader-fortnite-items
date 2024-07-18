@@ -1,4 +1,33 @@
 ﻿Version 3.220 Changelog
 
-The Assault Rifle has been given a slight amount of spread (0 degrees -> 2 degrees)
-The Assault Rifle has been been given increased damage (8 damage -> 9 damage)
+The Assault Rifle has been given a slight amount of spread (0 degrees -> 2 degrees).
+The Assault Rifle has been been given increased damage (8 damage -> 9 damage).
+
+Fixed an an oversight which caused the copper bullet to travel faster than the starndard musket ball (Thanks to SpecyJ for pointing this out.)
+
+Slowed most bullet velocities to be more in line with vanilla weapons. Velocity changes will not be induvidually listed.
+
+Bolt Action Sniper Rifle Armor Penetration 30 -> 10.
+Burst Assault Rifle Armor Penetration 30 -> 0.
+Burst Submachine Gun Armor Penetration 3 -> 0.
+Charge shotgun damage 500 -> 300 when the bullet is a misfire.
+Charge shotgun crit chance 9% -> 4%.
+Charge Submachine Gun Armor Penetration 3 -> 0.
+Charge Submachine Gun Ammo Usage 32 -> 1.
+Cobra DMR Armor Penetration 25 -> 5.
+Combat Assault Rifle Armor Penetration 10 -> 0.
+Combat Shotgun Armor Penetration 60 -> 30.
+DMR Armor Penetration 25 -> 0.
+
+!!!!!
+ADD RECIPE FOR EXOTIC DUB AND LIGHTNING BOLT
+ADD STINGER SMG ITEM
+!!!!!
+
+!!!!!
+ADD MATERIAL FOR EOL ITEMS
+!!!!!
+
+!!!!
+REMOVE LEFT OVER STRIKER AR AND MOD PARTS
+!!!!
