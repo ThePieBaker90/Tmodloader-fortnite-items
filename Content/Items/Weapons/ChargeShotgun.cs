@@ -17,18 +17,29 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ChargeShotgun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Charge Shotgun");
-            // Tooltip.SetDefault("a Shotgun which charges up shots with the use button\nCan load a maximum of 7 shots before bullets start misfiring\n\"Get ready for the pain train!\"");
+            /* Name: 
+             *  Charge Shotgun
+             * 
+             * Description: 
+             *  a Shotgun which charges up shots with the use button
+             *  Can load a maximum of 7 shots before bullets start misfiring
+             *  "Get ready for the pain train!"
+             * 
+             * Obtain Point:
+             *  Bought from Arms Dealer after Duke Fishron Defeated
+             *  
+             * Intent:
+             *  This is intended to be a post duke fishron shotgun that deals high damage at the cost of charge time 
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a basic post skeletron shotgun that hits hard 
 
         
         public override void SetDefaults()
         {
 
-            Item.damage = 300;
+            Item.damage = 500;
             Item.DamageType = ModContent.GetInstance<ShotgunClass>();
             Item.width = 40;
             Item.height = 40;
@@ -50,8 +61,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shootSpeed = 1;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.crit = 5;
-            Item.ArmorPenetration = 10;
 
             
             

@@ -13,12 +13,23 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ChargeSMG";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Charge SMG");
-            // Tooltip.SetDefault("90% chance not to consume ammo\nShoots in bursts of 32 but has a long reuse time\n\"The new spray and pray\"");
+            /* Name: 
+             *  Charge Submachine Gun
+             * 
+             * Description: 
+             *  90% chance not to consume ammo
+             *  Shoots in bursts of 32 but has a long reuse time
+             *  "The new spray and pray"
+             * 
+             * Obtain Point:
+             *  Dropped by Elf Copter (frost moon)
+             *  
+             * Intent:
+             *  This is intended to be a post plantera, pre golem smg with long uptime yet long downtime aswell   
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a high uptime and medium downtime smg
         public override void SetDefaults()
         {
 
@@ -40,11 +51,11 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 70;
+            Item.shootSpeed = 10;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
+            Item.consumeAmmoOnLastShotOnly = true;
             Item.reuseDelay = 55;
-            Item.ArmorPenetration = 3;
         }
 
         public override Vector2? HoldoutOffset()

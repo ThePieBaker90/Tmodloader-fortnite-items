@@ -13,8 +13,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/BurstSMG";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Burst Submachine Gun");
-            // Tooltip.SetDefault("75% chance to not consume ammo\nShoots in bursts of 4\n\"The Future is Yours\"");
+            /* Name: 
+             *  Burst Submachine Gun
+             * 
+             * Description: 
+             *  75% chance to not consume ammo
+             *  Shoots in bursts of 4
+             *  "The Future is Yours"
+             * 
+             * Obtain Point:
+             *  King Slime Drop
+             *  
+             * Intent:
+             *  This is intended to be an early game version of the UZI with a 4 shot burst
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -40,11 +52,10 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 70;
+            Item.shootSpeed = 10;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.reuseDelay = 14;
-            Item.ArmorPenetration = 3;
         }
 
 

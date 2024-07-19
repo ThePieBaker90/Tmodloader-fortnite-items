@@ -29,7 +29,7 @@ namespace FortniteItems.Content.Items.Ammo
             Item.value = Item.sellPrice(copper: 1);
             Item.rare = ItemRarityID.White;
             Item.shoot = ProjectileID.Bullet; // The projectile that weapons fire when using this item as ammunition.
-            Item.shootSpeed = 16f; // The speed of the projectile.
+            Item.shootSpeed = 4; // The speed of the projectile.
             Item.ammo = AmmoID.Bullet; // The ammo class this ammo belongs to.
         }
 

@@ -54,10 +54,10 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 200;
+            Item.shootSpeed = 16;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 30;
+            Item.ArmorPenetration = 10;
             Item.crit = 10;
 
         }

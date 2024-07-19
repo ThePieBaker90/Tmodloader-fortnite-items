@@ -73,7 +73,7 @@ namespace FortniteItems.Content.Projectiles
              */
 
             Vector2 position = Projectile.Center;
-            var projectile = Projectile.NewProjectileDirect(Terraria.Entity.InheritSource(Projectile), position, rotatedVelocity, ProjectileID.MeteorShot, 500, 10, Main.myPlayer);
+            
             SoundStyle shootSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ChargeShotgunFire")
             {
                 Volume = 0.9f,
@@ -88,10 +88,12 @@ namespace FortniteItems.Content.Projectiles
             };
             if (misfire == false)
             {
+                var projectile = Projectile.NewProjectileDirect(Terraria.Entity.InheritSource(Projectile), position, rotatedVelocity, ProjectileID.MeteorShot, 500, 10, Main.myPlayer);
                 SoundEngine.PlaySound(shootSound);
             }
             else if (misfire == true)
             {
+                var projectile = Projectile.NewProjectileDirect(Terraria.Entity.InheritSource(Projectile), position, rotatedVelocity, ProjectileID.MeteorShot, 300, 10, Main.myPlayer);
                 SoundEngine.PlaySound(misfireSound);
             }
 

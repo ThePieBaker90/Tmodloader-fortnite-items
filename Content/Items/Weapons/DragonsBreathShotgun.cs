@@ -14,12 +14,22 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/DragonsBreathShotgun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Dragon's Breath Shotgun");
-            // Tooltip.SetDefault("Shoots fire instead of musket balls\n\"Fight fire with fire\"");
+            /* Name: 
+             * Dragon's Breath Shotgun
+             * 
+             * Description: 
+             * Shoots fire instead of musket balls
+             * "Fight fire with fire"
+             * 
+             * Obtain Point:
+             * Hellstone Craft
+             *  
+             * Intent:
+             * Another fire based ranged weapon from hell!
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a basic post skeletron shotgun that hits hard 
         public override void SetDefaults()
         {
 
@@ -41,7 +51,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.Flames;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 10;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
 
@@ -72,10 +82,7 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            if (type == ProjectileID.Bullet)
-            {
-                type = ProjectileID.Flames;
-            }
+            type = ProjectileID.Flames;
 
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)

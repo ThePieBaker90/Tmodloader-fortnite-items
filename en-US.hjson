@@ -206,6 +206,7 @@ Mods: {
 			DrumGun: {
 				DisplayName: Drum Gun
 				Tooltip:
+
 					'''
 					25% chance to not consume ammo
 					Turns musket balls into meteor shot
@@ -226,8 +227,8 @@ Mods: {
 				DisplayName: EvoChrome Assault Rifle MKI
 				Tooltip:
 					'''
-					An assault rifle that is upgraded throughout the lunar events!
-					Each upgrade increases damage and adds 1 additional bullet
+					An assault rifle that is upgraded throughout the lunar events
+					Shoots in a 2 bullet burst
 					"Chrome Runs Rampant"
 					'''
 			}
@@ -236,7 +237,7 @@ Mods: {
 				DisplayName: EvoChrome Assault Rifle MKII
 				Tooltip:
 					'''
-					An assault rifle that is upgraded throughout the lunar events!
+					An assault rifle that is upgraded throughout the lunar events
 					Shoots in a 3 bullet burst
 					"Chrome Runs Rampant"
 					'''
@@ -246,7 +247,7 @@ Mods: {
 				DisplayName: EvoChrome Assault Rifle MKIII
 				Tooltip:
 					'''
-					An assault rifle that is upgraded throughout the lunar events!
+					An assault rifle that is upgraded throughout the lunar events
 					Shoots in a 4 bullet burst
 					"Chrome Runs Rampant"
 					'''
@@ -256,7 +257,7 @@ Mods: {
 				DisplayName: EvoChrome Assault Rifle MKIV
 				Tooltip:
 					'''
-					An assault rifle that is upgraded throughout the lunar events!
+					An assault rifle that is upgraded throughout the lunar events
 					Shoots in a 5 bullet burst
 					"Chrome Runs Rampant"
 					'''
@@ -827,6 +828,7 @@ Mods: {
 				Tooltip:
 					'''
 					Has a high knockback and damage but does not fire a projectile
+					Allows the user to launch upwards on alt use
 					"Personal Defense of the Ageless Champion"
 					'''
 			}
@@ -1204,8 +1206,8 @@ Mods: {
 				DisplayName: Striker Assault Rifle
 				Tooltip:
 					'''
-					You shouldn't see this unless you cheated it in.
-					If you didn't cheat this in, please contact Rift90.
+					A modded assault rifle with a red dot sight, suppressor, angeled foregrip, and speed magazine.
+					"[Insert Witty Comment]"
 					'''
 			}
 
@@ -1213,7 +1215,7 @@ Mods: {
 				DisplayName: Kinetic Blade
 				Tooltip:
 					'''
-					A katana which allows the user to dash forward on alt use
+					Allows the user to dash forward on alt use
 					"*Teleports Behind You*"
 					'''
 			}
@@ -1225,21 +1227,6 @@ Mods: {
 					If you see this text either you took the item from cheatsheet or you crafted it.
 					If you crafted this item, please contact Rift90. They messed up.
 					'''
-			}
-
-			StrikerAR0000: {
-				DisplayName: Striker Assault Rifle
-				Tooltip: A rifle with a fast fire rate
-			}
-
-			StrikerAR0001: {
-				DisplayName: Striker Assault Rifle
-				Tooltip: A 
-			}
-
-			RedDotSight: {
-				DisplayName: Red Dot Sight
-				Tooltip: ""
 			}
 
 			ExampleAdvancedAnimatedProjectileItem: {

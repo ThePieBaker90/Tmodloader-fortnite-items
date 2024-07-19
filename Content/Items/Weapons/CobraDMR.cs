@@ -33,7 +33,7 @@ namespace FortniteItems.Content.Items.Weapons
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a post deerclops sniper rifle
+        //a post deerclops DMR
         public override void SetDefaults()
         {
 
@@ -55,10 +55,10 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 30;
+            Item.shootSpeed = 9;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 25;
+            Item.ArmorPenetration = 5;
             Item.crit = 10;
 
         }

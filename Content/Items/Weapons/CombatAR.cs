@@ -13,12 +13,23 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/CombatAR";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Combat Assault Rifle");
-            // Tooltip.SetDefault("60% chance to not consume ammo\nTurns musket balls into high velocity bullets\n\"Speed over power!\"");
+            /* Name: 
+             * Combat Assault Rifle
+             * 
+             * Description: 
+             * 60% chance to not consume ammo
+             * Turns musket balls into high velocity bullets
+             * "Speed over power!"
+             * 
+             * Obtain Point:
+             *  Post All Mech Craft
+             *  
+             * Intent:
+             *  This is intended to be a post mech gun with a fast firing rate but low damage
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a quick firing rifle acquired after the mech bosses have been defeated
         public override void SetDefaults()
         {
 
@@ -40,10 +51,9 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 70;
+            Item.shootSpeed = 14;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 10;
         }
 
         public override void AddRecipes()
