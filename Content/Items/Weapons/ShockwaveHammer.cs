@@ -26,13 +26,11 @@ namespace FortniteItems.Content.Items.Weapons
         {
 
             Item.damage = 735;
-            //when calamity comes out, this needs to be rebalanced 
             Item.DamageType = DamageClass.Melee;
             Item.width = 76;
             Item.height = 76;
             Item.useTime = 40;
             Item.useAnimation = 40;
-            //Item.reuseDelay = 30;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 20;
             Item.value = Item.sellPrice(gold: 24);

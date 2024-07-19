@@ -13,41 +13,41 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/DualPistols";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Dual Barrel Pistol");
+            /* Name: 
+             * Dual Barrel Pistol
+             * 
+             * Description: 
+             * 33% chance to not use ammo
+             * "It's a shame you can't just hold two pistols at once"
+             * 
+             * Obtain Point:
+             * Bloodnautilus drop
+             *  
+             * Intent:
+             * This weapon serves a purpose as a burst pistol for players with pistol buffs and adds a reason a ranged player may want to kill the dreadnautilus
+             */
+
             //Even though the dual barrel pistol is not a thing in fortnite, there is no way that i've found to make the player appear to be holding two items at once
             //So this is my workaround, it will work the exact same way as the dual pistols, just a different name and look
-            // Tooltip.SetDefault("33% chance to not use ammo\n\"It's a shame you can't just hold two pistols at once\"");
+
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         //a post plague burst pistol
         public override void SetDefaults()
         {
-            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
-            if (calamityMod != null
-                && calamityMod.TryFind("InfectedArmorPlating", out ModItem InfectedPlate)
-                && calamityMod.TryFind("DubiousPlating", out ModItem DubiousPlate)
-                && calamityMod.TryFind("PlagueCellCanister", out ModItem PlagueCanister))
-            {
-                Item.damage = 223;
-                Item.value = Item.sellPrice(gold: 12);
-            }
-            else
-            {
-                Item.damage = 57;
-                Item.value = Item.sellPrice(gold: 5);
-            }
-
+            Item.damage = 57;
+            Item.value = Item.sellPrice(gold: 5);
             Item.knockBack = 1f;
             Item.useTime = 6;
             Item.useAnimation = 12 ;
             Item.reuseDelay = 12;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 7;
             Item.DamageType = ModContent.GetInstance<PistolClass>();
             Item.width = 40;
             Item.height = 40;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.rare = ItemRarityID.Yellow; //Post plaguebringer goliath
+            Item.rare = ItemRarityID.LightRed; //Post Bloodnautilus
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/DualPistolsShoot")
             {
                 Volume = 0.9f,
@@ -58,31 +58,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shoot = ProjectileID.PurificationPowder;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-
-        }
-
-        public override void AddRecipes()
-        {
-            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
-
-            if (calamityMod != null
-                && calamityMod.TryFind("InfectedArmorPlating", out ModItem InfectedPlate)
-                && calamityMod.TryFind("DubiousPlating", out ModItem DubiousPlate)
-                && calamityMod.TryFind("PlagueCellCanister", out ModItem PlagueCanister))
-            {
-                Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(InfectedPlate.Type, 7);
-                recipe.AddIngredient(DubiousPlate.Type, 12);
-                recipe.AddIngredient(PlagueCanister.Type, 20);
-                recipe.AddIngredient(ModContent.ItemType<MakeshiftPistol>(), 2);
-                recipe.AddTile(TileID.MythrilAnvil);
-                recipe.Register();
-
-            }//adds calamity recipe
-            else
-            {
-                //dropped by blood nautilus when calamity isnt installed
-            }
 
         }
 

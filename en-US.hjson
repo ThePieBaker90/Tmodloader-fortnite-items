@@ -227,8 +227,8 @@ Mods: {
 				DisplayName: EvoChrome Assault Rifle MKI
 				Tooltip:
 					'''
-					An assault rifle that is upgraded throughout the lunar events!
-					Each upgrade increases damage and adds 1 additional bullet
+					An assault rifle that is upgraded throughout the lunar events
+					Shoots in a 2 bullet burst
 					"Chrome Runs Rampant"
 					'''
 			}
@@ -237,7 +237,7 @@ Mods: {
 				DisplayName: EvoChrome Assault Rifle MKII
 				Tooltip:
 					'''
-					An assault rifle that is upgraded throughout the lunar events!
+					An assault rifle that is upgraded throughout the lunar events
 					Shoots in a 3 bullet burst
 					"Chrome Runs Rampant"
 					'''
@@ -247,7 +247,7 @@ Mods: {
 				DisplayName: EvoChrome Assault Rifle MKIII
 				Tooltip:
 					'''
-					An assault rifle that is upgraded throughout the lunar events!
+					An assault rifle that is upgraded throughout the lunar events
 					Shoots in a 4 bullet burst
 					"Chrome Runs Rampant"
 					'''
@@ -257,7 +257,7 @@ Mods: {
 				DisplayName: EvoChrome Assault Rifle MKIV
 				Tooltip:
 					'''
-					An assault rifle that is upgraded throughout the lunar events!
+					An assault rifle that is upgraded throughout the lunar events
 					Shoots in a 5 bullet burst
 					"Chrome Runs Rampant"
 					'''
@@ -828,6 +828,7 @@ Mods: {
 				Tooltip:
 					'''
 					Has a high knockback and damage but does not fire a projectile
+					Allows the user to launch upwards on alt use
 					"Personal Defense of the Ageless Champion"
 					'''
 			}
@@ -1214,7 +1215,7 @@ Mods: {
 				DisplayName: Kinetic Blade
 				Tooltip:
 					'''
-					A katana which allows the user to dash forward on alt use
+					Allows the user to dash forward on alt use
 					"*Teleports Behind You*"
 					'''
 			}

@@ -13,12 +13,23 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/EvoChromeAR2";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("EvoChrome Assault Rifle MKII");
-            // Tooltip.SetDefault("An assault rifle that is upgraded throughout the lunar events!\nShoots in a 3 bullet burst\n\"Chrome Runs Rampant\"");
+            /* Name: 
+             * EvoChrome Assault Rifle MKII
+             * 
+             * Description: 
+             * An assault rifle that is upgraded throughout the lunar events
+             * Shoots in a 3 bullet burst
+             * "Chrome Runs Rampant"
+             * 
+             * Obtain Point:
+             * Lunar Events Craft
+             *  
+             * Intent:
+             * Intended to be a lunar events gun that is upgraded throughout the event
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //Intended to be a lunar events gun that is upgraded throughout the event
         public override void SetDefaults()
         {
 
@@ -40,10 +51,9 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 70;
+            Item.shootSpeed = 8;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 30;
             Item.reuseDelay = 25;
             Item.consumeAmmoOnLastShotOnly = true;
         }
@@ -70,7 +80,7 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(1)); //Random Bullet Spread
+            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(2)); //Random Bullet Spread
 
 
         }

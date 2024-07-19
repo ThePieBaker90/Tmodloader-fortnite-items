@@ -13,12 +13,23 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/DrumGun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Drum Gun");
-            // Tooltip.SetDefault("25% chance to not consume ammo\nTurns musket balls into meteor shot\n\"It's back for round Two!\"");
+            /* Name: 
+             * Drum Gun
+             * 
+             * Description: 
+             * 25% chance to not consume ammo
+             * Turns musket balls into meteor shot
+             * "It's back for round Two!"
+             * 
+             * Obtain Point:
+             * BEE CRAFT
+             *  
+             * Intent:
+             * Better than minishark worse than mega shark, an inbetween.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //Intended to be an early game upgrade to the Minishark
         public override void SetDefaults()
         {
 
@@ -43,7 +54,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shootSpeed = 10;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 0;
         }
 
         public override void AddRecipes()
