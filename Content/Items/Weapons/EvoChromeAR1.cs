@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.DamageClasses;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -63,7 +64,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.FragmentVortex, 10);
+            recipe.AddIngredient(ModContent.ItemType<ChromeSample>(), 1);
             recipe.AddIngredient(ModContent.ItemType<MakeshiftAR>());
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.Register();

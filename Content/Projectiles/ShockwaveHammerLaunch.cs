@@ -51,14 +51,14 @@ namespace FortniteItems.Content.Projectiles
         public override void Kill(int timeLeft)
         {
             //Setting up variables
-            /*
+            
             SoundStyle shockwaveHammerLaunch = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ShockwaveHammerLaunch")
             {
                 Volume = 0.1f,
-                PitchVariance = 0.2f,
+                PitchVariance = 0.4f,
                 MaxInstances = 1,
             };
-            */
+            
             Player player = Main.player[Projectile.owner];
            
 
@@ -76,7 +76,7 @@ namespace FortniteItems.Content.Projectiles
                 //Launches the player to the right
                 player.velocity.X += 10;
             }
-            //SoundEngine.PlaySound(shockwaveHammerLaunch);
+            SoundEngine.PlaySound(shockwaveHammerLaunch);
             Console.WriteLine("Shockwave Sound Played");
         }
 

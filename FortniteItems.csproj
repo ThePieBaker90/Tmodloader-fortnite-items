@@ -10,9 +10,12 @@
     <None Remove="Content\Items\ChugJug.piskel" />
   </ItemGroup>
   <ItemGroup>
+    <AdditionalFiles Remove="Assets\Args\**" />
+    <Compile Remove="Assets\Args\**" />
+    <EmbeddedResource Remove="Assets\Args\**" />
+    <None Remove="Assets\Args\**" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Args\" />
     <Folder Include="Assets\Sounds\Items\Guns\" />
   </ItemGroup>
 </Project>

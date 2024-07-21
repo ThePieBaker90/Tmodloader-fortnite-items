@@ -6,6 +6,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
 using FortniteItems.Content.DamageClasses;
+using FortniteItems.Content.Items.Materials;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -14,8 +15,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/EvoChromeShotgun4";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("EvoChrome Shotgun MKIV");
-            // Tooltip.SetDefault("A shotgun that is upgraded throughout the lunar events!\nFires 7 Bullets\n\"Chrome will consume all\"");
+            /* Name: 
+             * EvoChrome Shotgun MKI
+             * 
+             * Description: 
+             * A shotgun that is upgraded throughout the lunar events!
+             * Fires 7 Bullets
+             * "Chrome will consume all"
+             * 
+             * Obtain Point:
+             * Lunar Events Craft
+             *  
+             * Intent:
+             * Intended to be a lunar events gun that is upgraded throughout the event
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -41,17 +54,16 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 100;
+            Item.shootSpeed = 6;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.crit = 2;
-            Item.ArmorPenetration = 60;
         }
 
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.FragmentSolar, 10);
+            recipe.AddIngredient(ModContent.ItemType<ChromeSample>(), 4);
             recipe.AddIngredient(ModContent.ItemType<EvoChromeShotgun3>());
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.Register();

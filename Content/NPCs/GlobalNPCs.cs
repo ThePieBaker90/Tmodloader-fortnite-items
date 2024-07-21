@@ -78,6 +78,45 @@ namespace FortniteItems.Content.NPCs
         }
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
         {
+            if (//Solar NPCS
+                npc.type == NPCID.SolarDrakomireRider ||
+                npc.type == NPCID.SolarDrakomire ||
+                npc.type == NPCID.SolarSolenian ||
+                npc.type == NPCID.SolarSpearman ||
+                npc.type == NPCID.SolarCorite ||
+                npc.type == NPCID.SolarSroller ||
+                npc.type == NPCID.SolarCrawltipedeTail ||
+                //Vortex NPCS
+                npc.type == NPCID.VortexSoldier ||
+                npc.type == NPCID.VortexHornetQueen ||
+                npc.type == NPCID.VortexHornet ||
+                npc.type == NPCID.VortexRifleman ||
+                npc.type == NPCID.VortexLarva ||
+                //Nebula NPCS
+                npc.type == NPCID.NebulaBeast ||
+                npc.type == NPCID.NebulaBrain ||
+                npc.type == NPCID.NebulaHeadcrab ||
+                npc.type == NPCID.NebulaSoldier ||
+                //Stardust NPCS
+                npc.type == NPCID.StardustCellBig ||
+                npc.type == NPCID.StardustJellyfishBig ||
+                npc.type == NPCID.StardustWormTail ||
+                npc.type == NPCID.StardustSoldier ||
+                npc.type == NPCID.StardustSpiderBig ||
+                npc.type == NPCID.StardustSpiderSmall
+                ) //Chrome Sample drop from all lunar events enemies
+            {
+                
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ChromeSample>(), 30));
+            }
+
+            if (npc.type == NPCID.LunarTowerSolar ||
+                npc.type == NPCID.LunarTowerVortex ||
+                npc.type == NPCID.LunarTowerNebula ||
+                npc.type == NPCID.LunarTowerStardust)
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ChromeSample>(), 1));
+            }
 
             if (npc.type == NPCID.Deerclops) //Rotating Gizmo drop from Deerclops
             {

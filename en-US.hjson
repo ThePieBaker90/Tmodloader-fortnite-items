@@ -206,7 +206,6 @@ Mods: {
 			DrumGun: {
 				DisplayName: Drum Gun
 				Tooltip:
-
 					'''
 					25% chance to not consume ammo
 					Turns musket balls into meteor shot
@@ -277,7 +276,7 @@ Mods: {
 				Tooltip:
 					'''
 					A shotgun that is upgraded throughout the lunar events!
-					Each upgrade increases damage and adds 1 additional bullet
+					Fires 4 Bullets
 					"Chrome will consume all"
 					'''
 			}
@@ -1232,6 +1231,14 @@ Mods: {
 			ExampleAdvancedAnimatedProjectileItem: {
 				DisplayName: Example Advanced Animated Projectile Item
 				Tooltip: ""
+			}
+
+			ChromeSample: {
+				DisplayName: Chrome Sample
+				Tooltip: 
+				'''
+				Can be used to make and upgrade evochrome weapons
+				'''
 			}
 		}
 
