@@ -325,7 +325,7 @@ Mods: {
 				Tooltip:
 					'''
 					Exotic Weapon
-					a Magic rifle that fires a 3 projectiles in a burst that explodes upon impact
+					a Magic rifle that fires 3 projectiles in a burst
 					"Kymera's weapon of choice"
 					'''
 			}
@@ -339,6 +339,7 @@ Mods: {
 				DisplayName: Exotic Heisted Accelerant Shotgun
 				Tooltip:
 					'''
+					Exotic Weapon
 					The more enemies that are nearby, the faster the gun shoots
 					"Goldie's Weapon of Choice"
 					'''
@@ -348,6 +349,7 @@ Mods: {
 				DisplayName: Exotic Heisted Blink Mag SMG
 				Tooltip:
 					'''
+					Exotic Weapon
 					40% chance to not use ammo
 					Fires two bullets per shot
 					Right click performs a Zero Point Blink
@@ -359,6 +361,7 @@ Mods: {
 				DisplayName: Exotic Heisted Breacher Shotgun
 				Tooltip:
 					'''
+					Exotic Weapon
 					A single slug "Shotgun" that fires a projectile which destroys tiles
 					"Chaos Double Agent's weapon of choice"
 					'''
@@ -368,9 +371,9 @@ Mods: {
 				DisplayName: Exotic Heisted Explosive Assault Rifle
 				Tooltip:
 					'''
+					Exotic Weapon
 					25% chance to not consume ammo
 					Fires an explosive projectile
-					Right click to zoom out
 					"Cold Blooded Ace's weapon of choice"
 					'''
 			}
@@ -379,6 +382,7 @@ Mods: {
 				DisplayName: Exotic Heisted Run 'N' Gun Submachine Gun
 				Tooltip:
 					'''
+					Exotic Weapon
 					70% chance to not use ammo
 					Turns musket balls into high velocity bullets
 					Grants the holder the "Slapped Up" buff
@@ -390,6 +394,7 @@ Mods: {
 				DisplayName: Exotic Hoprock Dual Barrel Pistol
 				Tooltip:
 					'''
+					Exotic Weapon
 					33% chance to not use ammo
 					Gives the user the "Otherworldly Gravity" buff
 					"To space!!"
@@ -400,6 +405,7 @@ Mods: {
 				DisplayName: Exotic Marksman Six Shooter
 				Tooltip:
 					'''
+					Exotic Weapon
 					Shoots six shots before needing to reload
 					Has a 10% chance to fire a shot for 5x damage
 					"Deadfire's Weapon of Choice"
@@ -1235,10 +1241,7 @@ Mods: {
 
 			ChromeSample: {
 				DisplayName: Chrome Sample
-				Tooltip: 
-				'''
-				Can be used to make and upgrade evochrome weapons
-				'''
+				Tooltip: Can be used to make and upgrade evochrome weapons
 			}
 		}
 

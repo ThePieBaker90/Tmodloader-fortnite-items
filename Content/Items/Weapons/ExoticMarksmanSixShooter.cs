@@ -18,8 +18,21 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticMarksmanSixShooter";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Marksman Six Shooter");
-            // Tooltip.SetDefault("Shoots six shots before needing to reload\nIncapable of critical shots, however has a 5% chance to fire a shot for 5x damage\n\"Deadfire's Weapon of Choice\"");
+            /* Name: 
+             * Exotic Marksman Six Shooter
+             * 
+             * Description: 
+             * Exotic Weapon
+             * Shoots six shots before needing to reload
+             * Has a 10% chance to fire a shot for 5x damage
+             * "Deadfire's Weapon of Choice"
+             * 
+             * Obtain Point:
+             * Hardmode / 1 Mech
+             *  
+             * Intent:
+             * This is intended to be a hardmode exotic variant of the six shooter which has a chance to output insane amounts of damage
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

@@ -15,8 +15,21 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticNightHawk";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Night Hawk");
-            // Tooltip.SetDefault("Exotic Weapon\nTurns musket balls into chlorophyte bullets\n20% chance to not consume ammo\n\"Mancake's Weapon of Choice\"");
+            /* Name: 
+             * Exotic Night Hawk
+             * 
+             * Description: 
+             * Exotic Weapon
+             * Turns musket balls into chlorophyte bullets
+             * 20% chance to not consume ammo
+             * "Mancake's Weapon of Choice"
+             * 
+             * Obtain Point:
+             * Post Signus / Post Moon Lord
+             *  
+             * Intent:
+             * This is intended to be a revolver that gives the user 2 buffs: Cheap Chlorophyte Bullets & The Hunter Buff
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -26,7 +39,6 @@ namespace FortniteItems.Content.Items.Weapons
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
             Item.damage = 300;
-            //needs a buff when calamity comes out
             Item.DamageType = ModContent.GetInstance<PistolClass>();
             Item.width = 40;
             Item.height = 40;
@@ -44,38 +56,22 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 9;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 60;
+            Item.ArmorPenetration = 20;
             Item.crit = 16;
         }
 
         public override void AddRecipes()
         {
-            ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
-
-            if (calamityMod != null && calamityMod.TryFind("TwistingNether", out ModItem TwistingNether))
-            {
-                Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ModContent.ItemType<ScopedRevolver>(), 1);
-                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
-                recipe.AddIngredient(TwistingNether.Type, 1);
-                recipe.AddIngredient(ItemID.LunarBar, 10);
-                recipe.AddIngredient(ItemID.SoulofSight, 5);
-                recipe.AddTile(TileID.LunarCraftingStation);
-                recipe.Register();
-            }//Adds bloodorb recipe if calamity mod is installed
-            else
-            {
-                Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ModContent.ItemType<ScopedRevolver>(), 1);
-                recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
-                recipe.AddIngredient(ItemID.LunarBar, 10);
-                recipe.AddIngredient(ItemID.SoulofSight, 5);
-                recipe.AddTile(TileID.LunarCraftingStation);
-                recipe.Register();
-            }
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ModContent.ItemType<ScopedRevolver>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<ExoticEssence>(), 1);
+            recipe.AddIngredient(ItemID.LunarBar, 10);
+            recipe.AddIngredient(ItemID.SoulofSight, 5);
+            recipe.AddTile(TileID.LunarCraftingStation);
+            recipe.Register();
         }
 
         public override Vector2? HoldoutOffset()

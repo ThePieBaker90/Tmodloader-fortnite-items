@@ -22,7 +22,22 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticHeistedBlinkMagSMG";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Heisted Blink Mag SMG");
+            /* Name: 
+             * Exotic Heisted Blink Mag SMG
+             * 
+             * Description: 
+             * Exotic Weapon
+             * 40% chance to not use ammo
+             * Fires two bullets per shot
+             * Right click performs a Zero Point Blink
+             * "Double Agent Hush's weapon of choice"
+             * 
+             * Obtain Point:
+             * Post Astrum Deus / Post Moonlord
+             *  
+             * Intent:
+             * This is intended to be a second teleport the player can use separate from the rod of discord.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -35,15 +50,14 @@ namespace FortniteItems.Content.Items.Weapons
             {
                 Item.useTime = 6;
                 Item.useAnimation = 6;
-                Item.damage = 33;
             }
             else
             {
                 Item.useTime = 5;
                 Item.useAnimation = 5;
-                Item.damage = 40;
+                
             }
-
+            Item.damage = 40;
             Item.DamageType = ModContent.GetInstance<SubmachineGunClass>();
             Item.width = 40;
             Item.height = 40;

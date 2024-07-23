@@ -16,8 +16,21 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Shadow Tracker");
-            // Tooltip.SetDefault("Exotic Weapon\n35% chance to not use ammo\nShoots ichor bullets instead of musket balls\n\"Reese's weapon of choice\"");
+            /* Name: 
+             * Exotic Shadow Tracker
+             * 
+             * Description: 
+             * Exotic Weapon
+             * 35% chance to not use ammo
+             * Shoots ichor bullets instead of musket balls
+             * "Reese's weapon of choice"
+             * 
+             * Obtain Point:
+             * Pumpkin Moon
+             *  
+             * Intent:
+             * This is intended to be a post pumpkin moon pistol that weakens enemies and makes them visible in the dark.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -43,7 +56,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 200;
+            Item.shootSpeed = 9;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
 

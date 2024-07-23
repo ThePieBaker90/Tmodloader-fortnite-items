@@ -15,7 +15,19 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void SetStaticDefaults()
         {
-
+            /* Name: 
+             * Explosive Repeater Rifle
+             * 
+             * Description: 
+             * A sniper rifle that shoots explosive rounds
+             * "Add some boom to your shot!"
+             * 
+             * Obtain Point:
+             * Hardmode
+             *  
+             * Intent:
+             * An early hardmode AoE ranged weapon.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -41,10 +53,9 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 20;
+            Item.shootSpeed = 16;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 30;
             Item.crit = 21;
 
         }

@@ -16,10 +16,21 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticHoprockDualies";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Hoprock Dual Barrel Pistols");
-            //Even though the dual barrel pistol is not a thing in fortnite, there is no way that i've found to make the player appear to be holding two items at once
-            //So this is my workaround, it will work the exact same way as the dual pistols, just a different name and look
-            // Tooltip.SetDefault("33% chance to not use ammo\nGives the user the \"Otherworldly Gravity\" buff\n\"To space!!\"");
+            /* Name: 
+             * Exotic Hoprock Dual Barrel Pistol
+             * 
+             * Description: 
+             * Exotic Weapon
+             * 33% chance to not use ammo
+             * Gives the user the "Otherworldly Gravity" buff
+             * "To space!!"
+             * 
+             * Obtain Point:
+             * Post DoG / Moon-Lord
+             *  
+             * Intent:
+             * This is intended to be a weapon which enhances late game mobilty of the user by increasing their flight speed.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -59,7 +70,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.crit = 21;
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 7;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.consumeAmmoOnLastShotOnly = true;

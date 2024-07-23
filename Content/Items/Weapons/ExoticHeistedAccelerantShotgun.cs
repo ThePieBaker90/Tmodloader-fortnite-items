@@ -9,6 +9,7 @@ using System;
 using FortniteItems.Content.Items.Materials;
 using FortniteItems.Content.Rarities;
 using FortniteItems.Content.DamageClasses;
+using System.Runtime.CompilerServices;
 
 namespace FortniteItems.Content.Items.Weapons
 {
@@ -17,8 +18,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticHeistedAccelerantShotgun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Heisted Accelerant Shotgun");
-            // Tooltip.SetDefault("The more enemies that are nearby, the faster the gun shoots\n\"Goldie's Weapon of Choice\"");
+            /* Name: 
+             * Exotic Heisted Accelerant Shotgun
+             * 
+             * Description: 
+             * Exotic Weapon
+             * The more enemies that are nearby, the faster the gun shoots
+             * "Goldie's Weapon of Choice"
+             * 
+             * Obtain Point:
+             * Post Polter / Vortex
+             *  
+             * Intent:
+             * This is intended to be a post-cultist direct upgrade to the Pulse Rifle
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -57,14 +70,13 @@ namespace FortniteItems.Content.Items.Weapons
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.crit = 5;
-            Item.ArmorPenetration = 10;
         }
 
         public override void AddRecipes()
         {
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            if (calamityMod != null && calamityMod.TryFind("Phantoplasm", out ModItem Phantoplasm) && calamityMod.TryFind("RuinousSoul", out ModItem Soul))
+            if (calamityMod != null && calamityMod.TryFind("Necroplasm", out ModItem Phantoplasm) && calamityMod.TryFind("RuinousSoul", out ModItem Soul))
             {
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ModContent.ItemType<MavenAutoShotgun>(), 1);
@@ -107,9 +119,28 @@ namespace FortniteItems.Content.Items.Weapons
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             const int NumProjectiles = 5; // The humber of projectiles that this gun will shoot.
-            float activeNPCs = player.nearbyActiveNPCs;
+            int closeNPCs = 0;
+            foreach (var target in Main.ActiveNPCs)
+            {
+                if (target.CanBeChasedBy())
+                {
+                    float sqrDistanceToTarget = Vector2.DistanceSquared(target.Center, player.Center);
+
+                    if (sqrDistanceToTarget < 921600 && !target.FullName.Equals("Super Dummy"))
+                    {
+                        closeNPCs++;
+                        Console.WriteLine(target.FullName + " Is Close Enough! (" + sqrDistanceToTarget + ")");
+                    }
+                    else
+                    {
+                        Console.WriteLine(target.FullName + " Is too Far Away! (" + sqrDistanceToTarget + ") or is a Super Dummy!");
+                    }
+                }
+            }
+            
+           
             int fireRateInt = 0;
-            fireRateInt = Convert.ToInt32(30 - 30 * (0.16 * activeNPCs) / (0.16 * activeNPCs + 1));
+            fireRateInt = Convert.ToInt32(30 - 30 * (0.16 * closeNPCs) / (0.16 * closeNPCs + 1));
             //A modified version of the equation from ror2's safer spaces calculation. Dont ask why because I dont know why either.
             //I realize critters count to the total but I cant figure out how to fix it, this weapon is already a nightmare to
             //bug check and balance so it is going to be kept in as a cheese strategy

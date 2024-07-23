@@ -16,13 +16,25 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticHeistedRunNGunSMG";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Heisted Run 'N' Gun Submachine Gun");
-            // Tooltip.SetDefault("70% chance to not use ammo\nTurns musket balls into high velocity bullets\nGrants the holder the \"Slapped Up\" buff\n\"Hotwire's weapon of choice\"");
-            //since no NPC sells this item or is associated with this item, I just chose to put a favorite skin of mine as the weapon holder.
+            /* Name: 
+             * Exotic Heisted Run 'N' Gun SMG
+             * 
+             * Description: 
+             * Exotic Weapon
+             * 70% chance to not use ammo
+             * Turns musket balls into high velocity bullets
+             * Grants the holder the "Slapped Up" buff
+             * "Hotwire's weapon of choice"
+             * 
+             * Obtain Point:
+             * Post Yharon / Post Moon Lord
+             *  
+             * Intent:
+             * This is intended to be a revolver that gives the user 2 buffs: Cheap Chlorophyte Bullets & The Hunter Buff
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //EoW SMG
         public override void SetDefaults()
         {
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);

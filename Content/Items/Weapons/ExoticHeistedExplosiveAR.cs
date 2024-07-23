@@ -16,9 +16,21 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticHeistedExplosiveAR";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Heisted Explosive Assault Rifle");
-            // Tooltip.SetDefault("25% chance to not consume ammo\nFires an explosive projectile\nRight click to zoom out\n\"Cold Blooded Ace's weapon of choice\"");
-            //Front towards enemy
+            /* Name: 
+             * Exotic Heisted Explosive Assault Rifle
+             * 
+             * Description: 
+             * Exotic Weapon
+             * 25% chance to not consume ammo
+             * Fires an explosive projectile
+             * "Cold Blooded Ace's weapon of choice"
+             * 
+             * Obtain Point:
+             * Post Plant
+             *  
+             * Intent:
+             * This is intended to be a fast firing explosive weapon.
+             */
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         //
@@ -33,8 +45,6 @@ namespace FortniteItems.Content.Items.Weapons
             {
                 Item.damage = 37;
             }
-
-            
             
             Item.width = 40;
             Item.height = 40;

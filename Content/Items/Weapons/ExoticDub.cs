@@ -24,7 +24,7 @@ namespace FortniteItems.Content.Items.Weapons
              * TBD
              * 
              * Obtain Point:
-             * TBD
+             * TBD (somewhere early in hardmode due to the mobility it will provide, we dont want this mobility to be outclassed or to outclass wings, we want it to be a supplementary to low level wings.)
              *  
              * Intent:
              * TBD
@@ -46,7 +46,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.knockBack = 20f;
             Item.value = Item.sellPrice(gold: 5);
             Item.value = Item.buyPrice(gold: 30);
-            Item.rare = ModContent.RarityType<Exotic>(); //Hardmode bloodmoon / cryogen
+            Item.rare = ModContent.RarityType<Exotic>(); 
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/DoubleBarrelShotgunShoot")
             {
                 Volume = 0.6f,
@@ -55,7 +55,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 8;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
         }

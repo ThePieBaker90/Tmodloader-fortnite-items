@@ -19,16 +19,24 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticHeistedBreacherShotgun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Heisted Breacher Shotgun");
-            // Tooltip.SetDefault("A single slug \"Shotgun\" that fires a projectile which destroys tiles\n\"Chaos Double Agent's weapon of choice\"");
+            /* Name: 
+             * Exotic Heisted Breacher Shotgun
+             * 
+             * Description: 
+             * Exotic Weapon
+             * A single slug "Shotgun" that fires a projectile which destroys tiles
+             * "Chaos Double Agent's weapon of choice"
+             * 
+             * Obtain Point:
+             * Hardmode
+             *  
+             * Intent:
+             * This is intended to be a utility tool used to destroy large amounts of tiles.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
-
-        //intended to be an early hardmode "shotgun" (more like a utility rocket launcher)
-        //Although this has a high dps, it destroys tiles making it a difficult "weapon" to use
-        //My intent is for this to be more of a tool.
         public override void SetDefaults()
         {
 

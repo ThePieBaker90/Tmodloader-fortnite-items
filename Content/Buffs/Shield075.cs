@@ -13,6 +13,10 @@ namespace FortniteItems.Content.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
+            if (player.HasBuff(ModContent.BuffType<Shield100>()))
+            {
+                player.DelBuff(buffIndex);
+            }
             player.statDefense += 30;
         }
     }

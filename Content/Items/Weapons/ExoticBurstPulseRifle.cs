@@ -14,8 +14,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/ExoticBurstPulseRifle";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Exotic Burst Pulse Rifle");
-            // Tooltip.SetDefault("Exotic Weapon\na Magic rifle that fires a 3 projectiles in a burst that explodes upon impact\n\"Kymera's weapon of choice\"");
+            /* Name: 
+             * Exotic Burst Pulse Rifle
+             * 
+             * Description: 
+             * Exotic Weapon
+             * a Magic rifle that fires 3 projectiles in a burst
+             * "Kymera's weapon of choice"
+             * 
+             * Obtain Point:
+             * Lunar Events Craft
+             *  
+             * Intent:
+             * This is intended to be a post-cultist direct upgrade to the Pulse Rifle
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
