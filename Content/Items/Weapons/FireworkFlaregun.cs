@@ -14,12 +14,22 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Firework Flare Gun");
-            // Tooltip.SetDefault("\"Take them out with style\"");
+            /* Name: 
+             * Firework Flaregun
+             * 
+             * Description: 
+             * "Take them out with style"
+             * 
+             * Obtain Point:
+             * Post Queen Slime
+             *  
+             * Intent:
+             * This is intended to be a post-cultist direct upgrade to the Pulse Rifle
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a queen slime flare gun for crown control
+        //a queen slime flare gun for crowd control
         public override void SetDefaults()
         {
 

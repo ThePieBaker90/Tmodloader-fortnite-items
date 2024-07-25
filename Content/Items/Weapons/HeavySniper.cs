@@ -13,8 +13,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/HeavySniper";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Heavy Sniper Rifle");
-            // Tooltip.SetDefault("Cannot fire chlorophyte bullets\nTurns musket balls into high velocity bullets\nFires a high damage bullet at the cost of firing speed\n\"Boom, Headshot\"");
+            /* Name: 
+             * Heavy Sniper Rifle
+             * 
+             * Description: 
+             * Cannot fire chlorophyte bullets
+             * Turns musket balls into high velocity bullets
+             * "Boom, Headshot"
+             * 
+             * Obtain Point:
+             * Post Plant Shroomite Craft
+             *  
+             * Intent:
+             * A post shroomite upgrade to the vanilla sniper rifle
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -40,10 +52,10 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 200;
+            Item.shootSpeed = 16;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 200;
+            Item.ArmorPenetration = 50;
             Item.crit = 10;
 
         }
@@ -60,7 +72,7 @@ namespace FortniteItems.Content.Items.Weapons
             altrecipe.AddIngredient(ItemID.ShroomiteBar, 12);
             altrecipe.AddIngredient(ItemID.SniperScope, 1);
             altrecipe.AddIngredient(ItemID.IllegalGunParts, 1);
-            altrecipe.AddIngredient(ModContent.ItemType<BoltActionSniper>());
+            altrecipe.AddIngredient(ModContent.ItemType<MakeshiftSniper>());
             altrecipe.AddTile(TileID.Autohammer);
             altrecipe.Register();
 

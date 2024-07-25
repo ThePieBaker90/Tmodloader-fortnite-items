@@ -464,7 +464,6 @@ Mods: {
 				Tooltip:
 					'''
 					Fires high velocity bullets instead of musket balls
-					a slow assault rifle that deals lots of damage
 					"Hit em Hard!"
 					'''
 			}
@@ -484,7 +483,6 @@ Mods: {
 					'''
 					Cannot fire chlorophyte bullets
 					Turns musket balls into high velocity bullets
-					Fires a high damage bullet at the cost of firing speed
 					"Boom, Headshot"
 					'''
 			}
@@ -1242,6 +1240,11 @@ Mods: {
 			ChromeSample: {
 				DisplayName: Chrome Sample
 				Tooltip: Can be used to make and upgrade evochrome weapons
+			}
+
+			MakeshiftSniper: {
+				DisplayName: Makeshift Sniper Rifle
+				Tooltip: '''"More of a material than a weapon"'''
 			}
 		}
 

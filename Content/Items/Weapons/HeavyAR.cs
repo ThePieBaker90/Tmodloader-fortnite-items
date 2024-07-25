@@ -14,8 +14,19 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/HeavyAR";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Heavy Assault Rifle");
-            // Tooltip.SetDefault("Fires high velocity bullets instead of musket balls\na slow assault rifle that deals lots of damage\n\"Hit em Hard!\"");
+            /* Name: 
+             * Heavy Assault Rifle
+             * 
+             * Description: 
+             * Fires high velocity bullets instead of musket balls
+             * "Hit em Hard!"
+             * 
+             * Obtain Point:
+             * Post Plantera Lunar Eclipse Mothron Drop
+             *  
+             * Intent:
+             * This is intended a slow firing assault rifle with high armor penetration
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -40,9 +51,9 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 40;
+            Item.shootSpeed = 8;
             Item.noMelee = true;
-            Item.ArmorPenetration = 70;
+            Item.ArmorPenetration = 40;
             Item.useAmmo = AmmoID.Bullet;
         }
 

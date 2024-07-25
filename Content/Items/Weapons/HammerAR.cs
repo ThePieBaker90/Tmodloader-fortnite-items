@@ -13,8 +13,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/HammerAR";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Hammer Assault Rifle");
-            // Tooltip.SetDefault("20% chance to not consume ammo\nTurns musket balls into explosive bullets\n\"Drop the Hammer\"");
+            /* Name: 
+             * Hammer Assault Rifle
+             * 
+             * Description: 
+             * 20% chance to not consume ammo
+             * Turns musket balls into explosive bullets
+             * "Drop the Hammer"
+             * 
+             * Obtain Point:
+             * Pre Hardmode Requires atleast one trip to hell to get hellstone bricks from a ruined house.
+             *  
+             * Intent:
+             * This is intended to be a post-cultist direct upgrade to the Pulse Rifle
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -43,7 +55,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shootSpeed = 12;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 10;
             Item.crit = 6;
         }
 

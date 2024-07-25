@@ -68,7 +68,7 @@ namespace FortniteItems.Content.Items.Weapons
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ModContent.ItemType<AlienNanites>(), 5);
-            recipe.AddIngredient(ModContent.ItemType<BoltActionSniper>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<MakeshiftSniper>(), 1);
             recipe.AddTile(TileID.AdamantiteForge);
             recipe.Register();
 

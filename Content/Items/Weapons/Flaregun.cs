@@ -14,12 +14,22 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Flare Gun");
-            // Tooltip.SetDefault("\"Unconventional, but who cares\"");
+            /* Name: 
+             * Flaregun
+             * 
+             * Description: 
+             * "Unconventional, but who cares"
+             * 
+             * Obtain Point:
+             * Pre Hardmode Requires atleast one trip to hell to get hellstone bricks from a ruined house.
+             *  
+             * Intent:
+             * This is intended to be a post-cultist direct upgrade to the Pulse Rifle
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //an early game rifle that is outclassed by nearly every other rifle in the game and is mainly used as a material
+
         public override void SetDefaults()
         {
 
@@ -32,7 +42,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 6f;
             Item.value = Item.sellPrice(gold: 1);
-            Item.rare = ItemRarityID.Green; //Goblin Army
+            Item.rare = ItemRarityID.Green; //Pre Hardmode
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/FlareGunShoot")
             {
                 Volume = 0.7f,

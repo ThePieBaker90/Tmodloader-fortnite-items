@@ -14,8 +14,19 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/HeavyShotgun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Heavy Shotgun");
-            // Tooltip.SetDefault("A single slug shotgun with a high crit rate\n\"Is it really a shotgun at this point?\"");
+            /* Name: 
+             * Heavy Shotgun
+             * 
+             * Description: 
+             * A single slug shotgun with a high crit rate
+             * "Is it really a shotgun at this point?"
+             * 
+             * Obtain Point:
+             * Hardmode Buy from Arms Dealer
+             *  
+             * Intent:
+             * This is intended to be an early hardmode shotgun that fires a single high damage slug with a high crit chance
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -42,7 +53,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 30;
+            Item.shootSpeed = 16;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
             Item.crit = 25;

@@ -1,6 +1,7 @@
 ﻿Version 3.300 Changelog
 
-Added Chrome Sample, a material which drops from enemies during the lunar events (1/30)
+Added Chrome Sample, a material which drops from enemies during the lunar events (1/30).
+Added Makeshift Sniper Rifle, an early game sniper rifle which also functions as a material for other sniper rifles.
 
 Fixed an an oversight which caused the copper bullet to travel faster than the starndard musket ball (Thanks to SpecyJ for pointing this out.)
 
@@ -9,6 +10,7 @@ Slowed most bullet velocities to be more in line with vanilla weapons. Velocity 
 Assault Rifle has been given a slight amount of spread (0 degrees -> 2 degrees).
 Assault Rifle has been been given increased damage (8 damage -> 9 damage).
 Bolt Action Sniper Rifle Armor Penetration 30 -> 10.
+Bolt Action Sniper Rifle Recipe Adjusted
 Burst Assault Rifle Armor Penetration 30 -> 0.
 Burst Submachine Gun Armor Penetration 3 -> 0.
 Charge shotgun damage 500 -> 300 when the bullet is a misfire.
@@ -29,12 +31,21 @@ Exotic Heisted Accelerant Shotgun now has more measures in place to prevent chee
 Exotic Heisted Blink Mag SMG's damage when calamity is not installed 33 -> 40.
 Exotic Night Hawk Armor Penetration 60 -> 20.
 Exotic Night Hawk no longer has a special crafting recipe when calamity is installed, it is now obtained after moon-lord has been defeated.
+Hammer Assault Rifle Armor Penetration 10 -> 0.
+Heavy Assault Rifle Armor Penetration 70 -> 40.
+Heavy Sniper Rifle Armor Penetration 200 -> 50.
+Heavy Sniper Rifle Recipe Adjusted.
+Rail Gun Recipe Adjusted.
 Lowered the volume of the shockwave hammer's alt use.
 All Shield Buffs are now non-stackable, the biggest buff will remove all smaller buffs.
 
 !!!!!
-ADD RECIPE FOR EXOTIC DUB AND LIGHTNING BOLT
-ADD STINGER SMG ITEM
+ADD RECIPE FOR EXOTIC DUB & LIGHTNING BOLT
+ADD STINGER SMG ITEM & MAKESHIFT SNIPER RIFLE (Called Sunsetter In STW)
+!!!!!
+
+!!!!!
+ADJUST SNIPER RIFLE RECIPES FOR THE MAKESHIFT SNIPER RIFLE
 !!!!!
 
 !!!!!

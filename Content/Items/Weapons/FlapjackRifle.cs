@@ -13,8 +13,20 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/FlapjackRifle";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Light Machine Gun");
-            // Tooltip.SetDefault("70% chance not to consume ammo\n\"Hit em hard and fast... or miss em hard and fast\"");
+            /* Name: 
+             * Flapjack Rifle
+             * 
+             * Description: 
+             * 50% chance not to consume ammo
+             * A rifle with a spinning magazine and a fast fire rate
+             * "Make heads turn"
+             * 
+             * Obtain Point:
+             * Hardmode Tier 2 Metals
+             *  
+             * Intent:
+             * An early hardmode minigun and a use for turtle shells for ranged players.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
