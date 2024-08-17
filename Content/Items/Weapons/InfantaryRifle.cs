@@ -15,8 +15,19 @@ namespace FortniteItems.Content.Items.Weapons
         public override void SetStaticDefaults()
         {
 
-            // DisplayName.SetDefault("Infantry Rifle");
-            // Tooltip.SetDefault("a longer range rifle\nFires a high velocity bullet instead of musket balls\n\"When a sniper rifle and an assault rifle meet...\"");
+            /* Name: 
+             * Infantry Rifle
+             * 
+             * Description: 
+             * Turns musket balls into high velocity bullets
+             * "When a sniper rifle and an assault rifle meet..."
+             * 
+             * Obtain Point:
+             * Post Calamitas Clone / Post All Mechs
+             *  
+             * Intent:
+             * This is intended to be an post calamitas clone rifle that is faster than other sniper rifles an has a high crit chance.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -41,7 +52,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 100;
+            Item.shootSpeed = 16;
             Item.noMelee = true;
             Item.ArmorPenetration = 30;
             Item.useAmmo = AmmoID.Bullet;

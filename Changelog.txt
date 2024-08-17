@@ -1,9 +1,10 @@
 ﻿Version 3.300 Changelog
 
-Added Chrome Sample, a material which drops from enemies during the lunar events (1/30).
-Added Makeshift Sniper Rifle, an early game sniper rifle which also functions as a material for other sniper rifles.
+Added Chrome Samples, a material which drops from enemies during the lunar events (1/30 chance).
+Added the Makeshift Sniper Rifle, an early game sniper rifle which also functions as a material for other sniper rifles.
 
-Fixed an an oversight which caused the copper bullet to travel faster than the starndard musket ball (Thanks to SpecyJ for pointing this out.)
+Fixed an oversight which caused the copper bullet to travel faster than the starndard musket ball (Thanks to SpecyJ for pointing this out.)
+Fixed an issue where boss drops wouldn't be included in the boss bag.
 
 Slowed most bullet velocities to be more in line with vanilla weapons. Velocity changes will not be induvidually listed.
 
@@ -34,18 +35,25 @@ Exotic Night Hawk no longer has a special crafting recipe when calamity is insta
 Hammer Assault Rifle Armor Penetration 10 -> 0.
 Heavy Assault Rifle Armor Penetration 70 -> 40.
 Heavy Sniper Rifle Armor Penetration 200 -> 50.
+Hunting Rifle Armor Penetration 50 -> 0.
 Heavy Sniper Rifle Recipe Adjusted.
+Kinetic Blade Armor Penetration 100 -> 30.
+Kinetic Blade Recipe Adjusted.
+Lever Action Rifle Armor Penetration 10 -> 0.
+Light Machine Gun Armor Pentration 3 -> 10.
+Light Machine Gun Spread 7 -> 9.
+Light Machine Gun Damage 75 -> 90.
+Light Machine Gun Drop Chance 20% -> 33.34%.
+
 Rail Gun Recipe Adjusted.
 Lowered the volume of the shockwave hammer's alt use.
+Vindertech Grenade will now only explode when grounded (unless the projectile is active for long enough, which it may explode while airborne).
 All Shield Buffs are now non-stackable, the biggest buff will remove all smaller buffs.
 
 !!!!!
 ADD RECIPE FOR EXOTIC DUB & LIGHTNING BOLT
-ADD STINGER SMG ITEM & MAKESHIFT SNIPER RIFLE (Called Sunsetter In STW)
-!!!!!
-
-!!!!!
-ADJUST SNIPER RIFLE RECIPES FOR THE MAKESHIFT SNIPER RIFLE
+ADD STINGER SMG ITEM
+ADD MYTHIC DUST, used to upgrade weapons to have upgraded stats later in the game
 !!!!!
 
 !!!!!
@@ -55,3 +63,8 @@ ADD MATERIAL FOR EOL ITEMS
 !!!!
 REMOVE LEFT OVER STRIKER AR AND MOD PARTS
 !!!!
+
+!!!!!
+EDIT RED EYE AR NON CALAMITY RECIPE
+& maybe the hunting rifle
+!!!!!

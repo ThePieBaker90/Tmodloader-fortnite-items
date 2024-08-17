@@ -57,7 +57,7 @@ namespace FortniteItems.Content.Items.Weapons
                 recipe.AddIngredient(ItemID.IllegalGunParts, 1);
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();
-            }//Adds exotic recipe if calamity is installed
+            }
             else
             {
                 Recipe recipe = CreateRecipe();

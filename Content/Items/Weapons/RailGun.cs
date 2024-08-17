@@ -31,6 +31,7 @@ namespace FortniteItems.Content.Items.Weapons
              *  High damage, infinite pierce, with no knockback and a long use time.
              *  Useful for big groups of enemies, less useful with bosses.
              */
+            //TODO: Needs a wiki page
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

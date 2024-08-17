@@ -16,11 +16,21 @@ namespace FortniteItems.Content.Items.Weapons
 
         public override void SetStaticDefaults()
         {
-
-
+            /* Name: 
+             * Lever Action Rifle
+             * 
+             * Description: 
+             * "Not to be confused with a button action rifle"
+             * 
+             * Obtain Point:
+             * Pre Hardmode Craft
+             *  
+             * Intent:
+             * A Pre boss sniper rifle which also functions as a material for other sniper rifles.
+             */
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //a post EoC sniper rifle
+
         public override void SetDefaults()
         {
 
@@ -34,7 +44,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.knockBack = 2f;
             Item.value = Item.buyPrice(gold: 10);
             Item.value = Item.sellPrice(gold: 2, silver: 50);
-            Item.rare = ItemRarityID.Green; //Goblin Army Buy
+            Item.rare = ItemRarityID.Green; //Goblin Army Craft
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/LeverActionShoot")
             {
                 Volume = 0.6f,
@@ -46,7 +56,6 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shootSpeed = 10;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 10;
             Item.crit = 11;
 
         }

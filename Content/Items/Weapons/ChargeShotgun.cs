@@ -80,10 +80,13 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
+
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<ChargeShotgunProjectile>(), damage, knockback, player.whoAmI);
+
+            
 
             return false; // Return false because we don't want tModLoader to shoot projectile
         }

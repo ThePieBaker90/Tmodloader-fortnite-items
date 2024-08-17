@@ -14,10 +14,21 @@ namespace FortniteItems.Content.Items.Consumables
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/KineticBoomerang";
         public override void SetStaticDefaults()
         {
-
+            /* Name: 
+             * Kinetic Boomerang
+             * 
+             * Description: 
+             * A boomerang with strong knockback and high speed
+             * "a necessity to explore the wilds"
+             * 
+             * Obtain Point:
+             * Post Solar Pillar
+             *  
+             * Intent:
+             * This is intended to be a late game boomerang
+             */
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //Post eye consumable gotten from the demo man
         public override void SetDefaults()
         {
 

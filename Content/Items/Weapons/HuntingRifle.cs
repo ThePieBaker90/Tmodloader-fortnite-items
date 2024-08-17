@@ -14,8 +14,19 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/HuntingRifle";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Hunting Rifle");
-            // Tooltip.SetDefault("Turns musket balls into high velocity bullets\n\"For... Hunting...\"");
+            /* Name: 
+             * Hunting Rifle
+             * 
+             * Description: 
+             * Turns musket balls into high velocity bullets
+             * "For... Hunting..."
+             * 
+             * Obtain Point:
+             * Post Calamitas Clone / Post All Mechs
+             *  
+             * Intent:
+             * This is intended to be an post calamitas clone rifle that is faster than other sniper rifles an has a high crit chance.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -23,15 +34,7 @@ namespace FortniteItems.Content.Items.Weapons
         {
             ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
 
-            if (calamityMod != null)
-            {
-                Item.damage = 260;
-            }
-            else
-            {
-                Item.damage = 125;
-            }
-
+            Item.damage = 200;
             Item.DamageType = ModContent.GetInstance<SniperRifleClass>();
             Item.width = 40;
             Item.height = 40;
@@ -49,11 +52,9 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 200
-                ;
+            Item.shootSpeed = 14;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
-            Item.ArmorPenetration = 50;
             Item.crit = 16;
 
         }

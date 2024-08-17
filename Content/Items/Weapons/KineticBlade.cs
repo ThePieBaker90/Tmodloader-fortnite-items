@@ -15,6 +15,19 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/KineticBlade";
         public override void SetStaticDefaults()
         {
+            /* Name: 
+             * Kinetic Blade
+             * 
+             * Description: 
+             * Allows the user to dash forward on alt use
+             * "*Teleports Behind You*"
+             * 
+             * Obtain Point:
+             * Post Mechs
+             *  
+             * Intent:
+             * This is intended to be a quick melee weapon and
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -34,7 +47,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.rare = ItemRarityID.Yellow; //Post All Mechs
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
-            Item.ArmorPenetration = 100;
+            Item.ArmorPenetration = 30;
             Item.crit = 11;
             Item.shootSpeed = 15;
             Item.shoot = ProjectileID.PurificationPowder;
@@ -45,6 +58,7 @@ namespace FortniteItems.Content.Items.Weapons
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.Muramasa, 1);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 12);
+            recipe.AddIngredient(ItemID.LargeAmethyst, 1);
             recipe.AddTile(TileID.AdamantiteForge);
             recipe.Register();
 

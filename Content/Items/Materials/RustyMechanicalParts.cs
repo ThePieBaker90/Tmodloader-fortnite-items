@@ -17,7 +17,7 @@ namespace FortniteItems.Content.Items.Materials
              * Rusty Mechanical Parts
              * 
              * Description: 
-             * A crafting material for early game
+             * N/A
              * 
              * Obtain Point:
              * Obtained as a drop chance from any goblin in the goblin army
@@ -28,7 +28,7 @@ namespace FortniteItems.Content.Items.Materials
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 20;
         }
-        //an early game pistol
+        
         public override void SetDefaults()
         {
 

@@ -39,8 +39,8 @@ namespace FortniteItems.Content.Items.Weapons
             Item.useAnimation = 90;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 2f;
-            Item.value = Item.sellPrice(gold: 10, silver: 50);
-            Item.rare = ItemRarityID.Lime; //Post Plantera Sniper Rifle Crafted with Shroomite
+            Item.value = Item.sellPrice(silver: 5);
+            Item.rare = ItemRarityID.Blue; 
             Item.UseSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/BoltActionSniperShoot")
             {
                 Volume = 0.9f,

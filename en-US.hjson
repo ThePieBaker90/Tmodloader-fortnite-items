@@ -463,7 +463,7 @@ Mods: {
 				DisplayName: Heavy Assault Rifle
 				Tooltip:
 					'''
-					Fires high velocity bullets instead of musket balls
+					Turns musket balls into high velocity bullets
 					"Hit em Hard!"
 					'''
 			}
@@ -509,8 +509,7 @@ Mods: {
 				DisplayName: Infantry Rifle
 				Tooltip:
 					'''
-					a longer range rifle
-					Fires a high velocity bullet instead of musket balls
+					Turns musket balls into high velocity bullets
 					"When a sniper rifle and an assault rifle meet..."
 					'''
 			}
@@ -938,7 +937,7 @@ Mods: {
 				Tooltip:
 					'''
 					35% chance to not use ammo
-					Shoots high velocity bullets instead of musket balls
+					Turns musket balls into high velocity bullets
 					"A staple of the Fog of War LTM"
 					'''
 			}
@@ -1085,11 +1084,7 @@ Mods: {
 
 			LeverActionRifle: {
 				DisplayName: Lever Action Rifle
-				Tooltip:
-					'''
-					A sniper rifle that shoots at a faster than usual speed
-					"Not to be confused with a button action rifle"
-					'''
+				Tooltip: '''"Not to be confused with a button action rifle"'''
 			}
 
 			MammothPistol: {
@@ -1246,6 +1241,16 @@ Mods: {
 				DisplayName: Makeshift Sniper Rifle
 				Tooltip: '''"More of a material than a weapon"'''
 			}
+
+			SimpleMechanicalParts: {
+				DisplayName: Simple Mechanical Parts
+				Tooltip: ""
+			}
+
+			AntiReflectionBullet: {
+				DisplayName: Anti Reflection Bullet
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
@@ -1264,6 +1269,7 @@ Mods: {
 			ShockwaveHammerLaunch.DisplayName: Shockwave Hammer Launch
 			ThunderboltOfZeus.DisplayName: Thunderbolt Of Zeus
 			ExampleAdvancedAnimatedProjectile.DisplayName: Example Advanced Animated Projectile
+			AntiReflectionBullet.DisplayName: Anti Reflection Bullet
 		}
 
 		Tiles.HopRockOreTile.MapEntry: Hop Rock Chunk

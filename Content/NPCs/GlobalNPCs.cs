@@ -78,6 +78,8 @@ namespace FortniteItems.Content.NPCs
         }
         public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
         {
+            LeadingConditionRule NotExpertRule = new LeadingConditionRule(new Conditions.NotExpert());
+
             if (//Solar NPCS
                 npc.type == NPCID.SolarDrakomireRider ||
                 npc.type == NPCID.SolarDrakomire ||
@@ -120,7 +122,9 @@ namespace FortniteItems.Content.NPCs
 
             if (npc.type == NPCID.Deerclops) //Rotating Gizmo drop from Deerclops
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RotatingGizmo>(), 1));
+                //Adds to floor loot if the world isnt expert or above. For expert drops adjust the boss bag in Content/Items/GlobalItems/BossBagLoot.cs
+                npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(), ModContent.ItemType<RotatingGizmo>(), 1));
+
             }
 
             if (npc.type == NPCID.EyeofCthulhu) //Six Shooter drop from EoC if calamity is not installed
@@ -128,7 +132,8 @@ namespace FortniteItems.Content.NPCs
                 ModLoader.TryGetMod("CalamityMod", out Mod calamityMod);
                 if (calamityMod == null)
                 {
-                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<SixShooter>(), 2));
+                    //Adds to floor loot if the world isnt expert or above. For expert drops adjust the boss bag in Content/Items/GlobalItems/BossBagLoot.cs
+                    npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(), ModContent.ItemType<SixShooter>(), 2));
                 }
 
             }
@@ -155,7 +160,8 @@ namespace FortniteItems.Content.NPCs
 
             if (npc.type == NPCID.KingSlime) //Burst SMG Drop from King Slime
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BurstSMG>(), 2));
+                //Adds to floor loot if the world isnt expert or above. For expert drops adjust the boss bag in Content/Items/GlobalItems/BossBagLoot.cs
+                    npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(), ModContent.ItemType<BurstSMG>(), 2));
             }
 
             if (npc.type == NPCID.ScutlixRider ||
@@ -185,15 +191,12 @@ namespace FortniteItems.Content.NPCs
 
             if (npc.type == NPCID.Golem) //Mammoth Pistol Drop from golem
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MammothPistol>(), 12));
+                //Adds to floor loot if the world isnt expert or above. For expert drops adjust the boss bag in Content/Items/GlobalItems/BossBagLoot.cs
+                npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(), ModContent.ItemType<MammothPistol>(), 12));
             }
 
-            if (npc.type == NPCID.Frankenstein) //Mechanical Parts Drop from frankenstein
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 30));
-            }
-
-            if (npc.type == NPCID.Fritz) //Mechanical Parts Drop from Fritz
+            if (npc.type == NPCID.Frankenstein ||
+                npc.type == NPCID.Fritz) //Mechanical Parts Drop from frankenstein
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<MechanicalParts>(), 30));
             }
@@ -208,57 +211,23 @@ namespace FortniteItems.Content.NPCs
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfantaryRifle>(), 3));
             }
 
-            if (npc.type == NPCID.PirateCaptain) //Ranger Assault Rifle Drop from Pirate Captain
+            if (npc.type == NPCID.PirateCaptain ||
+                npc.type == NPCID.PirateCorsair ||
+                npc.type == NPCID.PirateCrossbower ||
+                npc.type == NPCID.PirateDeadeye ||
+                npc.type == NPCID.PirateDeckhand) //Ranger Assault Rifle Drop from all pirates
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
             }
 
-            if (npc.type == NPCID.PirateCorsair) //Ranger Assault Rifle Drop from Pirate Corsair
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
-            }
-
-            if (npc.type == NPCID.PirateCrossbower) //Ranger Assault Rifle Drop from Pirate Crossbower
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
-            }
-
-            if (npc.type == NPCID.PirateDeadeye) //Ranger Assault Rifle Drop from Pirate Deadeye
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
-            }
-
-            if (npc.type == NPCID.PirateDeckhand) //Ranger Assault Rifle Drop from Pirate Deckhand
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RangerAR>(), 100));
-            }
             if (npc.type == NPCID.Mothron) //Heavy Assault Rifle Drop from Mothron
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<HeavyAR>(), 3));
             }
             if (npc.type == NPCID.PirateCaptain) //Combat Shotgun Drop from Pirate Captain
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
-            }
-
-            if (npc.type == NPCID.PirateCorsair) //Combat Shotgun Drop from Pirate Corsair
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
-            }
-
-            if (npc.type == NPCID.PirateCrossbower) //Combat Shotgun Drop from Pirate Crossbower
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
-            }
-
-            if (npc.type == NPCID.PirateDeadeye) //Combat Shotgun Drop from Pirate Deadeye
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
-            }
-
-            if (npc.type == NPCID.PirateDeckhand) //Combat Shotgun Drop from Pirate Deckhand
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CombatShotgun>(), 100));
+                
             }
 
             if (npc.type == NPCID.ElfCopter) //Charge SMG Drop from Elf Copter
@@ -266,21 +235,21 @@ namespace FortniteItems.Content.NPCs
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ChargeSMG>(), 75));
             }
 
-            if (npc.type == NPCID.ElfArcher) //Tactical AR Drop from Elf Archer
+            if (npc.type == NPCID.ElfArcher ||
+                npc.type == NPCID.ZombieElf) //Tactical AR Drop from Elf Archer / Zombie Elf
             {
                 npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TacticalAR>(), 75));
             }
-            if (npc.type == NPCID.ZombieElf) //Tactical AR Drop from Elf Zombie
-            {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TacticalAR>(), 75));
-            }
+
             if (npc.type == NPCID.DukeFishron) //LMG drop from Duke fishron
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<LMG>(), 5));
+                //Adds to floor loot if the world isnt expert or above. For expert drops adjust the boss bag in Content/Items/GlobalItems/BossBagLoot.cs
+                npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(), ModContent.ItemType<LMG>(), 3));
             }
             if (npc.type == NPCID.MoonLordCore) //Chug Jug Drop from Moon lord
             {
-                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ChugJug>(), 1, 5, 15));
+                //Adds to floor loot if the world isnt expert or above. For expert drops adjust the boss bag in Content/Items/GlobalItems/BossBagLoot.cs
+                npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(), ModContent.ItemType<ChugJug>(), 1, 5, 15));
             }
             if (npc.type == NPCID.MeteorHead) //Hop Rock Drop from Meteor Head
             {

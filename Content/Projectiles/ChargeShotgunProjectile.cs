@@ -76,13 +76,13 @@ namespace FortniteItems.Content.Projectiles
             
             SoundStyle shootSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ChargeShotgunFire")
             {
-                Volume = 0.9f,
+                Volume = 0.5f,
                 PitchVariance = 0.2f,
                 MaxInstances = 1,
             };
             SoundStyle misfireSound = new SoundStyle($"{nameof(FortniteItems)}/Assets/Sounds/Items/Guns/ChargeShotgunMisfire")
             {
-                Volume = 0.9f,
+                Volume = 0.5f,
                 PitchVariance = 0.2f,
                 MaxInstances = 1,
             };

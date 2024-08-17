@@ -32,7 +32,6 @@ namespace FortniteItems.Content.Projectiles
             Projectile.tileCollide = true; // Can the projectile collide with tiles?
             Projectile.extraUpdates = 1; // Set to above 0 if you want the projectile to update multiple time in a frame
 
-
             AIType = ProjectileID.WoodenArrowFriendly; // Act exactly like default Bullet
         }
 

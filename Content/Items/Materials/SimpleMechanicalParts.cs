@@ -8,34 +8,34 @@ using FortniteItems.Content.Rarities;
 
 namespace FortniteItems.Content.Items.Materials
 {
-    public class MechanicalParts : ModItem
+    public class SimpleMechanicalParts : ModItem
     {
-        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/SleekMechanicalParts";
+        public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MissingTexture";
         public override void SetStaticDefaults()
         {
             /* Name: 
-             * Sleek Mechanical Parts
+             * Simple Mechanical Parts
              * 
              * Description: 
              * N/A
              * 
              * Obtain Point:
-             * Obtained as a drop chance from frankenstein or fritz during the pre mech solar eclipse
+             * TBD
              *  
              * Intent:
-             * Used as a way to make sure the player has passed the pre mech solar eclipse
+             * TBD
              */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 20;
         }
-        //an early game pistol
+
         public override void SetDefaults()
         {
 
             Item.width = 40;
             Item.height = 40;
-            Item.value = Item.sellPrice(gold: 1);
-            Item.rare = ItemRarityID.Pink; //Solar eclipse drop
+            Item.value = Item.sellPrice(silver: 10);
+            Item.rare = ItemRarityID.Green; //Goblin Army Drop
             Item.maxStack = 9999;
         }
 

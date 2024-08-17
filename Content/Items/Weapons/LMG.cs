@@ -13,15 +13,26 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/LMG";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Light Machine Gun");
-            // Tooltip.SetDefault("70% chance not to consume ammo\n\"Hit em hard and fast... or miss em hard and fast\"");
+            /* Name: 
+             * Light Machine Gun
+             * 
+             * Description: 
+             * 70% chance not to consume ammo
+             * "Hit em hard and fast... or miss em hard and fast"
+             * 
+             * Obtain Point:
+             * Duke Fishron Drop
+             *  
+             * Intent:
+             * This is intended to be an inaccurate but fast and hard hitting assault rifle
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         //a hardmode minigun equivalent
         public override void SetDefaults()
         {
-            Item.damage = 75;
+            Item.damage = 90;
             Item.DamageType = ModContent.GetInstance<AssaultRifleClass>();
             Item.width = 40;
             Item.height = 40;
@@ -41,7 +52,7 @@ namespace FortniteItems.Content.Items.Weapons
             Item.shoot = ProjectileID.PurificationPowder;
             Item.shootSpeed = 7f;
             Item.noMelee = true;
-            Item.ArmorPenetration = 3;
+            Item.ArmorPenetration = 10;
             Item.useAmmo = AmmoID.Bullet;
         }
 
@@ -59,7 +70,7 @@ namespace FortniteItems.Content.Items.Weapons
                 position += muzzleOffset;
             }
 
-            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(7f)); //Random Bullet Spread
+            velocity = velocity.RotatedByRandom(MathHelper.ToRadians(9f)); //Random Bullet Spread
 
         }
 
