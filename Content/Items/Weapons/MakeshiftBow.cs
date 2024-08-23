@@ -13,8 +13,18 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MakeshiftBow";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Makeshift Bow");
-            // Tooltip.SetDefault("Shoots arrows at a high velocity\n\"a precursor to the sniper rifle\"");
+            /* Name: 
+             * Makeshift Bow
+             * 
+             * Description: 
+             * "Boney Burb's finest weaponry"
+             * 
+             * Obtain Point:
+             * Pre Hardmode Craft
+             *  
+             * Intent:
+             * A Pre boss bow which also functions as a material for other bows. Additionally, it has a very high velocity.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }

@@ -14,8 +14,18 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MakeshiftShotgun";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Makeshift Shotgun");
-            // Tooltip.SetDefault("\"Better than nothin'\"");
+            /* Name: 
+             * Makeshift Shotgun
+             * 
+             * Description: 
+             * "Better than nothin'"
+             * 
+             * Obtain Point:
+             * Pre Hardmode Craft
+             *  
+             * Intent:
+             * A Pre boss shotgun which also functions as a material for other shotguns.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
@@ -41,7 +51,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 5;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
         }

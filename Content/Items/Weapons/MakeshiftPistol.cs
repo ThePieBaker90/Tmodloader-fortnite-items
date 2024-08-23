@@ -13,12 +13,21 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/MakeshiftPistol";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Makeshift Pistol");
-            // Tooltip.SetDefault("\"It shoots\"");
+            /* Name: 
+             * Makeshift Pistol
+             * 
+             * Description: 
+             * "It shoots"
+             * 
+             * Obtain Point:
+             * Pre Hardmode Craft
+             *  
+             * Intent:
+             * A Pre boss pistol which also functions as a material for other pistols.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //an early game rifle that is outclassed by nearly every other rifle in the game and is mainly used as a material
         public override void SetDefaults()
         {
 
@@ -40,7 +49,7 @@ namespace FortniteItems.Content.Items.Weapons
             };
             Item.autoReuse = true;
             Item.shoot = ProjectileID.PurificationPowder;
-            Item.shootSpeed = 15;
+            Item.shootSpeed = 5;
             Item.noMelee = true;
             Item.useAmmo = AmmoID.Bullet;
         }

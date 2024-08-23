@@ -1,9 +1,9 @@
 Base Velocities
 
 Sniper Rifles - 16
-DMR - 9
-LMG - 14
-SMG - 10
-Pistol - 5
-AR - 8
-Shotgun - 6
+DMR - 8-14
+LMG - 7-13
+SMG - 6-12
+Pistol - 5-13
+AR - 8-10
+Shotgun - 5-7

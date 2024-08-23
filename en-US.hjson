@@ -544,11 +544,7 @@ Mods: {
 
 			MakeshiftBow: {
 				DisplayName: Makeshift Bow
-				Tooltip:
-					'''
-					Shoots arrows at a high velocity
-					"a precursor to the sniper rifle"
-					'''
+				Tooltip:'''"Boney Burb's finest weaponry"'''
 			}
 
 			MakeshiftPistol: {

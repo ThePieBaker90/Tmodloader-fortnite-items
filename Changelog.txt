@@ -44,6 +44,7 @@ Light Machine Gun Armor Pentration 3 -> 10.
 Light Machine Gun Spread 7 -> 9.
 Light Machine Gun Damage 75 -> 90.
 Light Machine Gun Drop Chance 20% -> 33.34%.
+Lock On Pistol Recipe Adjusted.
 
 Rail Gun Recipe Adjusted.
 Lowered the volume of the shockwave hammer's alt use.

@@ -13,12 +13,23 @@ namespace FortniteItems.Content.Items.Weapons
         public override string Texture => $"{nameof(FortniteItems)}/Assets/Textures/LockOnPistol";
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Lock On Pistol");
-            // Tooltip.SetDefault("25% chance to not use ammo\nBullets lock on to the nearest enemy\n\"Infests every part of the island\"");
+            /* Name: 
+             * Lock On Pistol
+             * 
+             * Description: 
+             * 25% chance to not use ammo
+             * Bullets lock on to the nearest enemy
+             * "MEGA City's most manufactured firearm 30 years in a row!"
+             * 
+             * Obtain Point:
+             * Post All Mechs Craft
+             *  
+             * Intent:
+             * This is intended to be a post mech pistol which deals consistent damage and fires lock on bullets before the player has an abundance of chlorophyte for bullets.
+             */
 
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
-        //an early game pistol
         public override void SetDefaults()
         {
 
@@ -48,7 +59,7 @@ namespace FortniteItems.Content.Items.Weapons
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ModContent.ItemType<Pistol>());
+            recipe.AddIngredient(ModContent.ItemType<MakeshiftPistol>());
             recipe.AddIngredient(ItemID.SoulofMight, 1);
             recipe.AddIngredient(ItemID.SoulofFright, 1);
             recipe.AddIngredient(ItemID.SoulofSight, 1);
